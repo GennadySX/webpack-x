@@ -1,0 +1,25 @@
+$hd: " only screen and (min-width: 1920px)"
+$lg: " only screen and (min-width: 1201px) and (max-width: 1919px)"
+$laptop: " only screen and (min-width: 769px) and (max-width: 1200px)"
+$not-device: "only screen and (min-width: 920px)"
+$tablet: " only screen and (min-width: 481px) and (max-width: 768px)"
+$phone: " only screen and (min-width: 320px) and (max-width: 480px)"
+
+
+$fsize: "2.5rem"
+
+
+html
+    body
+        header
+            nav
+                #navbarNavDropdown
+                    //background: black
+                    @media #{$not-device}
+                         display: flex
+                    justify-content: flex-end
+                    ul.navbar-nav
+                        position: relative
+                        
+                    
+

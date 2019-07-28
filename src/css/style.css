@@ -1,0 +1,7 @@
+html body header nav #navbarNavDropdown {
+  justify-content: flex-end; }
+  @media only screen and (min-width: 920px) {
+    html body header nav #navbarNavDropdown {
+      display: flex; } }
+  html body header nav #navbarNavDropdown ul.navbar-nav {
+    position: relative; }
