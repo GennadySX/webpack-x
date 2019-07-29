@@ -1,7 +1,180 @@
-html body header nav #navbarNavDropdown {
-  justify-content: flex-end; }
-  @media only screen and (min-width: 920px) {
-    html body header nav #navbarNavDropdown {
-      display: flex; } }
-  html body header nav #navbarNavDropdown ul.navbar-nav {
-    position: relative; }
+html body header nav {
+  height: 25px; }
+  html body header nav #navbarNavDropdown {
+    justify-content: flex-end; }
+    @media only screen and (min-width: 920px) {
+      html body header nav #navbarNavDropdown {
+        display: flex; } }
+    html body header nav #navbarNavDropdown ul.navbar-nav {
+      position: relative; }
+
+html body header .center-nav {
+  justify-content: space-around;
+  position: relative;
+  align-items: center; }
+  html body header .center-nav .search-form form {
+    display: flex; }
+    html body header .center-nav .search-form form input, html body header .center-nav .search-form form button {
+      height: 35px; }
+    html body header .center-nav .search-form form input {
+      position: relative;
+      left: -5px;
+      width: 200px; }
+  html body header .center-nav .right-block {
+    display: flex;
+    align-items: center; }
+    html body header .center-nav .right-block .adding-equipment .btn-warning {
+      background: orange;
+      margin-left: 20px;
+      height: 35px;
+      box-shadow: 0px 3px 1px darkorange; }
+    html body header .center-nav .right-block select {
+      outline: none;
+      background: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid gray; }
+
+html body header .nav-bottom {
+  height: 50px;
+  padding: 0px; }
+  html body header .nav-bottom .li-category {
+    height: 100%; }
+    html body header .nav-bottom .li-category ul.nav {
+      height: 100%; }
+      html body header .nav-bottom .li-category ul.nav li {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        margin-left: 10px; }
+        html body header .nav-bottom .li-category ul.nav li a {
+          color: #fff; }
+          html body header .nav-bottom .li-category ul.nav li a sup {
+            color: orange; }
+        html body header .nav-bottom .li-category ul.nav li:hover {
+          background: #16181b; }
+        html body header .nav-bottom .li-category ul.nav li:last-child {
+          background: #16a905; }
+
+html body .content-block {
+  height: 100%;
+  background: rgba(255, 165, 0, 0.1);
+  padding-bottom: 50px; }
+  html body .content-block .head-block {
+    position: relative;
+    top: 25px;
+    padding-bottom: 70px; }
+    html body .content-block .head-block .h1-content {
+      font-size: 22px; }
+    html body .content-block .head-block .cities {
+      position: relative;
+      top: 10px;
+      border: 1px solid rgba(128, 128, 128, 0.1);
+      box-shadow: 0 0 5px gray;
+      background: rgba(128, 128, 128, 0.05);
+      padding: 10px;
+      border-radius: 3px; }
+      html body .content-block .head-block .cities .sub_cities_list_in a {
+        color: #16181b;
+        text-decoration: underline;
+        margin-left: 10px;
+        font-size: 0.8rem; }
+  html body .content-block .block-items .left-block {
+    padding: 0; }
+    html body .content-block .block-items .left-block .card {
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      box-shadow: 0 0 15px rgba(128, 128, 128, 0.5);
+      margin-top: 10px; }
+      html body .content-block .block-items .left-block .card:first-child {
+        margin-top: 0px; }
+  html body .content-block .block-items .center-items {
+    padding-right: 0; }
+    html body .content-block .block-items .center-items .card-item .card {
+      margin-top: 10px;
+      box-shadow: 0 0 15px lightgray; }
+      html body .content-block .block-items .center-items .card-item .card:first-child {
+        margin-top: 0; }
+    html body .content-block .block-items .center-items .row .h2 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+      text-transform: uppercase; }
+
+html body .order-cards, html body .description-cards {
+  height: 500px;
+  margin-top: 50px; }
+  html body .order-cards .container .head-block .title, html body .description-cards .container .head-block .title {
+    font-weight: bold; }
+  html body .order-cards .container .head-block .show_all, html body .description-cards .container .head-block .show_all {
+    color: black;
+    text-decoration: underline;
+    font-size: 0.9rem; }
+  html body .order-cards .container .card-item, html body .description-cards .container .card-item {
+    display: flex;
+    justify-content: space-between; }
+    html body .order-cards .container .card-item .card, html body .description-cards .container .card-item .card {
+      margin-top: 15px;
+      transition: box-shadow 0.3s ease-in-out; }
+      html body .order-cards .container .card-item .card:hover, html body .description-cards .container .card-item .card:hover {
+        box-shadow: 0 0 20px rgba(68, 85, 102, 0.5); }
+  html body .order-cards .container .bottom-items, html body .description-cards .container .bottom-items {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+
+html body .description-cards {
+  margin-top: 110px;
+  height: auto; }
+
+html body footer .footer-top {
+  background: #2c3339;
+  height: 130px;
+  padding: 20px; }
+  html body footer .footer-top .left-links .footer-links {
+    display: flex;
+    flex-wrap: wrap; }
+    html body footer .footer-top .left-links .footer-links a {
+      color: #fff;
+      font-size: 0.9rem;
+      font-family: Consolas;
+      text-decoration: underline;
+      margin-left: 15px;
+      text-transform: uppercase; }
+      html body footer .footer-top .left-links .footer-links a:hover {
+        text-decoration: underline; }
+  html body footer .footer-top .right-items {
+    float: right;
+    margin-left: 70px; }
+    html body footer .footer-top .right-items .footer-block-s .footer-title {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    html body footer .footer-top .right-items .footer-block-s .footer-partners a img {
+      width: 70px; }
+
+html body footer .footer-bottom {
+  height: 200px;
+  margin-top: 20px; }
+  html body footer .footer-bottom .container .footer-cities .footer-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 15px; }
+  html body footer .footer-bottom .container .footer-cities .cities-list {
+    margin: 10px 5px; }
+    html body footer .footer-bottom .container .footer-cities .cities-list a {
+      color: gray;
+      font-size: 0.9rem;
+      display: block; }
+  html body footer .footer-bottom .container .footer-about .footer-title {
+    font-size: 1.2rem;
+    color: #1E252B;
+    margin-bottom: 10px;
+    font-weight: bold; }
+  html body footer .footer-bottom .container .footer-about .footer-about-text {
+    font-size: 0.7rem;
+    color: gray; }
+  html body footer .footer-bottom .container .footer-about .footer-copy {
+    margin-top: 10px;
+    font-size: 0.9rem; }
