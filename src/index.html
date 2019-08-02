@@ -10,401 +10,134 @@
     <!-- End meta tag configurations -->
     <title>NTF</title>
     <!-- CSS stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/font-awesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container ">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="navbarNavDropdown" class="navbar-collapse collapse">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">
-                                платное размещение
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">вход</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">регистрация</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container d-flex center-nav">
-            <div class="brand"><img src="img/logo.png" alt=""></div>
-            <div class="search-form">
-                <form action="" class="d-flex"><input type="text" class="form-control">
-                    <button class="btn btn-dark">Поиск</button>
-                </form>
-            </div>
-            <div class="right-block d-flex">
-                <div class="loc">
-                    <select>
-                        <option value="">Moscow</option>
-                        <option value="">Kazan</option>
-                        <option value="">Sankt Petersburg</option>
-                        <option value="">Ekaterinburs</option>
-                        <option value="">Sochi</option>
-                    </select>
-                </div>
-                <div class="adding-equipment">
-                    <a class="btn btn-warning btn-block" onclick="yaCounter15848353.reachGoal('add'); return true;"
-                       href="/add_advert/">Добавить технику</a>
-
-                </div>
-            </div>
-        </div>
-
-        <nav class="navbar nav-bottom navbar-expand-lg navbar-dark bg-dark">
-
-            <div class="container li-category">
-                <ul class="nav nav-pills nav-stacked nav-main">
-                    <li><a href="#" data-toggle="modal" data-target="#arenda_modal">Аренда техники <sup>5719</sup></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#uslugi_modal">Услуги <sup>18111</sup></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#materials_modal">Материалы <sup>229</sup></a></li>
-                    <li><a href="/bids/arenda/">Заявки на аренду <span class="label label-success">new</span> <sup>44</sup></a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-first">
+        <div class="container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavDropdownStart" class="navbar-collapse collapse">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Местоположение:</a>
                     </li>
-                    <li><a href="/prodazha/">Продажа <span class="label label-success">new</span> <sup>190</sup></a></li>
-                    <li><a class="show_areq_form_md19" href="#"><span class=" glyphicon-plus"></span> Оставить заявку</a>
+                    <li class="nav-item">
+                        <a class="nav-link choicecity" href="#"><i class="fas fa-location-arrow" size="10px"></i>
+                            Выберете регион</a>
                     </li>
                 </ul>
             </div>
-        </nav>
 
-    </header>
-
-    <section class="content-block">
-        <div class="container">
-            <div class="head-block">
-                <h1 class="h1-content">АРЕНДА СПЕЦТЕХНИКИ В ВОЛОКОЛАМСКЕ</h1>
-                <div class="cities">
-                    <div class="sub_cities_list_in">
-                        <a class="mcity sclnk" href="/">Москва</a>
-
-                        <a class="sclnk" href="/balashiha/">Балашиха</a>
-
-                        <a class="sclnk" href="/bronnicy/">Бронницы</a>
-
-                        <a class="sclnk" href="/vidnoe/">Видное</a>
-                        <span class="sclnk sclnk_cur">Волоколамск</span>
-
-                        <a class="sclnk" href="/voskresensk/">Воскресенск</a>
-
-                        <a class="sclnk" href="/dedovsk/">Дедовск</a>
-                        <a class="sclnk sclnk2 show_other_sub_cities" href="#">Другие города <span
-                                class="glyphicon glyphicon-arrow-right"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="block-items col-md-12 d-flex p-0">
-                <!-- Left block -->
-                <div class="left-block col-md-3 mr-1 d-block">
-                    <div class="card" style="width: 17rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 17rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 17rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Center block -->
-                <div class="center-items col-md-9">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="h2">Последние объявления</div>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Войти</a>
+                    </li>
+                </ul>
             </div>
         </div>
-
-    </section>
-
-    <section class="order-cards">
-        <div class="container">
-            <div class="head-block d-flex justify-content-between">
-                <p class="title">ЗАЯВКИ НА АРЕНДУ СПЕЦТЕХНИКИ И ОБОРУДОВАНИЯ</p>
-                <a href="" class="show_all ">Все заявки</a>
+    </nav>
+    <nav class="navbar navbar-expand-lg nav-second">
+        <div class="container bottom-nav">
+            <div class="brand col-md-1">
+                <img src="img/logo.png" alt="">
+                <span class="brand-text">Спецтехникофф</span>
             </div>
-            <div class="card-item d-flex flex-wrap">
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+            <div class="cat-right-block col-md-8">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Аренда техники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Доставка материалов</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Продажа</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Грузоперевозки</a>
+                    </li>
+                </ul>
             </div>
-
-            <div class="bottom-items text-center">
-                <button class="adding-order btn btn-success">
-                    Добавить заявку
-                </button>
+            <div class="rent-equip col-md-1">
+                <button class="btn btn-warning rent">Сдать технику</button>
             </div>
         </div>
-    </section>
-    <section class="description-cards">
-        <div class="container">
-            <div class="head-block d-flex justify-content-between">
-                <p class="title">ПОСЛЕДНИЕ ОТЗЫВЫ В МОСКВЕ</p>
-            </div>
-            <div class="card-item d-flex flex-wrap">
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+    </nav>
+    </div>
+</header>
+
+
+<section class="main-1">
+    <div class="container">
+    <div class="top-content">
+        <h1 class="title">Аренда спецтехники в городе от собственников</h1>
+        <p class="your-equip">Ваш заказ получит 1256 владельцев техники</p>
+        <div class="search-form">
+            <form action="#" class="form-control">
+                <div class="input-block example-part">
+                    <input type="text" placeholder="Какая техника требуется?">
+                    <p class="label-input">Напиример: <a href="#">Дорожный каток</a></p>
                 </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 16rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="bottom-items text-center">
-                <button class="adding-order btn btn-success">
-                    Смотреть другие отзывы
-                </button>
-            </div>
+                <input type="text" placeholder="Казань">
+                <button type="submit">Заказать</button>
+            </form>
         </div>
-    </section>
-    <footer class="bottom-content">
-
-
-
-        <div class="footer-top">
-            <div class="container d-flex">
-                <div class="left-links col-md-6">
-                    <div class="footer-links">
-                        <a rel="nofollow" href="/about/">О проекте</a>
-                        <a rel="nofollow" href="/oferta/">Оферта</a>
-                        <a rel="nofollow" href="/sitemap/">Карта сайта</a>
-                        <a rel="nofollow" href="/price/">Платное размещение</a>
-                        <a rel="nofollow" href="/agreement/">Пользовательское соглашение</a>
-                    </div>
-                </div>
-                <div class="right-items col-md-6 d-flex">
-                    <div class="col-md-4 footer-block-s">
-                        <div class="footer-title">Мы в соцсетях</div>
-                        <div class="footer-soc">
-                            <a href="http://vk.com/spcteh" rel="nofollow" target="_blank">
-                                <img class="lazy-img" alt="vkontakte" src="https://spcteh.ru/templates/default3/img/soc/vk.png" style="display: inline-block;">
-                            </a>
-                            <a href="https://www.facebook.com/pages/Спецтехника/1404816476420746" rel="nofollow" target="_blank">
-                                <img class="lazy-img" alt="facebook" src="https://spcteh.ru/templates/default3/img/soc/fb.png" style="display: inline-block;">
-                            </a>
-                            <a href="https://twitter.com/spcteh" rel="nofollow" target="_blank">
-                                <img class="lazy-img" alt="twitter" src="https://spcteh.ru/templates/default3/img/soc/tw.png" style="display: inline-block;">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footer-block-s"">
-                        <div class="footer-title">Наши партнеры</div>
-                        <div class="footer-partners">
-
-                            <a href="https://vsaunah.ru/">
-                                <img class="lazy-img" alt="https://vsaunah.ru/" src="https://spcteh.ru/templates/default3/img/partners/vs.png" style="display: inline-block;">
-                            </a>
-
-                            <a href="https://www.zemlebaza.ru/">
-                                <img class="lazy-img" alt="https://www.zemlebaza.ru/" src="https://spcteh.ru/templates/default3/img/partners/zb.png" style="display: inline-block;">
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+        <div class="pre-block">
+            <div class="card_desc">
+                <img src="" alt="" class="icon">
+                <p class="title_card">Оставить заявку</p>
+                <p class="description">Мы подберем для Вас любую техники. Подача техники в день обращения</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container d-flex">
-                <div class="col-md-7 footer-cities">
-                    <div class="footer-title">Другие города</div>
-                    <div class="row cities-list">
-                        <div class="col-md-4">
-                            <a href="">Волгоград</a>
-                            <a href="">Екатеринбург</a>
-                            <a href="">Казань</a>
-                            <a href="">Краснодар</a>
-                            Москва
-                        </div><div class="col-md-4">
-                        <a href="">Нижний Новгород</a>
-                        <a href="">Новосибирск</a>
-                        <a href="">Пермь</a>
-                        <a href="">Ростов-на-Дону</a>
-                        <a href="">Самара</a>
-                    </div>
-                        <div class="col-md-4">
-                        <a href="">Санкт-Петербург</a>
-                        <a href="">Уфа</a>
-                        <a href="">Челябинск</a>
-                    </div>
-                    </div>
-
-                </div>
-                <div class="col-md-5 footer-about">
-                    <div class="footer-title">О портале</div>
-                    <div class="footer-about-text">
-                        <noindex>
-                            Сайт "spcteh.ru" - это сайт объявлений поставщиков услуг спецтехники в Москве.
-                            Сайт "spcteh.ru" осуществляет только информационные услуги, направленные на прием, обработку и передачу заявки Поставщику услуг спецтехники.
-                            Сайт "spcteh.ru" не является контрактной стороной во взаимоотношениях посетителя сайта и Поставщика услуг спецтехники.
-                            Использование сайта, в том числе подача объявлений, означает согласие с пользовательским соглашением.
-                            Оплачивая услуги на сайте, вы принимаете оферту.
-
-                        </noindex>
-                    </div>
-                    <div class="footer-copy">© 2011-2019 Аренда спецтехники в Москве</div>
-                </div>
+            <div class="card_desc"><img src="" alt="" class="icon">
+                <p class="title_card">Получить предложения</p>
+                <p class="description">Мы поможем сдать вашу технику быстро и на выгодных условиях. Заполните форму и получайте заказы.</p>
             </div>
-        </div>
-    </footer>
+            <div class="card_desc"><img src="" alt="" class="icon">
+                <p class="title_card">Договриться напрямую</p>
+                <p class="description">Изучайте предложения, связывайтесь напрямую и обсуждайте детали заказа по телефону.</p>
+            </div>
+        </div> 
+    </div>
+    </div>
+</section>
 
-    <!-- JavaScript links -->
-    <script src="./libs/jquery/dist/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 
-    <script src="./js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript links -->
+<script src="./libs/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+
+<script src="./js/main.js"></script>
 </body>
 </html>

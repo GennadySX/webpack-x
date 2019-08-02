@@ -12,204 +12,87 @@ $fsize: "2.5rem"
 html
     body
         header
-            nav
-                height: 25px
-                #navbarNavDropdown
-                    //background: black
-                    @media #{$not-device}
-                         display: flex
-                    justify-content: flex-end
-                    ul.navbar-nav
-                        position: relative
-
-            .center-nav
-                justify-content: space-around
-                position: relative
-                align-items: center
-                .search-form
-                    form
-                        display: flex
-                        input, button
-                            height: 35px
-                        input
-                            position: relative
-                            left: -5px
-                            width: 200px
-
-
-                .right-block
-                    display: flex
-                    align-items: center
-                    .adding-equipment
-                        .btn-warning
-                            background: orange
-                            margin-left: 20px
-                            height: 35px
-                            box-shadow: 0px 3px 1px darkorange
-                    select
-                        outline: none
-                        background: #fff
-                        padding: 10px
-                        border-radius: 5px
-                        border: 1px solid gray
-            .nav-bottom
-                height: 50px
-                padding: 0px
-                .li-category
-                    height: 100%
-                    ul.nav
-                        height: 100%
-                        li
-                            display: flex
-                            padding-left: 10px
-                            padding-right: 10px
-                            align-items: center
-                            margin-left: 10px
-                            a
-                                color: #fff
-                                sup
-                                    color: orange
-                            &:hover
-                                background: #16181b
-                            &:last-child
-                                background: #16a905
-
-
-        .content-block
-            height: 100%
-            background: rgba(orange, 0.1)
-            padding-bottom: 50px
-            .head-block
-                position: relative
-                top: 25px
-                padding-bottom: 70px
-                .h1-content
-                    font-size: 22px
-                .cities
-                    position: relative
-                    top: 10px
-                    border: 1px solid rgba(gray, 0.1)
-                    box-shadow: 0 0 5px gray
-                    background: rgba(gray, 0.05)
-                    padding: 10px
-                    border-radius: 3px
-                    .sub_cities_list_in
-                        a
-                            color: #16181b
-                            text-decoration: underline
-                            margin-left: 10px
-                            font-size: 0.8rem
-            .block-items
-                //background: #0b0b0b
-                .left-block
-                    //height: 500px
-                    padding: 0
-                    .card
-                        position: relative
-                        transform: translateX(-50%)
-                        left: 50%
-                        box-shadow: 0 0 15px rgba(gray, 0.5)
-                        margin-top: 10px
-                        &:first-child
-                            margin-top: 0px
-                .center-items
-                    padding-right: 0
-                    //height: 500px
-                    //background: wheat
-                    .card-item
-                        .card
-                            margin-top: 10px
-                            box-shadow: 0 0 15px rgba(lightgray, 4px)
-                            &:first-child
-                                margin-top: 0
-                    .row
-                        .h2
-                            font-size: 1.1rem
-                            font-weight: bold
-                            margin-bottom: 25px
-                            text-transform: uppercase
-        .order-cards, .description-cards
-            height: 500px
-            margin-top: 50px
-            .container
-                .head-block
-                    .title
-                        font-weight: bold
-                    .show_all
-                        color: black
+            nav.nav-first
+                height: 55px
+                box-shadow: 0 10px 1px #FFCD11
+                .navbar-collapse
+                  ul.navbar-nav
+                    li
+                      a
+                        color: #FFCD11 !important
+                      .choicecity
                         text-decoration: underline
                         font-size: 0.9rem
-                .card-item
+                #navbarNavDropdownStart
+                  @media #{$not-device}
                     display: flex
-                    justify-content: space-between
-                    .card
-                        margin-top: 15px
-                        transition: box-shadow 0.3s ease-in-out
-                        &:hover
-                            box-shadow: 0 0 20px rgba(#456, 0.5)
-                .bottom-items
-                    margin-top: 40px
-                    margin-bottom: 40px
-        .description-cards
-            margin-top: 110px
-            height: auto
-        footer
-            .footer-top
-                background: #2c3339
-                height: 130px
-                padding: 20px
-
-                .left-links
-                    .footer-links
-                        display: flex
-                        flex-wrap: wrap
-
-                        a
-                            color: #fff
-                            font-size: 0.9rem
-                            font-family: Consolas
-                            text-decoration: underline
-                            margin-left: 15px
-                            text-transform: uppercase
-
-                            &:hover
-                                text-decoration: underline
-                .right-items
-                    float: right
-                    margin-left: 70px
-                    .footer-block-s
-                        .footer-title
-                            color: white
-                            font-weight: bold
-                            margin-bottom: 10px
-                        .footer-partners
-                            a
-                                img
-                                    width: 70px
-            .footer-bottom
-                height: 200px
+                  justify-content: flex-start
+                #navbarNavDropdown
+                  @media #{$not-device}
+                    display: flex
+                  justify-content: flex-end
+            .nav-second
+              height: 80px
+              display: flex
+              //background: #1E252B
+              .bottom-nav
                 margin-top: 20px
-                .container
-                    .footer-cities
-                        .footer-title
-                            font-size: 1rem
-                            font-weight: bold
-                            margin-left: 15px
-                        .cities-list
-                            margin: 10px 5px
-                            a
-                                color: gray
-                                font-size: 0.9rem
-                                display: block
-                    .footer-about
-                        .footer-title
-                            font-size: 1.2rem
-                            color: #1E252B
-                            margin-bottom: 10px
-                            font-weight: bold
-                        .footer-about-text
-                            font-size: 0.7rem
-                            color: gray
-                        .footer-copy
-                            margin-top: 10px
-                            font-size: 0.9rem
+                height: 100px
+                //background: lightgrey
+                .brand
+                  position: relative
+                  top: 15px
+                  display: block
+                  //background: #1e7e34
+                  img
+                    margin-left: 10px
+                    width: 80px
+                  span.brand-text
+                    left: -15px
+                    background: #FFCD11
+                    padding: 8px
+                    font-weight: 550
+                    position: relative
+                    top: 10px
+
+                .cat-right-block
+                  ul.nav-pills
+                    //width: 0px
+                    display: flex
+                    justify-content: space-around
+
+                    .nav-item
+                      a
+                        color: black
+                        font-size: 1rem
+                      .active
+                        background: transparent
+                        &:after
+                          position: absolute
+                          content: ""
+                          width: 120px
+                          height: 10px
+                          top: 57px
+                          left: 0
+                          margin-left: 35px
+                          background: #FFCD11
+                .rent-equip
+                  padding: 0
+                  position: relative
+                  left: -40px
+                  button.rent
+                    height: 45px
+                    border-radius: 2px
+                    width: 170px
+                    font-weight: 600
+        section.main-1
+          z-index: -1
+          width: 100%
+          height: 850px
+          background: rgba(black, 0.5)
+          background-image: url("../img/main-bkg.jpg")
+          background-repeat: no-repeat
+          background-size: 100%
+          .container
+            //background: #FFCD11
+            height: 100%
