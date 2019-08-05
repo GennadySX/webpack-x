@@ -15,7 +15,16 @@
     <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./libs/font-awesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/swiper/dist/css/swiper.min.css">
 
+
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
 </head>
 <body>
 <header>
@@ -82,52 +91,130 @@
 
 <section class="main-1">
     <div class="container">
-    <div class="top-content">
-        <h1 class="title">Аренда спецтехники в городе от собственников</h1>
-        <p class="your-equip">Ваш заказ получит 1256 владельцев техники</p>
-        <div class="search-form">
-            <form action="#" class="form-control">
-                <div class="input-block example-part">
-                    <input type="text" placeholder="Какая техника требуется?">
-                    <p class="label-input">Напиример: <a href="#">Дорожный каток</a></p>
+        <div class="top-content">
+            <h1 class="title">Аренда спецтехники в городе от собственников</h1>
+            <p class="your-equip">Ваш заказ получит 1256 владельцев техники</p>
+            <div class="search-form">
+                <form action="#" class="form-control">
+                    <div class="form-row ">
+                        <div class="form-group col-md-5">
+                            <input type="text" class="form-control" placeholder="Какая техника требуется?">
+                            <p class="label-input">Напиример: <a href="#">Дорожный каток</a></p>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="text" class="form-control" placeholder="Казань">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-warning">Заказать</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="pre-block col-md-12 row">
+                <div class="col-md-4">
+                    <div class="card_desc card">
+                        <div class="card-body">
+                            <img src="./img/home-icon.png" class="icon">
+                            <p class="card-title">Оставить заявку</p>
+                            <p class="card-text">Мы подберем для Вас любую <br> техники. Подача техники в день
+                                обращения</p>
+                        </div>
+                    </div>
                 </div>
-                <input type="text" placeholder="Казань">
-                <button type="submit">Заказать</button>
-            </form>
+                <div class="col-md-4">
+                    <div class="card_desc card">
+                        <div class="card-body">
+                    <img src="./img/home-icon.png" alt="" class="icon">
+                    <p class="card-title">Получить предложения</p>
+                    <p class="card-text">Мы поможем сдать вашу технику быстро и на выгодных условиях. Заполните форму
+                        и получайте <br> заказы.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card_desc card">
+                        <div class="card-body">
+                    <img src="./img/home-icon.png" alt="" class="icon">
+                    <p class="card-title">Договриться напрямую</p>
+                    <p class="card-text">Изучайте предложения, связывайтесь напрямую и обсуждайте детали заказа по
+                        телефону.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-icon_col-md-12 d-flex justify-content-end p-5">
+                <div class="store_link ">
+                    <img src="./img/home-icon.png" alt="" width="50px">
+                    <img src="./img/home-icon.png" alt="" width="50px">
+                </div>
+            </div>
         </div>
-        <div class="pre-block">
-            <div class="card_desc">
-                <img src="" alt="" class="icon">
-                <p class="title_card">Оставить заявку</p>
-                <p class="description">Мы подберем для Вас любую техники. Подача техники в день обращения</p>
-            </div>
-            <div class="card_desc"><img src="" alt="" class="icon">
-                <p class="title_card">Получить предложения</p>
-                <p class="description">Мы поможем сдать вашу технику быстро и на выгодных условиях. Заполните форму и получайте заказы.</p>
-            </div>
-            <div class="card_desc"><img src="" alt="" class="icon">
-                <p class="title_card">Договриться напрямую</p>
-                <p class="description">Изучайте предложения, связывайтесь напрямую и обсуждайте детали заказа по телефону.</p>
-            </div>
-        </div> 
-    </div>
     </div>
 </section>
 
+<section class="category">
+    <div class="container">
+        <h1 class="title">Популярные категории</h1>
+        <div class="slide-category swiper-container">
+            <div class="slider-list owl-carousel col-md-12 d-flex swiper-wrapper">
+                <div class="swiper-slide items col-md-3">
+                    <img src="img/tractor.jpg" alt="" class="item_img" width="100%">
+                    <p class="title text-center ">Транспорт</p>
+                </div>
+                <div class="swiper-slide items col-md-3">
+                    <img src="img/tractor.jpg" alt="" class="item_img" width="100%">
+                    <p class="title text-center ">Транспорт</p>
+                </div>
+                <div class="swiper-slide items col-md-3">
+                    <img src="img/tractor.jpg" alt="" class="item_img" width="100%">
+                    <p class="title text-center ">Транспорт</p>
+                </div>
+                <div class="swiper-slide items col-md-3">
+                    <img src="img/tractor.jpg" alt="" class="item_img" width="100%">
+                    <p class="title text-center ">Транспорт</p>
+                </div>
+            </div>
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="search-map" style="background-image: url(img/map.png);">
+            <div class="container">
+                <h1 class="tile-content">Ищите необходимую технику рядом</h1>
+                <button class="btn search-on-map">Искать на карте</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="item-container">
+    <div class="container">
+        <div class="left-block" id="categories">
+            <ul>
+                <li class="category"><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="right-block" id="item-block">
+            <div class="col-md-9 card">
+                <div class="card-body"><img src="" alt="">
+                    <div class="card-title"></div>
+                    <div class="card-prop"></div>
+                    <div class="cost-content"><span class="cost"></span>
+                        <div class="hour-dock"></div>
+                        <div class="location"></div>
+                    </div>
+                    <div class="bottom-content">
+                        <button class="more"></button>
+                        <button class="order"></button>
+                        <button class="number"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- JavaScript links -->
@@ -137,7 +224,29 @@
         crossorigin="anonymous"></script>
 <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="libs/swiper/dist/js/swiper.min.js"></script>
 
 <script src="./js/main.js"></script>
+
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+
 </body>
 </html>
