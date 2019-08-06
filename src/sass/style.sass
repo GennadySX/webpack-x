@@ -51,7 +51,6 @@ html
                     left: -15px
                     background: #FFCD11
                     padding: 8px
-                    font-weight: 550
                     position: relative
                     top: 10px
 
@@ -79,11 +78,6 @@ html
                         padding-left: 0%
                         padding-right: 0%
                         border-radius: 0px
-
-
-
-
-
                 .rent-equip
                   padding: 0
                   position: relative
@@ -143,8 +137,6 @@ html
                     padding-bottom: 5px
 
         section.category
-          height: 1000px
-
           .container
             padding-top: 70px
             h1.title
@@ -154,3 +146,148 @@ html
               .slider-list
                 .items
                   background: #FFFFFF
+          .search-map
+            &::before
+              background-image: url("../img/map.png")
+              content: ""
+              display: block
+              position: absolute
+              background-size: cover
+              width: 100%
+              height: 100%
+              left: 0
+              top: 0
+              z-index: -2
+              opacity: 0.7
+            position: relative
+            height: 140px
+            .container 
+              display: flex
+              justify-content: space-between
+              padding: 0
+              height: 100%
+              align-items: center
+              h1.title-content
+                font-weight: bold
+                font-size: 1.7rem
+                text-shadow: 0 0 2px black
+              button.search-on-map
+                background: #2a2b29
+                font-size: 1.1rem
+                text-shadow: 0 0 3px #fecc11
+                color: #fecc11
+                padding: 10px
+                padding-left: 14px
+                padding-right: 14px
+                border-radius: 0px
+        section.item-container
+          padding-top: 40px
+          height: 1000px
+          background: whitesmoke
+          .container
+            height: 100%
+            .left-block
+
+              .list-block
+                margin-top: 30px
+                .title-list-block
+                  width: 100%
+                  background: #4E4852
+                  color: whitesmoke
+                  padding-left: 15px
+                  height: 25px
+                .cat-list
+                  background: white
+                  padding-left: 25px
+                  .cat-item
+                    list-style: none
+                    a
+                      color: #1a1a1a
+
+            .right-block
+              //background: #6c757d
+              .card
+                height: 300px
+                margin-top: 30px
+                box-shadow: 0px 5px 25px rgba(#000, 0.2)
+                border: none
+                transition: box-shadow 0.7s ease-in-out
+                &:hover
+                  box-shadow: 0px 5px 25px rgba(#000, 0.3)
+                .card-body
+                  padding: 0
+                  .card-thumb
+                    height: 100%
+                    width: 100%
+                    background: #fec
+                    background-size: cover
+                    height: 100%
+                  .right-side-card
+                    padding-left: 15px
+                    padding-right: 25px
+                    .card-title
+                      height: 40px
+                      margin-top: 20px
+                      font-size: 1.3rem
+                      font-weight: bold
+                    .card-prop
+                      margin-top: 20px
+                      .table
+                        tbody
+                          tr
+                            th, td
+                              border: none
+                              padding: 0
+                              padding-bottom: 5px
+                            th
+                              width: 70%
+                              font-weight: normal
+                            td
+                              width: 30%
+                              text-align: right
+                    .cost-content
+                      display: flex
+                      justify-content: space-between
+                      height: 40px
+                      font-size: 0.9rem
+                      text-shadow:  0 0 1px black
+                      height: 40px
+                      img
+                        width: 20px
+                    .card-bottom-content
+                      display: flex
+                      justify-content: space-between
+                      button
+                        height: 2.2rem
+                        padding-left: 10px
+                        padding-right: 10px
+                        border: none
+                        text-shadow: 0 0 1px black
+                      button.more
+                        background: none
+                        padding-left: 0
+                      .right-side
+                        width: 59%
+                        display: flex
+                        justify-content: space-between
+                        button.order
+                          background: #fecc11
+                        button.number
+                          background: #3b3b3b
+                          color: #fecc11
+                          text-shadow: 0 0 1px #fecc11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
