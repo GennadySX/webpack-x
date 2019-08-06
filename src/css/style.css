@@ -85,7 +85,11 @@ html body section.main-1 {
         margin-bottom: 100px; }
         html body section.main-1 .container .top-content .search-form form {
           background: transparent;
+          padding-left: 0;
           border: none; }
+          html body section.main-1 .container .top-content .search-form form .form-group input, html body section.main-1 .container .top-content .search-form form .form-group button {
+            height: 3rem;
+            border-radius: 0; }
           html body section.main-1 .container .top-content .search-form form .form-group .label-input {
             color: #FFFFFF;
             padding-top: 5px; }
@@ -105,6 +109,11 @@ html body section.main-1 {
         font-size: 1.4rem;
         text-decoration: underline;
         padding-bottom: 5px; }
+    html body section.main-1 .container .bottom-icon .store_link img {
+      width: 200px; }
+      html body section.main-1 .container .bottom-icon .store_link img:nth-child(2) {
+        width: 180px;
+        margin-left: 15px; }
 
 html body section.category .container {
   padding-top: 70px; }
@@ -151,12 +160,19 @@ html body section.category .search-map {
 
 html body section.item-container {
   padding-top: 40px;
-  height: 1000px;
-  background: whitesmoke; }
+  height: auto;
+  background: whitesmoke;
+  padding-bottom: 50px; }
   html body section.item-container .container {
     height: 100%; }
+    html body section.item-container .container .title-block {
+      margin-top: 35px;
+      font-size: 1.7rem;
+      font-weight: bold; }
+    html body section.item-container .container .left-block .title-block {
+      margin-bottom: 30px; }
     html body section.item-container .container .left-block .list-block {
-      margin-top: 30px; }
+      margin-top: 10px; }
       html body section.item-container .container .left-block .list-block .title-list-block {
         width: 100%;
         background: #4E4852;
@@ -170,6 +186,53 @@ html body section.item-container {
           list-style: none; }
           html body section.item-container .container .left-block .list-block .cat-list .cat-item a {
             color: #1a1a1a; }
+      html body section.item-container .container .left-block .list-block .order-double-click {
+        text-align: center;
+        display: flex;
+        border: none; }
+        html body section.item-container .container .left-block .list-block .order-double-click .card-body {
+          padding: 0;
+          margin-bottom: 10px; }
+          html body section.item-container .container .left-block .list-block .order-double-click .card-body img {
+            width: 100%; }
+          html body section.item-container .container .left-block .list-block .order-double-click .card-body .title-item {
+            margin-top: 10px;
+            padding: 0; }
+          html body section.item-container .container .left-block .list-block .order-double-click .card-body a.order {
+            position: relative;
+            bottom: 10px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            background: #fecc11;
+            color: #1a1a1a;
+            padding: 7px;
+            padding-left: 10px;
+            padding-right: 10px; }
+      html body section.item-container .container .left-block .list-block .order-ask {
+        padding: 0;
+        display: flex;
+        text-align: center;
+        border: none; }
+        html body section.item-container .container .left-block .list-block .order-ask .title-ask {
+          height: 40px;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 5px;
+          background: #fecc11;
+          font-size: 0.9rem;
+          padding-top: 10px; }
+        html body section.item-container .container .left-block .list-block .order-ask .card-body {
+          padding-top: 0px; }
+          html body section.item-container .container .left-block .list-block .order-ask .card-body .ask-desc {
+            text-align: left; }
+          html body section.item-container .container .left-block .list-block .order-ask .card-body button.number {
+            background: #1a1a1a;
+            color: #fecc11;
+            border: none;
+            height: 2.2rem;
+            padding-right: 10px;
+            padding-right: 10px;
+            text-shadow: 0 0 1px #fecc11; }
     html body section.item-container .container .right-block .card {
       height: 300px;
       margin-top: 30px;
@@ -237,3 +300,140 @@ html body section.item-container {
                 background: #3b3b3b;
                 color: #fecc11;
                 text-shadow: 0 0 1px #fecc11; }
+    html body section.item-container .container .right-block .more-content {
+      margin-top: 20px; }
+      html body section.item-container .container .right-block .more-content button.more-items {
+        background: transparent;
+        border: 2px solid black;
+        font-size: 0.9rem;
+        padding: 7px;
+        padding-right: 12px;
+        padding-left: 12px;
+        text-shadow: 0 0 1px #000;
+        box-shadow: 0 0 1px #000;
+        transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out; }
+        html body section.item-container .container .right-block .more-content button.more-items:hover {
+          background: #000;
+          color: whitesmoke;
+          text-shadow: 0 0 1px whitesmoke; }
+
+html body section.service-block {
+  background: whitesmoke;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  html body section.service-block .container {
+    display: flex; }
+    html body section.service-block .container .left-block {
+      height: 280px; }
+      html body section.service-block .container .left-block .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    html body section.service-block .container .right-block .title-block {
+      font-weight: bolder;
+      font-size: 1.75rem;
+      text-shadow: 0 0 1px #000; }
+    html body section.service-block .container .right-block .desc-block {
+      margin-top: 40px; }
+      html body section.service-block .container .right-block .desc-block p.desc {
+        padding-bottom: 10px; }
+
+html body section.on-app {
+  background: #3b3b3b;
+  padding-top: 50px;
+  padding-bottom: 40px; }
+  html body section.on-app .container {
+    display: flex; }
+    html body section.on-app .container .left-block {
+      margin-left: 0;
+      padding-left: 0; }
+      html body section.on-app .container .left-block img.screen {
+        width: 90%; }
+    html body section.on-app .container .right-block {
+      padding-top: 20px; }
+      html body section.on-app .container .right-block .title-block {
+        color: #fecc11;
+        font-weight: bolder;
+        font-size: 2rem;
+        text-shadow: 0 0 1px #fecc11; }
+      html body section.on-app .container .right-block .desc-block {
+        margin-top: 50px;
+        padding-bottom: 20px; }
+        html body section.on-app .container .right-block .desc-block .title-desc {
+          color: white;
+          font-weight: bold;
+          font-size: 1.7rem;
+          padding-bottom: 20px; }
+        html body section.on-app .container .right-block .desc-block ul {
+          padding-left: 7rem; }
+          html body section.on-app .container .right-block .desc-block ul li.desc-item {
+            font-size: 1.2rem;
+            padding-bottom: 10px;
+            color: white;
+            list-style: none; }
+            html body section.on-app .container .right-block .desc-block ul li.desc-item:before {
+              content: "o ";
+              color: #fecc11;
+              font-weight: bold;
+              display: inline-block;
+              width: 1rem;
+              position: relative;
+              left: -7px;
+              margin-left: -1rem; }
+    html body section.on-app .container .store-links {
+      margin-top: 40px; }
+      html body section.on-app .container .store-links a:nth-child(2) {
+        margin-left: 15px; }
+      html body section.on-app .container .store-links a img {
+        width: 200px; }
+      html body section.on-app .container .store-links .app-store img {
+        width: 180px; }
+
+html body footer {
+  background: #1a1a1a;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  html body footer .container .col-md-4 .list-block p.title-list-block {
+    color: white;
+    font-weight: bold; }
+  html body footer .container .col-md-4 .list-block ul.list-parent {
+    padding-left: 10px;
+    padding-bottom: 10px; }
+    html body footer .container .col-md-4 .list-block ul.list-parent li.list-item {
+      list-style: none; }
+      html body footer .container .col-md-4 .list-block ul.list-parent li.list-item a {
+        color: white; }
+  html body footer .container .companie {
+    justify-content: space-between;
+    padding-top: 40px;
+    line-height: 1.9; }
+    html body footer .container .companie .policy, html body footer .container .companie .contacts {
+      padding-left: 0; }
+      html body footer .container .companie .policy a, html body footer .container .companie .contacts a {
+        color: white;
+        text-decoration: underline; }
+    html body footer .container .companie .contacts {
+      display: block;
+      text-decoration: underline; }
+    html body footer .container .companie .copy {
+      line-height: 0.7; }
+      html body footer .container .companie .copy .copy-companie {
+        color: white; }
+      html body footer .container .companie .copy .icons a {
+        margin-left: 10px; }
+        html body footer .container .companie .copy .icons a:first-child {
+          margin-left: 0; }
+        html body footer .container .companie .copy .icons a i {
+          font-size: 0.8rem;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          padding-top: 7px;
+          text-align: center;
+          border: 1px solid white;
+          color: white;
+          transition: color 0.7s ease-in-out, background 0.5s ease-in, box-shadow 1s ease-in-out; }
+          html body footer .container .companie .copy .icons a i:hover {
+            background: white;
+            color: #1a1a1a;
+            box-shadow: 0 0 5px whitesmoke; }
