@@ -149,14 +149,33 @@ html
                     margin-left: 15px
 
         section.category
+
           .container
-            padding-top: 70px
+            padding-top: 40px
             h1.title
               font-size: 1.7rem
               font-weight: bold
             .slide-category
+              margin-top: 40px
+              height: 290px
+              .carousel
+                .flickity-viewport
+                  height: 170px
+                .flickity-page-dots
+                  li.dot
+                    opacity: 1
+                  li.is-selected
+                    background: transparent
+                    border: 1px solid black
+                .flickity-prev-next-button.next
+                  right: -30px
+                .flickity-prev-next-button.previous
+                  left: -30px
+
               .slider-list
                 .items
+                  img
+                    width: 130px
                   background: #FFFFFF
           .search-map
             &::before

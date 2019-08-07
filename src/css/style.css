@@ -116,12 +116,28 @@ html body section.main-1 {
         margin-left: 15px; }
 
 html body section.category .container {
-  padding-top: 70px; }
+  padding-top: 40px; }
   html body section.category .container h1.title {
     font-size: 1.7rem;
     font-weight: bold; }
-  html body section.category .container .slide-category .slider-list .items {
-    background: #FFFFFF; }
+  html body section.category .container .slide-category {
+    margin-top: 40px;
+    height: 290px; }
+    html body section.category .container .slide-category .carousel .flickity-viewport {
+      height: 170px; }
+    html body section.category .container .slide-category .carousel .flickity-page-dots li.dot {
+      opacity: 1; }
+    html body section.category .container .slide-category .carousel .flickity-page-dots li.is-selected {
+      background: transparent;
+      border: 1px solid black; }
+    html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
+      right: -30px; }
+    html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
+      left: -30px; }
+    html body section.category .container .slide-category .slider-list .items {
+      background: #FFFFFF; }
+      html body section.category .container .slide-category .slider-list .items img {
+        width: 130px; }
 
 html body section.category .search-map {
   position: relative;
