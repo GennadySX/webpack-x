@@ -502,7 +502,8 @@ html body {
     flex-wrap: wrap; }
     html body section.card_main .container h1.title-card {
       font-weight: bold;
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      flex-basis: 100%; }
     html body section.card_main .container .left-side .item-slide img.main-img {
       width: 100%;
       object-fit: cover; }
