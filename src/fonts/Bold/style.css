@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "PFDinTextCondPro-Bold";
+  src: url("./fonts/pfdintextcondpro-bold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/pfdintextcondpro-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/pfdintextcondpro-bold.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/pfdintextcondpro-bold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/pfdintextcondpro-bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/pfdintextcondpro-bold.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/pfdintextcondpro-bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

@@ -11,10 +11,20 @@ $fsize: "2.5rem"
 
 html
     body
+        font-family: "PFDinTextCondPro-Light", sans-serif
+        @media screen and ( max-width: 560px )
+          font-size: .9rem
+          h1
+            font-size: 1.5em
         header
             nav.nav-first
                 height: 55px
                 box-shadow: 0 10px 1px #FFCD11
+                .rent-equip
+                  display: none
+                  @media screen and ( max-width: 1199px )
+                    display: block
+                    
                 .navbar-collapse
                   ul.navbar-nav
                     li
@@ -34,6 +44,7 @@ html
             .nav-second
               height: 105px
               display: flex
+              background-color: white
               //background: #1E252B
               .bottom-nav
                 margin-top: 20px
@@ -55,17 +66,21 @@ html
                     top: 10px
 
                 .cat-right-block
+                  @media screen and ( max-width: 1199px )
+                    flex: 0 0 86.666667%
+                    max-width: 86.666667%
                   ul.nav-pills
                     //width: 0px
                     display: flex
                     justify-content: space-around
-
+                    @media screen and ( max-width: 1199px )
+                      justify-content: space-between
+                      
                     .nav-item
                       a
                         color: black
                         font-size: 1rem
-                        padding-top: 25px
-                        padding-bottom: 25px
+                        padding: 25px 0
                         transition: border 1s ease-in-out
                       &:hover
                         //border-bottom: 10px solid #FFCD11
@@ -82,6 +97,8 @@ html
                   padding: 0
                   position: relative
                   left: -40px
+                  @media screen and ( max-width: 1199px )
+                    display: none
                   button.rent
                     height: 45px
                     border-radius: 2px
@@ -92,9 +109,9 @@ html
           width: 100%
           height: auto
           background: rgba(black, 0.5)
-          background-image: url("../img/main-bkg.jpg")
+          background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg")
           background-repeat: no-repeat
-          background-size: 100%
+          background-size: cover
           .container
             //background: #FFCD11
             height: 100%
@@ -109,6 +126,7 @@ html
                 padding-bottom: 10px
                 font-size: 1.3rem
               .search-form
+                margin-bottom: 100px
                 form
                   background: transparent
                   padding-left: 0
@@ -124,9 +142,10 @@ html
                         color: #FFCD11
                         text-decoration: underline
                         padding-left: 10px
-                margin-bottom: 100px
+                
 
             .pre-block
+              flex-wrap: nowrap
               .card_desc,.card-body
                 color: white
                 border: none
@@ -134,21 +153,39 @@ html
                 .card-body
                   img
                     width: 90px
-                    padding-bottom: 10px
+                  .icon-rotate
+                    transform: rotate(180deg)
                   .card-title
                     font-weight: bold
                     font-size: 1.4rem
                     text-decoration: underline
                     padding-bottom: 5px
+                  &:hover
+                    color: #FFCD11
+                      
+                  @media screen and ( max-width: 600px )
+                    .card-text
+                      display: none
+                  @media screen and ( max-width: 768px )
+                    text-align: center
+                    img
+                      width: 32px
+                      height: 32px
+                    .card-title
+                      font-size: 1rem
             .bottom-icon
               .store_link
+                a
+                  &:nth-child(2)
+                    margin-left: 15px
                 img
                   width: 200px
-                  &:nth-child(2)
-                    width: 180px
-                    margin-left: 15px
+                  @media #{$tablet}
+                    width: 80px
+                    height: 24px
 
         section.category
+          background-color: #f5f5f5
           .container
             padding-top: 40px
             h1.title
@@ -177,30 +214,39 @@ html
                     width: 130px
                   background: #FFFFFF
           .search-map
-            &::before
-              background-image: url("../img/map.png")
-              content: ""
-              display: block
-              position: absolute
-              background-size: cover
-              width: 100%
-              height: 100%
-              left: 0
-              top: 0
-              z-index: -2
-              opacity: 0.7
             position: relative
             height: 140px
+            background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url('../img/map2.jpg')
+            background-size: cover
+            // &::before
+            //   background-image: url("../img/map.png")
+            //   content: ""
+            //   display: block
+            //   position: absolute
+            //   background-size: cover
+            //   width: 100%
+            //   height: 100%
+            //   left: 0
+            //   top: 0
+            //   z-index: -2
+            //   opacity: 0.7
             .container 
               display: flex
               justify-content: space-between
               padding: 0
               height: 100%
               align-items: center
+              @media screen and ( max-width: 768px )
+                flex-direction: column
+                justify-content: center
+                h1.title-content
+                  text-align: center
+                
               h1.title-content
                 font-weight: bold
                 font-size: 1.7rem
-                text-shadow: 0 0 2px black
+                padding-bottom: 5px
+                // text-shadow: 0 0 2px black
               button.search-on-map
                 background: #2a2b29
                 font-size: 1.1rem
@@ -267,14 +313,15 @@ html
                   display: flex
                   text-align: center
                   border: none
+                  margin-bottom: 1rem
                   .title-ask
-                    height: 40px
+                    min-height: 40px
                     font-weight: bold
                     text-align: center
                     margin-bottom: 5px
                     background: #fecc11
                     font-size: 0.9rem
-                    padding-top: 10px
+                    padding: 10px 0
                   .card-body
                     padding-top: 0px
                     .ask-desc
@@ -283,7 +330,8 @@ html
                       background: #1a1a1a
                       color: #fecc11
                       border: none
-                      height: 2.2rem
+                      min-height: 2.2rem
+                      line-height: 12px
                       padding-right: 10px
                       padding-right: 10px
                       text-shadow: 0 0 1px #fecc11
@@ -360,6 +408,8 @@ html
                           background: #3b3b3b
                           color: #fecc11
                           text-shadow: 0 0 1px #fecc11
+                          line-height: 12px
+                          min-height: 2.2rem
               .more-content
                 margin-top: 20px
                 button.more-items
@@ -398,7 +448,7 @@ html
                 p.desc
                   padding-bottom: 10px
         section.on-app
-          background: #3b3b3b
+          background: #3B3B3B
           padding-top: 50px
           padding-bottom: 40px
           .container
@@ -424,6 +474,9 @@ html
                   padding-bottom: 20px
                 ul
                   padding-left: 7rem
+                  @media screen and ( max-width: 720px )
+                    padding-left: 3rem
+                    
                   li.desc-item
                     font-size: 1.2rem
                     padding-bottom: 10px
@@ -447,18 +500,20 @@ html
                   margin-left: 15px
                 img
                   width: 200px
-              .app-store
-                img
-                  width: 180px
+                  @media #{$tablet}
+                    width: 80px
+                    height: 24px
+      
         footer
-          background: #1a1a1a
+          background: #000000
           padding-top: 40px
           padding-bottom: 40px
+          color: white
+
           .container
             .col-md-4
               .list-block
                 p.title-list-block
-                  color: white
                   font-weight: bold
                 ul.list-parent
                   padding-left: 10px
@@ -481,8 +536,7 @@ html
                 text-decoration: underline
               .copy
                 .copy-companie
-                  color: white
-                line-height: 0.7
+                line-height: 16px
                 .icons
                   a
                     &:first-child
@@ -581,7 +635,8 @@ html
                     background: #1a1a1a
                     color: #fecc11
                     border: none
-                    height: 2.2rem
+                    min-height: 2.2rem
+                    line-height: 12px
                     text-shadow: 0 0 1px #fecc11
                   button.on-map
                     background: transparent
@@ -646,6 +701,7 @@ html
                     .bottom-content
                       display: flex
                       justify-content: space-between
+                      flex-wrap: wrap
                       margin-top: 15px
                       button.more
                         padding-left: 0

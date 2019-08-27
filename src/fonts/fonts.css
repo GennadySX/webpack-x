@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "PFDinTextCondPro-Light";
+    src: url("Light/PFDinTextCondPro-Light.eot"); /* IE9 Compat Modes */
+    src: url("Light/PFDinTextCondPro-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("Light/PFDinTextCondPro-Light.otf") format("opentype"), /* Open Type Font */
+      url("Light/PFDinTextCondPro-Light.svg") format("svg"), /* Legacy iOS */
+      url("Light/PFDinTextCondPro-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("Light/PFDinTextCondPro-Light.woff") format("woff"), /* Modern Browsers */
+      url("Light/PFDinTextCondPro-Light.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PFDinTextCondPro-Regular";
+    src: url("Regular/pfdintextcondpro-regular.eot"); /* IE9 Compat Modes */
+    src: url("Regular/pfdintextcondpro-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("Regular/pfdintextcondpro-regular.otf") format("opentype"), /* Open Type Font */
+      url("Regular/pfdintextcondpro-regular.svg") format("svg"), /* Legacy iOS */
+      url("Regular/pfdintextcondpro-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("Regular/pfdintextcondpro-regular.woff") format("woff"), /* Modern Browsers */
+      url("Regular/pfdintextcondpro-regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PFDinTextCompPro-Medium";
+    src: url("Medium/PFDinTextCompProMediumRegular.eot"); /* IE9 Compat Modes */
+    src: url("Medium/PFDinTextCompProMediumRegular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("Medium/PFDinTextCompProMediumRegular.otf") format("opentype"), /* Open Type Font */
+      url("Medium/PFDinTextCompProMediumRegular.svg") format("svg"), /* Legacy iOS */
+      url("Medium/PFDinTextCompProMediumRegular.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("Medium/PFDinTextCompProMediumRegular.woff") format("woff"), /* Modern Browsers */
+      url("Medium/PFDinTextCompProMediumRegular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PFDinTextCondPro-Bold";
+    src: url("Bold/pfdintextcondpro-bold.eot"); /* IE9 Compat Modes */
+    src: url("Bold/pfdintextcondpro-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("Bold/pfdintextcondpro-bold.otf") format("opentype"), /* Open Type Font */
+      url("Bold/pfdintextcondpro-bold.svg") format("svg"), /* Legacy iOS */
+      url("Bold/pfdintextcondpro-bold.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("Bold/pfdintextcondpro-bold.woff") format("woff"), /* Modern Browsers */
+      url("Bold/pfdintextcondpro-bold.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}

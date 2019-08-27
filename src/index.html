@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="ru">
 <head>
     <!-- Project By GennadySX -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta charset="theme-color" content="#EE8813">
     <!-- End meta tag configurations -->
-    <title>NTF</title>
+    <title>Спецтехникофф - Главная</title>
     <!-- CSS stylesheets -->
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./libs/font-awesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="libs/flickity/dist/flickity.min.css">
-
+    <link rel="stylesheet" href="fonts/fonts.css">
 
 </head>
 <body>
@@ -34,7 +34,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link choicecity" href="#"><i class="fas fa-location-arrow" size="10px"></i>
-                            Выберете регион</a>
+                            Выберите регион</a>
                     </li>
                 </ul>
             </div>
@@ -46,6 +46,11 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="rent-equip col-md-1">
+                <button class="btn btn-warning rent">Сдать технику</button>
+            </div>
+
         </div>
     </nav>
     <nav class="navbar navbar-expand-lg nav-second">
@@ -90,10 +95,10 @@
                     <div class="form-row ">
                         <div class="form-group col-md-5">
                             <input type="text" class="form-control" placeholder="Какая техника требуется?">
-                            <p class="label-input">Напиример: <a href="#">Дорожный каток</a></p>
+                            <p class="label-input">Например: <a href="#">Дорожный каток</a></p>
                         </div>
                         <div class="form-group col-md-2">
-                            <input type="text" class="form-control" value="Казань">
+                            <input type="text" class="form-control" placeholder="Какой город?" value="Казань">
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-warning">Заказать</button>
@@ -106,32 +111,29 @@
                 <div class="col-md-4">
                     <div class="card_desc card">
                         <div class="card-body">
-                            <img src="./img/home-icon.png" class="icon">
+                            <img src="./img/home-icon1.svg" class="icon">
                             <p class="card-title">Оставить заявку</p>
-                            <p class="card-text">Мы подберем для Вас любую <br> техники. Подача техники в день
-                                обращения</p>
+                            <p class="card-text">Мы подберем для Вас любую <br> технику. Подача техники в день
+                                обращения.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card_desc card">
                         <div class="card-body">
-                            <img src="./img/home-icon.png" alt="" class="icon">
+                            <img src="./img/home-icon1.svg" alt="" class="icon icon-rotate">
                             <p class="card-title">Получить предложения</p>
                             <p class="card-text">Мы поможем сдать вашу технику быстро и на выгодных условиях. Заполните
-                                форму
-                                и получайте <br> заказы.</p>
+                                форму и получайте <br> заказы.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card_desc card">
                         <div class="card-body">
-                            <img src="./img/home-icon.png" alt="" class="icon">
-                            <p class="card-title">Договриться напрямую</p>
-                            <p class="card-text">Изучайте предложения, связывайтесь напрямую и обсуждайте детали заказа
-                                по
-                                телефону.</p>
+                            <img src="./img/home-icon.svg" alt="" class="icon">
+                            <p class="card-title">Договориться напрямую</p>
+                            <p class="card-text">Изучайте предложения, связывайтесь напрямую и обсуждайте детали заказа по телефону.</p>
                         </div>
                     </div>
                 </div>
@@ -140,8 +142,12 @@
         </div>
         <div class="bottom-icon col-md-12 d-flex justify-content-end pb-5">
             <div class="store_link ">
-                <img src="./img/icons/google-play.png" alt="">
-                <img src="./img/icons/app-store.png" alt="">
+                <a href="">
+                    <img src="./img/icons/google-play.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/icons/app-store.svg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -183,7 +189,7 @@
 
         </div>
     </div>
-    <div class="search-map" style="">
+    <div class="search-map">
         <div class="container">
             <h1 class="title-content">Ищите необходимую технику рядом</h1>
             <button class="btn search-on-map">Искать на карте</button>
@@ -200,46 +206,42 @@
                     <li class="cat-item"><a href="#">Автовышки</a></li>
                     <li class="cat-item"><a href="#">Автогрейдеры</a></li>
                     <li class="cat-item"><a href="#">Автокраны</a></li>
+                    <li class="cat-item"><a href="#">Асфальтоукладчики</a></li>
                     <li class="cat-item"><a href="#">Бетононасосы</a></li>
+                    <li class="cat-item"><a href="#">Бульдозеры</a></li>
+                    <li class="cat-item"><a href="#">Гидромолоты</a></li>
+                    <li class="cat-item"><a href="#">ГНБ</a></li>
+                    <li class="cat-item"><a href="#">Катки</a></li>
                     <li class="cat-item"><a href="#">Краны</a></li>
                     <li class="cat-item"><a href="#">Манипуляторы</a></li>
-                    <li class="cat-item"><a href="#">Катки</a></li>
-                    <li class="cat-item"><a href="#">ГНБ</a></li>
-                    <li class="cat-item"><a href="#">Бульдозеры</a></li>
-                    <li class="cat-item"><a href="#">Автокраны</a></li>
-                    <li class="cat-item"><a href="#">Бетононасосы</a></li>
-                    <li class="cat-item"><a href="#">Краны</a></li>
-                    <li class="cat-item"><a href="#">Манипуляторы</a></li>
-                    <li class="cat-item"><a href="#">Катки</a></li>
-                    <li class="cat-item"><a href="#">ГНБ</a></li>
-                    <li class="cat-item"><a href="#">Бульдозеры</a></li>
-                    <li class="cat-item"><a href="#">Автокраны</a></li>
-                    <li class="cat-item"><a href="#">Бетононасосы</a></li>
-                    <li class="cat-item"><a href="#">Краны</a></li>
-                    <li class="cat-item"><a href="#">Манипуляторы</a></li>
-                    <li class="cat-item"><a href="#">Катки</a></li>
-                    <li class="cat-item"><a href="#">ГНБ</a></li>
-                    <li class="cat-item"><a href="#">Бульдозеры</a></li>
+                    <li class="cat-item"><a href="#">Миксеры</a></li>
+                    <li class="cat-item"><a href="#">Погрузчики</a></li>
+                    <li class="cat-item"><a href="#">Самосвалы</a></li>
+                    <li class="cat-item"><a href="#">Сваебои</a></li>
+                    <li class="cat-item"><a href="#">Тракторы</a></li>
+                    <li class="cat-item"><a href="#">Трубоукладчики</a></li>
+                    <li class="cat-item"><a href="#">Фреза</a></li>
+                    <li class="cat-item"><a href="#">Экскаваторы</a></li>
+                    <li class="cat-item"><a href="#">Ямобуры</a></li>
                 </ul>
             </div>
             <div class="list-block">
-                <p class="title-list-block">Строительная техника</p>
+                <p class="title-list-block">Грузоперевозки</p>
                 <ul class="cat-list">
-
-                    <li class="cat-item"><a href="#">Катки</a></li>
-                    <li class="cat-item"><a href="#">ГНБ</a></li>
-                    <li class="cat-item"><a href="#">Бульдозеры</a></li>
-                    <li class="cat-item"><a href="#">Автокраны</a></li>
-                    <li class="cat-item"><a href="#">Бетононасосы</a></li>
-                    <li class="cat-item"><a href="#">Краны</a></li>
-                    <li class="cat-item"><a href="#">Манипуляторы</a></li>
-                    <li class="cat-item"><a href="#">Катки</a></li>
-                    <li class="cat-item"><a href="#">ГНБ</a></li>
-                    <li class="cat-item"><a href="#">Бульдозеры</a></li>
+                    <li class="cat-item"><a href="#">Бензовозы</a></li>
+                    <li class="cat-item"><a href="#">Водовозы</a></li>
+                    <li class="cat-item"><a href="#">Газели</a></li>
+                    <li class="cat-item"><a href="#">Длинномеры</a></li>
+                    <li class="cat-item"><a href="#">Камазы</a></li>
+                    <li class="cat-item"><a href="#">Лесовозы</a></li>
+                    <li class="cat-item"><a href="#">Рефрижераторы</a></li>
+                    <li class="cat-item"><a href="#">Тралы</a></li>
+                    <li class="cat-item"><a href="#">Фуры</a></li>
+                    <li class="cat-item"><a href="#">Эвакуаторы</a></li>
                 </ul>
             </div>
             <div class="list-block">
-                <p class="title-list-block">Строительная техника</p>
+                <p class="title-list-block">Заказ в 2 клика</p>
                 <div class="card order-double-click">
                     <div class="card-body">
                         <img src="./img/items/camas.png" alt="" class="item-thumb">
@@ -249,7 +251,15 @@
                 </div>
             </div>
             <div class="list-block">
-                <p class="title-list-block">Строительная техника</p>
+                <p class="title-list-block">Заявки</p>
+                <div class="card order-ask">
+                    <p class="title-ask">Эвакуатор-погрузчик JSB 1СХ</p>
+                    <div class="card-body">
+                        <p class="ask-desc">Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По
+                            срокам нужен от 2 до 5.</p>
+                        <button class="number">+7 показать номер</button>
+                    </div>
+                </div>
                 <div class="card order-ask">
                     <p class="title-ask">Эвакуатор-погрузчик JSB 1СХ</p>
                     <div class="card-body">
@@ -510,7 +520,7 @@
 <section class="on-app">
     <div class="container">
         <div class="left-block app-screeen col-md-4">
-            <img src="./img/items/ios-app.png" alt="" class="screen"></div>
+            <img src="./img/items/ios-app-2.png" alt="" class="screen"></div>
         <div class="right-block app-desc col-md-9">
             <h1 class="title-block">Заказ техники и услуг всегда под рукой</h1>
             <div class="desc-block">
@@ -525,10 +535,10 @@
             </div>
             <div class="store-links">
                 <a href="" class="google-play">
-                    <img src="./img/icons/google-play.png" alt="">
+                    <img src="./img/icons/google-play.svg" alt="">
                 </a>
                 <a href="" class="app-store">
-                    <img src="./img/icons/app-store.png" alt="">
+                    <img src="./img/icons/app-store.svg" alt="">
                 </a>
             </div>
         </div>
@@ -541,26 +551,27 @@
             <div class="list-block">
                 <p class="title-list-block">Аренда техники</p>
                 <ul class="list-parent">
+                    
                     <li class="list-item"><a href="#">Автовышки</a></li>
-                    <li class="list-item"><a href="#">Автогрейды</a></li>
+                    <li class="list-item"><a href="#">Автогрейдеры</a></li>
                     <li class="list-item"><a href="#">Автокраны</a></li>
                     <li class="list-item"><a href="#">Асфальтоукладчики</a></li>
                     <li class="list-item"><a href="#">Бетононасосы</a></li>
                     <li class="list-item"><a href="#">Бульдозеры</a></li>
                     <li class="list-item"><a href="#">Гидромолоты</a></li>
-                    <li class="list-item"><a href="#">Автовышки</a></li>
-                    <li class="list-item"><a href="#">Автогрейды</a></li>
-                    <li class="list-item"><a href="#">Автокраны</a></li>
-                    <li class="list-item"><a href="#">Асфальтоукладчики</a></li>
-                    <li class="list-item"><a href="#">Бетононасосы</a></li>
-                    <li class="list-item"><a href="#">Бульдозеры</a></li>
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-                    <li class="list-item"><a href="#">Автогрейды</a></li>
-                    <li class="list-item"><a href="#">Автокраны</a></li>
-                    <li class="list-item"><a href="#">Асфальтоукладчики</a></li>
-                    <li class="list-item"><a href="#">Бетононасосы</a></li>
-                    <li class="list-item"><a href="#">Бульдозеры</a></li>
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
+                    <li class="list-item"><a href="#">ГНБ</a></li>
+                    <li class="list-item"><a href="#">Катки</a></li>
+                    <li class="list-item"><a href="#">Краны</a></li>
+                    <li class="list-item"><a href="#">Манипуляторы</a></li>
+                    <li class="list-item"><a href="#">Миксеры</a></li>
+                    <li class="list-item"><a href="#">Погрузчики</a></li>
+                    <li class="list-item"><a href="#">Самосвалы</a></li>
+                    <li class="list-item"><a href="#">Сваебои</a></li>
+                    <li class="list-item"><a href="#">Тракторы</a></li>
+                    <li class="list-item"><a href="#">Трубоукладчики</a></li>
+                    <li class="list-item"><a href="#">Фреза</a></li>
+                    <li class="list-item"><a href="#">Экскаваторы</a></li>
+                    <li class="list-item"><a href="#">Ямобуры</a></li>
                 </ul>
             </div>
         </div>
@@ -568,53 +579,51 @@
             <div class="list-block">
                 <p class="title-list-block">Грузоперевозки</p>
                 <ul class="list-parent">
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-                    <li class="list-item"><a href="#">Автовышки</a></li>
-                    <li class="list-item"><a href="#">Автогрейды</a></li>
-                    <li class="list-item"><a href="#">Автокраны</a></li>
-                    <li class="list-item"><a href="#">Асфальтоукладчики</a></li>
-                    <li class="list-item"><a href="#">Бетононасосы</a></li>
-                    <li class="list-item"><a href="#">Бульдозеры</a></li>
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-
+                    <li class="list-item"><a href="#">Бензовозы</a></li>
+                    <li class="list-item"><a href="#">Водовозы</a></li>
+                    <li class="list-item"><a href="#">Газели</a></li>
+                    <li class="list-item"><a href="#">Длинномеры</a></li>
+                    <li class="list-item"><a href="#">Камазы</a></li>
+                    <li class="list-item"><a href="#">Лесовозы</a></li>
+                    <li class="list-item"><a href="#">Рефрижераторы</a></li>
+                    <li class="list-item"><a href="#">Тралы</a></li>
+                    <li class="list-item"><a href="#">Фуры</a></li>
+                    <li class="list-item"><a href="#">Эвакуаторы</a></li>
                 </ul>
             </div>
-            <div class="list-block">
-                <p class="title-list-block">Грузоперевозки</p>
-                <ul class="list-parent">
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-                    <li class="list-item"><a href="#">Автовышки</a></li>
-                    <li class="list-item"><a href="#">Автогрейды</a></li>
-                    <li class="list-item"><a href="#">Автокраны</a></li>
-                    <li class="list-item"><a href="#">Асфальтоукладчики</a></li>
-                    <li class="list-item"><a href="#">Бетононасосы</a></li>
-                    <li class="list-item"><a href="#">Бульдозеры</a></li>
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class=" col-md-4">
             <div class="list-block">
                 <p class="title-list-block">Доставка материалов</p>
                 <ul class="list-parent">
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-                    <li class="list-item"><a href="#">Автовышки</a></li>
-                    <li class="list-item"><a href="#">Автогрейды</a></li>
-                    <li class="list-item"><a href="#">Автокраны</a></li>
-                    <li class="list-item"><a href="#">Асфальтоукладчики</a></li>
-                    <li class="list-item"><a href="#">Бетононасосы</a></li>
-                    <li class="list-item"><a href="#">Бульдозеры</a></li>
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-                    <li class="list-item"><a href="#">Автовышки</a></li>
-                    <li class="list-item"><a href="#">Автогрейды</a></li>
-                    <li class="list-item"><a href="#">Автокраны</a></li>
-                    <li class="list-item"><a href="#">Асфальтоукладчики</a></li>
-                    <li class="list-item"><a href="#">Бетононасосы</a></li>
-                    <li class="list-item"><a href="#">Бульдозеры</a></li>
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-                    <li class="list-item"><a href="#">Гидромолоты</a></li>
-                    <li class="list-item"><a href="#">Автовышки</a></li>
+                    <li class="list-item"><a href="#">Доставка асфальта</a></li>
+                    <li class="list-item"><a href="#">Доставка бетона</a></li>
+                    <li class="list-item"><a href="#">Доставка грунта</a></li>
+                    <li class="list-item"><a href="#">Доставка песка</a></li>
+                    <li class="list-item"><a href="#">Доставка щебня</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class=" col-md-4">
+            <div class="list-block">
+                <p class="title-list-block">Услуги</p>
+                <ul class="list-parent">
+                    <li class="list-item"><a href="#">Асфальтирование дорог</a></li>
+                    <li class="list-item"><a href="#">Бестраншейная замена коммуникаций</a></li>
+                    <li class="list-item"><a href="#">Бурение колодцев</a></li>
+                    <li class="list-item"><a href="#">Бурение под сваи</a></li>
+                    <li class="list-item"><a href="#">Вывоз ЖБО</a></li>
+                    <li class="list-item"><a href="#">Вывоз мусора</a></li>
+                    <li class="list-item"><a href="#">Выкапывание ямы под септик</a></li>
+                    <li class="list-item"><a href="#">Выкорчевка</a></li>
+                    <li class="list-item"><a href="#">Горизонтальное бурение</a></li>
+                    <li class="list-item"><a href="#">Грейдирование дорог</a></li>
+                    <li class="list-item"><a href="#">Демонтаж асфальта</a></li>
+                    <li class="list-item"><a href="#">Дорожные работы</a></li>
+                    <li class="list-item"><a href="#">Забивка свай под дом</a></li>
+                    <li class="list-item"><a href="#">Малоэтажное строительство</a></li>
+                    <li class="list-item"><a href="#">Монтаж железобетонных конструкций</a></li>
+                    <li class="list-item"><a href="#">Осушение котлованов, траншей, ливневок и отстойников</a></li>
+                    <li class="list-item"><a href="#">Снос зданий и разрушение зданий</a></li>
+                    <li class="list-item"><a href="#">Уборка снега</a></li>
                 </ul>
             </div>
         </div>
@@ -641,10 +650,10 @@
             <div class="copy col-md-4">
                 <p class="copy-companie">@ 2019 г. ООО "Спецтехникофф"</p>
                 <div class="icons">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-vk"></i></a>
-                    <a href=""><i class="fab fa-telegram-plane"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" title="Vkontakte"><i class="fab fa-vk"></i></a>
+                    <a href="" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
