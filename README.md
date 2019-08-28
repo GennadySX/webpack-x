@@ -6,7 +6,6 @@ Ready and complected dependencies by GennadySX
 * 1.BrowserSync 
 * 2.Sass  
 * 3.Concat 
-* 3.Concat
 * 4.Uglify
 * 5.CSSNano
 * 6.Rename
