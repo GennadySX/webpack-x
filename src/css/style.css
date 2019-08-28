@@ -1,5 +1,5 @@
 html body {
-  font-family: "PFDinTextCondPro-Light", sans-serif; }
+  font-family: "PFDinTextCondPro-Regular", sans-serif; }
   @media screen and (max-width: 560px) {
     html body {
       font-size: .9rem; }
@@ -231,11 +231,13 @@ html body {
           height: 25px; }
         html body section.item-container .container .left-block .list-block .cat-list {
           background: white;
-          padding-left: 25px; }
+          padding: 10px 0 10px 25px; }
           html body section.item-container .container .left-block .list-block .cat-list .cat-item {
             list-style: none; }
             html body section.item-container .container .left-block .list-block .cat-list .cat-item a {
-              color: #1a1a1a; }
+              color: #1a1a1a;
+              display: inline-block;
+              width: 100%; }
         html body section.item-container .container .left-block .list-block .order-double-click {
           text-align: center;
           display: flex;
@@ -328,6 +330,8 @@ html body {
               font-size: 0.9rem;
               text-shadow: 0 0 1px black;
               height: 40px; }
+              html body section.item-container .container .right-block .card .card-body .right-side-card .cost-content i {
+                font-weight: 300; }
               html body section.item-container .container .right-block .card .card-body .right-side-card .cost-content img {
                 width: 20px; }
             html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content {
@@ -342,6 +346,14 @@ html body {
               html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content button.more {
                 background: none;
                 padding-left: 0; }
+              html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content button.order {
+                background: #fecc11; }
+              html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content button.number {
+                background: #3b3b3b;
+                color: #fecc11;
+                text-shadow: 0 0 1px #fecc11;
+                line-height: 12px;
+                min-height: 2.2rem; }
               html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content .right-side {
                 width: 59%;
                 display: flex;
@@ -537,6 +549,8 @@ html body {
           font-weight: bold; }
           html body section.card_main .container .right-side .prop-content .cost-content .cost img, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock img, html body section.card_main .container .right-side .prop-content .cost-content .location img {
             width: 25px; }
+        html body section.card_main .container .right-side .prop-content .cost-content i {
+          font-weight: 300; }
       html body section.card_main .container .right-side .prop-content .desc {
         padding-bottom: 20px; }
       html body section.card_main .container .right-side .prop-content .client-contact-info {

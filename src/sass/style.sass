@@ -11,7 +11,7 @@ $fsize: "2.5rem"
 
 html
     body
-        font-family: "PFDinTextCondPro-Light", sans-serif
+        font-family: "PFDinTextCondPro-Regular", sans-serif
         @media screen and ( max-width: 560px )
           font-size: .9rem
           h1
@@ -280,11 +280,14 @@ html
                   height: 25px
                 .cat-list
                   background: white
-                  padding-left: 25px
+                  padding: 10px 0 10px 25px
+                  // padding-left: 25px
                   .cat-item
                     list-style: none
                     a
                       color: #1a1a1a
+                      display: inline-block
+                      width: 100%
 
                 .order-double-click
                   text-align: center
@@ -384,6 +387,8 @@ html
                       font-size: 0.9rem
                       text-shadow:  0 0 1px black
                       height: 40px
+                      i
+                        font-weight: 300
                       img
                         width: 20px
                     .card-bottom-content
@@ -398,6 +403,14 @@ html
                       button.more
                         background: none
                         padding-left: 0
+                      button.order
+                        background: #fecc11
+                      button.number
+                        background: #3b3b3b
+                        color: #fecc11
+                        text-shadow: 0 0 1px #fecc11
+                        line-height: 12px
+                        min-height: 2.2rem
                       .right-side
                         width: 59%
                         display: flex
@@ -613,6 +626,8 @@ html
                     font-weight: bold
                     img
                       width: 25px
+                  i
+                    font-weight: 300
                 .desc
                   padding-bottom: 20px
                 .client-contact-info
