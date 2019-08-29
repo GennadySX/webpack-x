@@ -168,6 +168,12 @@ html body {
         height: 290px; }
         html body section.category .container .slide-category .carousel .flickity-viewport {
           height: 170px; }
+          html body section.category .container .slide-category .carousel .flickity-viewport .flickity-slider {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end; }
+            html body section.category .container .slide-category .carousel .flickity-viewport .flickity-slider .title {
+              margin-top: 10px; }
         html body section.category .container .slide-category .carousel .flickity-page-dots li.dot {
           opacity: 1; }
         html body section.category .container .slide-category .carousel .flickity-page-dots li.is-selected {
@@ -226,6 +232,12 @@ html body {
     padding-bottom: 50px; }
     html body section.item-container .container {
       height: 100%; }
+      @media (max-width: 768px) {
+        html body section.item-container .container {
+          max-width: 860px; } }
+      @media (max-width: 576px) {
+        html body section.item-container .container {
+          max-width: 710px; } }
       html body section.item-container .container .title-block {
         margin-top: 35px;
         font-size: 1.7rem;
