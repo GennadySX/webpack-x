@@ -43,7 +43,7 @@ html body {
           margin-left: 10px;
           width: 80px; }
         html body header .nav-second .bottom-nav .brand span.brand-text {
-          left: -15px;
+          left: -10px;
           background: #FFCD11;
           padding: 8px;
           position: relative;
@@ -110,6 +110,9 @@ html body {
             html body section.main-1 .container .top-content .search-form form .form-group input, html body section.main-1 .container .top-content .search-form form .form-group button {
               height: 3rem;
               border-radius: 0; }
+              html body section.main-1 .container .top-content .search-form form .form-group input:focus, html body section.main-1 .container .top-content .search-form form .form-group button:focus {
+                box-shadow: 0px 0px 5px 1px #FFCD11;
+                border: none; }
             html body section.main-1 .container .top-content .search-form form .form-group .label-input {
               color: #FFFFFF;
               padding-top: 5px; }
@@ -170,10 +173,19 @@ html body {
         html body section.category .container .slide-category .carousel .flickity-page-dots li.is-selected {
           background: transparent;
           border: 1px solid black; }
-        html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
-          right: -30px; }
-        html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
-          left: -30px; }
+        html body section.category .container .slide-category .carousel .flickity-prev-next-button {
+          border-radius: 0;
+          background-color: #FFCD11;
+          width: 30px;
+          height: 30px;
+          top: 40%;
+          transform: translateY(-40%), translateX(-40%); }
+          html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
+            right: -30px; }
+          html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
+            left: -30px; }
+          html body section.category .container .slide-category .carousel .flickity-prev-next-button:disabled {
+            background-color: #B8B8B8; }
         html body section.category .container .slide-category .slider-list .items {
           background: #FFFFFF; }
           html body section.category .container .slide-category .slider-list .items img {
@@ -202,7 +214,6 @@ html body {
         html body section.category .search-map .container button.search-on-map {
           background: #2a2b29;
           font-size: 1.1rem;
-          text-shadow: 0 0 3px #fecc11;
           color: #fecc11;
           padding: 10px;
           padding-left: 14px;
@@ -231,13 +242,17 @@ html body {
           height: 25px; }
         html body section.item-container .container .left-block .list-block .cat-list {
           background: white;
-          padding: 10px 0 10px 25px; }
+          padding: 10px 0; }
           html body section.item-container .container .left-block .list-block .cat-list .cat-item {
             list-style: none; }
             html body section.item-container .container .left-block .list-block .cat-list .cat-item a {
+              padding-left: 25px;
               color: #1a1a1a;
               display: inline-block;
               width: 100%; }
+              html body section.item-container .container .left-block .list-block .cat-list .cat-item a:hover {
+                color: white;
+                background-color: #9a9a9a; }
         html body section.item-container .container .left-block .list-block .order-double-click {
           text-align: center;
           display: flex;
@@ -285,8 +300,7 @@ html body {
               min-height: 2.2rem;
               line-height: 12px;
               padding-right: 10px;
-              padding-right: 10px;
-              text-shadow: 0 0 1px #fecc11; }
+              padding-right: 10px; }
       html body section.item-container .container .right-block .card {
         height: 300px;
         margin-top: 30px;
@@ -313,25 +327,21 @@ html body {
               font-weight: bold; }
             html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop {
               margin-top: 20px; }
-              html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr th, html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr td {
-                border: none;
-                padding: 0;
-                padding-bottom: 5px; }
-              html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr th {
-                width: 70%;
-                font-weight: normal; }
-              html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr td {
-                width: 30%;
-                text-align: right; }
+              html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr {
+                display: flex;
+                justify-content: space-between; }
+                html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr th, html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr td {
+                  border: none;
+                  padding: 0;
+                  padding-bottom: 5px; }
+                html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr th {
+                  font-weight: normal; }
             html body section.item-container .container .right-block .card .card-body .right-side-card .cost-content {
               display: flex;
               justify-content: space-between;
               height: 40px;
               font-size: 0.9rem;
-              text-shadow: 0 0 1px black;
               height: 40px; }
-              html body section.item-container .container .right-block .card .card-body .right-side-card .cost-content i {
-                font-weight: 300; }
               html body section.item-container .container .right-block .card .card-body .right-side-card .cost-content img {
                 width: 20px; }
             html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content {
@@ -341,8 +351,7 @@ html body {
                 height: 2.2rem;
                 padding-left: 10px;
                 padding-right: 10px;
-                border: none;
-                text-shadow: 0 0 1px black; }
+                border: none; }
               html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content button.more {
                 background: none;
                 padding-left: 0; }
@@ -351,7 +360,6 @@ html body {
               html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content button.number {
                 background: #3b3b3b;
                 color: #fecc11;
-                text-shadow: 0 0 1px #fecc11;
                 line-height: 12px;
                 min-height: 2.2rem; }
               html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content .right-side {
@@ -363,7 +371,6 @@ html body {
                 html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content .right-side button.number {
                   background: #3b3b3b;
                   color: #fecc11;
-                  text-shadow: 0 0 1px #fecc11;
                   line-height: 12px;
                   min-height: 2.2rem; }
       html body section.item-container .container .right-block .more-content {
@@ -396,8 +403,7 @@ html body {
           object-fit: cover; }
       html body section.service-block .container .right-block .title-block {
         font-weight: bolder;
-        font-size: 1.75rem;
-        text-shadow: 0 0 1px #000; }
+        font-size: 1.75rem; }
       html body section.service-block .container .right-block .desc-block {
         margin-top: 40px; }
         html body section.service-block .container .right-block .desc-block p.desc {
@@ -418,8 +424,7 @@ html body {
         html body section.on-app .container .right-block .title-block {
           color: #fecc11;
           font-weight: bolder;
-          font-size: 2rem;
-          text-shadow: 0 0 1px #fecc11; }
+          font-size: 2rem; }
         html body section.on-app .container .right-block .desc-block {
           margin-top: 50px;
           padding-bottom: 20px; }
@@ -429,7 +434,7 @@ html body {
             font-size: 1.7rem;
             padding-bottom: 20px; }
           html body section.on-app .container .right-block .desc-block ul {
-            padding-left: 7rem; }
+            padding-left: 3rem; }
             @media screen and (max-width: 720px) {
               html body section.on-app .container .right-block .desc-block ul {
                 padding-left: 3rem; } }
@@ -438,15 +443,10 @@ html body {
               padding-bottom: 10px;
               color: white;
               list-style: none; }
-              html body section.on-app .container .right-block .desc-block ul li.desc-item:before {
-                content: "o ";
+              html body section.on-app .container .right-block .desc-block ul li.desc-item i {
                 color: #fecc11;
-                font-weight: bold;
-                display: inline-block;
-                width: 1rem;
-                position: relative;
-                left: -7px;
-                margin-left: -1rem; }
+                font-size: 0.6em;
+                margin-right: 1em; }
       html body section.on-app .container .store-links {
         margin-top: 40px; }
         html body section.on-app .container .store-links a:nth-child(2) {
@@ -475,6 +475,8 @@ html body {
       justify-content: space-between;
       padding-top: 40px;
       line-height: 1.9; }
+      html body footer .container .companie .policy a {
+        display: inline-block; }
       html body footer .container .companie .policy, html body footer .container .companie .contacts {
         padding-left: 0; }
         html body footer .container .companie .policy a, html body footer .container .companie .contacts a {

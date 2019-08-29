@@ -59,7 +59,7 @@ html
                     margin-left: 10px
                     width: 80px
                   span.brand-text
-                    left: -15px
+                    left: -10px
                     background: #FFCD11
                     padding: 8px
                     position: relative
@@ -135,6 +135,9 @@ html
                     input, button
                       height: 3rem
                       border-radius: 0
+                      &:focus
+                        box-shadow: 0px 0px 5px 1px #FFCD11
+                        border: none
                     .label-input
                       color: #FFFFFF
                       padding-top: 5px
@@ -203,11 +206,19 @@ html
                   li.is-selected
                     background: transparent
                     border: 1px solid black
-                .flickity-prev-next-button.next
-                  right: -30px
-                .flickity-prev-next-button.previous
-                  left: -30px
-
+                .flickity-prev-next-button
+                  border-radius: 0
+                  background-color: #FFCD11
+                  width: 30px
+                  height: 30px
+                  top: 40%
+                  transform: translateY(-40%), translateX(-40%)
+                  &.next
+                    right: -30px
+                  &.previous
+                    left: -30px
+                  &:disabled
+                    background-color: #B8B8B8
               .slider-list
                 .items
                   img
@@ -250,7 +261,7 @@ html
               button.search-on-map
                 background: #2a2b29
                 font-size: 1.1rem
-                text-shadow: 0 0 3px #fecc11
+                // text-shadow: 0 0 3px #fecc11
                 color: #fecc11
                 padding: 10px
                 padding-left: 14px
@@ -280,14 +291,19 @@ html
                   height: 25px
                 .cat-list
                   background: white
-                  padding: 10px 0 10px 25px
+                  padding: 10px 0
                   // padding-left: 25px
                   .cat-item
                     list-style: none
                     a
+                      padding-left: 25px
                       color: #1a1a1a
                       display: inline-block
                       width: 100%
+                      &:hover
+                        color: white
+                        background-color: #9a9a9a
+
 
                 .order-double-click
                   text-align: center
@@ -337,7 +353,7 @@ html
                       line-height: 12px
                       padding-right: 10px
                       padding-right: 10px
-                      text-shadow: 0 0 1px #fecc11
+                      // text-shadow: 0 0 1px #fecc11
 
             .right-block
               //background: #6c757d
@@ -370,25 +386,23 @@ html
                       .table
                         tbody
                           tr
+                            display: flex
+                            justify-content: space-between
                             th, td
                               border: none
                               padding: 0
                               padding-bottom: 5px
                             th
-                              width: 70%
                               font-weight: normal
-                            td
-                              width: 30%
-                              text-align: right
                     .cost-content
                       display: flex
                       justify-content: space-between
                       height: 40px
                       font-size: 0.9rem
-                      text-shadow:  0 0 1px black
+                      // text-shadow:  0 0 1px black
                       height: 40px
-                      i
-                        font-weight: 300
+                      // i
+                      //   font-weight: 300
                       img
                         width: 20px
                     .card-bottom-content
@@ -399,7 +413,7 @@ html
                         padding-left: 10px
                         padding-right: 10px
                         border: none
-                        text-shadow: 0 0 1px black
+                        // text-shadow: 0 0 1px black
                       button.more
                         background: none
                         padding-left: 0
@@ -408,7 +422,7 @@ html
                       button.number
                         background: #3b3b3b
                         color: #fecc11
-                        text-shadow: 0 0 1px #fecc11
+                        // text-shadow: 0 0 1px #fecc11
                         line-height: 12px
                         min-height: 2.2rem
                       .right-side
@@ -420,7 +434,7 @@ html
                         button.number
                           background: #3b3b3b
                           color: #fecc11
-                          text-shadow: 0 0 1px #fecc11
+                          // text-shadow: 0 0 1px #fecc11
                           line-height: 12px
                           min-height: 2.2rem
               .more-content
@@ -455,7 +469,7 @@ html
               .title-block
                 font-weight: bolder
                 font-size: 1.75rem
-                text-shadow: 0 0 1px #000
+                // text-shadow: 0 0 1px #000
               .desc-block
                 margin-top: 40px
                 p.desc
@@ -477,7 +491,7 @@ html
                 color: #fecc11
                 font-weight: bolder
                 font-size: 2rem
-                text-shadow: 0 0 1px #fecc11
+                // text-shadow: 0 0 1px #fecc11
               .desc-block
                 margin-top: 50px
                 .title-desc
@@ -486,7 +500,7 @@ html
                   font-size: 1.7rem
                   padding-bottom: 20px
                 ul
-                  padding-left: 7rem
+                  padding-left: 3rem
                   @media screen and ( max-width: 720px )
                     padding-left: 3rem
                     
@@ -495,15 +509,19 @@ html
                     padding-bottom: 10px
                     color: white
                     list-style: none
-                    &:before
-                      content: "o "
+                    i
                       color: #fecc11
-                      font-weight: bold
-                      display: inline-block
-                      width: 1rem
-                      position: relative
-                      left: -7px
-                      margin-left: -1rem
+                      font-size: 0.6em
+                      margin-right: 1em
+                    // &:before
+                    //   content: " "
+                    //   
+                    //   font-weight: bold
+                    //   display: inline-block
+                    //   width: 1rem
+                    //   position: relative
+                    //   left: -7px
+                    //   margin-left: -1rem
 
                 padding-bottom: 20px
             .store-links
@@ -539,6 +557,9 @@ html
               justify-content: space-between
               padding-top: 40px
               line-height: 1.9
+              .policy
+                a
+                  display: inline-block
               .policy, .contacts
                 padding-left: 0
                 a
