@@ -1,4 +1,5 @@
 html body {
+  background-color: #F5F5F5;
   font-family: "PFDinTextCondPro-Regular", sans-serif; }
   @media screen and (max-width: 560px) {
     html body {
@@ -88,7 +89,8 @@ html body {
     background: rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg");
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     html body section.main-1 .container {
       height: 100%; }
       html body section.main-1 .container .top-content {
@@ -519,7 +521,8 @@ html body {
               box-shadow: 0 0 5px whitesmoke; }
   html body .breadcrumb {
     padding-top: 30px;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    background-color: inherit; }
     html body .breadcrumb .container nav ol.breadcrumb li.breadcrumb-item a {
       color: #3b3b3b !important; }
   html body section.card_main .container {
@@ -718,6 +721,8 @@ html body {
           html body section.order-form .container .order-form form .form-group label {
             width: 70%;
             text-shadow: 0 0 1px black; }
+          html body section.order-form .container .order-form form .form-group textarea {
+            resize: none; }
           html body section.order-form .container .order-form form .form-group button {
             height: 40px;
             border-radius: 0;
@@ -750,3 +755,41 @@ html body {
           html body section.order-form .container .order-form form .policy p.policy-text {
             padding-left: 5px;
             margin-top: -4px; }
+  html body .item-container > .container h1 {
+    padding: 0 15px;
+    font-size: 1.9rem;
+    margin-bottom: 20px; }
+  html body .container.d-flex .left-block h3 {
+    font-size: 20px;
+    font-weight: bold; }
+  html body .container.d-flex .left-block .main-characteristics-filtr, html body .container.d-flex .left-block .search-map {
+    margin-bottom: 20px; }
+  html body .container.d-flex .left-block .main-characteristics-filtr {
+    padding: 20px 15px;
+    background-color: #FEFEFE; }
+    html body .container.d-flex .left-block .main-characteristics-filtr table {
+      width: 100%; }
+      html body .container.d-flex .left-block .main-characteristics-filtr table th {
+        font-weight: normal; }
+      html body .container.d-flex .left-block .main-characteristics-filtr table td {
+        text-align: right; }
+    html body .container.d-flex .left-block .main-characteristics-filtr a {
+      color: inherit;
+      font-weight: bold; }
+  html body .container.d-flex .left-block .search-map {
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0; }
+    html body .container.d-flex .left-block .search-map .container {
+      flex-direction: column;
+      align-items: center; }
+    html body .container.d-flex .left-block .search-map button.search-on-map {
+      background: #2a2b29;
+      font-size: 1.1rem;
+      color: #fecc11;
+      padding: 5px 14px;
+      border-radius: 0px;
+      margin-top: 10px; }
+  html body .container.d-flex .right-block .card:first-child {
+    margin-top: 0; }
