@@ -795,28 +795,28 @@ html body {
       margin-top: 10px; }
   html body .container.d-flex .right-block .card:first-child {
     margin-top: 0; }
-  html body .location {
+  html body .location-form {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 80px; }
-    html body .location .title-block {
+    html body .location-form .title-block {
       font-size: 30px; }
-    html body .location .form-body {
+    html body .location-form .form-body {
       margin: 50px 0; }
-    html body .location input[type=radio] {
+    html body .location-form input[type=radio] {
       margin-right: 20px; }
-    html body .location p {
+    html body .location-form p {
       color: #B1B1B1; }
-    html body .location input[type=text] {
+    html body .location-form input[type=text] {
       width: 100%;
       padding: 7px 0 7px 7%;
       border: 1px solid #E5E5E5; }
-      html body .location input[type=text]:focus {
+      html body .location-form input[type=text]:focus {
         box-shadow: 0px 0px 4px 0px #FFCD11;
         outline: 1px solid #FFCD11; }
-      html body .location input[type=text]::placeholder {
+      html body .location-form input[type=text]::placeholder {
         color: #B1B1B1; }
-    html body .location button {
+    html body .location-form button {
       background-color: #FFCD11;
       font-weight: bold;
       width: 50%; }
