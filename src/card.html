@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./libs/font-awesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="libs/flickity/dist/flickity.min.css">
 
 
@@ -99,13 +99,74 @@
         <h1 class="title-card ">Автокран Ивановец 14 тонн (14 метров)</h1>
         <div class="left-side col-md-6">
             <div class="item-slide">
+                <div class="mySlides">
+                    <img src="./img/main-bg2.jpg" style="width:100%">
+                </div>
+                 <div class="mySlides">
+                    <img src="./img/icons/google-play.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./img/items/ios-app.svg" style="width:100%">
+                </div>
+                 <div class="mySlides">
+                    <img src="./img/items/ios-app-2.png" style="width:100%">
+                </div>
+                      
+                        
+                <!-- Thumbnail images -->
+                <div class="img-card d-flex container">
+                    <div class="column">
+                        <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(4)">
+                    </div>
+                          
+                </div>
+            </div>
+            <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    // Next/previous controls
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("demo");
+                      if (n > slides.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " active";
+                    }</script>
+            <!-- <div class="item-slide">
                 <img src="./img/items/camas.png" alt="" class="main-img ">
-                <div class="img-card col-md-5 d-flex justify-content-start">
+                <div class="img-card d-flex container">
                     <img class="active" src="./img/items/camas.png" alt="">
                     <img src="./img/items/camas.png" alt="">
                     <img src="./img/items/camas.png" alt="">
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="right-side col-md-6">
             <div class="prop-content">
@@ -130,27 +191,74 @@
                             <th scope="row">Угол поворота</th>
                             <td>360</td>
                         </tr>
-
                         </tbody>
                     </table>
+                    <div id="more-info">
+                    <div id="more">
+                        <a class="more-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        подробнее...
+                        </a>
+                    </div>
+                      
+                    <div id="collapseOne" class="collapse" aria-labelledby="more" data-parent="#more-info">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Максимальный вылет стрелы</th>
+                            <td>13 м</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Угол поворота</th>
+                            <td>360</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Максимальный вылет стрелы</th>
+                            <td>13 м</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Угол поворота</th>
+                            <td>360</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Максимальный вылет стрелы</th>
+                            <td>13 м</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Угол поворота</th>
+                            <td>360</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
                     <div class="cost-content">
                         <span class="cost"> <img src="./img/icons/ruble-icon-8.png" alt=""> 2 000 р/ч</span>
                         <div class="hour-dock"><img src="./img/icons/hour.png" alt=""> Смена 4 часа</div>
                         <div class="location"><img src="./img/icons/101411-200.png" alt=""> Зеленодольск</div>
                     </div>
                 </div>
-                <div class="desc">
-                    <p>Окажем услуги автокрана <br>
-                        Все виды погрузочно-разгрузочных работ. Опытные <br>
-                        операторы. Имеются стропальщики. <br>
-                        Наличный/безналичный расчет. Договор.
-                        <br> Режим работы круглосуточно, без перерывов и выходных.</p>
+                <div id="more-info">
+                    <div id="more">
+                        <a class="more-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        подробнее...
+                        </a>
+                    </div>
+                      
+                    <div id="collapseOne" class="collapse" aria-labelledby="more" data-parent="#more-info">
+                        <div class="description">
+                            <p>Окажем услуги автокрана <br>
+                            Все виды погрузочно-разгрузочных работ. Опытные <br>
+                            операторы. Имеются стропальщики. <br>
+                            Наличный/безналичный расчет. Договор.
+                            <br> Режим работы круглосуточно, без перерывов и выходных.</p>
+                        </div>
+                        <div class="client-contact-info">
+                            <p>Контактное лицо <a href="">Станислав "СтройТехника Казань"</a></p>
+                            <p>на портале с апреля 2014 г</p>
+                            <p>всего объявлений 15</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="client-contact-info">
-                    <p>Контактное лицо <a href="">Станислав "СтройТехника Казань"</a></p>
-                    <p>на портале с апреля 2014 г</p>
-                    <p>всего объявлений 15</p>
-                </div>
+                
                 <div class="bottom-content">
                     <button class="btn order">Заказать</button>
                     <button class="btn number">+7 показать номер</button>

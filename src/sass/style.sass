@@ -8,18 +8,40 @@ $phone: " only screen and (min-width: 320px) and (max-width: 480px)"
 
 $fsize: "2.5rem"
 
+// main background colors
+$white-bg: #FFFFFF
+$white-alt-bg: #FEFEFE
+$light-grey-bg: #E5E5E5
+$dark-grey-bg: #3B3B3B
+$black-bg: #000000
+$yellow-bg: #FFCD11
+
+// main text colors
+$yellow-text: #FFCD11
+$black-text: #000000
+$dark-grey: #3B3B3B
+$white: #FFFFFF
+$placeholder: #B1B1B1
+
+
 
 html
     body
+        background-color: #F5F5F5
         font-family: "PFDinTextCondPro-Regular", sans-serif
         @media screen and ( max-width: 560px )
           font-size: .9rem
           h1
             font-size: 1.5em
+        button.btn
+          border-radius: 0
         header
             nav.nav-first
                 height: 55px
                 box-shadow: 0 10px 1px #FFCD11
+                .navbar-toggler
+                  .navbar-toggler-icon
+                    background-image: url('../img/icons/menu-icon.svg')
                 .rent-equip
                   display: none
                   @media screen and ( max-width: 1199px )
@@ -59,7 +81,7 @@ html
                     margin-left: 10px
                     width: 80px
                   span.brand-text
-                    left: -15px
+                    left: -10px
                     background: #FFCD11
                     padding: 8px
                     position: relative
@@ -112,6 +134,7 @@ html
           background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg")
           background-repeat: no-repeat
           background-size: cover
+          background-position: center
           .container
             //background: #FFCD11
             height: 100%
@@ -135,6 +158,9 @@ html
                     input, button
                       height: 3rem
                       border-radius: 0
+                      &:focus
+                        box-shadow: 0px 0px 5px 1px #FFCD11
+                        border: none
                     .label-input
                       color: #FFFFFF
                       padding-top: 5px
@@ -159,15 +185,9 @@ html
                     font-weight: bold
                     font-size: 1.4rem
                     text-decoration: underline
-                    padding-bottom: 5px
+                    margin-bottom: 0
                   &:hover
                     color: #FFCD11
-                      
-                  @media screen and ( max-width: 600px )
-                    .card-text
-                      display: none
-                  @media screen and ( max-width: 768px )
-                    text-align: center
                     img
                       width: 32px
                       height: 32px
@@ -197,17 +217,31 @@ html
               .carousel
                 .flickity-viewport
                   height: 170px
+                  .flickity-slider
+                    display: flex
+                    flex-direction: row
+                    align-items: flex-end
+                    .title
+                      margin-top: 10px
                 .flickity-page-dots
                   li.dot
                     opacity: 1
                   li.is-selected
                     background: transparent
                     border: 1px solid black
-                .flickity-prev-next-button.next
-                  right: -30px
-                .flickity-prev-next-button.previous
-                  left: -30px
-
+                .flickity-prev-next-button
+                  border-radius: 0
+                  background-color: #FFCD11
+                  width: 30px
+                  height: 30px
+                  top: 40%
+                  transform: translateY(-40%), translateX(-40%)
+                  &.next
+                    right: -30px
+                  &.previous
+                    left: -30px
+                  &:disabled
+                    background-color: #B8B8B8
               .slider-list
                 .items
                   img
@@ -250,7 +284,7 @@ html
               button.search-on-map
                 background: #2a2b29
                 font-size: 1.1rem
-                text-shadow: 0 0 3px #fecc11
+                // text-shadow: 0 0 3px #fecc11
                 color: #fecc11
                 padding: 10px
                 padding-left: 14px
@@ -263,6 +297,10 @@ html
           padding-bottom: 50px
           .container
             height: 100%
+            @media (max-width: 768px)
+              max-width: 860px
+            @media (max-width: 576px)
+              max-width: 710px
             .title-block
               margin-top: 35px
               font-size: 1.7rem
@@ -280,14 +318,19 @@ html
                   height: 25px
                 .cat-list
                   background: white
-                  padding: 10px 0 10px 25px
+                  padding: 10px 0
                   // padding-left: 25px
                   .cat-item
                     list-style: none
                     a
+                      padding-left: 25px
                       color: #1a1a1a
                       display: inline-block
                       width: 100%
+                      &:hover
+                        color: white
+                        background-color: #9a9a9a
+
 
                 .order-double-click
                   text-align: center
@@ -337,7 +380,7 @@ html
                       line-height: 12px
                       padding-right: 10px
                       padding-right: 10px
-                      text-shadow: 0 0 1px #fecc11
+                      // text-shadow: 0 0 1px #fecc11
 
             .right-block
               //background: #6c757d
@@ -352,14 +395,17 @@ html
                 .card-body
                   padding: 0
                   .card-thumb
-                    height: 100%
+                    height: 300px
                     width: 100%
                     background: #fec
                     background-size: cover
                     height: 100%
+                    position: static
+                    display: inline-block
                   .right-side-card
                     padding-left: 15px
                     padding-right: 25px
+                    height: 300px
                     .card-title
                       height: 40px
                       margin-top: 20px
@@ -370,25 +416,23 @@ html
                       .table
                         tbody
                           tr
+                            display: flex
+                            justify-content: space-between
                             th, td
                               border: none
                               padding: 0
                               padding-bottom: 5px
                             th
-                              width: 70%
                               font-weight: normal
-                            td
-                              width: 30%
-                              text-align: right
                     .cost-content
                       display: flex
                       justify-content: space-between
                       height: 40px
                       font-size: 0.9rem
-                      text-shadow:  0 0 1px black
+                      // text-shadow:  0 0 1px black
                       height: 40px
-                      i
-                        font-weight: 300
+                      // i
+                      //   font-weight: 300
                       img
                         width: 20px
                     .card-bottom-content
@@ -399,7 +443,7 @@ html
                         padding-left: 10px
                         padding-right: 10px
                         border: none
-                        text-shadow: 0 0 1px black
+                        // text-shadow: 0 0 1px black
                       button.more
                         background: none
                         padding-left: 0
@@ -408,7 +452,7 @@ html
                       button.number
                         background: #3b3b3b
                         color: #fecc11
-                        text-shadow: 0 0 1px #fecc11
+                        // text-shadow: 0 0 1px #fecc11
                         line-height: 12px
                         min-height: 2.2rem
                       .right-side
@@ -420,7 +464,7 @@ html
                         button.number
                           background: #3b3b3b
                           color: #fecc11
-                          text-shadow: 0 0 1px #fecc11
+                          // text-shadow: 0 0 1px #fecc11
                           line-height: 12px
                           min-height: 2.2rem
               .more-content
@@ -455,7 +499,7 @@ html
               .title-block
                 font-weight: bolder
                 font-size: 1.75rem
-                text-shadow: 0 0 1px #000
+                // text-shadow: 0 0 1px #000
               .desc-block
                 margin-top: 40px
                 p.desc
@@ -464,6 +508,7 @@ html
           background: #3B3B3B
           padding-top: 50px
           padding-bottom: 40px
+          color: $white
           .container
             display: flex
             .left-block
@@ -477,7 +522,7 @@ html
                 color: #fecc11
                 font-weight: bolder
                 font-size: 2rem
-                text-shadow: 0 0 1px #fecc11
+                // text-shadow: 0 0 1px #fecc11
               .desc-block
                 margin-top: 50px
                 .title-desc
@@ -486,7 +531,7 @@ html
                   font-size: 1.7rem
                   padding-bottom: 20px
                 ul
-                  padding-left: 7rem
+                  padding-left: 3rem
                   @media screen and ( max-width: 720px )
                     padding-left: 3rem
                     
@@ -495,24 +540,29 @@ html
                     padding-bottom: 10px
                     color: white
                     list-style: none
-                    &:before
-                      content: "o "
+                    i
                       color: #fecc11
-                      font-weight: bold
-                      display: inline-block
-                      width: 1rem
-                      position: relative
-                      left: -7px
-                      margin-left: -1rem
+                      font-size: 0.6em
+                      margin-right: 1em
+                    // &:before
+                    //   content: " "
+                    //   
+                    //   font-weight: bold
+                    //   display: inline-block
+                    //   width: 1rem
+                    //   position: relative
+                    //   left: -7px
+                    //   margin-left: -1rem
 
                 padding-bottom: 20px
             .store-links
               margin-top: 40px
               a
+                width: 50%
                 &:nth-child(2)
                   margin-left: 15px
                 img
-                  width: 200px
+                  width: 100%
                   @media #{$tablet}
                     width: 80px
                     height: 24px
@@ -526,6 +576,7 @@ html
           .container
             .col-md-4
               .list-block
+                padding-bottom: 40px
                 p.title-list-block
                   font-weight: bold
                 ul.list-parent
@@ -537,8 +588,10 @@ html
                       color: white
             .companie
               justify-content: space-between
-              padding-top: 40px
               line-height: 1.9
+              .policy
+                a
+                  display: block
               .policy, .contacts
                 padding-left: 0
                 a
@@ -572,6 +625,7 @@ html
         .breadcrumb
           padding-top: 30px
           padding-bottom: 0
+          background-color: inherit
           .container
             nav
               ol.breadcrumb
@@ -589,15 +643,38 @@ html
               flex-basis: 100%
             .left-side
               .item-slide
+                .mySlides
+                  display: none
+                  img
+                    position: relative
+                .img-card
+                  padding-bottom: 0
+                  ::after
+                  content: ""
+                  display: table
+                  clear: both
+                  .column 
+                    float: left
+                    width: 23%
+                  .cursor
+                    cursor: pointer
+                  .demo
+                    opacity: 0.6
+                  .active, .demo:hover 
+                    opacity: 1
+
                 img.main-img
                   width: 100%
                   object-fit: cover
                 .img-card
                   margin-top: 20px
                   padding-left: 0
+                  padding-right: 0
+                  justify-content: space-between
+                  width: 100%
                   img
                     padding-left: 10px
-                    width: 86%
+                    width: 33%
                     max-height: 115px
                     opacity: 0.7
                     object-fit: cover
@@ -613,11 +690,21 @@ html
                 .card-prop
                   tbody
                     tr
+                      display: flex
+                      justify-content: space-between
                       th, td
                         padding-left: 0
                         padding-bottom: 0
                         border: none
                         font-weight: normal
+                      td
+                        padding-right: 0
+                #more-info
+                  #more
+                    margin-bottom: 10px
+                    a.more-link
+                      color: #21ADD9
+                      cursor: pointer
                 .cost-content
                   padding-bottom: 20px
                   display: flex
@@ -732,6 +819,7 @@ html
             justify-content: center
             display: flex
             flex-wrap: wrap
+            
             .login-block, .signup-block
               box-shadow: 0 0 25px #8E8892
               border-radius: 5px
@@ -793,6 +881,7 @@ html
                     text-shadow: 0 0 1px black
                   select
                   textarea
+                    resize: none
                   input
                   button
                     height: 40px
@@ -829,23 +918,157 @@ html
                   p.policy-text
                     padding-left: 5px
                     margin-top: -4px
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    label
+                      width: 100%
+        .item-container
+          > .container
+            h1
+              padding: 0 15px
+              font-size: 1.9rem
+              margin-bottom: 20px
+        .container.d-flex
+          .left-block
+            h3
+              font-size: 20px
+              font-weight: bold
+            .main-characteristics-filtr, .search-map
+              margin-bottom: 20px
+            .main-characteristics-filtr
+              padding: 20px 15px
+              background-color: #FEFEFE
+              table
+                width: 100%
+                th
+                  font-weight: normal
+                td
+                  text-align: right
+              a
+                color: inherit
+                font-weight: bold
+            .search-map
+              background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url('../img/map2.jpg')
+              background-size: cover
+              background-repeat: no-repeat
+              padding: 20px 0
+              .container
+                flex-direction: column
+                align-items: center
+              button.search-on-map
+                background: #2a2b29
+                font-size: 1.1rem
+                // text-shadow: 0 0 3px #fecc11
+                color: #fecc11
+                padding: 5px 14px
+                border-radius: 0px
+                margin-top: 10px
+          .right-block
+            .card
+              &:first-child
+                margin-top: 0
+        
+        .location-form
+          background-color: $white-bg
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+          padding: 80px
+          .title-block
+            font-size: 30px
+          .form-body
+            margin: 50px 0
+          input[type=radio]
+            margin-right: 20px
+          p
+            color: $placeholder
+          input[type=text]
+            width: 100%
+            padding: 7px 0 7px 7%
+            border: 1px solid $light-grey-bg
+            &:focus
+              box-shadow: 0px 0px 4px 0px $yellow-bg
+              outline: 1px solid $yellow-bg
+            &::placeholder
+              color: $placeholder
+          button
+            background-color: $yellow-bg
+            font-weight: bold
+            width: 50%
+        #myModal
+          display: none
+          position: fixed
+          z-index: 1
+          left: 50%
+          top: 50%
+          transform: translateX(-50%) translateY(-50%)
+          box-shadow: 0 0 25px #8E8892
+          border-radius: 5px
+          margin-top: 40px
+          .login-block
+            background-color: white
+            padding: 40px
+            .title-block
+              display: flex
+              justify-content: space-between
+              padding-bottom: 10px
+              h1.title-block
+                font-size: 1.7rem
+              .reg_link
+                font-size: 1.5rem
+                color: #4E4852
+                text-decoration: underline
+            form
+              background-color: white
+              .form-group
+                padding-bottom: 7px
+                label
+                  line-height: 0.7
+                  text-shadow: 0 0 1px gray
+                input.form-control
+                  border-radius: 0
+                .desc
+                  padding-bottom: 0
+                  p.policy
+                    font-size: 0.9rem
+              .bottom-form
+                margin-top: 30px
+                display: flex
+                justify-content: space-between
+                button
+                  width: 45%
+                  border-radius: 0
+                button.send
+                  font-weight: bold
+                  background: #fecc11
+                  outline: none
+                .sign_up
+                  width: 100%
+                  height: 70px
+        .location-form
+          display: none
+          background-color: $white-bg
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25)
+          padding: 80px
+          position: fixed
+          z-index: 1
+          left: 50%
+          top: 50%
+          transform: translateX(-50%) translateY(-50%)
+          .title-block
+            font-size: 30px
+          .form-body
+            margin: 50px 0
+          input[type=radio]
+            margin-right: 20px
+          p
+            color: $placeholder
+          input[type=text]
+            width: 100%
+            padding: 7px 0 7px 7%
+            border: 1px solid $light-grey-bg
+            &:focus
+              box-shadow: 0px 0px 4px 0px $yellow-bg
+              outline: 1px solid $yellow-bg
+            &::placeholder
+              color: $placeholder
+          button
+            background-color: $yellow-bg
+            font-weight: bold
+            width: 50%
