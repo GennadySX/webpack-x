@@ -495,7 +495,11 @@ html body {
       justify-content: space-between;
       line-height: 1.9; }
       html body footer .container .companie .policy a {
+<<<<<<< HEAD
         display: block; }
+=======
+        display: inline-block; }
+>>>>>>> e66217db862974f57c68076701b904e8d69e666a
       html body footer .container .companie .policy, html body footer .container .companie .contacts {
         padding-left: 0; }
         html body footer .container .companie .policy a, html body footer .container .companie .contacts a {
@@ -791,8 +795,11 @@ html body {
           html body section.order-form .container .order-form form .policy p.policy-text {
             padding-left: 5px;
             margin-top: -4px; }
+<<<<<<< HEAD
             html body section.order-form .container .order-form form .policy p.policy-text label {
               width: 100%; }
+=======
+>>>>>>> e66217db862974f57c68076701b904e8d69e666a
   html body .item-container > .container h1 {
     padding: 0 15px;
     font-size: 1.9rem;
@@ -856,6 +863,7 @@ html body {
       background-color: #FFCD11;
       font-weight: bold;
       width: 50%; }
+<<<<<<< HEAD
   html body #myModal {
     display: none;
     position: fixed;
@@ -937,3 +945,5 @@ html body {
       background-color: #FFCD11;
       font-weight: bold;
       width: 50%; }
+=======
+>>>>>>> e66217db862974f57c68076701b904e8d69e666a
