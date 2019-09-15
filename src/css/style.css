@@ -143,11 +143,6 @@ html body {
             margin-bottom: 0; }
           html body section.main-1 .container .pre-block .card_desc .card-body:hover, html body section.main-1 .container .pre-block .card-body .card-body:hover {
             color: #FFCD11; }
-            html body section.main-1 .container .pre-block .card_desc .card-body:hover img, html body section.main-1 .container .pre-block .card-body .card-body:hover img {
-              width: 32px;
-              height: 32px; }
-            html body section.main-1 .container .pre-block .card_desc .card-body:hover .card-title, html body section.main-1 .container .pre-block .card-body .card-body:hover .card-title {
-              font-size: 1rem; }
       html body section.main-1 .container .bottom-icon .store_link a:nth-child(2) {
         margin-left: 15px; }
       html body section.main-1 .container .bottom-icon .store_link img {
