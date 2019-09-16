@@ -5,7 +5,10 @@ html body {
     html body {
       font-size: .9rem; }
       html body h1 {
-        font-size: 1.5em; } }
+        font-size: 16px; } }
+  @media screen and (max-width: 769px) {
+    html body h1 {
+      font-size: 24px; } }
   html body button.btn {
     border-radius: 0; }
   html body header nav.nav-first {
@@ -15,8 +18,37 @@ html body {
     @media screen and (max-width: 321px) {
       html body header nav.nav-first {
         border: none; } }
+    html body header nav.nav-first .container {
+      position: relative; }
     html body header nav.nav-first .navbar-toggler .navbar-toggler-icon {
-      background-image: url("../img/icons/menu-icon.svg"); }
+      background-image: url("../img/icons/menu-icon.svg");
+      width: 22px;
+      height: 17px; }
+    html body header nav.nav-first .mobile-menu {
+      display: none;
+      background-color: #000000;
+      position: absolute;
+      z-index: 100;
+      width: 100%;
+      bottom: -290px;
+      left: 0;
+      height: 0px;
+      padding: 0 1em 1em 1em;
+      overflow: hidden;
+      font-size: 1.2em;
+      transform: scaleX(1);
+      transform: scaleY(0);
+      will-change: transform;
+      transition: transform 0.2s linear; }
+      html body header nav.nav-first .mobile-menu li {
+        border-bottom: 1px solid rgba(196, 196, 196, 0.3);
+        margin-top: 1em;
+        padding-bottom: 4px; }
+        html body header nav.nav-first .mobile-menu li a {
+          display: inline-block;
+          width: 100%; }
+          html body header nav.nav-first .mobile-menu li a:focus {
+            color: #FFCD11; }
     html body header nav.nav-first .rent-equip {
       display: none; }
       @media screen and (max-width: 1199px) {
@@ -253,10 +285,8 @@ html body {
           max-width: 710px; } }
       html body section.item-container .container .title-block {
         font-weight: bold; }
-      html body section.item-container .container .left-block .title-block {
-        margin-bottom: 30px; }
       html body section.item-container .container .left-block .list-block {
-        margin-top: 10px; }
+        margin-bottom: 10px; }
         html body section.item-container .container .left-block .list-block .title-list-block {
           width: 100%;
           background: #4E4852;
@@ -457,14 +487,8 @@ html body {
               color: #fecc11;
               font-size: 0.6em;
               margin-right: 1em; }
-      html body section.on-app .container .store-links a {
-        width: 50%; }
-        html body section.on-app .container .store-links a img {
-          width: 100%; }
-          @media only screen and (min-width: 481px) and (max-width: 768px) {
-            html body section.on-app .container .store-links a img {
-              width: 80px;
-              height: 24px; } }
+      html body section.on-app .container .store-links img {
+        width: 100%; }
   html body footer {
     background: #000000;
     color: white; }
@@ -482,6 +506,8 @@ html body {
     html body footer .container .companie {
       justify-content: space-between;
       line-height: 1.9; }
+      html body footer .container .companie > div {
+        flex-basis: 100%; }
       html body footer .container .companie .policy a {
         display: block; }
       html body footer .container .companie .policy, html body footer .container .companie .contacts {
@@ -778,9 +804,6 @@ html body {
             margin-top: -4px; }
             html body section.order-form .container .order-form form .policy p.policy-text label {
               width: 100%; }
-  html body .item-container > .container h1 {
-    padding: 0 15px;
-    margin-bottom: 20px; }
   html body .container.d-flex .left-block h3 {
     font-size: 20px;
     font-weight: bold; }

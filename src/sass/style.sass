@@ -32,7 +32,11 @@ html
         @media screen and ( max-width: 560px )
           font-size: .9rem
           h1
-            font-size: 1.5em
+            font-size: 16px
+        @media screen and ( max-width: 769px )
+          h1
+            font-size: 24px
+          
         button.btn
           border-radius: 0
         header
@@ -42,9 +46,38 @@ html
                 background-color: $black-bg
                 @media screen and ( max-width: 321px )
                   border: none
+                .container
+                  position: relative
                 .navbar-toggler
                   .navbar-toggler-icon
                     background-image: url('../img/icons/menu-icon.svg')
+                    width: 22px
+                    height: 17px
+                .mobile-menu
+                  display: none
+                  background-color: #000000
+                  position: absolute
+                  z-index: 100
+                  width: 100%
+                  bottom: -290px
+                  left: 0
+                  height: 0px
+                  padding: 0 1em 1em 1em
+                  overflow: hidden
+                  font-size: 1.2em
+                  transform: scaleX(1)
+                  transform: scaleY(0)
+                  will-change: transform
+                  transition: transform 0.2s linear
+                  li
+                    border-bottom: 1px solid rgba(196, 196, 196, 0.3)
+                    margin-top: 1em
+                    padding-bottom: 4px
+                    a
+                      display: inline-block
+                      width: 100%
+                      &:focus
+                        color: #FFCD11
                 .rent-equip
                   display: none
                   @media screen and ( max-width: 1199px )
@@ -298,9 +331,9 @@ html
               font-weight: bold
             .left-block
               .title-block
-                margin-bottom: 30px
+                // margin-bottom: 30px
               .list-block
-                margin-top: 10px
+                margin-bottom: 10px
                 .title-list-block
                   width: 100%
                   background: #4E4852
@@ -533,14 +566,8 @@ html
 
                 padding-bottom: 20px
             .store-links
-              // margin-top: 40px
-              a
-                width: 50%
-                img
-                  width: 100%
-                  @media #{$tablet}
-                    width: 80px
-                    height: 24px
+              img
+                width: 100%
       
         footer
           background: #000000
@@ -564,6 +591,8 @@ html
             .companie
               justify-content: space-between
               line-height: 1.9
+              & > div
+                flex-basis: 100%
               .policy
                 a
                   display: block
@@ -727,9 +756,6 @@ html
                       background: #000
                       color: whitesmoke
                       text-shadow: 0 0 1px whitesmoke
-
-
-
 
 
         section.also-by-client
@@ -898,9 +924,9 @@ html
         .item-container
           > .container
             h1
-              padding: 0 15px
+              // padding: 0 15px
               // font-size: 1.9rem
-              margin-bottom: 20px
+              // margin-bottom: 20px
         .container.d-flex
           .left-block
             h3
