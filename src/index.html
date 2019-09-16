@@ -166,7 +166,7 @@
 </section>
 <section class="category">
     <div class="container">
-        <h1 class="title">Популярные категории</h1>
+        <h1 class="title text-center">Популярные категории</h1>
         <div class="slide-category ">
             <div  class="carousel">
                 <div class="carousel-cell items col-md-3">
@@ -201,19 +201,19 @@
 
         </div>
     </div>
-    <div class="search-map">
-        <div class="container d-flex flex-wrap">
+    <div class="search-map px-3 py-4">
+        <div class="container d-flex flex-wrap ">
             <h1 class="title-content">Ищите необходимую технику рядом</h1>
-            <button class="btn search-on-map">Искать на карте</button>
+            <button class="btn search-on-map align-self-stretch ">Искать на карте</button>
         </div>
     </div>
 </section>
 <section class="item-container">
-    <div class="container d-flex flex-column flex-md-row">
+    <div class="container d-flex flex-column flex-md-row px-0">
         <div class="left-block col-md-3" id="categories">
-            <h1 class="title-block">Категории</h1>
+            <h1 class="title-block text-center">Категории</h1>
             <div class="list-block">
-                <p class="title-list-block">Строительная техника</p>
+                <p class="title-list-block py-2">Строительная техника</p>
                 <ul class="cat-list">
                     <li class="cat-item"><a href="#">Автовышки</a></li>
                     <li class="cat-item"><a href="#">Автогрейдеры</a></li>
@@ -238,7 +238,7 @@
                 </ul>
             </div>
             <div class="list-block">
-                <p class="title-list-block">Грузоперевозки</p>
+                <p class="title-list-block py-2">Грузоперевозки</p>
                 <ul class="cat-list">
                     <li class="cat-item"><a href="#">Бензовозы</a></li>
                     <li class="cat-item"><a href="#">Водовозы</a></li>
@@ -252,8 +252,8 @@
                     <li class="cat-item"><a href="#">Эвакуаторы</a></li>
                 </ul>
             </div>
-            <div class="list-block">
-                <p class="title-list-block">Заказ в 2 клика</p>
+            <div class="list-block d-none d-sm-block">
+                <p class="title-list-block py-2">Заказ в 2 клика</p>
                 <div class="card order-double-click">
                     <div class="card-body">
                         <img src="./img/items/camas.png" alt="" class="item-thumb">
@@ -263,9 +263,9 @@
                 </div>
             </div>
             <div class="list-block">
-                <p class="title-list-block">Заявки</p>
+                <p class="title-list-block py-1">Заявки</p>
                 <div class="card order-ask">
-                    <p class="title-ask">Эвакуатор-погрузчик JSB 1СХ</p>
+                    <p class="title-ask pl-3">Эвакуатор-погрузчик JSB 1СХ</p>
                     <div class="card-body">
                         <p class="ask-desc">Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По
                             срокам нужен от 2 до 5.</p>
@@ -273,7 +273,7 @@
                     </div>
                 </div>
                 <div class="card order-ask">
-                    <p class="title-ask">Эвакуатор-погрузчик JSB 1СХ</p>
+                    <p class="title-ask pl-3">Эвакуатор-погрузчик JSB 1СХ</p>
                     <div class="card-body">
                         <p class="ask-desc">Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По
                             срокам нужен от 2 до 5.</p>
@@ -282,12 +282,14 @@
                 </div>
             </div>
         </div>
-        <div class="right-block col-md-9" id="item-block">
-            <h1 id="ads" class="title-block">Объявления</h1>
-            <div class="card">
-                <div class="card-body d-flex flex-column">
-                    <span class="col-md-5 card-thumb" style="background-image: url('./img/items/camas.png')"></span>
-                    <div class="right-side-card col-md-7">
+        <!-- ОБЪЯВЛЕНИЯ -->
+        <div class="right-block col-12 col-md-9 px-0 py-4" id="item-block">
+            <h1 id="ads" class="title-block text-center">Объявления</h1>
+            
+            <div class="card shadow-none mb-3">
+                <div class="card-body d-flex flex-column flex-sm-row">
+                    <div class="align-self-md-stretch card-thumb" style="background-image: url('./img/items/camas.png')"></div>
+                    <div class="right-side-card col-md-7 p-3 pb-4">
                         <p class="card-title">Автовышка АГП-28</p>
                         <div class="card-prop">
                             <table class="table">
@@ -313,25 +315,24 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="cost-content">
-                            <span class="cost"><i class="fas fa-ruble-sign"></i> 2 000 р/ч</span>
-                            <div class="hour-dock"><i class="far fa-clock"></i> Смена 4 часа</div>
-                            <div class="location"><i class="fas fa-map-marker-alt"></i> Зеленодольск</div>
+                        <div class="cost-content font-weight-bold">
+                            <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 р/ч</span>
+                            <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
+                            <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
                         </div>
-                        <div class="card-bottom-content">
+                        <div class="card-bottom-content font-weight-bold">
                             <button class="more">Подробнее</button>
-                            <!-- <div class="right-side"> -->
                                 <button class="order">Заказать</button>
-                                <button class="number">+7 показать номер</button>
-                            <!-- </div> -->
+                                <button class="number d-none d-sm-block">+7 показать номер</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-body d-flex">
-                    <span class="col-md-5 card-thumb" style="background-image: url('./img/items/camas.png')"></span>
-                    <div class="right-side-card col-md-7">
+            
+            <div class="card shadow-none">
+                <div class="card-body d-flex flex-column flex-sm-row">
+                    <div class=" card-thumb" style="background-image: url('./img/items/camas.png')"></div>
+                    <div class="right-side-card col-md-7 p-3 pb-4">
                         <p class="card-title">Автовышка АГП-28</p>
                         <div class="card-prop">
                             <table class="table">
@@ -351,161 +352,27 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Угол поворота</th>
-                                    <td>360</td>
+                                    <td>360<sup> o</sup></td>
                                 </tr>
 
                                 </tbody>
                             </table>
                         </div>
-                        <div class="cost-content">
-                            <span class="cost"><i class="fas fa-ruble-sign"></i> 2 000 р/ч</span>
-                            <div class="hour-dock"><img src="./img/icons/hour.png" alt=""> Смена 4 часа</div>
-                            <div class="location"><img src="./img/icons/101411-200.png" alt=""> Зеленодольск</div>
+                        <div class="cost-content font-weight-bold">
+                            <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 р/ч</span>
+                            <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
+                            <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
                         </div>
-                        <div class="card-bottom-content">
+                        <div class="card-bottom-content font-weight-bold">
                             <button class="more">Подробнее</button>
-                            <div class="right-side">
                                 <button class="order">Заказать</button>
-                                <button class="number">+7 показать номер</button>
-                            </div>
+                                <button class="number d-none d-sm-block">+7 показать номер</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-body d-flex">
-                    <span class="col-md-5 card-thumb" style="background-image: url('./img/items/camas.png')"></span>
-                    <div class="right-side-card col-md-7">
-                        <p class="card-title">Автовышка АГП-28</p>
-                        <div class="card-prop">
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Рабочая высота подъема</th>
-                                    <td>28 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Грузоподъемность люльки</th>
-
-                                    <td>300 кг</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Максимальный вылет стрелы</th>
-                                    <td>13 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Угол поворота</th>
-                                    <td>360</td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="cost-content">
-                            <span class="cost"> <img src="./img/icons/ruble-icon-8.png" alt=""> 2 000 р/ч</span>
-                            <div class="hour-dock"><img src="./img/icons/hour.png" alt=""> Смена 4 часа</div>
-                            <div class="location"><img src="./img/icons/101411-200.png" alt=""> Зеленодольск</div>
-                        </div>
-                        <div class="card-bottom-content">
-                            <button class="more">Подробнее</button>
-                            <div class="right-side">
-                                <button class="order">Заказать</button>
-                                <button class="number">+7 показать номер</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body d-flex">
-                    <span class="col-md-5 card-thumb" style="background-image: url('./img/items/camas.png')"></span>
-                    <div class="right-side-card col-md-7">
-                        <p class="card-title">Автовышка АГП-28</p>
-                        <div class="card-prop">
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Рабочая высота подъема</th>
-                                    <td>28 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Грузоподъемность люльки</th>
-
-                                    <td>300 кг</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Максимальный вылет стрелы</th>
-                                    <td>13 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Угол поворота</th>
-                                    <td>360</td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="cost-content">
-                            <span class="cost"> <img src="./img/icons/ruble-icon-8.png" alt=""> 2 000 р/ч</span>
-                            <div class="hour-dock"><img src="./img/icons/hour.png" alt=""> Смена 4 часа</div>
-                            <div class="location"><img src="./img/icons/101411-200.png" alt=""> Зеленодольск</div>
-                        </div>
-                        <div class="card-bottom-content">
-                            <button class="more">Подробнее</button>
-                            <div class="right-side">
-                                <button class="order">Заказать</button>
-                                <button class="number">+7 показать номер</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body d-flex">
-                    <span class="col-md-5 card-thumb" style="background-image: url('./img/items/camas.png')"></span>
-                    <div class="right-side-card col-md-7">
-                        <p class="card-title">Автовышка АГП-28</p>
-                        <div class="card-prop">
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Рабочая высота подъема</th>
-                                    <td>28 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Грузоподъемность люльки</th>
-
-                                    <td>300 кг</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Максимальный вылет стрелы</th>
-                                    <td>13 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Угол поворота</th>
-                                    <td>360</td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="cost-content">
-                            <span class="cost"> <img src="./img/icons/ruble-icon-8.png" alt=""> 2 000 р/ч</span>
-                            <div class="hour-dock"><img src="./img/icons/hour.png" alt=""> Смена 4 часа</div>
-                            <div class="location"><img src="./img/icons/101411-200.png" alt=""> Зеленодольск</div>
-                        </div>
-                        <div class="card-bottom-content">
-                            <button class="more">Подробнее</button>
-                            <div class="right-side">
-                                <button class="order">Заказать</button>
-                                <button class="number">+7 показать номер</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="more-content">
-                <button class="more-items">Больше объявлений</button>
+            <div class="more-content mx-3">
+                <button class="more-items w-100">Больше объявлений</button>
             </div>
         </div>
 
@@ -529,14 +396,14 @@
         </div>
     </div>
 </section>
-<section class="on-app">
-    <div class="container">
+<section class="on-app p-4 text-center text-sm-left">
+    <div class="container p-0">
         <div class="left-block app-screeen col-md-4 d-none d-sm-block">
             <img src="./img/items/ios-app.svg" alt="" class="screen">
         </div>
         <div class="right-block app-desc col-md-9">
             <h1 class="title-block">Заказ техники и услуг всегда под рукой!</h1>
-            <p class=".d-none d-sm-block d-md-none">Загрузите мобильное приложение</p>
+            <p class=".d-none d-sm-block d-md-none font-weight-light">Загрузите мобильное приложение</p>
             <div class="desc-block d-none d-sm-block">
                 
                 <p class="title-desc">Мобильное приложение это:</p>
@@ -549,18 +416,18 @@
                 </ul>
             </div>
             <div class="store-links d-flex">
-                <a href="">
-                    <img src="./img/icons/google-play.svg" alt="" title="Перейти в Google Play">
+                <a href="" class="mr-2">
+                    <img src="./img/icons/app-store.svg" alt="" title="Перейти в App Store">
                 </a>
                 <a href="">
-                    <img src="./img/icons/app-store.svg" alt="" title="Перейти в App Store">
+                    <img src="./img/icons/google-play.svg" alt="" title="Перейти в Google Play">
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-<footer>
+<footer class="py-4">
     <div class="container d-none d-sm-flex">
         <div class="col-md-4">
             <div class="list-block">
@@ -650,7 +517,7 @@
                 <a href="">Политика конфиденциальности</a>
                 <a href="">Пользовательское соглашение</a>
             </div>
-            <div class="contacts col-md-4 d-inline-block">
+            <div class="contacts col-md-4 d-inline-block pr-0">
                 <div class="item">
                     <a href="">Сотрудничество и предложения</a>
                 </div>
@@ -659,7 +526,7 @@
                 </div>
             </div>
 
-            <div class="copy col-md-4">
+            <div class="copy col-md-4 pt-4">
                 <address class="copy-companie">@ 2019 г. ООО "Спецтехникофф"</address>
                 <div class="icons">
                     <a href="" title="Facebook"><i class="fab fa-facebook-f"></i></a>
