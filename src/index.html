@@ -21,9 +21,9 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-first">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-first">
         <div class="container ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            <button class="navbar-toggler px-0 border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,13 +48,13 @@
             </div>
             
             
-            <div class="rent-equip col-md-1">
+            <div class="rent-equip col-md-1 d-none d-sm-block">
                 <button class="btn btn-warning rent">Сдать технику</button>
             </div>
 
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg nav-second">
+    <nav class="navbar navbar-expand-lg nav-second d-none d-sm-block">
         <div class="container bottom-nav">
             <div class="brand col-md-1">
                 <img src="img/logo.png" alt="">
@@ -111,41 +111,41 @@
             
 
         </div>
-        <div class="pre-block d-flex col-md-12 flex-column flex-sm-row p-0">
-            <div class="col-md-4">
+        <div class="pre-block d-flex col-md-12 flex-column flex-sm-row p-0 no-gutters row py-4">
+            <div class="col-md-4 p-0 py-2">
                 <div class="card_desc card">
-                    <div class="card-body d-flex flex-row flex-sm-column">
-                        <div>
+                    <div class="card-body d-flex flex-row flex-sm-column p-0 row no-gutters">
+                        <div class="col-2 col-sm-4 mr-3 d-flex align-self-center align-self-md-start">
                             <img src="./img/home-icon1.svg" class="icon">
                         </div>
-                        <div>
-                            <p class="card-title">Оставить заявку</p>
+                        <div class="col">
+                            <p class="card-title pb-1">Оставить заявку</p>
                             <p class="card-text">Мы подберем для Вас любую <br> технику. Подача техники в день обращения.</p>
                         </div>  
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 p-0 py-2">
                 <div class="card_desc card">
-                    <div class="card-body d-flex flex-row flex-sm-column">
-                        <div>
+                    <div class="card-body d-flex flex-row flex-sm-column p-0 row no-gutters">
+                        <div class="col-2 col-sm-4 mr-3 d-flex align-self-center align-self-md-start">
                             <img src="./img/home-icon1.svg" class="icon icon-rotate">
                         </div>
-                        <div>
-                            <p class="card-title">Получить предложения</p>
+                        <div class="col">
+                            <p class="card-title pb-1">Получить предложения</p>
                             <p class="card-text">Мы поможем сдать вашу технику быстро и на выгодных условиях. Заполните форму и получайте <br> заказы.</p>
                         </div>  
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 p-0 py-2">
                 <div class="card_desc card">
-                    <div class="card-body d-flex flex-row flex-sm-column">
-                        <div>
+                    <div class="card-body d-flex flex-row flex-sm-column p-0 row no-gutters">
+                        <div class="col-2 col-sm-4 mr-3 d-flex align-self-center align-self-md-start">
                             <img src="./img/home-icon.svg" class="icon">
                         </div>
-                        <div>
-                            <p class="card-title">Договориться напрямую</p>
+                        <div class="col">
+                            <p class="card-title pb-1">Договориться напрямую</p>
                             <p class="card-text">Изучайте предложения, связывайтесь напрямую и обсуждайте детали заказа по телефону.</p>
                         </div>  
                     </div>
@@ -169,7 +169,7 @@
         <h1 class="title text-center">Популярные категории</h1>
         <div class="slide-category ">
             <div  class="carousel">
-                <div class="carousel-cell items col-md-3">
+                <div class="carousel-cell items col-12 col-md-3">
                     <img src="img/kran.jpg" alt="" class="item_img" width="100%">
                     <p class="title text-center ">Подъемная техника</p>
                 </div>
@@ -213,7 +213,7 @@
         <div class="left-block col-md-3" id="categories">
             <h1 class="title-block text-center">Категории</h1>
             <div class="list-block">
-                <p class="title-list-block py-2">Строительная техника</p>
+                <p class="title-list-block py-1">Строительная техника</p>
                 <ul class="cat-list">
                     <li class="cat-item"><a href="#">Автовышки</a></li>
                     <li class="cat-item"><a href="#">Автогрейдеры</a></li>
@@ -238,7 +238,7 @@
                 </ul>
             </div>
             <div class="list-block">
-                <p class="title-list-block py-2">Грузоперевозки</p>
+                <p class="title-list-block py-1">Грузоперевозки</p>
                 <ul class="cat-list">
                     <li class="cat-item"><a href="#">Бензовозы</a></li>
                     <li class="cat-item"><a href="#">Водовозы</a></li>

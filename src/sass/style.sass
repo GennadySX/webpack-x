@@ -38,7 +38,10 @@ html
         header
             nav.nav-first
                 height: 55px
-                box-shadow: 0 10px 1px #FFCD11
+                border-bottom: 10px solid #FFCD11
+                background-color: $black-bg
+                @media screen and ( max-width: 321px )
+                  border: none
                 .navbar-toggler
                   .navbar-toggler-icon
                     background-image: url('../img/icons/menu-icon.svg')
@@ -67,16 +70,13 @@ html
               height: 105px
               display: flex
               background-color: white
-              //background: #1E252B
               .bottom-nav
                 margin-top: 20px
                 height: 100px
-                //background: lightgrey
                 .brand
                   position: relative
                   top: 0px
                   display: block
-                  //background: #1e7e34
                   img
                     margin-left: 10px
                     width: 80px
@@ -92,7 +92,6 @@ html
                     flex: 0 0 86.666667%
                     max-width: 86.666667%
                   ul.nav-pills
-                    //width: 0px
                     display: flex
                     justify-content: space-around
                     @media screen and ( max-width: 1199px )
@@ -104,11 +103,6 @@ html
                         font-size: 1rem
                         padding: 25px 0
                         transition: border 1s ease-in-out
-                      &:hover
-                        //border-bottom: 10px solid #FFCD11
-                        //padding-left: 0%
-                        //padding-right: 0%
-                        //border-radius: 0px
                       .active
                         background: transparent
                         border-bottom: 10px solid #FFCD11
@@ -130,13 +124,13 @@ html
           z-index: -1
           width: 100%
           height: auto
-          background: rgba(black, 0.5)
           background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg")
           background-repeat: no-repeat
           background-size: cover
           background-position: center
+          @media screen and ( max-width: 321px )
+            background-image:  url('../img/main-bg-mobile.jpg')
           .container
-            //background: #FFCD11
             height: 100%
             .top-content
               padding-top: 77px
@@ -178,16 +172,18 @@ html
                 background: transparent !important
                 .card-body
                   img
-                    width: 90px
+                    width: 100%
                   .icon-rotate
                     transform: rotate(180deg)
                   .card-title
                     font-weight: bold
-                    font-size: 1.4rem
+                    // font-size: 1.4rem
                     text-decoration: underline
                     margin-bottom: 0
                   &:hover
                     color: #FFCD11
+                  .card-text
+                    line-height: 1.3
             .bottom-icon
               .store_link
                 a
@@ -219,6 +215,8 @@ html
                     .title
                       margin-top: 10px
                 .flickity-page-dots
+                  @media screen and ( max-width: 321px )
+                    display: none
                   li.dot
                     opacity: 1
                   li.is-selected
@@ -233,10 +231,22 @@ html
                   transform: translateY(-40%), translateX(-40%)
                   &.next
                     right: -30px
+                    @media screen and ( max-width: 321px )
+                      right: 0px
+                      background-color: transparent
+                      
+                      color: #E5E5E5
                   &.previous
                     left: -30px
+                    @media screen and ( max-width: 321px )
+                      left: 0px
+                      background-color: transparent
+                      color: #E5E5E5
                   &:disabled
                     background-color: #B8B8B8
+                    @media screen and ( max-width: 321px )
+                      background-color: transparent
+                      opacity: 1
               .slider-list
                 .items
                   img
@@ -404,6 +414,9 @@ html
                               padding-bottom: 5px
                             th
                               font-weight: normal
+                              @media screen and ( max-width: 321px )
+                                color: #757575
+                                
                     .cost-content
                       display: flex
                       justify-content: space-between
