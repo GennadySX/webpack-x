@@ -77,14 +77,12 @@ html body {
     html body header .nav-second .bottom-nav .cat-right-block .nav-item a {
       color: black;
       font-size: 1rem;
-      padding: 1rem 0;
+      padding: 1rem 0.5rem;
       transition: border 1s ease-in-out;
       height: 100%; }
     html body header .nav-second .bottom-nav .cat-right-block .nav-item .active {
       background: transparent;
       border-bottom: 10px solid #FFCD11;
-      padding-left: 0%;
-      padding-right: 0%;
       border-radius: 0px; }
     html body header .nav-second .bottom-nav .rent-equip {
       padding: 0;
@@ -184,14 +182,14 @@ html body {
               html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
                 right: 0px;
                 background-color: transparent;
-                color: #E5E5E5; } }
+                color: #B1B1B1; } }
           html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
             left: -30px; }
             @media screen and (max-width: 321px) {
               html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
                 left: 0px;
                 background-color: transparent;
-                color: #E5E5E5; } }
+                color: #B1B1B1; } }
           html body section.category .container .slide-category .carousel .flickity-prev-next-button:disabled {
             background-color: #B8B8B8; }
             @media screen and (max-width: 321px) {
@@ -421,7 +419,6 @@ html body {
         padding-bottom: 20px; }
         html body section.on-app .container .right-block .desc-block .title-desc {
           color: white;
-          font-weight: bold;
           font-size: 1.7rem; }
         html body section.on-app .container .right-block .desc-block ul li.desc-item {
           font-size: 1.2rem;
@@ -701,13 +698,14 @@ html body {
       display: flex;
       justify-content: center; }
       html body section.order-form .container .order-form {
-        padding: 100px;
-        padding-top: 120px;
-        padding-bottom: 40px;
-        border-radius: 10px;
-        box-shadow: 0 0 25px #8E8892; }
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
         html body section.order-form .container .order-form form .form-group {
           display: flex; }
+          html body section.order-form .container .order-form form .form-group * {
+            border-radius: 0; }
+          html body section.order-form .container .order-form form .form-group input::placeholder, html body section.order-form .container .order-form form .form-group textarea::placeholder, html body section.order-form .container .order-form form .form-group select::placeholder {
+            color: #B1B1B1; }
           html body section.order-form .container .order-form form .form-group label {
             width: 70%;
             text-shadow: 0 0 1px black; }
@@ -715,7 +713,6 @@ html body {
             resize: none; }
           html body section.order-form .container .order-form form .form-group button {
             height: 40px;
-            border-radius: 0;
             text-shadow: 0 0 1px black; }
         html body section.order-form .container .order-form form .btn-col {
           padding-top: 15px;
@@ -723,7 +720,6 @@ html body {
           display: flex;
           justify-content: space-between; }
           html body section.order-form .container .order-form form .btn-col .left-side button.order {
-            width: 200px;
             background: #fecc11;
             height: 40px; }
           html body section.order-form .container .order-form form .btn-col .right-side {
@@ -731,10 +727,7 @@ html body {
             justify-content: space-between; }
             html body section.order-form .container .order-form form .btn-col .right-side button {
               border: 2px solid #1a1a1a;
-              margin-left: 10px;
-              width: 240px; }
-              html body section.order-form .container .order-form form .btn-col .right-side button:nth-child(2) {
-                width: 280px; }
+              margin-left: 10px; }
         html body section.order-form .container .order-form form .policy {
           padding-top: 15px; }
           html body section.order-form .container .order-form form .policy input[type="checkbox"]:before {

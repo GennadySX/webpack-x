@@ -107,21 +107,16 @@ html
                     padding: 8px
                     bottom: -20px
                 .cat-right-block
-                  
-                      
                     .nav-item
                       a
                         color: black
                         font-size: 1rem
-                        padding: 1rem 0
-
+                        padding: 1rem 0.5rem
                         transition: border 1s ease-in-out
                         height: 100%
                       .active
                         background: transparent
                         border-bottom: 10px solid #FFCD11
-                        padding-left: 0%
-                        padding-right: 0%
                         border-radius: 0px
                 .rent-equip
                   padding: 0
@@ -233,14 +228,13 @@ html
                     @media screen and ( max-width: 321px )
                       right: 0px
                       background-color: transparent
-                      
-                      color: #E5E5E5
+                      color: #B1B1B1
                   &.previous
                     left: -30px
                     @media screen and ( max-width: 321px )
                       left: 0px
                       background-color: transparent
-                      color: #E5E5E5
+                      color: #B1B1B1
                   &:disabled
                     background-color: #B8B8B8
                     @media screen and ( max-width: 321px )
@@ -480,7 +474,7 @@ html
                 padding-bottom: 20px
                 .title-desc
                   color: white
-                  font-weight: bold
+                  // font-weight: bold
                   font-size: 1.7rem
                 ul
                   li.desc-item
@@ -791,14 +785,17 @@ html
             display: flex
             justify-content: center
             .order-form
-              padding: 100px
-              padding-top: 120px
-              padding-bottom: 40px
-              border-radius: 10px
-              box-shadow: 0 0 25px #8E8892
+              background-color: $white-bg
+              // box-shadow: 0 0 25px #8E8892
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
               form
                 .form-group
                   display: flex
+                  *
+                    border-radius: 0
+                  input, textarea, select
+                    &::placeholder
+                      color: $placeholder
                   label
                     width: 70%
                     text-shadow: 0 0 1px black
@@ -808,7 +805,6 @@ html
                   input
                   button
                     height: 40px
-                    border-radius: 0
                     text-shadow: 0 0 1px black
 
                 .btn-col
@@ -818,7 +814,7 @@ html
                   justify-content: space-between
                   .left-side
                     button.order
-                      width: 200px
+                      // width: 200px
                       background: #fecc11
                       height: 40px
                   .right-side
@@ -827,9 +823,9 @@ html
                     button
                       border: 2px solid #1a1a1a
                       margin-left: 10px
-                      width: 240px
+                      // width: 240px
                       &:nth-child(2)
-                        width: 280px
+                        // width: 280px
                 .policy
                   padding-top: 15px
                   input[type="checkbox"]
