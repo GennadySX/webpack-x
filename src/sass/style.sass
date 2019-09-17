@@ -41,13 +41,12 @@ html
           border-radius: 0
         header
             nav.nav-first
-                height: 55px
                 border-bottom: 10px solid #FFCD11
                 background-color: $black-bg
-                @media screen and ( max-width: 321px )
+                @media screen and ( max-width: 425px )
                   border: none
                 .container
-                  position: relative
+                  color: $yellow-text
                 .navbar-toggler
                   .navbar-toggler-icon
                     background-image: url('../img/icons/menu-icon.svg')
@@ -80,17 +79,14 @@ html
                         color: #FFCD11
                 .rent-equip
                   display: none
-                  @media screen and ( max-width: 1199px )
-                    display: block
                     
-                .navbar-collapse
-                  ul.navbar-nav
-                    li
-                      a
-                        color: #FFCD11 !important
-                      .choicecity
-                        text-decoration: underline
-                        font-size: 0.9rem
+                
+                ul.navbar-nav
+                  li
+                    a
+                      color: #FFCD11 !important
+                    .choicecity
+                      text-decoration: underline !important
                 #navbarNavDropdownStart
                   @media #{$not-device}
                     display: flex
@@ -100,42 +96,27 @@ html
                     display: flex
                   justify-content: flex-end
             .nav-second
-              height: 105px
               display: flex
               background-color: white
               .bottom-nav
-                margin-top: 20px
-                height: 100px
                 .brand
-                  position: relative
                   top: 0px
                   display: block
-                  img
-                    margin-left: 10px
-                    width: 80px
                   span.brand-text
-                    left: -10px
                     background: #FFCD11
                     padding: 8px
-                    position: relative
-                    top: 10px
-
+                    bottom: -20px
                 .cat-right-block
-                  @media screen and ( max-width: 1199px )
-                    flex: 0 0 86.666667%
-                    max-width: 86.666667%
-                  ul.nav-pills
-                    display: flex
-                    justify-content: space-around
-                    @media screen and ( max-width: 1199px )
-                      justify-content: space-between
+                  
                       
                     .nav-item
                       a
                         color: black
                         font-size: 1rem
-                        padding: 25px 0
+                        padding: 1rem 0
+
                         transition: border 1s ease-in-out
+                        height: 100%
                       .active
                         background: transparent
                         border-bottom: 10px solid #FFCD11
@@ -144,14 +125,11 @@ html
                         border-radius: 0px
                 .rent-equip
                   padding: 0
-                  position: relative
                   left: -40px
-                  @media screen and ( max-width: 1199px )
-                    display: none
                   button.rent
-                    height: 45px
-                    border-radius: 2px
-                    width: 170px
+                    // height: 45px
+                    // border-radius: 2px
+                    // width: 170px
                     font-weight: 600
         section.main-1
           z-index: -1
@@ -166,7 +144,7 @@ html
           .container
             height: 100%
             .top-content
-              padding-top: 77px
+              // padding-top: 77px
               h1.title
                 color: #fff
                 font-weight: bold
@@ -176,14 +154,13 @@ html
                 padding-bottom: 10px
                 font-size: 1.3rem
               .search-form
-                margin-bottom: 100px
                 form
                   background: transparent
                   padding-left: 0
                   border: none
                   .form-group
+
                     input, button
-                      height: 3rem
                       border-radius: 0
                       &:focus
                         box-shadow: 0px 0px 5px 1px #FFCD11
@@ -191,6 +168,7 @@ html
                     .label-input
                       color: #FFFFFF
                       padding-top: 5px
+
                       a
                         color: #FFCD11
                         text-decoration: underline
@@ -210,30 +188,18 @@ html
                     transform: rotate(180deg)
                   .card-title
                     font-weight: bold
-                    // font-size: 1.4rem
                     text-decoration: underline
                     margin-bottom: 0
                   &:hover
                     color: #FFCD11
                   .card-text
                     line-height: 1.3
-            .bottom-icon
-              .store_link
-                a
-                  &:nth-child(2)
-                    margin-left: 15px
-                img
-                  width: 200px
-                  @media #{$tablet}
-                    width: 80px
-                    height: 24px
 
         section.category
           background-color: #f5f5f5
           .container
             padding-top: 40px
             h1.title
-              // font-size: 1.7rem
               font-weight: bold
             .slide-category
               margin-top: 40px
@@ -303,22 +269,17 @@ html
                 
               h1.title-content
                 font-weight: bold
-                // font-size: 1.7rem
                 padding-bottom: 5px
-                // text-shadow: 0 0 2px black
               button.search-on-map
                 background: #2a2b29
                 font-size: 1.1rem
-                // text-shadow: 0 0 3px #fecc11
                 color: #fecc11
                 padding-left: 14px
                 padding-right: 14px
                 border-radius: 0px
         section.item-container
-          // padding-top: 40px
           height: auto
           background: whitesmoke
-          // padding-bottom: 50px
           .container
             height: 100%
             @media (max-width: 768px)
@@ -326,12 +287,9 @@ html
             @media (max-width: 576px)
               max-width: 710px
             .title-block
-              // margin-top: 35px
-              // font-size: 1.7rem
               font-weight: bold
             .left-block
               .title-block
-                // margin-bottom: 30px
               .list-block
                 margin-bottom: 10px
                 .title-list-block
@@ -343,7 +301,6 @@ html
                 .cat-list
                   background: white
                   padding: 10px 0
-                  // padding-left: 25px
                   .cat-item
                     list-style: none
                     a
@@ -381,13 +338,13 @@ html
                 .order-ask
                   padding: 0
                   display: flex
-                  // text-align: center
+                  &:last-child
+                    margin-bottom: 0
                   border: none
                   margin-bottom: 1rem
                   .title-ask
                     min-height: 40px
                     font-weight: bold
-                    // text-align: center
                     margin-bottom: 5px
                     background: #fecc11
                     font-size: 0.9rem
@@ -404,13 +361,9 @@ html
                       line-height: 12px
                       padding-right: 10px
                       padding-right: 10px
-                      // text-shadow: 0 0 1px #fecc11
 
             .right-block
-              //background: #6c757d
               .card
-                // height: 300px
-                // margin-top: 30px
                 box-shadow: 0px 5px 25px rgba(#000, 0.2)
                 border: none
                 transition: box-shadow 0.7s ease-in-out
@@ -426,16 +379,10 @@ html
                     background-position: 50% 50%
                     display: inline-block
                   .right-side-card
-                    // padding-left: 15px
-                    // padding-right: 25px
-                    // height: 300px
                     .card-title
-                      // height: 40px
-                      // margin-top: 20px
                       font-size: 1.3rem
                       font-weight: bold
                     .card-prop
-                      // margin-top: 20px
                       .table
                         tbody
                           tr
@@ -474,7 +421,6 @@ html
                       button.number
                         background: #3b3b3b
                         color: #fecc11
-                        // text-shadow: 0 0 1px #fecc11
                         line-height: 12px
                         min-height: 2.2rem
                       .right-side
@@ -486,7 +432,6 @@ html
                         button.number
                           background: #3b3b3b
                           color: #fecc11
-                          // text-shadow: 0 0 1px #fecc11
                           line-height: 12px
                           min-height: 2.2rem
               .more-content
@@ -517,15 +462,6 @@ html
                 width: 100%
                 height: 100%
                 object-fit: cover
-            .right-block
-              .title-block
-                font-weight: bolder
-                // font-size: 1.75rem
-                // text-shadow: 0 0 1px #000
-              .desc-block
-                margin-top: 40px
-                p.desc
-                  padding-bottom: 10px
         section.on-app
           background: #3B3B3B
           color: $white
@@ -537,23 +473,16 @@ html
               img.screen
                 width: 90%
             .right-block
-              // padding-top: 20px
               .title-block
                 color: #fecc11
                 font-weight: bolder
-                // text-shadow: 0 0 1px #fecc11
               .desc-block
-                margin-top: 50px
+                padding-bottom: 20px
                 .title-desc
                   color: white
                   font-weight: bold
                   font-size: 1.7rem
-                  padding-bottom: 20px
                 ul
-                  padding-left: 3rem
-                  @media screen and ( max-width: 720px )
-                    padding-left: 3rem
-                    
                   li.desc-item
                     font-size: 1.2rem
                     padding-bottom: 10px
@@ -561,18 +490,13 @@ html
                     list-style: none
                     i
                       color: #fecc11
-                      font-size: 0.6em
+                      font-size: 0.5em
                       margin-right: 1em
 
-                padding-bottom: 20px
-            .store-links
-              img
-                width: 100%
+                
       
         footer
           background: #000000
-          // padding-top: 40px
-          // padding-bottom: 40px
           color: white
 
           .container
@@ -771,7 +695,6 @@ html
               .card
                 padding: 0
                 border: none
-                // border-radius: 5px
                 margin-left: 15px
                 transition: box-shadow 0.7s ease-in-out
                 &:first-child
@@ -831,7 +754,6 @@ html
                 justify-content: space-between
                 padding-bottom: 10px
                 h1.title-block
-                  // font-size: 1.7rem
                 .reg_link
                   font-size: 1.5rem
                   color: #4E4852
@@ -924,9 +846,6 @@ html
         .item-container
           > .container
             h1
-              // padding: 0 15px
-              // font-size: 1.9rem
-              // margin-bottom: 20px
         .container.d-flex
           .left-block
             h3
@@ -957,7 +876,6 @@ html
               button.search-on-map
                 background: #2a2b29
                 font-size: 1.1rem
-                // text-shadow: 0 0 3px #fecc11
                 color: #fecc11
                 padding: 5px 14px
                 border-radius: 0px
@@ -970,7 +888,6 @@ html
         .location-form
           background-color: $white-bg
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-          padding: 80px
           .title-block
             font-size: 30px
           .form-body
@@ -1046,7 +963,6 @@ html
           display: none
           background-color: $white-bg
           box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25)
-          padding: 80px
           position: fixed
           z-index: 1000
           left: 50%

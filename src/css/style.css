@@ -12,14 +12,13 @@ html body {
   html body button.btn {
     border-radius: 0; }
   html body header nav.nav-first {
-    height: 55px;
     border-bottom: 10px solid #FFCD11;
     background-color: #000000; }
-    @media screen and (max-width: 321px) {
+    @media screen and (max-width: 425px) {
       html body header nav.nav-first {
         border: none; } }
     html body header nav.nav-first .container {
-      position: relative; }
+      color: #FFCD11; }
     html body header nav.nav-first .navbar-toggler .navbar-toggler-icon {
       background-image: url("../img/icons/menu-icon.svg");
       width: 22px;
@@ -51,14 +50,10 @@ html body {
             color: #FFCD11; }
     html body header nav.nav-first .rent-equip {
       display: none; }
-      @media screen and (max-width: 1199px) {
-        html body header nav.nav-first .rent-equip {
-          display: block; } }
-    html body header nav.nav-first .navbar-collapse ul.navbar-nav li a {
+    html body header nav.nav-first ul.navbar-nav li a {
       color: #FFCD11 !important; }
-    html body header nav.nav-first .navbar-collapse ul.navbar-nav li .choicecity {
-      text-decoration: underline;
-      font-size: 0.9rem; }
+    html body header nav.nav-first ul.navbar-nav li .choicecity {
+      text-decoration: underline !important; }
     html body header nav.nav-first #navbarNavDropdownStart {
       justify-content: flex-start; }
       @media only screen and (min-width: 920px) {
@@ -70,58 +65,32 @@ html body {
         html body header nav.nav-first #navbarNavDropdown {
           display: flex; } }
   html body header .nav-second {
-    height: 105px;
     display: flex;
     background-color: white; }
-    html body header .nav-second .bottom-nav {
-      margin-top: 20px;
-      height: 100px; }
-      html body header .nav-second .bottom-nav .brand {
-        position: relative;
-        top: 0px;
-        display: block; }
-        html body header .nav-second .bottom-nav .brand img {
-          margin-left: 10px;
-          width: 80px; }
-        html body header .nav-second .bottom-nav .brand span.brand-text {
-          left: -10px;
-          background: #FFCD11;
-          padding: 8px;
-          position: relative;
-          top: 10px; }
-      @media screen and (max-width: 1199px) {
-        html body header .nav-second .bottom-nav .cat-right-block {
-          flex: 0 0 86.666667%;
-          max-width: 86.666667%; } }
-      html body header .nav-second .bottom-nav .cat-right-block ul.nav-pills {
-        display: flex;
-        justify-content: space-around; }
-        @media screen and (max-width: 1199px) {
-          html body header .nav-second .bottom-nav .cat-right-block ul.nav-pills {
-            justify-content: space-between; } }
-        html body header .nav-second .bottom-nav .cat-right-block ul.nav-pills .nav-item a {
-          color: black;
-          font-size: 1rem;
-          padding: 25px 0;
-          transition: border 1s ease-in-out; }
-        html body header .nav-second .bottom-nav .cat-right-block ul.nav-pills .nav-item .active {
-          background: transparent;
-          border-bottom: 10px solid #FFCD11;
-          padding-left: 0%;
-          padding-right: 0%;
-          border-radius: 0px; }
-      html body header .nav-second .bottom-nav .rent-equip {
-        padding: 0;
-        position: relative;
-        left: -40px; }
-        @media screen and (max-width: 1199px) {
-          html body header .nav-second .bottom-nav .rent-equip {
-            display: none; } }
-        html body header .nav-second .bottom-nav .rent-equip button.rent {
-          height: 45px;
-          border-radius: 2px;
-          width: 170px;
-          font-weight: 600; }
+    html body header .nav-second .bottom-nav .brand {
+      top: 0px;
+      display: block; }
+      html body header .nav-second .bottom-nav .brand span.brand-text {
+        background: #FFCD11;
+        padding: 8px;
+        bottom: -20px; }
+    html body header .nav-second .bottom-nav .cat-right-block .nav-item a {
+      color: black;
+      font-size: 1rem;
+      padding: 1rem 0;
+      transition: border 1s ease-in-out;
+      height: 100%; }
+    html body header .nav-second .bottom-nav .cat-right-block .nav-item .active {
+      background: transparent;
+      border-bottom: 10px solid #FFCD11;
+      padding-left: 0%;
+      padding-right: 0%;
+      border-radius: 0px; }
+    html body header .nav-second .bottom-nav .rent-equip {
+      padding: 0;
+      left: -40px; }
+      html body header .nav-second .bottom-nav .rent-equip button.rent {
+        font-weight: 600; }
   html body section.main-1 {
     z-index: -1;
     width: 100%;
@@ -135,35 +104,30 @@ html body {
         background-image: url("../img/main-bg-mobile.jpg"); } }
     html body section.main-1 .container {
       height: 100%; }
-      html body section.main-1 .container .top-content {
-        padding-top: 77px; }
-        html body section.main-1 .container .top-content h1.title {
-          color: #fff;
-          font-weight: bold; }
-        html body section.main-1 .container .top-content p.your-equip {
-          color: #fff;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          font-size: 1.3rem; }
-        html body section.main-1 .container .top-content .search-form {
-          margin-bottom: 100px; }
-          html body section.main-1 .container .top-content .search-form form {
-            background: transparent;
-            padding-left: 0;
+      html body section.main-1 .container .top-content h1.title {
+        color: #fff;
+        font-weight: bold; }
+      html body section.main-1 .container .top-content p.your-equip {
+        color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.3rem; }
+      html body section.main-1 .container .top-content .search-form form {
+        background: transparent;
+        padding-left: 0;
+        border: none; }
+        html body section.main-1 .container .top-content .search-form form .form-group input, html body section.main-1 .container .top-content .search-form form .form-group button {
+          border-radius: 0; }
+          html body section.main-1 .container .top-content .search-form form .form-group input:focus, html body section.main-1 .container .top-content .search-form form .form-group button:focus {
+            box-shadow: 0px 0px 5px 1px #FFCD11;
             border: none; }
-            html body section.main-1 .container .top-content .search-form form .form-group input, html body section.main-1 .container .top-content .search-form form .form-group button {
-              height: 3rem;
-              border-radius: 0; }
-              html body section.main-1 .container .top-content .search-form form .form-group input:focus, html body section.main-1 .container .top-content .search-form form .form-group button:focus {
-                box-shadow: 0px 0px 5px 1px #FFCD11;
-                border: none; }
-            html body section.main-1 .container .top-content .search-form form .form-group .label-input {
-              color: #FFFFFF;
-              padding-top: 5px; }
-              html body section.main-1 .container .top-content .search-form form .form-group .label-input a {
-                color: #FFCD11;
-                text-decoration: underline;
-                padding-left: 10px; }
+        html body section.main-1 .container .top-content .search-form form .form-group .label-input {
+          color: #FFFFFF;
+          padding-top: 5px; }
+          html body section.main-1 .container .top-content .search-form form .form-group .label-input a {
+            color: #FFCD11;
+            text-decoration: underline;
+            padding-left: 10px; }
       html body section.main-1 .container .pre-block {
         flex-wrap: nowrap; }
         html body section.main-1 .container .pre-block .card_desc, html body section.main-1 .container .pre-block .card-body {
@@ -182,14 +146,6 @@ html body {
             color: #FFCD11; }
           html body section.main-1 .container .pre-block .card_desc .card-body .card-text, html body section.main-1 .container .pre-block .card-body .card-body .card-text {
             line-height: 1.3; }
-      html body section.main-1 .container .bottom-icon .store_link a:nth-child(2) {
-        margin-left: 15px; }
-      html body section.main-1 .container .bottom-icon .store_link img {
-        width: 200px; }
-        @media only screen and (min-width: 481px) and (max-width: 768px) {
-          html body section.main-1 .container .bottom-icon .store_link img {
-            width: 80px;
-            height: 24px; } }
   html body section.category {
     background-color: #f5f5f5; }
     html body section.category .container {
@@ -333,6 +289,8 @@ html body {
           display: flex;
           border: none;
           margin-bottom: 1rem; }
+          html body section.item-container .container .left-block .list-block .order-ask:last-child {
+            margin-bottom: 0; }
           html body section.item-container .container .left-block .list-block .order-ask .title-ask {
             min-height: 40px;
             font-weight: bold;
@@ -446,12 +404,6 @@ html body {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-      html body section.service-block .container .right-block .title-block {
-        font-weight: bolder; }
-      html body section.service-block .container .right-block .desc-block {
-        margin-top: 40px; }
-        html body section.service-block .container .right-block .desc-block p.desc {
-          padding-bottom: 10px; }
   html body section.on-app {
     background: #3B3B3B;
     color: #FFFFFF; }
@@ -466,29 +418,20 @@ html body {
         color: #fecc11;
         font-weight: bolder; }
       html body section.on-app .container .right-block .desc-block {
-        margin-top: 50px;
         padding-bottom: 20px; }
         html body section.on-app .container .right-block .desc-block .title-desc {
           color: white;
           font-weight: bold;
-          font-size: 1.7rem;
-          padding-bottom: 20px; }
-        html body section.on-app .container .right-block .desc-block ul {
-          padding-left: 3rem; }
-          @media screen and (max-width: 720px) {
-            html body section.on-app .container .right-block .desc-block ul {
-              padding-left: 3rem; } }
-          html body section.on-app .container .right-block .desc-block ul li.desc-item {
-            font-size: 1.2rem;
-            padding-bottom: 10px;
-            color: white;
-            list-style: none; }
-            html body section.on-app .container .right-block .desc-block ul li.desc-item i {
-              color: #fecc11;
-              font-size: 0.6em;
-              margin-right: 1em; }
-      html body section.on-app .container .store-links img {
-        width: 100%; }
+          font-size: 1.7rem; }
+        html body section.on-app .container .right-block .desc-block ul li.desc-item {
+          font-size: 1.2rem;
+          padding-bottom: 10px;
+          color: white;
+          list-style: none; }
+          html body section.on-app .container .right-block .desc-block ul li.desc-item i {
+            color: #fecc11;
+            font-size: 0.5em;
+            margin-right: 1em; }
   html body footer {
     background: #000000;
     color: white; }
@@ -840,8 +783,7 @@ html body {
     margin-top: 0; }
   html body .location-form {
     background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 80px; }
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
     html body .location-form .title-block {
       font-size: 30px; }
     html body .location-form .form-body {
@@ -917,7 +859,6 @@ html body {
     display: none;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
-    padding: 80px;
     position: fixed;
     z-index: 1000;
     left: 50%;
