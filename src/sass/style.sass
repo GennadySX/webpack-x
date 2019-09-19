@@ -34,7 +34,7 @@ html
           font-size: 14px
           
         @media screen and ( max-width: 560px )
-          font-size: .9rem
+          // font-size: .9rem
           h1
             font-size: 16px
           
@@ -194,19 +194,25 @@ html
         section.category
           background-color: #f5f5f5
           .container
-            padding-top: 40px
+            // padding-top: 40px
             h1.title
               font-weight: bold
             .slide-category
-              margin-top: 40px
-              height: 290px
+              // margin-top: 40px
+              // height: 290px
+
               .carousel
                 .flickity-viewport
-                  height: 170px
+                  height: 200px
                   .flickity-slider
                     display: flex
                     flex-direction: row
-                    align-items: flex-end
+                    align-items: center
+                    top: 0
+                    height: 100%
+                    .carousel-cell
+                      // height: 100%
+
                     .title
                       margin-top: 10px
                 .flickity-page-dots
@@ -227,13 +233,13 @@ html
                   &.next
                     right: -30px
                     @media screen and ( max-width: 321px )
-                      right: 0px
+                      // right: 0px
                       background-color: transparent
                       color: #B1B1B1
                   &.previous
                     left: -30px
                     @media screen and ( max-width: 321px )
-                      left: 0px
+                      // left: 0px
                       background-color: transparent
                       color: #B1B1B1
                   &:disabled
@@ -267,7 +273,7 @@ html
                 padding-bottom: 5px
               button.search-on-map
                 background: #2a2b29
-                font-size: 1.1rem
+                // font-size: 1.1rem
                 color: #fecc11
                 padding-left: 14px
                 padding-right: 14px
@@ -359,7 +365,7 @@ html
 
             .right-block
               .card
-                background-color: transparent
+                // background-color: transparent
                 // box-shadow: 0px 5px 25px rgba(#000, 0.2)
                 border: none
                 transition: box-shadow 0.7s ease-in-out
@@ -376,7 +382,8 @@ html
                     display: inline-block
                   .right-side-card
                     .card-title
-                      font-size: 1.3rem
+                      font-size: 1.2em
+
                       font-weight: bold
                     .card-prop
                       .table
@@ -396,9 +403,7 @@ html
                     .cost-content
                       display: flex
                       justify-content: space-between
-                      height: 40px
-                      font-size: 0.9rem
-                      height: 40px
+                      padding-bottom: 20px
                       
                     .card-bottom-content
                       display: flex
@@ -435,13 +440,8 @@ html
                 button.more-items
                   background: transparent
                   border: 2px solid black
-                  font-size: 0.9rem
-                  padding: 7px
-                  padding-right: 12px
-                  padding-left: 12px
-                  text-shadow: 0 0 1px #000
                   box-shadow: 0 0 1px #000
-                  transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out
+                  transition: color 0.5s ease-in, background 0.7s ease-in-out
                   &:hover
                     background: #000
                     color: whitesmoke
@@ -472,6 +472,9 @@ html
               .title-block
                 color: #fecc11
                 font-weight: bolder
+                @media screen and ( max-width: 320px )
+                  font-size: 20px
+                  
               .desc-block
                 padding-bottom: 20px
                 .title-desc
@@ -874,9 +877,7 @@ html
                 align-items: center
               button.search-on-map
                 background: #2a2b29
-                font-size: 1.1rem
                 color: #fecc11
-                padding: 5px 14px
                 border-radius: 0px
                 margin-top: 10px
           .right-block
@@ -888,9 +889,9 @@ html
           background-color: $white-bg
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
           .title-block
-            font-size: 30px
+            // font-size: 30px
           .form-body
-            margin: 50px 0
+            // margin: 50px 0
           input[type=radio]
             margin-right: 20px
           p
@@ -968,9 +969,9 @@ html
           top: 50%
           transform: translateX(-50%) translateY(-50%)
           .title-block
-            font-size: 30px
+            // font-size: 30px
           .form-body
-            margin: 50px 0
+            // margin: 50px 0
           input[type=radio]
             margin-right: 20px
           p
