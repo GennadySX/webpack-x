@@ -27,15 +27,16 @@ $placeholder: #B1B1B1
 
 html
     body
+        
         background-color: #F5F5F5
         font-family: "PFDinTextCondPro-Regular", sans-serif
+        @media screen and ( max-width: 320px )
+          font-size: 14px
+          
         @media screen and ( max-width: 560px )
           font-size: .9rem
           h1
             font-size: 16px
-        @media screen and ( max-width: 769px )
-          h1
-            font-size: 24px
           
         button.btn
           border-radius: 0
@@ -358,7 +359,8 @@ html
 
             .right-block
               .card
-                box-shadow: 0px 5px 25px rgba(#000, 0.2)
+                background-color: transparent
+                // box-shadow: 0px 5px 25px rgba(#000, 0.2)
                 border: none
                 transition: box-shadow 0.7s ease-in-out
                 &:hover
@@ -563,7 +565,11 @@ html
               font-weight: bold
               padding-bottom: 30px
               flex-basis: 100%
+              @media screen and ( max-width: 320px )
+                font-size: 16px
+                
             .left-side
+              background-color: $white-bg
               .item-slide
                 .mySlides
                   display: none
@@ -605,6 +611,7 @@ html
                   .active
                     opacity: 1
             .right-side
+              background-color: $white-bg
               .prop-content
                 padding-top: 0px
                 .block-title
@@ -621,82 +628,78 @@ html
                         font-weight: normal
                       td
                         padding-right: 0
-                #more-info
-                  #more
-                    margin-bottom: 10px
-                    a.more-link
-                      color: #21ADD9
-                      cursor: pointer
-                .cost-content
-                  padding-bottom: 20px
-                  display: flex
-                  justify-content: space-between
-                  .cost, .hour-dock, .location
-                    font-weight: bold
-                    img
-                      width: 25px
-                  i
-                    font-weight: 300
+            .cost-content
+              padding-bottom: 20px
+              display: flex
+              justify-content: space-between
+              .cost, .hour-dock, .location
+                font-weight: bold
+                i
+                  font-weight: 300
                 .desc
                   padding-bottom: 20px
-                .client-contact-info
-                  font-size: 0.8rem
-                  padding-bottom: 20px
-                  p
-                    line-height: 0.1
-                    opacity: 0.7
-                .bottom-content
-                  display: flex
-                  justify-content: space-between
-                  button
-                    border: none
-                    border-radius: 0
-                    padding-left: 15px
-                    padding-right: 15px
-                  button.order
-                    background: #fecc11
-                    width: 9rem
-                  button.number
-                    background: #1a1a1a
-                    color: #fecc11
-                    border: none
-                    min-height: 2.2rem
-                    line-height: 12px
-                    text-shadow: 0 0 1px #fecc11
-                  button.on-map
-                    background: transparent
-                    border: 2px solid black
-                    font-size: 0.9rem
-                    text-shadow: 0 0 1px #000
-                    box-shadow: 0 0 1px #000
-                    transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out
-                    &:hover
-                      background: #000
-                      color: whitesmoke
-                      text-shadow: 0 0 1px whitesmoke
-
+                
+            .bottom-content
+              display: flex
+              justify-content: space-between
+              button
+                border: none
+                border-radius: 0
+              button.order
+                background: #fecc11
+                @media screen and ( max-width: 320px )
+                  letter-spacing: 3px
+                  
+              button.number
+                background: #1a1a1a
+                color: #fecc11
+                border: none
+              button.on-map
+                background: transparent
+                border: 2px solid black
+                font-size: 0.9rem
+                transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out
+                &:hover
+                  background: #000
+                  color: whitesmoke
+                  text-shadow: 0 0 1px whitesmoke
+            .client-contact-info
+              background-color: $white-bg
+              button.number
+                background: #3b3b3b
+                color: #fecc11
+                font-size: inherit
 
         section.also-by-client
-          padding-top: 50px
           background: whitesmoke
           padding-bottom: 50px
           .container
             h1.title-content
               font-weight: bold
-              font-size: 2.2rem
             .card-block
-              margin-top: 40px
               .card
+                background-color: transparent
                 padding: 0
                 border: none
                 margin-left: 15px
                 transition: box-shadow 0.7s ease-in-out
+                @media screen and ( max-width: 425px )
+                    width: 40%
+                    &:nth-child(odd)
+                      padding-right: 5px
+                    &:nth-child(even)
+                      padding-left: 5px
+                      
+                      
                 &:first-child
                   margin-left: 0
                 &:hover
                   box-shadow: 0 0 25px rgba(darkgray, 0.7)
                 .card-body
                   padding: 0
+                  
+                      
+                    
                   img.card-image
                     width: 100%
                   .card-data

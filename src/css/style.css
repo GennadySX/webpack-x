@@ -1,14 +1,14 @@
 html body {
   background-color: #F5F5F5;
   font-family: "PFDinTextCondPro-Regular", sans-serif; }
+  @media screen and (max-width: 320px) {
+    html body {
+      font-size: 14px; } }
   @media screen and (max-width: 560px) {
     html body {
       font-size: .9rem; }
       html body h1 {
         font-size: 16px; } }
-  @media screen and (max-width: 769px) {
-    html body h1 {
-      font-size: 24px; } }
   html body button.btn {
     border-radius: 0; }
   html body header nav.nav-first {
@@ -309,7 +309,7 @@ html body {
               padding-right: 10px;
               padding-right: 10px; }
       html body section.item-container .container .right-block .card {
-        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+        background-color: transparent;
         border: none;
         transition: box-shadow 0.7s ease-in-out; }
         html body section.item-container .container .right-block .card:hover {
@@ -492,161 +492,160 @@ html body {
       font-weight: bold;
       padding-bottom: 30px;
       flex-basis: 100%; }
-    html body section.card_main .container .left-side .item-slide .mySlides {
-      display: none; }
-      html body section.card_main .container .left-side .item-slide .mySlides img {
-        position: relative; }
-    html body section.card_main .container .left-side .item-slide .img-card {
-      padding-bottom: 0;
-      content: "";
-      display: table;
-      clear: both; }
-      html body section.card_main .container .left-side .item-slide .img-card .column {
-        float: left;
-        width: 23%; }
-      html body section.card_main .container .left-side .item-slide .img-card .cursor {
-        cursor: pointer; }
-      html body section.card_main .container .left-side .item-slide .img-card .demo {
-        opacity: 0.6; }
-      html body section.card_main .container .left-side .item-slide .img-card .active, html body section.card_main .container .left-side .item-slide .img-card .demo:hover {
-        opacity: 1; }
-    html body section.card_main .container .left-side .item-slide img.main-img {
-      width: 100%;
-      object-fit: cover; }
-    html body section.card_main .container .left-side .item-slide .img-card {
-      margin-top: 20px;
-      padding-left: 0;
-      padding-right: 0;
-      justify-content: space-between;
-      width: 100%; }
-      html body section.card_main .container .left-side .item-slide .img-card img {
-        padding-left: 10px;
-        width: 33%;
-        max-height: 115px;
-        opacity: 0.7;
-        object-fit: cover; }
-        html body section.card_main .container .left-side .item-slide .img-card img:first-child {
-          padding-left: 0; }
-      html body section.card_main .container .left-side .item-slide .img-card .active {
-        opacity: 1; }
-    html body section.card_main .container .right-side .prop-content {
-      padding-top: 0px; }
-      html body section.card_main .container .right-side .prop-content .block-title {
-        font-weight: bold; }
-      html body section.card_main .container .right-side .prop-content .card-prop tbody tr {
-        display: flex;
-        justify-content: space-between; }
-        html body section.card_main .container .right-side .prop-content .card-prop tbody tr th, html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
-          padding-left: 0;
-          padding-bottom: 0;
-          border: none;
-          font-weight: normal; }
-        html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
-          padding-right: 0; }
-      html body section.card_main .container .right-side .prop-content #more-info #more {
-        margin-bottom: 10px; }
-        html body section.card_main .container .right-side .prop-content #more-info #more a.more-link {
-          color: #21ADD9;
+      @media screen and (max-width: 320px) {
+        html body section.card_main .container h1.title-card {
+          font-size: 16px; } }
+    html body section.card_main .container .left-side {
+      background-color: #FFFFFF; }
+      html body section.card_main .container .left-side .item-slide .mySlides {
+        display: none; }
+        html body section.card_main .container .left-side .item-slide .mySlides img {
+          position: relative; }
+      html body section.card_main .container .left-side .item-slide .img-card {
+        padding-bottom: 0;
+        content: "";
+        display: table;
+        clear: both; }
+        html body section.card_main .container .left-side .item-slide .img-card .column {
+          float: left;
+          width: 23%; }
+        html body section.card_main .container .left-side .item-slide .img-card .cursor {
           cursor: pointer; }
-      html body section.card_main .container .right-side .prop-content .cost-content {
-        padding-bottom: 20px;
-        display: flex;
-        justify-content: space-between; }
-        html body section.card_main .container .right-side .prop-content .cost-content .cost, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock, html body section.card_main .container .right-side .prop-content .cost-content .location {
+        html body section.card_main .container .left-side .item-slide .img-card .demo {
+          opacity: 0.6; }
+        html body section.card_main .container .left-side .item-slide .img-card .active, html body section.card_main .container .left-side .item-slide .img-card .demo:hover {
+          opacity: 1; }
+      html body section.card_main .container .left-side .item-slide img.main-img {
+        width: 100%;
+        object-fit: cover; }
+      html body section.card_main .container .left-side .item-slide .img-card {
+        margin-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: space-between;
+        width: 100%; }
+        html body section.card_main .container .left-side .item-slide .img-card img {
+          padding-left: 10px;
+          width: 33%;
+          max-height: 115px;
+          opacity: 0.7;
+          object-fit: cover; }
+          html body section.card_main .container .left-side .item-slide .img-card img:first-child {
+            padding-left: 0; }
+        html body section.card_main .container .left-side .item-slide .img-card .active {
+          opacity: 1; }
+    html body section.card_main .container .right-side {
+      background-color: #FFFFFF; }
+      html body section.card_main .container .right-side .prop-content {
+        padding-top: 0px; }
+        html body section.card_main .container .right-side .prop-content .block-title {
           font-weight: bold; }
-          html body section.card_main .container .right-side .prop-content .cost-content .cost img, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock img, html body section.card_main .container .right-side .prop-content .cost-content .location img {
-            width: 25px; }
-        html body section.card_main .container .right-side .prop-content .cost-content i {
+        html body section.card_main .container .right-side .prop-content .card-prop tbody tr {
+          display: flex;
+          justify-content: space-between; }
+          html body section.card_main .container .right-side .prop-content .card-prop tbody tr th, html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
+            padding-left: 0;
+            padding-bottom: 0;
+            border: none;
+            font-weight: normal; }
+          html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
+            padding-right: 0; }
+    html body section.card_main .container .cost-content {
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between; }
+      html body section.card_main .container .cost-content .cost, html body section.card_main .container .cost-content .hour-dock, html body section.card_main .container .cost-content .location {
+        font-weight: bold; }
+        html body section.card_main .container .cost-content .cost i, html body section.card_main .container .cost-content .hour-dock i, html body section.card_main .container .cost-content .location i {
           font-weight: 300; }
-      html body section.card_main .container .right-side .prop-content .desc {
-        padding-bottom: 20px; }
-      html body section.card_main .container .right-side .prop-content .client-contact-info {
-        font-size: 0.8rem;
-        padding-bottom: 20px; }
-        html body section.card_main .container .right-side .prop-content .client-contact-info p {
-          line-height: 0.1;
-          opacity: 0.7; }
-      html body section.card_main .container .right-side .prop-content .bottom-content {
-        display: flex;
-        justify-content: space-between; }
-        html body section.card_main .container .right-side .prop-content .bottom-content button {
-          border: none;
-          border-radius: 0;
-          padding-left: 15px;
-          padding-right: 15px; }
-        html body section.card_main .container .right-side .prop-content .bottom-content button.order {
-          background: #fecc11;
-          width: 9rem; }
-        html body section.card_main .container .right-side .prop-content .bottom-content button.number {
-          background: #1a1a1a;
-          color: #fecc11;
-          border: none;
-          min-height: 2.2rem;
-          line-height: 12px;
-          text-shadow: 0 0 1px #fecc11; }
-        html body section.card_main .container .right-side .prop-content .bottom-content button.on-map {
-          background: transparent;
-          border: 2px solid black;
-          font-size: 0.9rem;
-          text-shadow: 0 0 1px #000;
-          box-shadow: 0 0 1px #000;
-          transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out; }
-          html body section.card_main .container .right-side .prop-content .bottom-content button.on-map:hover {
-            background: #000;
-            color: whitesmoke;
-            text-shadow: 0 0 1px whitesmoke; }
+        html body section.card_main .container .cost-content .cost .desc, html body section.card_main .container .cost-content .hour-dock .desc, html body section.card_main .container .cost-content .location .desc {
+          padding-bottom: 20px; }
+    html body section.card_main .container .bottom-content {
+      display: flex;
+      justify-content: space-between; }
+      html body section.card_main .container .bottom-content button {
+        border: none;
+        border-radius: 0; }
+      html body section.card_main .container .bottom-content button.order {
+        background: #fecc11; }
+        @media screen and (max-width: 320px) {
+          html body section.card_main .container .bottom-content button.order {
+            letter-spacing: 3px; } }
+      html body section.card_main .container .bottom-content button.number {
+        background: #1a1a1a;
+        color: #fecc11;
+        border: none; }
+      html body section.card_main .container .bottom-content button.on-map {
+        background: transparent;
+        border: 2px solid black;
+        font-size: 0.9rem;
+        transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out; }
+        html body section.card_main .container .bottom-content button.on-map:hover {
+          background: #000;
+          color: whitesmoke;
+          text-shadow: 0 0 1px whitesmoke; }
+    html body section.card_main .container .client-contact-info {
+      background-color: #FFFFFF; }
+      html body section.card_main .container .client-contact-info button.number {
+        background: #3b3b3b;
+        color: #fecc11;
+        font-size: inherit; }
   html body section.also-by-client {
-    padding-top: 50px;
     background: whitesmoke;
     padding-bottom: 50px; }
     html body section.also-by-client .container h1.title-content {
-      font-weight: bold;
-      font-size: 2.2rem; }
-    html body section.also-by-client .container .card-block {
-      margin-top: 40px; }
-      html body section.also-by-client .container .card-block .card {
-        padding: 0;
-        border: none;
-        margin-left: 15px;
-        transition: box-shadow 0.7s ease-in-out; }
-        html body section.also-by-client .container .card-block .card:first-child {
-          margin-left: 0; }
-        html body section.also-by-client .container .card-block .card:hover {
-          box-shadow: 0 0 25px rgba(169, 169, 169, 0.7); }
-        html body section.also-by-client .container .card-block .card .card-body {
-          padding: 0; }
-          html body section.also-by-client .container .card-block .card .card-body img.card-image {
-            width: 100%; }
-          html body section.also-by-client .container .card-block .card .card-body .card-data {
-            padding: 15px; }
-            html body section.also-by-client .container .card-block .card .card-body .card-data span.card-title {
+      font-weight: bold; }
+    html body section.also-by-client .container .card-block .card {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      margin-left: 15px;
+      transition: box-shadow 0.7s ease-in-out; }
+      @media screen and (max-width: 425px) {
+        html body section.also-by-client .container .card-block .card {
+          width: 40%; }
+          html body section.also-by-client .container .card-block .card:nth-child(odd) {
+            padding-right: 5px; }
+          html body section.also-by-client .container .card-block .card:nth-child(even) {
+            padding-left: 5px; } }
+      html body section.also-by-client .container .card-block .card:first-child {
+        margin-left: 0; }
+      html body section.also-by-client .container .card-block .card:hover {
+        box-shadow: 0 0 25px rgba(169, 169, 169, 0.7); }
+      html body section.also-by-client .container .card-block .card .card-body {
+        padding: 0; }
+        html body section.also-by-client .container .card-block .card .card-body img.card-image {
+          width: 100%; }
+        html body section.also-by-client .container .card-block .card .card-body .card-data {
+          padding: 15px; }
+          html body section.also-by-client .container .card-block .card .card-body .card-data span.card-title {
+            font-weight: bold; }
+          html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block {
+            padding-top: 10px;
+            display: flex;
+            padding-bottom: 10px; }
+            html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props {
+              width: 100%; }
+              html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tr {
+                width: 100%;
+                display: flex;
+                justify-content: space-between; }
+                html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tr th, html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tr td {
+                  padding-right: 7px;
+                  padding-left: 7px;
+                  font-weight: normal;
+                  padding-bottom: 0; }
+          html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 15px; }
+            html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content button.more {
+              padding-left: 0;
+              color: gray; }
+            html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content button.order {
+              background: #fecc11;
               font-weight: bold; }
-            html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block {
-              padding-top: 10px;
-              display: flex;
-              padding-bottom: 10px; }
-              html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props {
-                width: 100%; }
-                html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tr {
-                  width: 100%;
-                  display: flex;
-                  justify-content: space-between; }
-                  html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tr th, html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tr td {
-                    padding-right: 7px;
-                    padding-left: 7px;
-                    font-weight: normal;
-                    padding-bottom: 0; }
-            html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content {
-              display: flex;
-              justify-content: space-between;
-              flex-wrap: wrap;
-              margin-top: 15px; }
-              html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content button.more {
-                padding-left: 0;
-                color: gray; }
-              html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content button.order {
-                background: #fecc11;
-                font-weight: bold; }
   html body section.login .container {
     margin-top: 70px;
     margin-bottom: 50px;
