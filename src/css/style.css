@@ -17,53 +17,15 @@ html body {
         border: none; } }
     html body header nav.nav-first .container {
       color: #FFCD11; }
-    html body header nav.nav-first .navbar-toggler .navbar-toggler-icon {
-      background-image: url("../img/icons/menu-icon.svg");
-      width: 22px;
-      height: 17px; }
-    html body header nav.nav-first .mobile-menu {
-      display: none;
-      background-color: #000000;
-      position: absolute;
-      z-index: 100;
-      width: 100%;
-      bottom: -290px;
-      left: 0;
-      height: 0px;
-      padding: 0 1em 1em 1em;
-      overflow: hidden;
-      font-size: 1.2em;
-      transform: scaleX(1);
-      transform: scaleY(0);
-      will-change: transform;
-      transition: transform 0.2s linear; }
-      html body header nav.nav-first .mobile-menu li {
-        border-bottom: 1px solid rgba(196, 196, 196, 0.3);
-        margin-top: 1em;
-        padding-bottom: 4px; }
-        html body header nav.nav-first .mobile-menu li a {
-          display: inline-block;
-          width: 100%; }
-          html body header nav.nav-first .mobile-menu li a:focus {
-            color: #FFCD11; }
-    html body header nav.nav-first .rent-equip {
-      display: none; }
-    html body header nav.nav-first ul.navbar-nav li a {
-      color: #FFCD11 !important; }
-    html body header nav.nav-first ul.navbar-nav li .choicecity {
-      text-decoration: underline !important; }
-    html body header nav.nav-first #navbarNavDropdownStart {
-      justify-content: flex-start; }
-      @media only screen and (min-width: 920px) {
-        html body header nav.nav-first #navbarNavDropdownStart {
-          display: flex; } }
-    html body header nav.nav-first #navbarNavDropdown {
-      justify-content: flex-end; }
-      @media only screen and (min-width: 920px) {
-        html body header nav.nav-first #navbarNavDropdown {
-          display: flex; } }
+      html body header nav.nav-first .container .navbar-toggler-icon {
+        background-image: url("../img/icons/menu-icon.svg");
+        width: 22px;
+        height: 17px; }
+      html body header nav.nav-first .container ul.navbar-nav a {
+        color: #FFCD11 !important; }
+      html body header nav.nav-first .container ul.navbar-nav .choicecity {
+        text-decoration: underline !important; }
   html body header .nav-second {
-    display: flex;
     background-color: white; }
     html body header .nav-second .bottom-nav .brand {
       top: 0px;
@@ -153,7 +115,7 @@ html body {
         align-items: center;
         top: 0;
         height: 100%; }
-        html body section.category .container .slide-category .carousel .flickity-viewport .flickity-slider .title {
+        html body section.category .container .slide-category .carousel .flickity-viewport .flickity-slider .carousel-cell .title {
           margin-top: 10px; }
     @media screen and (max-width: 321px) {
       html body section.category .container .slide-category .carousel .flickity-page-dots {
@@ -188,12 +150,11 @@ html body {
           html body section.category .container .slide-category .carousel .flickity-prev-next-button:disabled {
             background-color: transparent;
             opacity: 1; } }
-    html body section.category .container .slide-category .slider-list .items {
-      background: #FFFFFF; }
-      html body section.category .container .slide-category .slider-list .items img {
-        width: 130px; }
+      html body section.category .container .slide-category .carousel .flickity-prev-next-button .slider-list .items {
+        background: #FFFFFF; }
+        html body section.category .container .slide-category .carousel .flickity-prev-next-button .slider-list .items img {
+          width: 130px; }
     html body section.category .search-map {
-      position: relative;
       background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
       background-size: cover; }
       html body section.category .search-map .container {
@@ -228,7 +189,7 @@ html body {
       @media (max-width: 576px) {
         html body section.item-container .container {
           max-width: 710px; } }
-      html body section.item-container .container .title-block {
+      html body section.item-container .container .left-block .title-block {
         font-weight: bold; }
       html body section.item-container .container .left-block .list-block {
         margin-bottom: 10px; }
@@ -373,6 +334,20 @@ html body {
             background: #000;
             color: whitesmoke;
             text-shadow: 0 0 1px whitesmoke; }
+      html body section.item-container .container .similar-technique .card {
+        padding: 0; }
+        html body section.item-container .container .similar-technique .card .card-thumb {
+          height: auto;
+          width: 100%; }
+      @media screen and (max-width: 600px) {
+        html body section.item-container .container .similar-technique .card-block .card {
+          background-color: transparent; }
+          html body section.item-container .container .similar-technique .card-block .card:nth-child(odd) {
+            padding-right: 5px; }
+          html body section.item-container .container .similar-technique .card-block .card:nth-child(even) {
+            padding-left: 5px; } }
+      html body section.item-container .container .similar-technique h1 {
+        font-weight: bold; }
   html body section.service-block {
     background: whitesmoke;
     padding-top: 40px;
@@ -444,26 +419,26 @@ html body {
       html body footer .container .companie .contacts {
         display: block;
         text-decoration: underline; }
-      html body footer .container .companie .copy {
+      html body footer .container .companie .copy .copy-companie {
         line-height: 16px; }
-        html body footer .container .companie .copy .icons a {
-          margin-left: 10px; }
-          html body footer .container .companie .copy .icons a:first-child {
-            margin-left: 0; }
-          html body footer .container .companie .copy .icons a i {
-            font-size: 0.8rem;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
-            padding-top: 7px;
-            text-align: center;
-            border: 1px solid white;
-            color: white;
-            transition: color 0.7s ease-in-out, background 0.5s ease-in, box-shadow 1s ease-in-out; }
-            html body footer .container .companie .copy .icons a i:hover {
-              background: white;
-              color: #1a1a1a;
-              box-shadow: 0 0 5px whitesmoke; }
+      html body footer .container .companie .icons a {
+        margin-left: 10px; }
+        html body footer .container .companie .icons a:first-child {
+          margin-left: 0; }
+        html body footer .container .companie .icons a i {
+          font-size: 0.8rem;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          padding-top: 7px;
+          text-align: center;
+          border: 1px solid white;
+          color: white;
+          transition: color 0.7s ease-in-out, background 0.5s ease-in, box-shadow 1s ease-in-out; }
+          html body footer .container .companie .icons a i:hover {
+            background: white;
+            color: #1a1a1a;
+            box-shadow: 0 0 5px whitesmoke; }
   html body .breadcrumb {
     padding-top: 30px;
     padding-bottom: 0;
@@ -474,33 +449,34 @@ html body {
     display: flex;
     padding-bottom: 40px;
     flex-wrap: wrap; }
-    html body section.card_main .container h1.title-card {
-      font-weight: bold;
-      padding-bottom: 30px;
-      flex-basis: 100%; }
-      @media screen and (max-width: 320px) {
-        html body section.card_main .container h1.title-card {
-          font-size: 16px; } }
     html body section.card_main .container .left-side {
       background-color: #FFFFFF; }
+      html body section.card_main .container .left-side h1.title-card {
+        font-weight: bold;
+        padding-bottom: 30px;
+        flex-basis: 100%; }
+        @media screen and (max-width: 320px) {
+          html body section.card_main .container .left-side h1.title-card {
+            font-size: 16px; } }
       html body section.card_main .container .left-side .item-slide .mySlides {
         display: none; }
         html body section.card_main .container .left-side .item-slide .mySlides img {
           position: relative; }
       html body section.card_main .container .left-side .item-slide .img-card {
-        padding-bottom: 0;
-        content: "";
-        display: table;
-        clear: both; }
+        padding-bottom: 0; }
+        html body section.card_main .container .left-side .item-slide .img-card::after {
+          content: "";
+          display: table;
+          clear: both; }
         html body section.card_main .container .left-side .item-slide .img-card .column {
           float: left;
           width: 23%; }
-        html body section.card_main .container .left-side .item-slide .img-card .cursor {
-          cursor: pointer; }
-        html body section.card_main .container .left-side .item-slide .img-card .demo {
-          opacity: 0.6; }
-        html body section.card_main .container .left-side .item-slide .img-card .active, html body section.card_main .container .left-side .item-slide .img-card .demo:hover {
-          opacity: 1; }
+          html body section.card_main .container .left-side .item-slide .img-card .column .cursor {
+            cursor: pointer; }
+          html body section.card_main .container .left-side .item-slide .img-card .column .demo {
+            opacity: 0.6; }
+          html body section.card_main .container .left-side .item-slide .img-card .column .active, html body section.card_main .container .left-side .item-slide .img-card .column .demo:hover {
+            opacity: 1; }
       html body section.card_main .container .left-side .item-slide img.main-img {
         width: 100%;
         object-fit: cover; }
@@ -518,8 +494,8 @@ html body {
           object-fit: cover; }
           html body section.card_main .container .left-side .item-slide .img-card img:first-child {
             padding-left: 0; }
-        html body section.card_main .container .left-side .item-slide .img-card .active {
-          opacity: 1; }
+          html body section.card_main .container .left-side .item-slide .img-card img .active {
+            opacity: 1; }
     html body section.card_main .container .right-side {
       background-color: #FFFFFF; }
       html body section.card_main .container .right-side .prop-content {
@@ -536,16 +512,15 @@ html body {
             font-weight: normal; }
           html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
             padding-right: 0; }
-    html body section.card_main .container .cost-content {
-      padding-bottom: 20px;
-      display: flex;
-      justify-content: space-between; }
-      html body section.card_main .container .cost-content .cost, html body section.card_main .container .cost-content .hour-dock, html body section.card_main .container .cost-content .location {
-        font-weight: bold; }
-        html body section.card_main .container .cost-content .cost i, html body section.card_main .container .cost-content .hour-dock i, html body section.card_main .container .cost-content .location i {
-          font-weight: 300; }
-        html body section.card_main .container .cost-content .cost .desc, html body section.card_main .container .cost-content .hour-dock .desc, html body section.card_main .container .cost-content .location .desc {
+          @media screen and (max-width: 321px) {
+            html body section.card_main .container .right-side .prop-content .card-prop tbody tr th {
+              color: #757575; } }
+        html body section.card_main .container .right-side .prop-content .cost-content {
           padding-bottom: 20px; }
+          html body section.card_main .container .right-side .prop-content .cost-content .cost, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock, html body section.card_main .container .right-side .prop-content .cost-content .location {
+            font-weight: bold; }
+            html body section.card_main .container .right-side .prop-content .cost-content .cost i, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock i, html body section.card_main .container .right-side .prop-content .cost-content .location i {
+              font-weight: 300; }
     html body section.card_main .container .bottom-content {
       display: flex;
       justify-content: space-between; }
@@ -561,15 +536,15 @@ html body {
         background: #1a1a1a;
         color: #fecc11;
         border: none; }
-      html body section.card_main .container .bottom-content button.on-map {
-        background: transparent;
-        border: 2px solid black;
-        font-size: 0.9rem;
-        transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out; }
-        html body section.card_main .container .bottom-content button.on-map:hover {
-          background: #000;
-          color: whitesmoke;
-          text-shadow: 0 0 1px whitesmoke; }
+        html body section.card_main .container .bottom-content button.number button.on-map {
+          background: transparent;
+          border: 2px solid black;
+          font-size: 0.9rem;
+          transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out; }
+          html body section.card_main .container .bottom-content button.number button.on-map:hover {
+            background: #000;
+            color: whitesmoke;
+            text-shadow: 0 0 1px whitesmoke; }
     html body section.card_main .container .client-contact-info {
       background-color: #FFFFFF; }
       html body section.card_main .container .client-contact-info button.number {
@@ -587,7 +562,7 @@ html body {
       border: none;
       margin-left: 15px;
       transition: box-shadow 0.7s ease-in-out; }
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 600px) {
         html body section.also-by-client .container .card-block .card {
           width: 40%; }
           html body section.also-by-client .container .card-block .card:nth-child(odd) {
@@ -612,11 +587,11 @@ html body {
             padding-bottom: 10px; }
             html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props {
               width: 100%; }
-              html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tr {
+              html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tbody tr {
                 width: 100%;
                 display: flex;
                 justify-content: space-between; }
-                html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tr th, html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tr td {
+                html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tbody tr th, html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tbody tr td {
                   padding-right: 7px;
                   padding-left: 7px;
                   font-weight: normal;
@@ -632,50 +607,74 @@ html body {
             html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content button.order {
               background: #fecc11;
               font-weight: bold; }
-  html body section.login .container {
-    margin-top: 70px;
-    margin-bottom: 50px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap; }
-    html body section.login .container .login-block, html body section.login .container .signup-block {
-      box-shadow: 0 0 25px #8E8892;
-      border-radius: 5px;
-      padding: 90px;
-      margin-top: 40px; }
-      html body section.login .container .login-block .title-block, html body section.login .container .signup-block .title-block {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 10px; }
-        html body section.login .container .login-block .title-block .reg_link, html body section.login .container .signup-block .title-block .reg_link {
-          font-size: 1.5rem;
-          color: #4E4852;
-          text-decoration: underline; }
-      html body section.login .container .login-block form .form-group, html body section.login .container .signup-block form .form-group {
-        padding-bottom: 7px; }
-        html body section.login .container .login-block form .form-group label, html body section.login .container .signup-block form .form-group label {
-          line-height: 0.7;
-          text-shadow: 0 0 1px gray; }
-        html body section.login .container .login-block form .form-group input.form-control, html body section.login .container .signup-block form .form-group input.form-control {
-          border-radius: 0; }
-      html body section.login .container .login-block form .desc, html body section.login .container .signup-block form .desc {
-        padding-bottom: 0; }
-        html body section.login .container .login-block form .desc p.policy, html body section.login .container .signup-block form .desc p.policy {
-          font-size: 0.9rem; }
-      html body section.login .container .login-block form .bottom-form, html body section.login .container .signup-block form .bottom-form {
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-between; }
-        html body section.login .container .login-block form .bottom-form button, html body section.login .container .signup-block form .bottom-form button {
-          width: 45%;
-          border-radius: 0; }
-        html body section.login .container .login-block form .bottom-form button.send, html body section.login .container .signup-block form .bottom-form button.send {
-          font-weight: bold;
-          background: #fecc11;
-          outline: none; }
-        html body section.login .container .login-block form .bottom-form .sign_up, html body section.login .container .signup-block form .bottom-form .sign_up {
-          width: 100%;
-          height: 70px; }
+    html body section.also-by-client .container .container.d-flex .left-block h3 {
+      font-size: 20px;
+      font-weight: bold; }
+    html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr, html body section.also-by-client .container .container.d-flex .left-block .search-map {
+      margin-bottom: 20px; }
+    html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr {
+      padding: 20px 15px;
+      background-color: #FEFEFE; }
+      html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr table {
+        width: 100%; }
+        html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr table th {
+          font-weight: normal; }
+        html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr table td {
+          text-align: right; }
+      html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr a {
+        color: inherit;
+        font-weight: bold; }
+    html body section.also-by-client .container .container.d-flex .left-block .search-map {
+      background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 20px 0; }
+      html body section.also-by-client .container .container.d-flex .left-block .search-map .container {
+        flex-direction: column;
+        align-items: center; }
+      html body section.also-by-client .container .container.d-flex .left-block .search-map button.search-on-map {
+        background: #2a2b29;
+        color: #fecc11;
+        border-radius: 0px;
+        margin-top: 10px; }
+    html body section.also-by-client .container .container.d-flex .right-block .card:first-child {
+      margin-top: 0; }
+  html body .backdrop {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none; }
+  html body .modal-window {
+    background-color: #FFFFFF; }
+  html body .location-form {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    html body .location-form input[type=radio] {
+      margin-right: 20px; }
+    html body .location-form p {
+      color: #B1B1B1; }
+    html body .location-form input[type=text] {
+      width: 100%;
+      padding: 7px 0 7px 7%;
+      border: 1px solid #E5E5E5; }
+      html body .location-form input[type=text]:focus {
+        box-shadow: 0px 0px 4px 0px #FFCD11;
+        outline: 1px solid #FFCD11; }
+      html body .location-form input[type=text]::placeholder {
+        color: #B1B1B1; }
+    html body .location-form button {
+      background-color: #FFCD11;
+      font-weight: bold;
+      width: 50%; }
   html body section.order-form {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -683,12 +682,11 @@ html body {
       display: flex;
       justify-content: center; }
       html body section.order-form .container .order-form {
-        background-color: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        html body section.order-form .container .order-form form * {
+          border-radius: 0; }
         html body section.order-form .container .order-form form .form-group {
           display: flex; }
-          html body section.order-form .container .order-form form .form-group * {
-            border-radius: 0; }
           html body section.order-form .container .order-form form .form-group input::placeholder, html body section.order-form .container .order-form form .form-group textarea::placeholder, html body section.order-form .container .order-form form .form-group select::placeholder {
             color: #B1B1B1; }
           html body section.order-form .container .order-form form .form-group label {
@@ -725,58 +723,6 @@ html body {
             margin-top: -4px; }
             html body section.order-form .container .order-form form .policy p.policy-text label {
               width: 100%; }
-  html body .container.d-flex .left-block h3 {
-    font-size: 20px;
-    font-weight: bold; }
-  html body .container.d-flex .left-block .main-characteristics-filtr, html body .container.d-flex .left-block .search-map {
-    margin-bottom: 20px; }
-  html body .container.d-flex .left-block .main-characteristics-filtr {
-    padding: 20px 15px;
-    background-color: #FEFEFE; }
-    html body .container.d-flex .left-block .main-characteristics-filtr table {
-      width: 100%; }
-      html body .container.d-flex .left-block .main-characteristics-filtr table th {
-        font-weight: normal; }
-      html body .container.d-flex .left-block .main-characteristics-filtr table td {
-        text-align: right; }
-    html body .container.d-flex .left-block .main-characteristics-filtr a {
-      color: inherit;
-      font-weight: bold; }
-  html body .container.d-flex .left-block .search-map {
-    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 20px 0; }
-    html body .container.d-flex .left-block .search-map .container {
-      flex-direction: column;
-      align-items: center; }
-    html body .container.d-flex .left-block .search-map button.search-on-map {
-      background: #2a2b29;
-      color: #fecc11;
-      border-radius: 0px;
-      margin-top: 10px; }
-  html body .container.d-flex .right-block .card:first-child {
-    margin-top: 0; }
-  html body .location-form {
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-    html body .location-form input[type=radio] {
-      margin-right: 20px; }
-    html body .location-form p {
-      color: #B1B1B1; }
-    html body .location-form input[type=text] {
-      width: 100%;
-      padding: 7px 0 7px 7%;
-      border: 1px solid #E5E5E5; }
-      html body .location-form input[type=text]:focus {
-        box-shadow: 0px 0px 4px 0px #FFCD11;
-        outline: 1px solid #FFCD11; }
-      html body .location-form input[type=text]::placeholder {
-        color: #B1B1B1; }
-    html body .location-form button {
-      background-color: #FFCD11;
-      font-weight: bold;
-      width: 50%; }
   html body #myModal {
     display: none;
     position: fixed;
@@ -788,7 +734,6 @@ html body {
     border-radius: 5px;
     margin-top: 40px; }
     html body #myModal .login-block {
-      background-color: white;
       padding: 40px; }
       html body #myModal .login-block .title-block {
         display: flex;
@@ -809,10 +754,10 @@ html body {
             text-shadow: 0 0 1px gray; }
           html body #myModal .login-block form .form-group input.form-control {
             border-radius: 0; }
-          html body #myModal .login-block form .form-group .desc {
-            padding-bottom: 0; }
-            html body #myModal .login-block form .form-group .desc p.policy {
-              font-size: 0.9rem; }
+        html body #myModal .login-block form .desc {
+          padding-bottom: 0; }
+          html body #myModal .login-block form .desc p.policy {
+            font-size: 0.9rem; }
         html body #myModal .login-block form .bottom-form {
           margin-top: 30px;
           display: flex;
@@ -827,39 +772,43 @@ html body {
           html body #myModal .login-block form .bottom-form .sign_up {
             width: 100%;
             height: 70px; }
-  html body .location-form {
-    display: none;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    z-index: 1000;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%); }
-    html body .location-form input[type=radio] {
-      margin-right: 20px; }
-    html body .location-form p {
-      color: #B1B1B1; }
-    html body .location-form input[type=text] {
-      width: 100%;
-      padding: 7px 0 7px 7%;
-      border: 1px solid #E5E5E5; }
-      html body .location-form input[type=text]:focus {
-        box-shadow: 0px 0px 4px 0px #FFCD11;
-        outline: 1px solid #FFCD11; }
-      html body .location-form input[type=text]::placeholder {
-        color: #B1B1B1; }
-    html body .location-form button {
-      background-color: #FFCD11;
-      font-weight: bold;
-      width: 50%; }
-
-.backdrop {
-  background: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: none; }
+  html body section.login .container {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; }
+    html body section.login .container .login-block, html body section.login .container .signup-block {
+      box-shadow: 0 0 25px #8E8892;
+      margin-top: 40px; }
+      html body section.login .container .login-block div.title-block, html body section.login .container .signup-block div.title-block {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px; }
+        html body section.login .container .login-block div.title-block .reg_link, html body section.login .container .signup-block div.title-block .reg_link {
+          color: #4E4852;
+          text-decoration: underline; }
+      html body section.login .container .login-block form .form-group, html body section.login .container .signup-block form .form-group {
+        padding-bottom: 7px; }
+        html body section.login .container .login-block form .form-group label, html body section.login .container .signup-block form .form-group label {
+          line-height: 0.7;
+          text-shadow: 0 0 1px gray; }
+        html body section.login .container .login-block form .form-group input.form-control, html body section.login .container .signup-block form .form-group input.form-control {
+          border-radius: 0; }
+      html body section.login .container .login-block form .desc, html body section.login .container .signup-block form .desc {
+        padding-bottom: 0; }
+        html body section.login .container .login-block form .desc p.policy, html body section.login .container .signup-block form .desc p.policy {
+          font-size: 0.9rem; }
+      html body section.login .container .login-block form .bottom-form, html body section.login .container .signup-block form .bottom-form {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between; }
+        html body section.login .container .login-block form .bottom-form button, html body section.login .container .signup-block form .bottom-form button {
+          width: 45%;
+          border-radius: 0; }
+        html body section.login .container .login-block form .bottom-form button.send, html body section.login .container .signup-block form .bottom-form button.send {
+          font-weight: bold;
+          background: #fecc11;
+          outline: none; }
+        html body section.login .container .login-block form .bottom-form .sign_up, html body section.login .container .signup-block form .bottom-form .sign_up {
+          width: 100%; }
