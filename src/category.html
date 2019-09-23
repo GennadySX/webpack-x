@@ -10,77 +10,74 @@
     <!-- End meta tag configurations -->
     <title>Спецтехникофф - Выбранная категория</title>
     <!-- CSS stylesheets -->
-
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./libs/font-awesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="libs/flickity/dist/flickity.min.css">
-
-
 </head>
 <body>
-<header>
-            <nav class="navbar navbar-expand-lg navbar-dark nav-first bg-dark">
-                <div class="container d-flex flex-row align-items-center">
-                    <button class="navbar-toggler px-0 border-0 d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>            
-                    </button>
-                    <div class="mobile-logo d-block d-sm-none">
-                        <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark nav-first bg-dark">
+            <div class="container d-flex flex-row align-items-center"> 
+                <button class="navbar-toggler px-0 border-0 d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="mobile-logo d-block d-sm-none">  
+                    <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                </div>
+                <div class="search-mobile d-block d-sm-none">
+                    <img src="img/icons/search-icon.svg" alt=" ">
+                </div>
+                <div class="d-flex" id="choose-location"> 
+                    <span class="d-none d-sm-block">Местоположение</span>
+                    <img class="mx-2" src="img/icons/location-icon.svg" alt="">
+                    <span class="d-none d-sm-block">Выберите регион</span>
+                </div>           
+                <div class="d-none d-sm-block ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                    </ul>
+                </div>
+                <div class="rent-equip col-md-3 col-lg-2 d-none d-md-block d-lg-none"> 
+                    <button class="btn btn-warning rent w-100">Сдать технику</button>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar nav-second d-none d-sm-block p-0">
+            <div class="container">
+                <div class="bottom-nav d-flex align-items-center justify-content-between row no-gutters flex-nowrap col px-0">
+                    <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
+                        <img src="img/logo.png" alt=" ">
+                        <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
                     </div>
-                    <div class="search-mobile d-block d-sm-none">
-                        <img src="img/icons/search-icon.svg" alt=" ">
-                    </div>
-                    <div class="d-flex" id="choose-location">
-                        <span class="d-none d-sm-block">Местоположение</span>
-                        <img class="mx-2" src="img/icons/location-icon.svg" alt="">
-                        <span class="d-none d-sm-block">Выберите регион</span>
-                    </div>            
-                    <div class="d-none d-sm-block ml-auto">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                    <div class="cat-right-block col-9 col-md-9 col-lg-8">
+                        <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Аренда техники</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Доставка материалов</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Продажа</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Грузоперевозки</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="rent-equip col-md-3 col-lg-2 d-none d-md-block d-lg-none">
+                    <div class="rent-equip col-md-2 col-lg-2 d-md-none d-lg-block">
                         <button class="btn btn-warning rent w-100">Сдать технику</button>
-                    </div>      
-                </div>
-            </nav>
-            <nav class="navbar nav-second d-none d-sm-block p-0">
-                <div class="container">
-                    <div class="bottom-nav d-flex align-items-center justify-content-between row no-gutters flex-nowrap col px-0">
-                        <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
-                            <img src="img/logo.png" alt=" ">
-                            <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
-                        </div>
-                        <div class="cat-right-block col-9 col-md-9 col-lg-8">
-                            <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Аренда техники</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Услуги</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="#">Доставка материалов</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="#">Продажа</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="#">Грузоперевозки</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="rent-equip col-md-2 col-lg-2 d-md-none d-lg-block">
-                            <button class="btn btn-warning rent w-100">Сдать технику</button>
-                        </div>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 <div class="breadcrumb">
     <div class="container">
         <nav aria-label="breadcrumb">
@@ -276,8 +273,8 @@
         <h1>Автокраны</h1>
     </div>
 
-    <div class="container d-flex flex-column flex-sm-row">
-        <div class="left-block col-md-3" id="categories">
+    <div class="container d-flex flex-column flex-sm-row px-0">
+        <div class="left-block col col-sm-4 col-md-3" id="categories">
             
             <!-- <h1 class="title-block">Категории</h1> -->
             <div class="main-characteristics-filtr">
@@ -388,12 +385,12 @@
                 </div>
             </div> -->
         </div>
-        <div class="right-block col-md-9" id="item-block">
+        <div class="right-block col-md-9 pl-0" id="item-block">
             <!-- <h1 class="title-block">Похожая техника</h1> -->
             <div class="card">
-                <div class="card-body d-flex">
+                <div class="card-body d-flex flex-column flex-sm-row">
                     <span class="col-md-5 card-thumb" style="background-image: url('./img/items/camas.png')"></span>
-                    <div class="right-side-card col-md-7">
+                    <div class="right-side-card col-md-7  p-3 pb-4 pb-md-3">
                         <p class="card-title">Автовышка АГП-28</p>
                         <div class="card-prop">
                             <table class="table">
@@ -424,12 +421,10 @@
                             <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
                             <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
                         </div>
-                        <div class="card-bottom-content">
+                        <div class="card-bottom-content font-weight-bold">
                             <button class="more">Подробнее</button>
-                            <div class="right-side">
-                                <button class="order">Заказать</button>
-                                <button class="number">+7 показать номер</button>
-                            </div>
+                            <button class="order px-3">Заказать</button>
+                            <button class="number d-none d-lg-block d-xl-none">+7 показать номер</button>
                         </div>
                     </div>
                 </div>
