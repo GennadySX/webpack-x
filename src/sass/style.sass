@@ -36,10 +36,14 @@ html
         font-size: 16px
     @media screen and ( min-width: 768px )
       font-size: 16px
+      h1
+        font-size: 24px
     @media screen and ( min-width: 1024px )
       font-size: 18px
     @media screen and ( min-width: 1440px )
       font-size: 20px
+      h1
+        font-size: 30px
     .header-and-promo
       background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg")
       background-repeat: no-repeat
@@ -205,29 +209,29 @@ html
                     width: 130px
                   background: #FFFFFF
       // Блок поиск на карте
-      .search-map
-        background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url('../img/map2.jpg')
-        background-size: cover
-        .container 
-          display: flex
-          justify-content: space-between
-          padding: 0
-          height: 100%
-          align-items: center
-          @media screen and ( max-width: 768px )
-            flex-direction: column
-            justify-content: center
-            h1.title-content
-              text-align: center
+    .search-map
+      background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url('../img/map2.jpg')
+      background-size: cover
+      .container 
+        display: flex
+        justify-content: space-between
+        padding: 0
+        height: 100%
+        align-items: center
+        @media screen and ( max-width: 768px )
+          flex-direction: column
+          justify-content: center
           h1.title-content
-            font-weight: bold
-            padding-bottom: 5px
-          button.search-on-map
-            background: #2a2b29
-            color: #fecc11
-            padding-left: 14px
-            padding-right: 14px
-            border-radius: 0px
+            text-align: center
+        h1.title-content
+          font-weight: bold
+          padding-bottom: 5px
+        button.search-on-map
+          background: #2a2b29
+          color: #fecc11
+          padding-left: 14px
+          padding-right: 14px
+          border-radius: 0px
     section.item-container
       height: auto
       background: whitesmoke
@@ -644,6 +648,9 @@ html
             border: none
             margin-left: 15px
             transition: box-shadow 0.7s ease-in-out
+            @media screen and ( min-width: 768px )
+              background-color: $white
+              
             @media screen and ( max-width: 600px )
               width: 40%
               &:nth-child(odd)
@@ -674,8 +681,7 @@ html
                         display: flex
                         justify-content: space-between
                         th, td
-                          padding-right: 7px
-                          padding-left: 7px
+                          padding: 0
                           font-weight: normal
                           padding-bottom: 0
                 .bottom-content

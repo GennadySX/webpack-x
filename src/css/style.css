@@ -10,13 +10,17 @@ html body {
       font-size: 16px; } }
   @media screen and (min-width: 768px) {
     html body {
-      font-size: 16px; } }
+      font-size: 16px; }
+      html body h1 {
+        font-size: 24px; } }
   @media screen and (min-width: 1024px) {
     html body {
       font-size: 18px; } }
   @media screen and (min-width: 1440px) {
     html body {
-      font-size: 20px; } }
+      font-size: 20px; }
+      html body h1 {
+        font-size: 30px; } }
   html body .header-and-promo {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg");
     background-repeat: no-repeat;
@@ -168,30 +172,30 @@ html body {
         background: #FFFFFF; }
         html body section.category .container .slide-category .carousel .flickity-prev-next-button .slider-list .items img {
           width: 130px; }
-    html body section.category .search-map {
-      background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
-      background-size: cover; }
-      html body section.category .search-map .container {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        height: 100%;
-        align-items: center; }
-        @media screen and (max-width: 768px) {
-          html body section.category .search-map .container {
-            flex-direction: column;
-            justify-content: center; }
-            html body section.category .search-map .container h1.title-content {
-              text-align: center; } }
-        html body section.category .search-map .container h1.title-content {
-          font-weight: bold;
-          padding-bottom: 5px; }
-        html body section.category .search-map .container button.search-on-map {
-          background: #2a2b29;
-          color: #fecc11;
-          padding-left: 14px;
-          padding-right: 14px;
-          border-radius: 0px; }
+  html body .search-map {
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
+    background-size: cover; }
+    html body .search-map .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      height: 100%;
+      align-items: center; }
+      @media screen and (max-width: 768px) {
+        html body .search-map .container {
+          flex-direction: column;
+          justify-content: center; }
+          html body .search-map .container h1.title-content {
+            text-align: center; } }
+      html body .search-map .container h1.title-content {
+        font-weight: bold;
+        padding-bottom: 5px; }
+      html body .search-map .container button.search-on-map {
+        background: #2a2b29;
+        color: #fecc11;
+        padding-left: 14px;
+        padding-right: 14px;
+        border-radius: 0px; }
   html body section.item-container {
     height: auto;
     background: whitesmoke; }
@@ -580,6 +584,9 @@ html body {
       border: none;
       margin-left: 15px;
       transition: box-shadow 0.7s ease-in-out; }
+      @media screen and (min-width: 768px) {
+        html body section.also-by-client .container .card-block .card {
+          background-color: #FFFFFF; } }
       @media screen and (max-width: 600px) {
         html body section.also-by-client .container .card-block .card {
           width: 40%; }
@@ -610,8 +617,7 @@ html body {
                 display: flex;
                 justify-content: space-between; }
                 html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tbody tr th, html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block table.props tbody tr td {
-                  padding-right: 7px;
-                  padding-left: 7px;
+                  padding: 0;
                   font-weight: normal;
                   padding-bottom: 0; }
           html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content {
