@@ -10,90 +10,76 @@
     <!-- End meta tag configurations -->
     <title>Спецтехникофф - Главная</title>
     <!-- CSS stylesheets -->
-
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./libs/font-awesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="libs/flickity/dist/flickity.min.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark nav-first">
-        <div class="container d-flex flex-row align-items-center">
-            <button class="navbar-toggler px-0 border-0 d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="mobile-logo d-block d-sm-none">
-                <img src="img/mobile-logo.svg" alt="Спецтехникофф">
-            </div>
-
-            <div class="location-mobile d-block d-sm-none" id="choose-location">
-                <img src="img/icons/location-icon.svg" alt="">
-            </div>
-
-            <div class="search-mobile d-block d-sm-none">
-                <img src="img/icons/search-icon.svg" alt="">
-            </div>
-
-            <div id="" class="d-none d-sm-block">
-                <ul class="navbar-nav flex-row" id="choose-location">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Местоположение:</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link choicecity u" href="#"><img class="mx-2" src="img/icons/location-icon.svg" alt="">Выберите регион</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div id="" class="d-none d-sm-block ml-auto">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
-                </ul>
-            </div>
-            <div class="rent-equip col-md-3 col-lg-2 d-none d-md-block d-lg-none">
-                <button class="btn btn-warning rent w-100">Сдать технику</button>
-            </div>
-
-        </div>
-    </nav>
-    <nav class="navbar nav-second d-none d-sm-block p-0">
-        <div class="bottom-nav d-flex flex-row align-items-center justify-content-between row no-gutters flex-nowrap px-md-3 px-lg-5">
-            <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
-                <img src="img/logo.png" alt="">
-                <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
-            </div>
-            <div class="cat-right-block col-md-9 col-lg-7">
-                <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Аренда техники</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Доставка материалов</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Продажа</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Грузоперевозки</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="rent-equip col-md-2 col-lg-1 d-md-none d-lg-block">
-                <button class="btn btn-warning rent w-100">Сдать технику</button>
-            </div>
-        </div>
-    </nav>
-    </div>
-</header>
-<section class="main-1">
+    <article class="header-and-promo">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark nav-first">
+                <div class="container d-flex flex-row align-items-center">
+                    <button class="navbar-toggler px-0 border-0 d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>            
+                    </button>
+                    <div class="mobile-logo d-block d-sm-none">
+                        <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                    </div>
+                    <div class="search-mobile d-block d-sm-none">
+                        <img src="img/icons/search-icon.svg" alt=" ">
+                    </div>
+                    <div class="d-flex" id="choose-location">
+                        <span class="d-none d-sm-block">Местоположение</span>
+                        <img class="mx-2" src="img/icons/location-icon.svg" alt="">
+                        <span class="d-none d-sm-block">Выберите регион</span>
+                    </div>            
+                    <div class="d-none d-sm-block ml-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                        </ul>
+                    </div>
+                    <div class="rent-equip col-md-3 col-lg-2 d-none d-md-block d-lg-none">
+                        <button class="btn btn-warning rent w-100">Сдать технику</button>
+                    </div>      
+                </div>
+            </nav>
+            <nav class="navbar nav-second d-none d-sm-block p-0">
+                <div class="container">
+                    <div class="bottom-nav d-flex align-items-center justify-content-between row no-gutters flex-nowrap col px-0">
+                        <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
+                            <img src="img/logo.png" alt=" ">
+                            <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
+                        </div>
+                        <div class="cat-right-block col-9 col-md-9 col-lg-8">
+                            <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Аренда техники</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Услуги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Доставка материалов</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Продажа</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Грузоперевозки</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rent-equip col-md-2 col-lg-2 d-md-none d-lg-block">
+                            <button class="btn btn-warning rent w-100">Сдать технику</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="main-1">
     <div class="container d-flex flex-column">
         <div class="top-content  d-none d-sm-block pt-md-5">
             <h1 class="title">Аренда спецтехники в городе от собственников</h1>
@@ -123,7 +109,7 @@
                 <div class="card_desc card">
                     <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
                         <div class="col-2 col-sm-4 col-md-2 col-lg-4 mr-3 mr-md-0 d-flex align-self-center align-self-lg-start">
-                            <img src="./img/home-icon1.svg" class="icon">
+                            <img src="./img/home-icon1.svg" class="icon" alt=" ">
                         </div>
                         <div class="col d-flex flex-column">
                             <p class="card-title pb-1 align-self-md-center align-self-lg-start">Оставить заявку</p>
@@ -136,7 +122,7 @@
                 <div class="card_desc card">
                     <div class="card-body d-flex flex-row flex-sm-column p-0 row no-gutters">
                         <div class="col-2 col-sm-4 col-md-2 col-lg-4 mr-3 mr-md-0 d-flex align-self-center align-self-lg-start">
-                            <img src="./img/home-icon1.svg" class="icon icon-rotate">
+                            <img src="./img/home-icon1.svg" class="icon icon-rotate" alt=" ">
                         </div>
                         <div class="col d-flex flex-column">
                             <p class="card-title pb-1 align-self-md-center align-self-lg-start">Получить предложения</p>
@@ -149,7 +135,7 @@
                 <div class="card_desc card">
                     <div class="card-body d-flex flex-row flex-sm-column p-0 row no-gutters">
                         <div class="col-2 col-sm-4 col-md-2 col-lg-4 mr-3 mr-md-0 d-flex align-self-center align-self-lg-start">
-                            <img src="./img/home-icon.svg" class="icon">
+                            <img src="./img/home-icon.svg" class="icon" alt=" ">
                         </div>
                         <div class="col d-flex flex-column">
                             <p class="card-title pb-1 align-self-md-center align-self-lg-start">Договориться напрямую</p>
@@ -162,46 +148,49 @@
         <div class="bottom-icon col-8 align-self-end justify-content-end pb-5 d-none d-sm-flex">
             <div class="store_link row no-gutters justify-content-end flex-nowrap">
                 <a href="" class="mr-3 col-4 col-md-4">
-                    <img class="w-100" src="./img/icons/google-play.svg" alt="" title="Перейти в Google Play">
+                    <img class="w-100" src="./img/icons/google-play.svg" alt=" " title="Перейти в Google Play">
                 </a>
                 <a href="" class="col-4 col-md-4">
-                    <img class="w-100" src="./img/icons/app-store.svg" alt="" title="Перейти в App Store">
+                    <img class="w-100" src="./img/icons/app-store.svg" alt=" " title="Перейти в App Store">
                 </a>
             </div>
         </div>
     </div>
 </section>
+    </article>
+    
+
 <section class="category">
     <div class="container py-4">
         <h1 class="title text-center pb-2">Популярные категории</h1>
         <div class="slide-category ">
             <div  class="carousel col-10 col-md-12 mx-auto">
                 <div class="carousel-cell items col-12 col-md-3">
-                    <img src="img/kran.jpg" alt="" class="item_img" width="100%">
+                    <img src="img/kran.jpg" alt=" " class="item_img" width="100%">
                     <p class="title text-center ">Подъемная техника</p>
                 </div>
                 <div class="carousel-cell items col-12 col-md-3">
-                    <img src="img/ZK9mmOR.jpg" alt="" class="item_img" width="100%">
+                    <img src="img/ZK9mmOR.jpg" alt=" " class="item_img" width="100%">
                     <p class="title text-center ">Транспорт</p>
                 </div>
                 <div class="carousel-cell items col-12 col-md-3">
-                    <img src="img/wrwLvJM.jpg" alt="" class="item_img" width="100%">
+                    <img src="img/wrwLvJM.jpg" alt=" " class="item_img" width="100%">
                     <p class="title text-center ">Дорожно-строительная техника</p>
                 </div>
                 <div class="carousel-cell items col-12 col-md-3">
-                    <img src="img/s20bOG6.jpg" alt="" class="item_img" width="100%">
+                    <img src="img/s20bOG6.jpg" alt=" " class="item_img" width="100%">
                     <p class="title text-center ">Землеройная техника</p>
                 </div>
                 <div class="carousel-cell items col-12 col-md-3">
-                    <img src="img/tractor.jpg" alt="" class="item_img" width="100%">
+                    <img src="img/tractor.jpg" alt=" " class="item_img" width="100%">
                     <p class="title text-center ">Транспорт</p>
                 </div>
                 <div class="carousel-cell items col-12 col-md-3">
-                    <img src="img/tractor.jpg" alt="" class="item_img" width="100%">
+                    <img src="img/tractor.jpg" alt=" " class="item_img" width="100%">
                     <p class="title text-center ">Транспорт</p>
                 </div>
                 <div class="carousel-cell items col-12 col-md-3">
-                    <img src="img/tractor.jpg" alt="" class="item_img" width="100%">
+                    <img src="img/tractor.jpg" alt=" " class="item_img" width="100%">
                     <p class="title text-center ">Транспорт</p>
                 </div>
             </div>
@@ -263,7 +252,7 @@
                 <p class="title-list-block py-1">Заказ в 2 клика</p>
                 <div class="card order-double-click">
                     <div class="card-body">
-                        <img src="./img/items/camas.png" alt="" class="item-thumb">
+                        <img src="./img/items/camas.png" alt=" " class="item-thumb">
                         <p class="title-item">Автовышка Камаз</p>
                         <a href="" class="order">цена от 1200 руб./ч</a>
                     </div>
@@ -301,92 +290,8 @@
         <div class="right-block col-12 col-md-9 p-0 d-flex flex-column" id="item-block">
             <h1 id="ads" class="title-block align-self-center align-self-md-start my-3">Объявления</h1>
             
-            <div class="card shadow-none mb-3">
-                <div class="card-body d-flex flex-column flex-sm-row">
-                    <div class="align-self-md-stretch card-thumb" style="background-image: url('./img/items/camas.png')"></div>
-                    <div class="right-side-card col-md-7 p-3 pb-4 pb-md-3">
-                        <p class="card-title">Автовышка АГП-28</p>
-                        <div class="card-prop">
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Рабочая высота подъема</th>
-                                    <td>28 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Грузоподъемность люльки</th>
-
-                                    <td>300 кг</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Максимальный вылет стрелы</th>
-                                    <td>13 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Угол поворота</th>
-                                    <td>360<sup> o</sup></td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="cost-content font-weight-bold">
-                            <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
-                            <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
-                            <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
-                        </div>
-                        <div class="card-bottom-content font-weight-bold">
-                            <button class="more">Подробнее</button>
-                            <button class="order px-3">Заказать</button>
-                            <button class="number d-none d-lg-block d-xl-none">+7 показать номер</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
-            <div class="card shadow-none mb-3">
-                <div class="card-body d-flex flex-column flex-sm-row">
-                    <div class="align-self-md-stretch card-thumb" style="background-image: url('./img/items/camas.png')"></div>
-                    <div class="right-side-card col-md-7 p-3 pb-4 pb-md-3">
-                        <p class="card-title">Автовышка АГП-28</p>
-                        <div class="card-prop">
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Рабочая высота подъема</th>
-                                    <td>28 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Грузоподъемность люльки</th>
-
-                                    <td>300 кг</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Максимальный вылет стрелы</th>
-                                    <td>13 м</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Угол поворота</th>
-                                    <td>360<sup> o</sup></td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="cost-content font-weight-bold">
-                            <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
-                            <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
-                            <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
-                        </div>
-                        <div class="card-bottom-content font-weight-bold">
-                            <button class="more">Подробнее</button>
-                                <button class="order px-3">Заказать</button>
-                                <button class="number d-none d-lg-block d-xl-none">+7 показать номер</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            
             <div class="card shadow-none mb-3">
                 <div class="card-body d-flex flex-column flex-sm-row">
                     <div class="align-self-md-stretch card-thumb" style="background-image: url('./img/items/camas.png')"></div>
@@ -440,7 +345,7 @@
 <section class="service-block d-none d-sm-block">
     <div class="container">
         <div class="left-block col-md-6">
-            <img src="./img/items/service-block.jpg" alt="" class="card-image">
+            <img src="./img/items/service-block.jpg" alt=" " class="card-image">
         </div>
         <div class="right-block col-md-6">
             <h1 class="title-block font-weight-bold">Сервис аренды спецтехники</h1>
@@ -458,7 +363,7 @@
 <section class="on-app p-4 p-md-5 text-center text-sm-left">
     <div class="container p-0 justify-content-start">
         <div class="left-block app-screeen col-md-4 col-lg-3 d-none d-sm-block">
-            <img src="./img/items/apptel.png" alt="" class="screen" height="370px">
+            <img src="./img/items/apptel.png" alt=" " class="screen" height="370px">
         </div>
         <div class="right-block app-desc col-md-8">
             <h1 class="title-block">Заказ техники и услуг всегда под рукой!</h1>
@@ -476,10 +381,10 @@
             </div>
             <div class="store-links d-flex justify-content-center justify-content-md-start row no-gutters">
                 <a href="" class="mr-2 mr-md-3 col-5 col-md-3 col-lg-2">
-                    <img class="w-100" src="./img/icons/app-store.svg" alt="" title="Перейти в App Store">
+                    <img class="w-100" src="./img/icons/app-store.svg" alt=" " title="Перейти в App Store">
                 </a>
                 <a href="" class="col-5 col-md-3 col-lg-2">
-                    <img class="w-100" src="./img/icons/google-play.svg" alt="" title="Перейти в Google Play">
+                    <img class="w-100" src="./img/icons/google-play.svg" alt=" " title="Перейти в Google Play">
                 </a>
             </div>
         </div>
@@ -571,7 +476,7 @@
     </div>
 
     <div class="container">
-        <div class="companie col-md-12 d-flex flex-column flex-sm-row text-center text-md-left">
+        <div class="companie col-md-12 d-flex flex-column flex-sm-row text-center text-sm-left">
             <div class="policy">
                 <a href="">Политика конфиденциальности</a>
                 <a href="">Пользовательское соглашение</a>
@@ -597,50 +502,142 @@
         </div>
     </div>
 </footer>
-<div id="myModal">
-    <div class="login-block">
-        <div class="title-block ">
-            <h1 class="title-block">Войти</h1>
-            <a href="#" class="reg_link">Зарегистрироваться</a>
-        </div>
-        <form action="">
-            <div class="form-group">
-                <label for="emailIn">Почта</label>
-                <input type="email" class="form-control" name="email" id="emailIn">
-            </div>
-            <div class="form-group">
-                <label for="passIn">Пароль</label>
-                <input type="password" class="form-control" id="passIn" name="password">
-            </div>
-            <div class="bottom-form">
-                <button class="send btn">Войти</button>
-                <a href="" class="forget-pass btn">Забыли пароль?</a>
-            </div>
-        </form>
+
+<!-- Модальное окно - войти -->
+<div class="login-block col-md-6 col-lg-5 p-3 py-4 modal-window">
+    <div class="title-block ">
+        <h1 class="title-block">Войти</h1>
+        <a href="#" class="reg_link">Зарегистрироваться</a>
     </div>
+    <form action="">
+        <div class="form-group">
+            <label for="emailIn">Почта</label>
+            <input type="email" class="form-control" name="email" id="emailIn">
+        </div>
+        <div class="form-group">
+            <label for="passIn">Пароль</label>
+            <input type="password" class="form-control" id="passIn" name="password">
+        </div>
+        <div class="bottom-form align-items-center">
+            <a href="" class="forget-pass">Забыли пароль?</a>
+            <button class="send btn">Войти</button>
+        </div>
+    </form>
 </div>
-<div class="location-form col col-md-7 col-lg-5 p-3 py-4 p-md-5 modal-window" id="location-form">
-        <div class="title-block ">
-            <h1 class="title-block">Изменение региона</h1>
-        </div>
-        <form action="">
-            <div class="form-body py-2">
-                <div class="form-group">
-                    <input type="radio" name="location" id="auto-location" checked><label for="auto-location">Казань</label>
-                    <p>Автоматически</p>
-                </div>
-                <div class="form-group">
-                    <input type="radio" name="location" id="set-location"><label for="set-location">Задать</label>
-                    <input type="text" id="city-field" placeholder="Введите название города">
-                </div>
-            </div>
-            <div class="bottom-form">
-                <button class="save btn">Сохранить</button>
-            </div> 
-        </form>
+
+<!-- Модальное окно - регистрация -->
+<div class="signup-block col-md-6 col-lg-5 p-3 py-4 modal-window">
+    <div class="title-block ">
+        <h1 class="title-block">Зарегистрироваться</h1>
+        <span class="reg_link">Войти</span>
     </div>
-<!-- JavaScript links -->
+    <form action="">
+        <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" class="form-control" name="name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="emailUp">Почта</label>
+            <input type="email" name="email" class="form-control" id="emailUp">
+        </div>
+        <div class="form-group">
+            <label for="passUp">Пароль</label>
+            <input type="password" class="form-control" id="passUp" name="password">
+        </div>
+        <div class="form-group">
+            <label for="passConfirm">Подтвердите пароль</label>
+            <input type="password" class="form-control" id="passConfirm" name="confirm">
+        </div>
+        <div class="form-group desc">
+            <p class="policy">Нажимая на кнопку Зарегистрироваться, я принимаю условия <a href="">пользовательского соглашения</a></p>
+        </div>
+        <div class="bottom-form">
+            <button class="btn sign_up send">Зарегистрироваться</button>
+        </div>
+    </form>
+</div>
+
+<!-- Модальное окно - техника -->
+<div class="order-form col-md-12 p-md-5 modal-window">
+    <form action="#">
+        <div class="form-group">
+            <label for="" class="d-none d-sm-block">Тип техники*</label>
+            <select name="" id="c" class="order_select form-control">
+                <option value="">Выберите технику</option>
+            </select>
+        </div>
+        <div class="form-group d-none d-sm-flex">
+            <label for="">Когда нужна*</label>
+            <select name="" id="" class="order_select form-control">
+                <option value="">Выберите необходимый диапозон дат</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="" class="d-none d-sm-flex">Вид работ*</label>
+            <textarea name="" id="" cols="30" rows="5" class="form-control">Опишите вид проводимых работ</textarea>
+        </div>
+        <div class="form-group d-none d-sm-flex">
+            <label for="">Место проведения работ</label>
+            <input type="text" class="form-control" placeholder="Где будут проводиться работы, район">
+        </div>
+        <div class="form-group d-none d-sm-flex">
+            <label for="">Оплата*</label>
+            <select name="" id="" class="order_select form-control">
+                <option value="">Выберите вид оплаты</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="" class="d-none d-sm-block">Имя*</label>
+            <input type="x" class="form-control" placeholder="Ваше имя">
+        </div>
+        <div class="form-group">
+            <label for="" class="d-none d-sm-block">Номер телефона*</label>
+            <input type="tel" class="form-control" placeholder="Введите ваш номер">
+        </div>
+        <div class="form-group btn-col">
+            <div class="left-side w-100">
+                <button class="order btn w-100 text-uppercase">Заказать</button>
+            </div>
+            <div class="right-side d-none d-sm-block">
+                <button class="search btn">Искать на карте</button>
+                <button class="search btn">Искать в объявлениях</button>
+            </div>
+        </div>
+        <div class="form-group policy">
+            <input type="checkbox" checked id="policy-check">
+            <p class="policy-text">
+                <label for="policy-check">Я согласен с политикой конфиденциальности и обработкой персональных данных</label>
+            </p>
+        </div>
+    </form>
+</div>
+<!-- Модальное окно - местоположение -->
+<div class="location-form col col-md-7 col-lg-5 p-3 py-4 p-md-5 modal-window" id="location-form">
+    <div class="title-block ">
+        <h1 class="title-block">Изменение региона</h1>
+    </div>
+    <form action="">
+        <div class="form-body py-2">
+            <div class="form-group">
+                <input type="radio" name="location" id="auto-location" checked><label for="auto-location">Казань</label>
+                <p>Автоматически</p>
+            </div>
+            <div class="form-group">
+                <input type="radio" name="location" id="set-location"><label for="set-location">Задать</label>
+                <input type="text" id="city-field" placeholder="Введите название города">
+            </div>
+        </div>
+        <div class="bottom-form">
+            <button class="save btn">Сохранить</button>
+        </div> 
+    </form>
+</div>
+
+<!-- Затемнение для мод. окон -->
 <div class="backdrop"></div>
+
+
+<!-- JavaScript links -->
 <script src="./libs/jquery/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -650,8 +647,53 @@
 <script src="./libs/flickity/dist/flickity.pkgd.min.js"></script>
 
 <script src="./js/main.js"></script>
+<!-- <script src="./js/modal.js"></script> -->
+
+<script>
+    // Затемнение
+var backdrop = document.querySelector(".backdrop");
+// Затемнение
+
+// Местоположение
+var choseLocation = document.getElementById("choose-location");
+var locationForm = document.getElementById("location-form");
+var locationRadio = document.querySelector("#set-location");
+var locationCityInput = document.querySelector("#city-field");
+
+chooseLocation.onclick = function() {
+    backdrop.style.display = "block";
+    locationForm.style.display = "block";
+}
+backdrop.onclick = function() {
+    backdrop.style.display = "none";
+    locationForm.style.display = "none";
+}
+locationRadio.onchange = function (event) {
+    if (event.target.checked) {
+        locationCityInput.focus();
+    }
+}
+// Местоположение
+
+// Войти
+var loginLink = document.getElementById("login-link");
+var loginForm = document.querySelector(".login-block");
+
+loginLink.onclick = function() {
+    backdrop.style.display = "block";
+    loginForm.style.display = "block";
+}
+backdrop.onclick = function() {
+    backdrop.style.display = "none";
+    loginForm.style.display = "none";
+}
+// Войти
+
+// Регистрация
+// Регистрация
 
 
+</script>
 <script>
     var flky = new Flickity( '.carousel', {
         // options, defaults listed
@@ -736,30 +778,13 @@
 
     });
 </script>
-<script>
-var modal = document.getElementById("myModal");
 
-var btn = document.getElementById("login-link");
-
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-<script>
+<!-- <script>
     // Get the modal
     var modal2 = document.getElementById("location-form");
 
-    // Get the button that opens the modal
     var btn = document.getElementById("choose-location");
 
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
     var backdrop = document.querySelector('.backdrop');
     var radio = document.querySelector('#set-location');
@@ -783,17 +808,6 @@ window.onclick = function(event) {
         }
     }
 
-    // When the user clicks on <span> (x), close the modal
-    // span.onclick = function() {
-    //     modal2.style.display = "none";
-    // }
-
-    // When the user clicks anywhere outside of the modal, close it
-    // window.onclick = function(event) {
-    // if (event.target == modal2) {
-    //     modal2.style.display = "none";
-    // }
-    // }
-</script>
+</script> -->
 </body>
 </html>

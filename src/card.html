@@ -19,87 +19,65 @@
 </head>
 <body>
     <header>
-        <!-- Верхняя навигация -->
-        <nav class="navbar navbar-expand-lg navbar-dark nav-first">
-            <div class="container d-flex flex-row align-items-center">
-                <a href="" class="d-block d-sm-none">
-                    <img src="img/icons/go-back.svg" alt="">
-                </a>
-                <!-- Гамбургер с мобильным меню -->
-                <button class="navbar-toggler px-0 border-0 d-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Мобильное лого -->
-                <div class="mobile-logo d-block d-sm-none">
-                    <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+            <nav class="navbar navbar-expand-lg navbar-dark nav-first bg-dark">
+                <div class="container d-flex flex-row align-items-center">
+                    <button class="navbar-toggler px-0 border-0 d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>            
+                    </button>
+                    <div class="mobile-logo d-block d-sm-none">
+                        <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                    </div>
+                    <div class="search-mobile d-block d-sm-none">
+                        <img src="img/icons/search-icon.svg" alt=" ">
+                    </div>
+                    <div class="d-flex" id="choose-location">
+                        <span class="d-none d-sm-block">Местоположение</span>
+                        <img class="mx-2" src="img/icons/location-icon.svg" alt="">
+                        <span class="d-none d-sm-block">Выберите регион</span>
+                    </div>            
+                    <div class="d-none d-sm-block ml-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                        </ul>
+                    </div>
+                    <div class="rent-equip col-md-3 col-lg-2 d-none d-md-block d-lg-none">
+                        <button class="btn btn-warning rent w-100">Сдать технику</button>
+                    </div>      
                 </div>
-                <!-- Мобильное местоположение -->
-                <div class="location-mobile d-block d-sm-none">
-                    <img src="img/icons/location-icon.svg" alt="">
+            </nav>
+            <nav class="navbar nav-second d-none d-sm-block p-0">
+                <div class="container">
+                    <div class="bottom-nav d-flex align-items-center justify-content-between row no-gutters flex-nowrap col px-0">
+                        <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
+                            <img src="img/logo.png" alt=" ">
+                            <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
+                        </div>
+                        <div class="cat-right-block col-9 col-md-9 col-lg-8">
+                            <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Аренда техники</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Услуги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Доставка материалов</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Продажа</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Грузоперевозки</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rent-equip col-md-2 col-lg-2 d-md-none d-lg-block">
+                            <button class="btn btn-warning rent w-100">Сдать технику</button>
+                        </div>
+                    </div>
                 </div>
-                <!-- Мобильный поиск -->
-                <div class="search-mobile d-block d-sm-none">
-                    <img src="img/icons/search-icon.svg" alt="">
-                </div>
-                <!-- Местоположение -->
-                <div class="d-none d-sm-block">
-                    <ul class="navbar-nav flex-row" id="choose-location">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Местоположение:</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link choicecity u" href="#">
-                                <img class="mx-2" src="img/icons/location-icon.svg" alt="">Выберите регион
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-none d-sm-block ml-auto">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="login-link">Войти</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="rent-equip col-md-3 col-lg-2 d-none d-sm-block">
-                    <button class="btn btn-warning rent w-100">Сдать технику</button>
-                </div>
-            </div>
-        </nav>
-        <!-- Нижняя навигация -->
-        <nav class="navbar navbar-expand-lg nav-second d-none d-sm-block p-0">
-            <div class="container bottom-nav d-flex flex-row align-items-stretch row no-gutters flex-nowrap">
-                <!-- Лого -->
-                <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
-                    <img src="img/logo.png" alt="">
-                    <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
-                </div>
-                <!-- Основное меню -->
-                <div class="cat-right-block col-md-9 col-lg-8">
-                    <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Аренда техники</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Услуги</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Доставка материалов</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Продажа</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Грузоперевозки</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="rent-equip col-md-2 d-md-none d-lg-block">
-                    <button class="btn btn-warning rent w-100">Сдать технику</button>
-                </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
     <!-- Хлебные крошки -->
     <div class="breadcrumb d-none d-md-block d-lg-none">
         <div class="container">

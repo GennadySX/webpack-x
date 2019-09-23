@@ -1,20 +1,39 @@
 html body {
+  color: #000000;
   background-color: #F5F5F5;
   font-family: "PFDinTextCondPro-Regular", sans-serif; }
-  @media screen and (max-width: 320px) {
+  @media screen and (min-width: 320px) {
     html body {
       font-size: 14px; } }
   @media screen and (max-width: 560px) {
     html body h1 {
       font-size: 16px; } }
+  @media screen and (min-width: 768px) {
+    html body {
+      font-size: 16px; } }
+  @media screen and (min-width: 1024px) {
+    html body {
+      font-size: 18px; } }
+  @media screen and (min-width: 1440px) {
+    html body {
+      font-size: 20px; } }
+  html body .header-and-promo {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    @media screen and (max-width: 321px) {
+      html body .header-and-promo {
+        background-image: url("../img/main-bg-mobile.jpg"); } }
   html body button.btn {
-    border-radius: 0; }
+    border-radius: 0;
+    font-size: inherit; }
   html body header nav.nav-first {
-    border-bottom: 10px solid #FFCD11;
-    background-color: #000000; }
+    border-bottom: 10px solid #FFCD11; }
     @media screen and (max-width: 425px) {
       html body header nav.nav-first {
-        border: none; } }
+        border: none;
+        background-color: #000000; } }
     html body header nav.nav-first .container {
       color: #FFCD11; }
       html body header nav.nav-first .container .navbar-toggler-icon {
@@ -36,7 +55,6 @@ html body {
         bottom: -20px; }
     html body header .nav-second .bottom-nav .cat-right-block .nav-item a {
       color: black;
-      font-size: 1rem;
       padding: 1rem 0.5rem;
       transition: border 1s ease-in-out;
       height: 100%; }
@@ -51,14 +69,7 @@ html body {
   html body section.main-1 {
     z-index: -1;
     width: 100%;
-    height: auto;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; }
-    @media screen and (max-width: 321px) {
-      html body section.main-1 {
-        background-image: url("../img/main-bg-mobile.jpg"); } }
+    height: auto; }
     html body section.main-1 .container {
       height: 100%; }
       html body section.main-1 .container .top-content h1.title {
@@ -74,8 +85,11 @@ html body {
         padding-left: 0;
         border: none; }
         html body section.main-1 .container .top-content .search-form form .form-group input, html body section.main-1 .container .top-content .search-form form .form-group button {
-          border-radius: 0; }
-          html body section.main-1 .container .top-content .search-form form .form-group input:focus, html body section.main-1 .container .top-content .search-form form .form-group button:focus {
+          border-radius: 0;
+          font-size: inherit; }
+        html body section.main-1 .container .top-content .search-form form .form-group button {
+          font-weight: bold; }
+          html body section.main-1 .container .top-content .search-form form .form-group button:focus {
             box-shadow: 0px 0px 5px 1px #FFCD11;
             border: none; }
         html body section.main-1 .container .top-content .search-form form .form-group .label-input {
@@ -117,7 +131,7 @@ html body {
         height: 100%; }
         html body section.category .container .slide-category .carousel .flickity-viewport .flickity-slider .carousel-cell .title {
           margin-top: 10px; }
-    @media screen and (max-width: 321px) {
+    @media screen and (max-width: 475px) {
       html body section.category .container .slide-category .carousel .flickity-page-dots {
         display: none; } }
     html body section.category .container .slide-category .carousel .flickity-page-dots li.dot {
@@ -195,8 +209,8 @@ html body {
         margin-bottom: 10px; }
         html body section.item-container .container .left-block .list-block .title-list-block {
           width: 100%;
-          background: #4E4852;
-          color: whitesmoke;
+          background: #3B3B3B;
+          color: #FFFFFF;
           padding-left: 15px;
           min-height: 25px; }
         html body section.item-container .container .left-block .list-block .cat-list {
@@ -225,9 +239,7 @@ html body {
               margin-top: 10px;
               padding: 0; }
             html body section.item-container .container .left-block .list-block .order-double-click .card-body a.order {
-              position: relative;
               bottom: 10px;
-              font-size: 0.7rem;
               font-weight: bold;
               background: #fecc11;
               color: #1a1a1a;
@@ -246,20 +258,21 @@ html body {
             font-weight: bold;
             margin-bottom: 5px;
             background: #fecc11;
-            font-size: 0.9rem;
             padding: 10px 0; }
           html body section.item-container .container .left-block .list-block .order-ask .card-body {
             padding-top: 0px; }
             html body section.item-container .container .left-block .list-block .order-ask .card-body .ask-desc {
               text-align: left; }
             html body section.item-container .container .left-block .list-block .order-ask .card-body button.number {
-              background: #1a1a1a;
-              color: #fecc11;
+              background: #3B3B3B;
+              color: #FFCD11;
               border: none;
               min-height: 2.2rem;
               line-height: 12px;
               padding-right: 10px;
               padding-right: 10px; }
+      html body section.item-container .container .right-block h1 {
+        font-weight: bold; }
       html body section.item-container .container .right-block .card {
         border: none;
         transition: box-shadow 0.7s ease-in-out; }
@@ -275,7 +288,7 @@ html body {
             background-position: 50% 50%;
             display: inline-block; }
           html body section.item-container .container .right-block .card .card-body .right-side-card .card-title {
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: bold; }
           html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr {
             display: flex;
@@ -422,16 +435,16 @@ html body {
       html body footer .container .companie .copy .copy-companie {
         line-height: 16px; }
       html body footer .container .companie .icons a {
-        margin-left: 10px; }
+        margin-left: 10px;
+        display: inline-block; }
         html body footer .container .companie .icons a:first-child {
           margin-left: 0; }
         html body footer .container .companie .icons a i {
+          position: relative;
           font-size: 0.8rem;
           border-radius: 50%;
           width: 25px;
           height: 25px;
-          padding-top: 7px;
-          text-align: center;
           border: 1px solid white;
           color: white;
           transition: color 0.7s ease-in-out, background 0.5s ease-in, box-shadow 1s ease-in-out; }
@@ -439,6 +452,11 @@ html body {
             background: white;
             color: #1a1a1a;
             box-shadow: 0 0 5px whitesmoke; }
+          html body footer .container .companie .icons a i::before {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%); }
   html body .breadcrumb {
     padding-top: 30px;
     padding-bottom: 0;
@@ -607,38 +625,38 @@ html body {
             html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content button.order {
               background: #fecc11;
               font-weight: bold; }
-    html body section.also-by-client .container .container.d-flex .left-block h3 {
+  html body .item-container .container.d-flex .left-block .main-characteristics-filtr, html body .item-container .container.d-flex .left-block .search-map {
+    margin-bottom: 20px; }
+  html body .item-container .container.d-flex .left-block .main-characteristics-filtr {
+    padding: 20px 15px;
+    background-color: #FEFEFE; }
+    html body .item-container .container.d-flex .left-block .main-characteristics-filtr h3 {
       font-size: 20px;
       font-weight: bold; }
-    html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr, html body section.also-by-client .container .container.d-flex .left-block .search-map {
-      margin-bottom: 20px; }
-    html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr {
-      padding: 20px 15px;
-      background-color: #FEFEFE; }
-      html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr table {
-        width: 100%; }
-        html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr table th {
-          font-weight: normal; }
-        html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr table td {
-          text-align: right; }
-      html body section.also-by-client .container .container.d-flex .left-block .main-characteristics-filtr a {
-        color: inherit;
-        font-weight: bold; }
-    html body section.also-by-client .container .container.d-flex .left-block .search-map {
-      background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      padding: 20px 0; }
-      html body section.also-by-client .container .container.d-flex .left-block .search-map .container {
-        flex-direction: column;
-        align-items: center; }
-      html body section.also-by-client .container .container.d-flex .left-block .search-map button.search-on-map {
+    html body .item-container .container.d-flex .left-block .main-characteristics-filtr table {
+      width: 100%; }
+      html body .item-container .container.d-flex .left-block .main-characteristics-filtr table th {
+        font-weight: normal; }
+      html body .item-container .container.d-flex .left-block .main-characteristics-filtr table td {
+        text-align: right; }
+    html body .item-container .container.d-flex .left-block .main-characteristics-filtr a {
+      color: inherit;
+      font-weight: bold; }
+  html body .item-container .container.d-flex .left-block .search-map {
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0; }
+    html body .item-container .container.d-flex .left-block .search-map .container {
+      flex-direction: column;
+      align-items: center; }
+      html body .item-container .container.d-flex .left-block .search-map .container button.search-on-map {
         background: #2a2b29;
         color: #fecc11;
         border-radius: 0px;
         margin-top: 10px; }
-    html body section.also-by-client .container .container.d-flex .right-block .card:first-child {
-      margin-top: 0; }
+  html body .item-container .container.d-flex .right-block .card:first-child {
+    margin-top: 0; }
   html body .backdrop {
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -649,15 +667,15 @@ html body {
     height: 100%;
     display: none; }
   html body .modal-window {
-    background-color: #FFFFFF; }
-  html body .location-form {
-    display: none;
     position: fixed;
+    background-color: #FFFFFF;
     z-index: 1000;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  html body .location-form {
+    display: none; }
     html body .location-form input[type=radio] {
       margin-right: 20px; }
     html body .location-form p {
@@ -675,140 +693,73 @@ html body {
       background-color: #FFCD11;
       font-weight: bold;
       width: 50%; }
-  html body section.order-form {
-    margin-top: 40px;
-    margin-bottom: 40px; }
-    html body section.order-form .container {
+  html body .order-form {
+    display: none; }
+    html body .order-form form * {
+      border-radius: 0; }
+    html body .order-form form .form-group {
+      display: flex; }
+      html body .order-form form .form-group input::placeholder, html body .order-form form .form-group textarea::placeholder, html body .order-form form .form-group select::placeholder {
+        color: #B1B1B1; }
+      html body .order-form form .form-group label {
+        width: 70%;
+        text-shadow: 0 0 1px black; }
+      html body .order-form form .form-group textarea {
+        resize: none; }
+      html body .order-form form .form-group button {
+        height: 40px;
+        text-shadow: 0 0 1px black; }
+    html body .order-form form .btn-col {
+      padding-top: 15px;
+      padding-bottom: 15px;
       display: flex;
-      justify-content: center; }
-      html body section.order-form .container .order-form {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-        html body section.order-form .container .order-form form * {
-          border-radius: 0; }
-        html body section.order-form .container .order-form form .form-group {
-          display: flex; }
-          html body section.order-form .container .order-form form .form-group input::placeholder, html body section.order-form .container .order-form form .form-group textarea::placeholder, html body section.order-form .container .order-form form .form-group select::placeholder {
-            color: #B1B1B1; }
-          html body section.order-form .container .order-form form .form-group label {
-            width: 70%;
-            text-shadow: 0 0 1px black; }
-          html body section.order-form .container .order-form form .form-group textarea {
-            resize: none; }
-          html body section.order-form .container .order-form form .form-group button {
-            height: 40px;
-            text-shadow: 0 0 1px black; }
-        html body section.order-form .container .order-form form .btn-col {
-          padding-top: 15px;
-          padding-bottom: 15px;
-          display: flex;
-          justify-content: space-between; }
-          html body section.order-form .container .order-form form .btn-col .left-side button.order {
-            background: #fecc11;
-            height: 40px; }
-          html body section.order-form .container .order-form form .btn-col .right-side {
-            display: flex;
-            justify-content: space-between; }
-            html body section.order-form .container .order-form form .btn-col .right-side button {
-              border: 2px solid #1a1a1a;
-              margin-left: 10px; }
-        html body section.order-form .container .order-form form .policy {
-          padding-top: 15px; }
-          html body section.order-form .container .order-form form .policy input[type="checkbox"]:before {
-            background: #fecc11; }
-          html body section.order-form .container .order-form form .policy input[type="checkbox"]:after {
-            content: "";
-            background: #fecc11; }
-          html body section.order-form .container .order-form form .policy p.policy-text {
-            padding-left: 5px;
-            margin-top: -4px; }
-            html body section.order-form .container .order-form form .policy p.policy-text label {
-              width: 100%; }
-  html body #myModal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    box-shadow: 0 0 25px #8E8892;
-    border-radius: 5px;
-    margin-top: 40px; }
-    html body #myModal .login-block {
-      padding: 40px; }
-      html body #myModal .login-block .title-block {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 10px; }
-        html body #myModal .login-block .title-block h1.title-block {
-          font-size: 1.7rem; }
-        html body #myModal .login-block .title-block .reg_link {
-          font-size: 1.5rem;
-          color: #4E4852;
-          text-decoration: underline; }
-      html body #myModal .login-block form {
-        background-color: white; }
-        html body #myModal .login-block form .form-group {
-          padding-bottom: 7px; }
-          html body #myModal .login-block form .form-group label {
-            line-height: 0.7;
-            text-shadow: 0 0 1px gray; }
-          html body #myModal .login-block form .form-group input.form-control {
-            border-radius: 0; }
-        html body #myModal .login-block form .desc {
-          padding-bottom: 0; }
-          html body #myModal .login-block form .desc p.policy {
-            font-size: 0.9rem; }
-        html body #myModal .login-block form .bottom-form {
-          margin-top: 30px;
-          display: flex;
-          justify-content: space-between; }
-          html body #myModal .login-block form .bottom-form button {
-            width: 45%;
-            border-radius: 0; }
-          html body #myModal .login-block form .bottom-form button.send {
-            font-weight: bold;
-            background: #fecc11;
-            outline: none; }
-          html body #myModal .login-block form .bottom-form .sign_up {
-            width: 100%;
-            height: 70px; }
-  html body section.login .container {
-    margin-top: 70px;
-    margin-bottom: 50px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap; }
-    html body section.login .container .login-block, html body section.login .container .signup-block {
-      box-shadow: 0 0 25px #8E8892;
-      margin-top: 40px; }
-      html body section.login .container .login-block div.title-block, html body section.login .container .signup-block div.title-block {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 10px; }
-        html body section.login .container .login-block div.title-block .reg_link, html body section.login .container .signup-block div.title-block .reg_link {
-          color: #4E4852;
-          text-decoration: underline; }
-      html body section.login .container .login-block form .form-group, html body section.login .container .signup-block form .form-group {
-        padding-bottom: 7px; }
-        html body section.login .container .login-block form .form-group label, html body section.login .container .signup-block form .form-group label {
-          line-height: 0.7;
-          text-shadow: 0 0 1px gray; }
-        html body section.login .container .login-block form .form-group input.form-control, html body section.login .container .signup-block form .form-group input.form-control {
-          border-radius: 0; }
-      html body section.login .container .login-block form .desc, html body section.login .container .signup-block form .desc {
-        padding-bottom: 0; }
-        html body section.login .container .login-block form .desc p.policy, html body section.login .container .signup-block form .desc p.policy {
-          font-size: 0.9rem; }
-      html body section.login .container .login-block form .bottom-form, html body section.login .container .signup-block form .bottom-form {
-        margin-top: 30px;
+      justify-content: space-between; }
+      html body .order-form form .btn-col .left-side button.order {
+        background: #fecc11;
+        height: 40px; }
+      html body .order-form form .btn-col .right-side {
         display: flex;
         justify-content: space-between; }
-        html body section.login .container .login-block form .bottom-form button, html body section.login .container .signup-block form .bottom-form button {
-          width: 45%;
-          border-radius: 0; }
-        html body section.login .container .login-block form .bottom-form button.send, html body section.login .container .signup-block form .bottom-form button.send {
-          font-weight: bold;
-          background: #fecc11;
-          outline: none; }
-        html body section.login .container .login-block form .bottom-form .sign_up, html body section.login .container .signup-block form .bottom-form .sign_up {
+        html body .order-form form .btn-col .right-side button {
+          border: 2px solid #1a1a1a;
+          margin-left: 10px; }
+    html body .order-form form .policy {
+      padding-top: 15px; }
+      html body .order-form form .policy p.policy-text {
+        padding-left: 5px;
+        margin-top: -4px; }
+        html body .order-form form .policy p.policy-text label {
           width: 100%; }
+  html body .login-block, html body .signup-block {
+    display: none; }
+    html body .login-block div.title-block, html body .signup-block div.title-block {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px; }
+      html body .login-block div.title-block .reg_link, html body .signup-block div.title-block .reg_link {
+        color: #4E4852;
+        text-decoration: underline; }
+    html body .login-block form .form-group, html body .signup-block form .form-group {
+      padding-bottom: 7px; }
+      html body .login-block form .form-group label, html body .signup-block form .form-group label {
+        line-height: 0.7;
+        text-shadow: 0 0 1px gray; }
+      html body .login-block form .form-group input.form-control, html body .signup-block form .form-group input.form-control {
+        border-radius: 0; }
+    html body .login-block form .desc, html body .signup-block form .desc {
+      padding-bottom: 0; }
+      html body .login-block form .desc p.policy, html body .signup-block form .desc p.policy {
+        font-size: 0.9rem; }
+    html body .login-block form .bottom-form, html body .signup-block form .bottom-form {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between; }
+      html body .login-block form .bottom-form button, html body .signup-block form .bottom-form button {
+        width: 45%;
+        border-radius: 0; }
+      html body .login-block form .bottom-form button.send, html body .signup-block form .bottom-form button.send {
+        font-weight: bold;
+        background: #fecc11;
+        outline: none; }
+      html body .login-block form .bottom-form .sign_up, html body .signup-block form .bottom-form .sign_up {
+        width: 100%; }
