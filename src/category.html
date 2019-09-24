@@ -18,267 +18,89 @@
     <link rel="stylesheet" href="libs/flickity/dist/flickity.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark nav-first bg-dark">
-            <div class="container d-flex flex-row align-items-center"> 
-                <button class="navbar-toggler px-0 border-0 d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="mobile-logo d-block d-sm-none">  
-                    <img src="img/mobile-logo.svg" alt="Спецтехникофф">
-                </div>
-                <div class="search-mobile d-block d-sm-none">
-                    <img src="img/icons/search-icon.svg" alt=" ">
-                </div>
-                <div class="d-flex" id="choose-location"> 
-                    <span class="d-none d-sm-block">Местоположение</span>
-                    <img class="mx-2" src="img/icons/location-icon.svg" alt="">
-                    <span class="d-none d-sm-block">Выберите регион</span>
-                </div>           
-                <div class="d-none d-sm-block ml-auto">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
-                    </ul>
-                </div>
-                <div class="rent-equip col-md-3 col-lg-2 d-none d-md-block d-lg-none"> 
-                    <button class="btn btn-warning rent w-100">Сдать технику</button>
-                </div>
-            </div>
-        </nav>
-        <nav class="navbar nav-second d-none d-sm-block p-0">
-            <div class="container">
-                <div class="bottom-nav d-flex align-items-center justify-content-between row no-gutters flex-nowrap col px-0">
-                    <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
-                        <img src="img/logo.png" alt=" ">
-                        <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-dark nav-first bg-dark">
+                    <div class="container d-flex flex-row align-items-center flex-nowrap">
+                        <button class="navbar-toggler px-0 border-0 d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>            
+                        </button>
+                        <div class="mobile-logo d-block d-sm-none">
+                            <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                        </div>
+                        <div class="search-mobile d-block d-sm-none">
+                            <img src="img/icons/search-icon.svg" alt=" ">
+                        </div>
+                        <div class="d-flex" id="choose-location">
+                            <span class="d-none d-sm-block">Местоположение</span>
+                            <img class="mx-2" src="img/icons/location-icon.svg" alt="">
+                            <span class="d-none d-sm-block">Выберите регион</span>
+                        </div>            
+                        <div class="d-none d-sm-block ml-auto">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                            </ul>
+                        </div>
+                        <div class="rent-equip col-3 col-md-3 col-lg-2 d-none d-sm-block d-lg-none">
+                            <button class="btn btn-warning rent w-100">Сдать технику</button>
+                        </div>      
                     </div>
-                    <div class="cat-right-block col-9 col-md-9 col-lg-8">
-                        <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Аренда техники</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Услуги</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Доставка материалов</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Продажа</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Грузоперевозки</a>
-                            </li>
-                        </ul>
+                </nav>
+                <nav class="navbar nav-second d-none d-sm-block p-0">
+                    <div class="container px-0">
+                        <div class="bottom-nav d-flex align-items-center justify-content-between row no-gutters flex-nowrap col px-0">
+                            <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
+                                <img src="img/logo.png" alt=" ">
+                                <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
+                            </div>
+                            <div class="cat-right-block col-10 col-md-9 col-lg-8 col-xl-7">
+                                <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Аренда техники</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Услуги</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Доставка материалов</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Продажа</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Грузоперевозки</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="rent-equip col-md-2 col-lg-2 d-sm-none d-lg-block">
+                                <button class="btn btn-warning rent w-100">Сдать технику</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rent-equip col-md-2 col-lg-2 d-md-none d-lg-block">
-                        <button class="btn btn-warning rent w-100">Сдать технику</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-<div class="breadcrumb">
-    <div class="container">
+                </nav>
+            </header>
+<div class="breadcrumb pt-sm-4 pt-md-4 pt-lg-5 m-0">
+    <div class="container p-0">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                <li class="breadcrumb-item"><a href="#">Аренда техники</a></li>
-                <li class="breadcrumb-item"><a href="#">Автокраны</a></li>
-                <!-- <li class="breadcrumb-item active" aria-current="page">Автокран Ивановец</li> -->
+            <ol class="breadcrumb p-0 m-0">
+                <li class="breadcrumb-item"><a href="#">Главная</a><i class="fas fa-chevron-right mx-2"></i></li>
+                <li class="breadcrumb-item"><a href="#">Аренда техники</a><i class="fas fa-chevron-right mx-2"></i></li>
+                <li class="breadcrumb-item"><a href="#">Аренда техники</a><i class="fas fa-chevron-right mx-2"></i></li>
+                <li class="breadcrumb-item"><a href="#">Аренда техники</a><i class="fas fa-chevron-right mx-2"></i></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#">Автокраны</a></li>
             </ol>
         </nav>
     </div>
 </div>
-
-<!-- <section class="card_main">
-    <div class="container">
-        <h1 class="title-card ">Автокран Ивановец 14 тонн (14 метров)</h1>
-        <div class="left-side col-md-6">
-            <div class="item-slide">
-                <img src="./img/items/camas.png" alt="" class="main-img ">
-                <div class="img-card col-md-5 d-flex justify-content-start">
-                    <img class="active" src="./img/items/camas.png" alt="">
-                    <img src="./img/items/camas.png" alt="">
-                    <img src="./img/items/camas.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="right-side col-md-6">
-            <div class="prop-content">
-                <p class="block-title">Основные характеристики техники</p>
-                <div class="card-prop">
-                    <table class="table">
-                        <tbody>
-                        <tr>
-                            <th scope="row">Рабочая высота подъема</th>
-                            <td>28 м</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Грузоподъемность люльки</th>
-
-                            <td>300 кг</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Максимальный вылет стрелы</th>
-                            <td>13 м</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Угол поворота</th>
-                            <td>360</td>
-                        </tr>
-
-                        </tbody>
-                    </table>
-                    <div class="cost-content">
-                        <span class="cost"> <img src="./img/icons/ruble-icon-8.png" alt=""> 2 000 р/ч</span>
-                        <div class="hour-dock"><img src="./img/icons/hour.png" alt=""> Смена 4 часа</div>
-                        <div class="location"><img src="./img/icons/101411-200.png" alt=""> Зеленодольск</div>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Окажем услуги автокрана <br>
-                        Все виды погрузочно-разгрузочных работ. Опытные <br>
-                        операторы. Имеются стропальщики. <br>
-                        Наличный/безналичный расчет. Договор.
-                        <br> Режим работы круглосуточно, без перерывов и выходных.</p>
-                </div>
-                <div class="client-contact-info">
-                    <p>Контактное лицо <a href="">Станислав "СтройТехника Казань"</a></p>
-                    <p>на портале с апреля 2014 г</p>
-                    <p>всего объявлений 15</p>
-                </div>
-                <div class="bottom-content">
-                    <button class="btn order">Заказать</button>
-                    <button class="btn number">+7 показать номер</button>
-                    <button class=" btn on-map">Показать на карте</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- <section class="also-by-client">
-    <div class="container">
-        <h1 class="title-content">Другая техника собственника</h1>
-        <div class="card-block  col-md-12 d-flex justify-content-around">
-            <div class="card col-md-4">
-                <div class="card-body">
-                    <img src="./img/items/camas.png" alt="" class="card-image">
-                    <div class="card-data">
-                    <span class="card-title">Мини-погрузчик Bobcat S300</span>
-                    <div class="prop-block">
-                        <table class="props">
-                            <tbody>
-                            <tr>
-                                <th>Емкость ковша</th>
-                                <td>0.83 м<sup>3</sup></td>
-                            </tr>
-                            <tr>
-                                <th>Макс. глубина копания</th>
-                                <td>6 м</td>
-                            </tr>
-                            <tr>
-                                <th>Угол поворота</th>
-                                <td>180<sup>2</sup></td>
-                            </tr>
-                            <tr>
-                                <th>Высота погрузки</th>
-                                <td>4 м</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="bottom-content">
-                        <button class="btn more">Подробнее</button>
-                        <button class="btn order">Заказать</button>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-md-4">
-                <div class="card-body">
-                    <img src="./img/items/camas.png" alt="" class="card-image">
-                    <div class="card-data">
-                        <span class="card-title">Мини-погрузчик Bobcat S300</span>
-                        <div class="prop-block">
-                            <table class="props">
-                                <tbody>
-                                <tr>
-                                    <th>Емкость ковша</th>
-                                    <td>0.83 м<sup>3</sup></td>
-                                </tr>
-                                <tr>
-                                    <th>Макс. глубина копания</th>
-                                    <td>6 м</td>
-                                </tr>
-                                <tr>
-                                    <th>Угол поворота</th>
-                                    <td>180<sup>2</sup></td>
-                                </tr>
-                                <tr>
-                                    <th>Высота погрузки</th>
-                                    <td>4 м</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="bottom-content">
-                            <button class="btn more">Подробнее</button>
-                            <button class="btn order">Заказать</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-md-4">
-                <div class="card-body">
-                    <img src="./img/items/camas.png" alt="" class="card-image">
-                    <div class="card-data">
-                        <span class="card-title">Мини-погрузчик Bobcat S300</span>
-                        <div class="prop-block">
-                            <table class="props">
-                                <tbody>
-                                <tr>
-                                    <th>Емкость ковша</th>
-                                    <td>0.83 м<sup>3</sup></td>
-                                </tr>
-                                <tr>
-                                    <th>Макс. глубина копания</th>
-                                    <td>6 м</td>
-                                </tr>
-                                <tr>
-                                    <th>Угол поворота</th>
-                                    <td>180<sup>2</sup></td>
-                                </tr>
-                                <tr>
-                                    <th>Высота погрузки</th>
-                                    <td>4 м</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="bottom-content">
-                            <button class="btn more">Подробнее</button>
-                            <button class="btn order">Заказать</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
-
 <section class="item-container">
-    <div class="container">
-        <h1>Автокраны</h1>
+    <div class="container d-flex">
+        <a href="" class="back"></a>
+        <h1 class="title-block p-0 pb-3 m-0">Автокраны</h1>
     </div>
 
     <div class="container d-flex flex-column flex-sm-row px-0">
-        <div class="left-block col col-sm-4 col-md-3" id="categories">
-            
-            <!-- <h1 class="title-block">Категории</h1> -->
-            <div class="main-characteristics-filtr">
-                <h3>Основные характеристики</h3>
+        <div class="left-block col col-sm-4 col-md-3 px-0 px-md-3" id="categories">
+            <div class="main-characteristics-filtr p-3 mx-3 mx-md-0">
+                <h1 class="pb-1">Основные характеристики</h1>
                 <table>
                     <tbody>
                         <tr>
@@ -315,83 +137,73 @@
                         </tr>
                     </tbody>
                 </table>
-                <a href="">Показать все</a>
             </div>
-            <div class="search-map">
-                <div class="container d-flex">
+            <div class="search-map my-3">
+                <div class="container d-flex flex-wrap px-3">
                     <h1 class="title-content">Найти ближайшие <span>автокраны</span> на карте</h1>
-                    <button class="btn search-on-map">Найти на карте</button>
+                    <button class="btn search-on-map py-1 align-self-stretch">Найти на карте</button>
                 </div>
             </div>
-            <div class="list-block">
-                <p class="title-list-block">Строительная техника</p>
-                <ul class="cat-list">
-                    <li class="cat-item"><a href="#">Автовышки</a></li>
-                    <li class="cat-item"><a href="#">Автогрейдеры</a></li>
-                    <li class="cat-item"><a href="#">Автокраны</a></li>
-                    <li class="cat-item"><a href="#">Асфальтоукладчики</a></li>
-                    <li class="cat-item"><a href="#">Бетононасосы</a></li>
-                    <li class="cat-item"><a href="#">Бульдозеры</a></li>
-                    <li class="cat-item"><a href="#">Гидромолоты</a></li>
-                    <li class="cat-item"><a href="#">ГНБ</a></li>
-                    <li class="cat-item"><a href="#">Катки</a></li>
-                    <li class="cat-item"><a href="#">Краны</a></li>
-                    <li class="cat-item"><a href="#">Манипуляторы</a></li>
-                    <li class="cat-item"><a href="#">Миксеры</a></li>
-                    <li class="cat-item"><a href="#">Погрузчики</a></li>
-                    <li class="cat-item"><a href="#">Самосвалы</a></li>
-                    <li class="cat-item"><a href="#">Сваебои</a></li>
-                    <li class="cat-item"><a href="#">Тракторы</a></li>
-                    <li class="cat-item"><a href="#">Трубоукладчики</a></li>
-                    <li class="cat-item"><a href="#">Фреза</a></li>
-                    <li class="cat-item"><a href="#">Экскаваторы</a></li>
-                    <li class="cat-item"><a href="#">Ямобуры</a></li>
-                </ul>
+            <div class="d-none d-md-block">
+                    <div class="list-block">
+                            <p class="title-list-block">Строительная техника</p>
+                            <ul class="cat-list">
+                                <li class="cat-item"><a href="#">Автовышки</a></li>
+                                <li class="cat-item"><a href="#">Автогрейдеры</a></li>
+                                <li class="cat-item"><a href="#">Автокраны</a></li>
+                                <li class="cat-item"><a href="#">Асфальтоукладчики</a></li>
+                                <li class="cat-item"><a href="#">Бетононасосы</a></li>
+                                <li class="cat-item"><a href="#">Бульдозеры</a></li>
+                                <li class="cat-item"><a href="#">Гидромолоты</a></li>
+                                <li class="cat-item"><a href="#">ГНБ</a></li>
+                                <li class="cat-item"><a href="#">Катки</a></li>
+                                <li class="cat-item"><a href="#">Краны</a></li>
+                                <li class="cat-item"><a href="#">Манипуляторы</a></li>
+                                <li class="cat-item"><a href="#">Миксеры</a></li>
+                                <li class="cat-item"><a href="#">Погрузчики</a></li>
+                                <li class="cat-item"><a href="#">Самосвалы</a></li>
+                                <li class="cat-item"><a href="#">Сваебои</a></li>
+                                <li class="cat-item"><a href="#">Тракторы</a></li>
+                                <li class="cat-item"><a href="#">Трубоукладчики</a></li>
+                                <li class="cat-item"><a href="#">Фреза</a></li>
+                                <li class="cat-item"><a href="#">Экскаваторы</a></li>
+                                <li class="cat-item"><a href="#">Ямобуры</a></li>
+                            </ul>
+                        </div>
+                        <div class="list-block">
+                            <p class="title-list-block">Грузоперевозки</p>
+                            <ul class="cat-list">
+                                <li class="cat-item"><a href="#">Бензовозы</a></li>
+                                <li class="cat-item"><a href="#">Водовозы</a></li>
+                                <li class="cat-item"><a href="#">Газели</a></li>
+                                <li class="cat-item"><a href="#">Длинномеры</a></li>
+                                <li class="cat-item"><a href="#">Камазы</a></li>
+                                <li class="cat-item"><a href="#">Лесовозы</a></li>
+                                <li class="cat-item"><a href="#">Рефрижераторы</a></li>
+                                <li class="cat-item"><a href="#">Тралы</a></li>
+                                <li class="cat-item"><a href="#">Фуры</a></li>
+                                <li class="cat-item"><a href="#">Эвакуаторы</a></li>
+                            </ul>
+                        </div>
+                        <div class="list-block">
+                            <p class="title-list-block">Заказ в 2 клика</p>
+                            <div class="card order-double-click">
+                                <div class="card-body">
+                                    <img src="./img/items/camas.png" alt="" class="item-thumb">
+                                    <p class="title-item">Автовышка Камаз</p>
+                                    <a href="" class="order">цена от 1200 руб./ч</a>
+                                </div>
+                            </div>
+                        </div>
             </div>
-            <div class="list-block">
-                <p class="title-list-block">Грузоперевозки</p>
-                <ul class="cat-list">
-                    <li class="cat-item"><a href="#">Бензовозы</a></li>
-                    <li class="cat-item"><a href="#">Водовозы</a></li>
-                    <li class="cat-item"><a href="#">Газели</a></li>
-                    <li class="cat-item"><a href="#">Длинномеры</a></li>
-                    <li class="cat-item"><a href="#">Камазы</a></li>
-                    <li class="cat-item"><a href="#">Лесовозы</a></li>
-                    <li class="cat-item"><a href="#">Рефрижераторы</a></li>
-                    <li class="cat-item"><a href="#">Тралы</a></li>
-                    <li class="cat-item"><a href="#">Фуры</a></li>
-                    <li class="cat-item"><a href="#">Эвакуаторы</a></li>
-                </ul>
-            </div>
-            <div class="list-block">
-                <p class="title-list-block">Заказ в 2 клика</p>
-                <div class="card order-double-click">
-                    <div class="card-body">
-                        <img src="./img/items/camas.png" alt="" class="item-thumb">
-                        <p class="title-item">Автовышка Камаз</p>
-                        <a href="" class="order">цена от 1200 руб./ч</a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="list-block">
-                <p class="title-list-block">Заявки</p>
-                <div class="card order-ask">
-                    <p class="title-ask">Эвакуатор-погрузчик JSB 1СХ</p>
-                    <div class="card-body">
-                        <p class="ask-desc">Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По
-                            срокам нужен от 2 до 5.</p>
-                        <button class="number">+7 показать номер</button>
-                    </div>
-                </div>
-            </div> -->
+            
         </div>
-        <div class="right-block col-md-9 pl-0" id="item-block">
-            <!-- <h1 class="title-block">Похожая техника</h1> -->
+        <div class="right-block col-md-9 px-0 pr-md-3" id="item-block">
             <div class="card">
                 <div class="card-body d-flex flex-column flex-sm-row">
                     <span class="col-md-5 card-thumb" style="background-image: url('./img/items/camas.png')"></span>
-                    <div class="right-side-card col-md-7  p-3 pb-4 pb-md-3">
-                        <p class="card-title">Автовышка АГП-28</p>
+                    <div class="right-side-card col-md-7  p-3 pb-4 pb-md-3 p-lg-4">
+                        <p class="card-title">Автокран Ивановец 14 тонн (14 метров)</p>
                         <div class="card-prop">
                             <table class="table">
                                 <tbody>
@@ -410,7 +222,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Угол поворота</th>
-                                    <td>360</td>
+                                    <td>360<sup>o</sup></td>
                                 </tr>
 
                                 </tbody>
@@ -419,41 +231,62 @@
                         <div class="cost-content font-weight-bold">
                             <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
                             <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
-                            <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
+
                         </div>
                         <div class="card-bottom-content font-weight-bold">
                             <button class="more">Подробнее</button>
-                            <button class="order px-3">Заказать</button>
-                            <button class="number d-none d-lg-block d-xl-none">+7 показать номер</button>
+                            <button class="order px-4 py-1">Заказать</button>
+                            <button class="number d-none d-lg-block">+7 показать номер</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="more-content">
-                <button class="more-items">Больше объявлений</button>
-            </div> -->
+            <div class="card">
+                <div class="card-body d-flex flex-column flex-sm-row">
+                    <span class="col-md-5 card-thumb" style="background-image: url('./img/items/camas.png')"></span>
+                    <div class="right-side-card col-md-7  p-3 pb-4 pb-md-3 p-lg-4">
+                        <p class="card-title">Автокран Ивановец 14 тонн (14 метров)</p>
+                        <div class="card-prop">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Рабочая высота подъема</th>
+                                    <td>28 м</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Грузоподъемность люльки</th>
+
+                                    <td>300 кг</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Максимальный вылет стрелы</th>
+                                    <td>13 м</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Угол поворота</th>
+                                    <td>360<sup>o</sup></td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="cost-content font-weight-bold">
+                            <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
+                            <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
+
+                        </div>
+                        <div class="card-bottom-content font-weight-bold">
+                            <button class="more">Подробнее</button>
+                            <button class="order px-4 py-1">Заказать</button>
+                            <button class="number d-none d-lg-block">+7 показать номер</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 </section>
-<!-- <section class="service-block">
-    <div class="container">
-        <div class="left-block col-md-6">
-            <img src="./img/items/camas.png" alt="" class="card-image">
-        </div>
-        <div class="right-block col-md-6">
-            <h1 class="title-block">Сервис аренды спецтехники</h1>
-            <div class="desc-block">
-                <p class="desc">Это крупнейший российский портал создан для удобной, простой и полезной систематизации
-                    информации как для заказчиков,
-                    так и для собственников спецтехники.</p>
-                <p class="desc">На портале вы сможете моментально оформить заказ на необходимую спецтехнику заполнив
-                    формы. Также вы можете найти ближайшую технику самостоятельно на карте или изучить объявления о
-                    сдаче в аренду техники от собственников.</p>
-            </div>
-        </div>
-    </div>
-</section> -->
 <section class="on-app p-4 p-md-5 text-center text-sm-left">
         <div class="container p-0 justify-content-start">
             <div class="left-block app-screeen col-md-4 col-lg-3 d-none d-sm-block">
@@ -692,7 +525,5 @@
 
     });
 </script>
-
-
 </body>
 </html>
