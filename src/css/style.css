@@ -491,18 +491,18 @@ html body {
         color: #3B3B3B; }
       html body .breadcrumb .container nav ol.breadcrumb li.breadcrumb-item i {
         color: #FFCD11; }
-  html body section.card_main .container {
-    display: flex;
-    padding-bottom: 40px;
-    flex-wrap: wrap; }
-    html body section.card_main .container .left-side {
-      background-color: #FFFFFF; }
-      html body section.card_main .container .left-side h1.title-card {
+  html body section.card_main {
+    background-color: #FFFFFF; }
+    html body section.card_main .container {
+      display: flex;
+      padding-bottom: 40px;
+      flex-wrap: wrap; }
+      html body section.card_main .container h1.title-card {
         font-weight: bold;
         padding-bottom: 30px;
         flex-basis: 100%; }
         @media screen and (max-width: 320px) {
-          html body section.card_main .container .left-side h1.title-card {
+          html body section.card_main .container h1.title-card {
             font-size: 16px; } }
       html body section.card_main .container .left-side .item-slide .mySlides {
         display: none; }
@@ -514,15 +514,12 @@ html body {
           content: "";
           display: table;
           clear: both; }
-        html body section.card_main .container .left-side .item-slide .img-card .column {
-          float: left;
-          width: 23%; }
-          html body section.card_main .container .left-side .item-slide .img-card .column .cursor {
-            cursor: pointer; }
-          html body section.card_main .container .left-side .item-slide .img-card .column .demo {
-            opacity: 0.6; }
-          html body section.card_main .container .left-side .item-slide .img-card .column .active, html body section.card_main .container .left-side .item-slide .img-card .column .demo:hover {
-            opacity: 1; }
+        html body section.card_main .container .left-side .item-slide .img-card .column .cursor {
+          cursor: pointer; }
+        html body section.card_main .container .left-side .item-slide .img-card .column .demo {
+          opacity: 0.6; }
+        html body section.card_main .container .left-side .item-slide .img-card .column .active, html body section.card_main .container .left-side .item-slide .img-card .column .demo:hover {
+          opacity: 1; }
       html body section.card_main .container .left-side .item-slide img.main-img {
         width: 100%;
         object-fit: cover; }
@@ -542,61 +539,58 @@ html body {
             padding-left: 0; }
           html body section.card_main .container .left-side .item-slide .img-card img .active {
             opacity: 1; }
-    html body section.card_main .container .right-side {
-      background-color: #FFFFFF; }
-      html body section.card_main .container .right-side .prop-content {
-        padding-top: 0px; }
-        html body section.card_main .container .right-side .prop-content .block-title {
-          font-weight: bold; }
-        html body section.card_main .container .right-side .prop-content .card-prop tbody tr {
-          display: flex;
-          justify-content: space-between; }
-          html body section.card_main .container .right-side .prop-content .card-prop tbody tr th, html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
-            padding-left: 0;
-            padding-bottom: 0;
-            border: none;
-            font-weight: normal; }
-          html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
-            padding-right: 0; }
-          @media screen and (max-width: 321px) {
-            html body section.card_main .container .right-side .prop-content .card-prop tbody tr th {
-              color: #757575; } }
-        html body section.card_main .container .right-side .prop-content .cost-content {
-          padding-bottom: 20px; }
-          html body section.card_main .container .right-side .prop-content .cost-content .cost, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock, html body section.card_main .container .right-side .prop-content .cost-content .location {
+      html body section.card_main .container .right-side {
+        background-color: #FFFFFF; }
+        html body section.card_main .container .right-side .prop-content {
+          padding-top: 0px; }
+          html body section.card_main .container .right-side .prop-content .block-title {
             font-weight: bold; }
-            html body section.card_main .container .right-side .prop-content .cost-content .cost i, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock i, html body section.card_main .container .right-side .prop-content .cost-content .location i {
-              font-weight: 300; }
-    html body section.card_main .container .bottom-content {
-      display: flex;
-      justify-content: space-between; }
-      html body section.card_main .container .bottom-content button {
-        border: none;
-        border-radius: 0; }
-      html body section.card_main .container .bottom-content button.order {
-        background: #fecc11; }
-        @media screen and (max-width: 320px) {
-          html body section.card_main .container .bottom-content button.order {
-            letter-spacing: 3px; } }
-      html body section.card_main .container .bottom-content button.number {
-        background: #1a1a1a;
-        color: #fecc11;
-        border: none; }
-        html body section.card_main .container .bottom-content button.number button.on-map {
-          background: transparent;
-          border: 2px solid black;
-          font-size: 0.9rem;
-          transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out; }
-          html body section.card_main .container .bottom-content button.number button.on-map:hover {
-            background: #000;
-            color: whitesmoke;
-            text-shadow: 0 0 1px whitesmoke; }
-    html body section.card_main .container .client-contact-info {
-      background-color: #FFFFFF; }
-      html body section.card_main .container .client-contact-info button.number {
-        background: #3b3b3b;
-        color: #fecc11;
-        font-size: inherit; }
+          html body section.card_main .container .right-side .prop-content .card-prop tbody tr {
+            display: flex;
+            justify-content: space-between; }
+            html body section.card_main .container .right-side .prop-content .card-prop tbody tr th, html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
+              padding-left: 0;
+              padding-bottom: 0;
+              border: none;
+              font-weight: normal; }
+            html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
+              padding-right: 0; }
+            @media screen and (max-width: 321px) {
+              html body section.card_main .container .right-side .prop-content .card-prop tbody tr th {
+                color: #757575; } }
+          html body section.card_main .container .right-side .prop-content .cost-content {
+            padding-bottom: 20px; }
+            html body section.card_main .container .right-side .prop-content .cost-content .cost, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock, html body section.card_main .container .right-side .prop-content .cost-content .location {
+              font-weight: bold; }
+      html body section.card_main .container .bottom-content {
+        display: flex;
+        justify-content: space-between; }
+        html body section.card_main .container .bottom-content button {
+          border-radius: 0; }
+        html body section.card_main .container .bottom-content button.order {
+          background: #fecc11; }
+          @media screen and (max-width: 320px) {
+            html body section.card_main .container .bottom-content button.order {
+              letter-spacing: 3px; } }
+        html body section.card_main .container .bottom-content button.number {
+          background: #1a1a1a;
+          color: #fecc11;
+          border: none; }
+          html body section.card_main .container .bottom-content button.number button.on-map {
+            background: transparent;
+            border: 2px solid black;
+            font-size: 0.9rem;
+            transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out; }
+            html body section.card_main .container .bottom-content button.number button.on-map:hover {
+              background: #000;
+              color: whitesmoke;
+              text-shadow: 0 0 1px whitesmoke; }
+      html body section.card_main .container .client-contact-info {
+        background-color: #FFFFFF; }
+        html body section.card_main .container .client-contact-info button.number {
+          background: #3b3b3b;
+          color: #fecc11;
+          font-size: inherit; }
   html body section.also-by-client {
     background: whitesmoke;
     padding-bottom: 50px; }

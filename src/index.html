@@ -31,7 +31,7 @@
                     <div class="search-mobile d-block d-sm-none">
                         <img src="img/icons/search-icon.svg" alt=" ">
                     </div>
-                    <div class="d-flex" id="choose-location">
+                    <div class="d-flex" data-toggle="modal" data-target="#locationModal">
                         <span class="d-none d-sm-block">Местоположение</span>
                         <img class="mx-2" src="img/icons/location-icon.svg" alt="">
                         <span class="d-none d-sm-block">Выберите регион</span>
@@ -73,7 +73,7 @@
                             </ul>
                         </div>
                         <div class="rent-equip col-md-2 col-lg-2 d-sm-none d-lg-block">
-                            <button class="btn btn-warning rent w-100">Сдать технику</button>
+                            <button class="btn btn-warning rent w-100" data-toggle="modal" data-target="#exampleModal">Сдать технику</button>
                         </div>
                     </div>
                 </div>
@@ -667,26 +667,11 @@
     <div class="title-block ">
         <h1 class="title-block">Изменение региона</h1>
     </div>
-    <form action="">
-        <div class="form-body py-2">
-            <div class="form-group">
-                <input type="radio" name="location" id="auto-location" checked><label for="auto-location">Казань</label>
-                <p>Автоматически</p>
-            </div>
-            <div class="form-group">
-                <input type="radio" name="location" id="set-location"><label for="set-location">Задать</label>
-                <input type="text" id="city-field" placeholder="Введите название города">
-            </div>
-        </div>
-        <div class="bottom-form">
-            <button class="save btn">Сохранить</button>
-        </div> 
-    </form>
+    
 </div>
 
 
-<!-- Разместить технику -->
-
+<!-- МОДАЛЬНОЕ ОКНО РАЗМЕСТИТЬ ТЕХНИКУ -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content rounded-0">
@@ -717,7 +702,7 @@
                   </select>
                   <p class="form-text">
                     В данном поле запрещено писать какую-либо контактную информацию, 
-                    такие объявления будут удаленв модератором.
+                    такие объявления будут удалены модератором.
                   </p>
               </div>
               
@@ -811,7 +796,7 @@
           </form>
       </div>
       <div class="modal-footer">
-          <button class="btn yel-btn">Разместить</button>
+          <button class="btn yel-btn" type="submit">Разместить</button>
           <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Я согласен с политикой конфиденциальности и обработкой персональных данных</label>
@@ -821,11 +806,42 @@
     </div>
   </div>
 </div>
+<!-- МОДАЛЬНОЕ ОКНО РАЗМЕСТИТЬ ТЕХНИКУ -->
+<div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Изменение региона</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form action="">
+        <div class="form-body py-2">
+            <div class="form-group">
+                <input type="radio" name="location" id="auto-location" checked><label for="auto-location">Казань</label>
+                <p>Автоматически</p>
+            </div>
+            <div class="form-group">
+                <input type="radio" name="location" id="set-location"><label for="set-location">Задать</label>
+                <input type="text" id="city-field" placeholder="Введите название города">
+            </div>
+        </div>
+    </form>
+      </div>
+      <div class="modal-footer">
+          <button class="btn yel-btn" type="submit">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- Разместить технику -->
+<!-- МОДАЛЬНОЕ ОКНО ВЫБОР МЕСТОПОЛОЖЕНИЯ -->
 
-<!-- Затемнение для мод. окон -->
-<div class="backdrop"></div>
+
+<!-- МОДАЛЬНОЕ ОКНО ВЫБОР МЕСТОПОЛОЖЕНИЯ -->
+
 
 
 <!-- JavaScript links -->
@@ -925,36 +941,5 @@
 
     });
 </script>
-
-<!-- <script>
-    // Get the modal
-    var modal2 = document.getElementById("location-form");
-
-    var btn = document.getElementById("choose-location");
-
-    var span = document.getElementsByClassName("close")[0];
-    var backdrop = document.querySelector('.backdrop');
-    var radio = document.querySelector('#set-location');
-    var city = document.querySelector('#city-field');
-
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function() {
-        backdrop.style.display = "block";
-        modal2.style.display = "block";
-    }
-
-    backdrop.onclick = function () {
-        backdrop.style.display = "none";
-        modal2.style.display = "none";
-    }
-
-    radio.onchange = function (event) {
-        if (event.target.checked) {
-            city.focus();
-        }
-    }
-
-</script> -->
 </body>
 </html>

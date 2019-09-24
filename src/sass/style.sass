@@ -604,18 +604,20 @@ html
                 color: $yellow-bg
     // Карточка спецтехники
     section.card_main
+      background-color: $white-bg
       .container
         display: flex
         padding-bottom: 40px
         flex-wrap: wrap 
+        h1.title-card
+          font-weight: bold
+          padding-bottom: 30px
+          flex-basis: 100%
+          @media screen and ( max-width: 320px )
+            font-size: 16px
         .left-side
-          background-color: $white-bg
-          h1.title-card
-            font-weight: bold
-            padding-bottom: 30px
-            flex-basis: 100%
-            @media screen and ( max-width: 320px )
-              font-size: 16px
+          
+          
           .item-slide
             .mySlides
               display: none
@@ -628,8 +630,7 @@ html
                 display: table
                 clear: both
               .column 
-                float: left
-                width: 23%
+                // flex-basis: 100%
                 .cursor
                   cursor: pointer
                 .demo
@@ -680,13 +681,11 @@ html
               padding-bottom: 20px
               .cost, .hour-dock, .location
                 font-weight: bold
-                i
-                  font-weight: 300
         .bottom-content
           display: flex
           justify-content: space-between
           button
-            border: none
+            // border: none
             border-radius: 0
           button.order
             background: #fecc11

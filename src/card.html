@@ -79,32 +79,28 @@
             </nav>
         </header>
     <!-- Хлебные крошки -->
-    <div class="breadcrumb d-none d-md-block d-lg-none">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#">Аренда техники</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#">Автокраны</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                        Автокран Ивановец
-                    </li>
-                </ol>
-            </nav>
-        </div>
+    <div class="breadcrumb pt-sm-4 pt-md-4 pt-lg-5 pb-4 m-0">
+    <div class="container p-0">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-0 m-0">
+                <li class="breadcrumb-item"><a href="#">Главная</a><i class="fas fa-chevron-right mx-2"></i></li>
+                <li class="breadcrumb-item"><a href="#">Аренда техники</a><i class="fas fa-chevron-right mx-2"></i></li>
+                <li class="breadcrumb-item"><a href="#">Аренда техники</a><i class="fas fa-chevron-right mx-2"></i></li>
+                <li class="breadcrumb-item"><a href="#">Аренда техники</a><i class="fas fa-chevron-right mx-2"></i></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#">Автокраны</a></li>
+            </ol>
+        </nav>
     </div>
+</div>
     <!-- Главная карточка -->
-    <section class="card_main">
+    <section class="card_main py-4">
+        <!-- Заголовок главной карточки -->
+        <div class="container">            <h1 class="title-card p-0 px-3 pt-3 order-md-0">Автокран Ивановец 14 тонн (14 метров)</h1>
+        </div>
         <div class="container p-0">
             <!-- Левая сторона с картинками -->
             <div class="left-side col-md-6 p-0  d-flex flex-column">
-                <div class="item-slide d-flex flex-column flex-md-column-reverse">
+                <div class="item-slide d-flex flex-column">
                     <div class="mySlides">
                         <img src="./img/main-bg2.jpg" style="width:100%">
                     </div>
@@ -118,28 +114,27 @@
                         <img src="./img/items/ios-app-2.png" style="width:100%">
                     </div>
                     <!-- Миниатюры главной карточки -->
-                    <div class="img-card container d-none d-md-flex d-lg-none">
-                        <div class="column">
+                    <div class="img-card container d-none d-md-flex flex-row flex-nowrap justify-content-between">
+                        <div class="column-3">
                             <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(1)">
                         </div>
-                        <div class="column">
+                        <div class="column-3">
                             <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(2)">
                         </div>
-                        <div class="column">
+                        <div class="column-3">
                             <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(3)">
                         </div>
-                        <div class="column">
+                        <!-- <div class="column">
                             <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(4)">
-                        </div>
+                        </div> -->
                     </div>
-                    <!-- Заголовок главной карточки -->
-                    <h1 class="title-card p-0 px-3 pt-3 order-md-0">Автокран Ивановец 14 тонн (14 метров)</h1>
+                    
                 </div>
             </div>
             <!-- Правая сторона с информацией -->
-            <div class="right-side col-md-6">
+            <div class="right-side col-md-6 px-3 ">
                 <div class="prop-content">
-                    <p class="block-title  d-none d-md-flex d-lg-none">Основные характеристики техники</p>
+                    <p class="block-title  d-none d-md-flex">Основные характеристики техники</p>
                     <div class="card-prop">
                         <table class="table">
                             <tbody>
@@ -180,21 +175,23 @@
                         Наличный/безналичный расчет. Договор.
                         Режим работы круглосуточно, без перерывов и выходных.
                     </p>
-                </div>      
+                </div>
+                <div class="client-contact-info">
+                        <p>Контактное лицо 
+                            <a href="">Станислав "СтройТехника Казань"</a>
+                        </p>
+                        <p>на портале с апреля 2014 г</p>
+                        <p>всего объявлений 15</p>
+                    </div>      
+                    <div class="bottom-content w-100 p-3">
+                            <button class="btn order text-uppercase py-1">Заказать</button>
+                            <button class="number d-none d-md-block">+7 показать номер</button>
+                            <button class=" btn on-map wh-btn d-none d-md-block">Показать на карте</button>
+            
+                        </div>
             </div>
-            <div class="bottom-content w-100 p-3">
-                <button class="btn order w-100 text-uppercase py-1">Заказать</button>
-                <button class=" btn on-map d-none d-md-block d-lg-none">Показать на карте</button>
-
-            </div>
-            <div class="client-contact-info p-3 mx-3">
-                <p>Контактное лицо 
-                    <a href="">Станислав "СтройТехника Казань"</a>
-                </p>
-                <p>на портале с апреля 2014 г</p>
-                <p>всего объявлений 15</p>
-                <button class="btn number w-100 py-1">+7 показать номер</button>
-            </div>
+            
+            
         </div>
     </section>
     <!-- Другая техника собственника -->
