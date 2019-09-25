@@ -45,10 +45,10 @@
                     <div class="search-mobile d-block d-sm-none" data-toggle="modal" data-target="#searchModal">
                         <img src="img/icons/search-icon.svg" alt=" ">
                     </div>
-                    <div class="d-flex" data-toggle="modal" data-target="#locationModal">
+                    <div class="d-flex location-choose" data-toggle="modal" data-target="#locationModal">
                         <span class="d-none d-sm-block">Местоположение</span>
                         <img class="mx-2" src="img/icons/location-icon.svg" alt="">
-                        <span class="d-none d-sm-block">Выберите регион</span>
+                        <span class="d-none d-sm-block choicecity">Выберите регион</span>
                     </div>            
                     <div class="d-none d-sm-block ml-auto" data-toggle="modal" data-target="#loginModal">
                         <ul class="navbar-nav">
@@ -665,11 +665,11 @@
         <form action="">
             <div class="form-group">
                 <label for="emailIn">Почта</label>
-                <input type="email" class="form-control" name="email" id="emailIn">
+                <input type="email" class="form-control rounded-0" name="email" id="emailIn" placeholder="Почта">
             </div>  
             <div class="form-group">
                 <label for="passIn">Пароль</label>
-                <input type="password" class="form-control" id="passIn" name="password">
+                <input type="password" class="form-control rounded-0" id="passIn" name="password" placeholder="Пароль">
             </div>
         </form>
        </div>

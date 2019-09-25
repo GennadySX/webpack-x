@@ -108,16 +108,17 @@ html
                   color: $yellow-text
                 &:focus
                   outline: none
-              
+          .location-choose
+            cursor: pointer
+            .choicecity
+              text-decoration: underline
+              text-underline-position: under
           .navbar-toggler-icon
             background-image: url('../img/icons/menu-icon.svg')
             width: 22px
             height: 17px
-          ul.navbar-nav
-            a
-              color: #FFCD11 !important
-            .choicecity
-              text-decoration: underline !important
+          a.nav-link
+            color: $yellow-text
       .nav-second
         background-color: white
         .bottom-nav
@@ -630,6 +631,10 @@ html
           ol.breadcrumb
             li.breadcrumb-item
               padding: 0
+              text-decoration: underline
+              text-underline-position: under
+              &.active
+                text-decoration: none
               &::before
                 display: none
                 content: ''
@@ -757,11 +762,7 @@ html
             background-color: transparent
             padding: 0
             border: none
-            margin-left: 15px
             transition: box-shadow 0.7s ease-in-out
-            @media screen and ( min-width: 768px )
-              background-color: $white
-              
             @media screen and ( max-width: 600px )
               width: 40%
               &:nth-child(odd)
@@ -772,12 +773,20 @@ html
               margin-left: 0
             &:hover
               box-shadow: 0 0 25px rgba(darkgray, 0.7)
+            // &:first-child
+            //   .card-body
+            //     padding-left: 0
+            // &:last-child
+            //   .card-body
+            //     padding-right: 0
             .card-body
-              padding: 0
+              padding: 10px
               img.card-image
                 width: 100%
               .card-data
-                padding: 15px
+                background-color: transparent
+                @media screen and ( min-width: 768px )
+                  background-color: $white
                 span.card-title
                   font-weight: bold
                 .prop-block
@@ -891,6 +900,12 @@ html
       button
         background-color: $yellow-bg
         font-weight: bold
+    #loginModal
+      .reg_link
+        color: #989396
+        text-decoration: underline
+        text-underline-position: under
+        font-size: inherit
 
     // Модальное окно техника
     .order-form
@@ -944,9 +959,7 @@ html
         justify-content: space-between
         padding-bottom: 10px
         h1.title-block
-        .reg_link
-          color: #4E4852
-          text-decoration: underline
+        
       form
         .form-group
           padding-bottom: 7px
