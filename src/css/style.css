@@ -93,6 +93,8 @@ html body {
         height: 17px; }
       html body header nav.nav-first .container a.nav-link {
         color: #FFCD11; }
+        html body header nav.nav-first .container a.nav-link:hover {
+          color: #FFCD11; }
   html body header .nav-second {
     background-color: white; }
     html body header .nav-second .bottom-nav .brand {
@@ -263,72 +265,86 @@ html body {
         font-weight: bold; }
       html body section.item-container .container .left-block .title-block {
         font-weight: bold; }
-      html body section.item-container .container .left-block .list-block {
+      html body section.item-container .container .left-block a.title-list-block {
+        width: 100%;
+        background: #3B3B3B;
+        color: #FFFFFF;
+        padding-left: 15px;
+        min-height: 25px;
+        display: block;
+        width: 100%; }
+        html body section.item-container .container .left-block a.title-list-block:hover {
+          color: #FFCD11; }
+      html body section.item-container .container .left-block .list-block .title-list-block {
+        width: 100%;
+        background: #3B3B3B;
+        color: #FFFFFF;
+        padding-left: 15px;
+        min-height: 25px; }
+      html body section.item-container .container .left-block .list-block a.title-list-block {
+        display: block;
+        width: 100%; }
+        html body section.item-container .container .left-block .list-block a.title-list-block:hover {
+          color: #FFCD11; }
+      html body section.item-container .container .left-block .list-block .cat-list {
+        background: white;
+        padding: 10px 0;
         margin-bottom: 10px; }
-        html body section.item-container .container .left-block .list-block .title-list-block {
-          width: 100%;
-          background: #3B3B3B;
-          color: #FFFFFF;
-          padding-left: 15px;
-          min-height: 25px; }
-        html body section.item-container .container .left-block .list-block .cat-list {
-          background: white;
-          padding: 10px 0; }
-          html body section.item-container .container .left-block .list-block .cat-list .cat-item {
-            list-style: none; }
-            html body section.item-container .container .left-block .list-block .cat-list .cat-item a {
-              padding-left: 25px;
-              color: #1a1a1a;
-              display: inline-block;
-              width: 100%; }
-              html body section.item-container .container .left-block .list-block .cat-list .cat-item a:hover {
-                color: white;
-                background-color: #9a9a9a; }
-        html body section.item-container .container .left-block .list-block .order-double-click {
-          text-align: center;
-          display: flex;
-          border: none; }
-          html body section.item-container .container .left-block .list-block .order-double-click .card-body {
-            padding: 0;
-            margin-bottom: 10px; }
-            html body section.item-container .container .left-block .list-block .order-double-click .card-body img {
-              width: 100%; }
-            html body section.item-container .container .left-block .list-block .order-double-click .card-body .title-item {
-              margin-top: 10px;
-              padding: 0; }
-            html body section.item-container .container .left-block .list-block .order-double-click .card-body a.order {
-              bottom: 10px;
-              font-weight: bold;
-              background: #fecc11;
-              color: #1a1a1a;
-              padding: 7px;
-              padding-left: 10px;
-              padding-right: 10px; }
-        html body section.item-container .container .left-block .list-block .order-ask {
+        html body section.item-container .container .left-block .list-block .cat-list .cat-item {
+          list-style: none; }
+          html body section.item-container .container .left-block .list-block .cat-list .cat-item a {
+            padding-left: 25px;
+            color: #1a1a1a;
+            display: inline-block;
+            width: 100%; }
+            html body section.item-container .container .left-block .list-block .cat-list .cat-item a:hover {
+              color: white;
+              background-color: #9a9a9a; }
+      html body section.item-container .container .left-block .list-block .order-double-click {
+        text-align: center;
+        display: flex;
+        border: none; }
+        html body section.item-container .container .left-block .list-block .order-double-click .card-body {
           padding: 0;
-          display: flex;
-          border: none;
-          margin-bottom: 1rem; }
-          html body section.item-container .container .left-block .list-block .order-ask:last-child {
-            margin-bottom: 0; }
-          html body section.item-container .container .left-block .list-block .order-ask .title-ask {
-            min-height: 40px;
+          margin-bottom: 10px; }
+          html body section.item-container .container .left-block .list-block .order-double-click .card-body img {
+            width: 100%; }
+          html body section.item-container .container .left-block .list-block .order-double-click .card-body .title-item {
+            margin-top: 10px;
+            padding: 0; }
+          html body section.item-container .container .left-block .list-block .order-double-click .card-body a.order {
+            bottom: 10px;
             font-weight: bold;
-            margin-bottom: 5px;
             background: #fecc11;
-            padding: 10px 0; }
-          html body section.item-container .container .left-block .list-block .order-ask .card-body {
-            padding-top: 0px; }
-            html body section.item-container .container .left-block .list-block .order-ask .card-body .ask-desc {
-              text-align: left; }
-            html body section.item-container .container .left-block .list-block .order-ask .card-body button.number {
-              background: #3B3B3B;
-              color: #FFCD11;
-              border: none;
-              min-height: 2.2rem;
-              line-height: 12px;
-              padding-right: 10px;
-              padding-right: 10px; }
+            color: #1a1a1a;
+            padding: 7px;
+            padding-left: 10px;
+            padding-right: 10px; }
+      html body section.item-container .container .left-block .list-block .order-ask {
+        padding: 0;
+        display: flex;
+        border: none;
+        margin-bottom: 1rem; }
+        html body section.item-container .container .left-block .list-block .order-ask:last-child {
+          margin-bottom: 0; }
+        html body section.item-container .container .left-block .list-block .order-ask .title-ask {
+          min-height: 40px;
+          font-weight: bold;
+          margin-bottom: 5px;
+          background: #fecc11;
+          padding: 10px 0; }
+        html body section.item-container .container .left-block .list-block .order-ask .card-body {
+          padding-top: 0px; }
+          html body section.item-container .container .left-block .list-block .order-ask .card-body .ask-desc {
+            text-align: left; }
+          html body section.item-container .container .left-block .list-block .order-ask .card-body button.number {
+            background: #3B3B3B;
+            color: #FFCD11;
+            border: none;
+            min-height: 2.2rem;
+            line-height: 12px;
+            padding-right: 10px;
+            padding-right: 10px; }
       html body section.item-container .container .right-block h1 {
         font-weight: bold; }
       html body section.item-container .container .right-block .card {

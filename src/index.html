@@ -274,8 +274,8 @@
         <div class="left-block col-md-3 d-flex flex-column" id="categories">
             <h1 class="title-block align-self-center align-self-md-start my-3">Категории</h1>
             <div class="list-block">
-                <p class="title-list-block py-1 mb-2">Строительная техника</p>
-                <ul class="cat-list">
+                <a data-toggle="collapse" href="#firstList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2">Строительная техника</a>
+                <ul class="cat-list collapse " id="firstList">
                     <li class="cat-item"><a href="#">Автовышки</a></li>
                     <li class="cat-item"><a href="#">Автогрейдеры</a></li>
                     <li class="cat-item"><a href="#">Автокраны</a></li>
@@ -298,9 +298,10 @@
                     <li class="cat-item"><a href="#">Ямобуры</a></li>
                 </ul>
             </div>
+            
             <div class="list-block">
-                <p class="title-list-block py-1 mb-2">Грузоперевозки</p>
-                <ul class="cat-list">
+                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2">Грузоперевозки</a>
+                <ul class="cat-list collapse " id="collapseExample">
                     <li class="cat-item"><a href="#">Бензовозы</a></li>
                     <li class="cat-item"><a href="#">Водовозы</a></li>
                     <li class="cat-item"><a href="#">Газели</a></li>
@@ -313,8 +314,8 @@
                     <li class="cat-item"><a href="#">Эвакуаторы</a></li>
                 </ul>
             </div>
-            <div class="list-block d-none d-sm-block">
-                <p class="title-list-block py-1">Заказ в 2 клика</p>
+            <div class="list-block d-none d-sm-block mb-3">
+                <p class="title-list-block py-1 mb-2">Заказ в 2 клика</p>
                 <div class="card order-double-click">
                     <div class="card-body">
                         <img src="./img/items/camas.png" alt=" " class="item-thumb">
@@ -323,8 +324,8 @@
                     </div>
                 </div>
             </div>
-            <div class="list-block">
-                <p class="title-list-block py-1 mb-2">Заявки</p>
+            <a data-toggle="collapse" href="#thirdList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2">Заявки</a>
+            <div class="list-block collapse" id="thirdList">
                 <div class="card order-ask">
                     <p class="title-ask pl-3">Эвакуатор-погрузчик JSB 1СХ</p>
                     <div class="card-body d-flex flex-column align-items-start">
@@ -333,7 +334,7 @@
                         <button class="number align-self-center px-4">+7 показать номер</button>
                     </div>
                 </div>
-                <div class="card order-ask">
+                <div class="card order-ask collapse" id="thirdList">
                     <p class="title-ask pl-3">Эвакуатор-погрузчик JSB 1СХ</p>
                     <div class="card-body d-flex flex-column align-items-start">
                         <p class="ask-desc">Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По
@@ -341,7 +342,7 @@
                         <button class="number align-self-center px-4">+7 показать номер</button>
                     </div>
                 </div>
-                <div class="card order-ask">
+                <div class="card order-ask collapse" id="thirdList">
                     <p class="title-ask pl-3">Эвакуатор-погрузчик JSB 1СХ</p>
                     <div class="card-body d-flex flex-column align-items-start">
                         <p class="ask-desc">Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По
