@@ -50,6 +50,7 @@ html
     @media screen and ( max-width: 560px )
       h1
         font-size: 16px
+      
     @media screen and ( min-width: 561px )
       h1
         font-size: 20px
@@ -63,12 +64,17 @@ html
       font-size: 20px
       h1
         font-size: 30px
+    h1, h2
+      font-weight: bold !important
+    h2
+      font-size: inherit
     .header-and-promo
       background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg")
       background-repeat: no-repeat
       background-size: cover
       background-position: center
-      @media screen and ( max-width: 321px )
+      background-color: $dark-grey
+      @media screen and ( max-width: 475px )
         background-image:  url('../img/main-bg-mobile.jpg')
     button.btn
       border-radius: 0
@@ -83,6 +89,26 @@ html
           background-color: $black-bg
         .container
           color: $yellow-text
+          .dropdown
+            .dropdown-toggle
+              &::after
+                display: none
+            &-menu
+              background-color: $black-bg
+              top: 30px
+              left: -16px
+              height: 350px
+              width: 100vw
+              .dropdown-item
+                padding: 20px 0 5px 0
+                color: $white
+                border-bottom: 1px solid rgba(196, 196, 196, 0.3)
+                &.active, &:focus, &:hover
+                  background-color: transparent
+                  color: $yellow-text
+                &:focus
+                  outline: none
+              
           .navbar-toggler-icon
             background-image: url('../img/icons/menu-icon.svg')
             width: 22px
@@ -128,11 +154,16 @@ html
           h1.title
             color: #fff
             font-weight: bold
+            @media screen and ( max-width: 600px )
+              font-size: 20px
+            @media screen and ( min-width: 1024px )
+              font-size: 30px
+            @media screen and ( min-width: 1440px )
+              font-size: 36px
           p.your-equip
             color: #fff
             padding-top: 10px
             padding-bottom: 10px
-            font-size: 1.3rem
           .search-form
             form
               background: transparent
@@ -389,9 +420,9 @@ html
             font-weight: bold
           .card
             border: none
-            transition: box-shadow 0.7s ease-in-out
+            transition: box-shadow 0.5s ease-in-out
             &:hover
-              box-shadow: 0px 5px 25px rgba(#000, 0.3)
+              box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15)
             .card-body
               padding: 0
               .card-thumb
@@ -509,17 +540,21 @@ html
         .right-block
           .title-block
             color: #fecc11
-            font-weight: bolder
-            @media screen and ( max-width: 320px )
+            font-weight: bold
+            @media screen and ( max-width: 600px )
               font-size: 20px
+            @media screen and ( min-width: 1024px )
+              font-size: 30px
+            @media screen and ( min-width: 1440px )
+              font-size: 36px
           .desc-block
             padding-bottom: 20px
             .title-desc
               color: white
-              font-size: 1.7rem
+              font-size: 1.4em
             ul
               li.desc-item
-                font-size: 1.2rem
+                // font-size: 1.2rem
                 padding-bottom: 10px
                 color: white
                 list-style: none
@@ -839,8 +874,7 @@ html
       transform: translateX(-50%) translateY(-50%)
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
     // Местоположение
-    .location-form
-      display: none
+    #locationModal, #searchModal
       input[type=radio]
         margin-right: 20px
       p
@@ -857,7 +891,6 @@ html
       button
         background-color: $yellow-bg
         font-weight: bold
-        width: 50%
 
     // Модальное окно техника
     .order-form

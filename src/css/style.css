@@ -41,12 +41,17 @@ html body {
       font-size: 20px; }
       html body h1 {
         font-size: 30px; } }
+  html body h1, html body h2 {
+    font-weight: bold !important; }
+  html body h2 {
+    font-size: inherit; }
   html body .header-and-promo {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; }
-    @media screen and (max-width: 321px) {
+    background-position: center;
+    background-color: #3B3B3B; }
+    @media screen and (max-width: 475px) {
       html body .header-and-promo {
         background-image: url("../img/main-bg-mobile.jpg"); } }
   html body button.btn {
@@ -60,6 +65,23 @@ html body {
         background-color: #000000; } }
     html body header nav.nav-first .container {
       color: #FFCD11; }
+      html body header nav.nav-first .container .dropdown .dropdown-toggle::after {
+        display: none; }
+      html body header nav.nav-first .container .dropdown-menu {
+        background-color: #000000;
+        top: 30px;
+        left: -16px;
+        height: 350px;
+        width: 100vw; }
+        html body header nav.nav-first .container .dropdown-menu .dropdown-item {
+          padding: 20px 0 5px 0;
+          color: #FFFFFF;
+          border-bottom: 1px solid rgba(196, 196, 196, 0.3); }
+          html body header nav.nav-first .container .dropdown-menu .dropdown-item.active, html body header nav.nav-first .container .dropdown-menu .dropdown-item:focus, html body header nav.nav-first .container .dropdown-menu .dropdown-item:hover {
+            background-color: transparent;
+            color: #FFCD11; }
+          html body header nav.nav-first .container .dropdown-menu .dropdown-item:focus {
+            outline: none; }
       html body header nav.nav-first .container .navbar-toggler-icon {
         background-image: url("../img/icons/menu-icon.svg");
         width: 22px;
@@ -99,11 +121,19 @@ html body {
       html body section.main-1 .container .top-content h1.title {
         color: #fff;
         font-weight: bold; }
+        @media screen and (max-width: 600px) {
+          html body section.main-1 .container .top-content h1.title {
+            font-size: 20px; } }
+        @media screen and (min-width: 1024px) {
+          html body section.main-1 .container .top-content h1.title {
+            font-size: 30px; } }
+        @media screen and (min-width: 1440px) {
+          html body section.main-1 .container .top-content h1.title {
+            font-size: 36px; } }
       html body section.main-1 .container .top-content p.your-equip {
         color: #fff;
         padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 1.3rem; }
+        padding-bottom: 10px; }
       html body section.main-1 .container .top-content .search-form form {
         background: transparent;
         padding-left: 0;
@@ -300,9 +330,9 @@ html body {
         font-weight: bold; }
       html body section.item-container .container .right-block .card {
         border: none;
-        transition: box-shadow 0.7s ease-in-out; }
+        transition: box-shadow 0.5s ease-in-out; }
         html body section.item-container .container .right-block .card:hover {
-          box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.3); }
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); }
         html body section.item-container .container .right-block .card .card-body {
           padding: 0; }
           html body section.item-container .container .right-block .card .card-body .card-thumb {
@@ -408,17 +438,22 @@ html body {
           width: 90%; }
       html body section.on-app .container .right-block .title-block {
         color: #fecc11;
-        font-weight: bolder; }
-        @media screen and (max-width: 320px) {
+        font-weight: bold; }
+        @media screen and (max-width: 600px) {
           html body section.on-app .container .right-block .title-block {
             font-size: 20px; } }
+        @media screen and (min-width: 1024px) {
+          html body section.on-app .container .right-block .title-block {
+            font-size: 30px; } }
+        @media screen and (min-width: 1440px) {
+          html body section.on-app .container .right-block .title-block {
+            font-size: 36px; } }
       html body section.on-app .container .right-block .desc-block {
         padding-bottom: 20px; }
         html body section.on-app .container .right-block .desc-block .title-desc {
           color: white;
-          font-size: 1.7rem; }
+          font-size: 1.4em; }
         html body section.on-app .container .right-block .desc-block ul li.desc-item {
-          font-size: 1.2rem;
           padding-bottom: 10px;
           color: white;
           list-style: none; }
@@ -702,25 +737,22 @@ html body {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-  html body .location-form {
-    display: none; }
-    html body .location-form input[type=radio] {
-      margin-right: 20px; }
-    html body .location-form p {
+  html body #locationModal input[type=radio], html body #searchModal input[type=radio] {
+    margin-right: 20px; }
+  html body #locationModal p, html body #searchModal p {
+    color: #B1B1B1; }
+  html body #locationModal input[type=text], html body #searchModal input[type=text] {
+    width: 100%;
+    padding: 7px 0 7px 7%;
+    border: 1px solid #E5E5E5; }
+    html body #locationModal input[type=text]:focus, html body #searchModal input[type=text]:focus {
+      box-shadow: 0px 0px 4px 0px #FFCD11;
+      outline: 1px solid #FFCD11; }
+    html body #locationModal input[type=text]::placeholder, html body #searchModal input[type=text]::placeholder {
       color: #B1B1B1; }
-    html body .location-form input[type=text] {
-      width: 100%;
-      padding: 7px 0 7px 7%;
-      border: 1px solid #E5E5E5; }
-      html body .location-form input[type=text]:focus {
-        box-shadow: 0px 0px 4px 0px #FFCD11;
-        outline: 1px solid #FFCD11; }
-      html body .location-form input[type=text]::placeholder {
-        color: #B1B1B1; }
-    html body .location-form button {
-      background-color: #FFCD11;
-      font-weight: bold;
-      width: 50%; }
+  html body #locationModal button, html body #searchModal button {
+    background-color: #FFCD11;
+    font-weight: bold; }
   html body .order-form {
     display: none; }
     html body .order-form form * {
