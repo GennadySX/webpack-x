@@ -806,7 +806,16 @@ html body {
       text-transform: uppercase; } }
   html body #exampleModal .form-row {
     width: 100%;
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 10px; }
+    html body #exampleModal .form-row label {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 5px; }
+  @media screen and (max-width: 575px) {
+    html body #exampleModal .modal-footer .yel-btn {
+      letter-spacing: 4px;
+      text-transform: uppercase; } }
   html body .order-form {
     display: none; }
     html body .order-form form * {

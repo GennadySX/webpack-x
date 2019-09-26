@@ -762,7 +762,7 @@
       <div class="modal-header border-0">
         <h1 class="modal-title" id="exampleModalLabel">Разместить технику</h1>
       </div>
-      <div class="modal-body">
+      <div class="modal-body py-0">
           <form action="">
               <div class="form-row">
                   <label for="" class="col-md-5">Раздел*</label>
@@ -799,42 +799,36 @@
                   </div>
               </div>
               <div class="form-row">
-                  <label for="" class="col-5">Цена за смену</label>
-                  <input type="text">
-                  <select name="" id="">
+                  <label for="" class="col-md-5">Цена за смену</label>
+                  <div class="col-md-7 p-0 flex-nowrap d-flex justify-content-between">
+                    <input type="text" class="col-7 m-0">
+                    <select name="" id="" class="col-4">
                       <option value="">руб.</option>
-                  </select>
+                    </select>
+                  </div>
               </div>
                 
               <div class="form-row">
-                  <label for="" class="col-5">Регион</label>
-                  <select name="" id="">
+                  <label for="" class="col-md-5">Регион</label>
+                  <select name="" id="" class="col-md-7">
                       <option value="">Выберите регион</option>
                   </select>
               </div>
               <div class="form-row">
-                    <label for=""class="align-top col-5">Описание объявления</label>
-                    <textarea name="" id="" cols="30" rows="5">Опишите вид проводимых работ</textarea>
+                    <label for=""class="align-top col-md-5">Описание объявления</label>
+                    <textarea name="" id="" cols="30" rows="5" class="w-100 col-md-7">Опишите вид проводимых работ</textarea>
                     <p class="form-text">В описании также запрещено вставлять контактные и персональные данные, ссылки на другие сайты. 
                     Подобные объявления удаляются модератором.</p>
               </div>
               <div class="form-row">
-                    <label for="" class="col-5">Оплата</label>
-                    <select name="" id="">
+                    <label for="" class="col-md-5">Оплата</label>
+                    <select name="" id="" class="col-md-7">
                         <option value="">Выберите вид оплаты</option>
                     </select>
                 </div>
-                <div class="form-row">
-                            <label for=""></label>
-                            <select name="" id=""></select>
-                        </div>
                     <div class="form-row">
-                            <label for=""></label>
-                            <input type="text" name="" id="">
-                    </div>
-                    <div class="form-row">
-                            <label for="" class="col-5">Год выпуска</label>
-                            <input type="text" name="" id="">
+                            <label for="" class="col-md-5">Год выпуска</label>
+                            <input type="text" name="" id="" class="col-md-7">
                     </div>
                     <div class="form-row">
                             <label for="" class="col-5">Фотографии</label>
@@ -877,23 +871,29 @@
                   </div>
               </div>
               <div class="form-row">
-                  <legend>Информация о собственнике</legend>
-                  <div class="form-group">
-                      <p>Уже зарегистрированы на нашем портале?</p>
-                      <button class="btn dark-btn">Да</button>
-                      <button class="btn wh-btn">Нет</button>
-                      <div class="form-group">
-                          <label for="" class="col-5">Почта*</label>
-                          <input type="text"></div>
-                      <div class="form-group">
-                          <label for="" class="col-5">Пароль*</label>
-                          <input type="text"></div>
+                  <div class="form-row">
+                        <legend class="col-md-5">Информация о собственнике</legend>
+                        <div class="form-group w-100">
+                            <p>Уже зарегистрированы на нашем портале?</p>
+                            <div class="w-100 d-flex justify-content-between">
+                                <button class="btn dark-btn flex-grow-1 mr-1 py-1">Да</button>
+                                <button class="btn wh-btn flex-grow-1 ml-1 py-1">Нет</button>
+                            </div>
+                        </div>
                   </div>
+                      <div class="form-row">
+                          <label for="" class="col-md-5">Почта*</label>
+                          <input type="text" class="col-md-7">
+                        </div>
+                      <div class="form-row">
+                          <label for="" class="col-md-5">Пароль*</label>
+                          <input type="text" class="col-md-7">
+                        </div>
               </div>
           </form>
       </div>
-      <div class="modal-footer border-0 flex-column align-items-start">
-          <button class="btn yel-btn" type="submit">Разместить</button>
+      <div class="modal-footer border-0 flex-column align-items-stretch">
+          <button class="btn yel-btn px-4 px-lg-5 align-self-sm-start" type="submit">Разместить</button>
           <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Я согласен с политикой конфиденциальности и обработкой персональных данных</label>

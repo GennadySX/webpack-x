@@ -955,7 +955,18 @@ html
     #exampleModal
       .form-row
         width: 100%
-        margin: 0    // Модальное окно техника
+        margin: 0
+        margin-bottom: 10px
+        label
+          padding: 0
+          margin: 0
+          margin-bottom: 5px
+      .modal-footer
+        .yel-btn
+          @media screen and ( max-width: 575px )
+            letter-spacing: 4px
+            text-transform: uppercase
+            // Модальное окно техника
     .order-form
       display: none
       form
