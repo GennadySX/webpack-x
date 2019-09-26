@@ -1,15 +1,17 @@
 .yel-btn {
   background-color: #FFCD11;
   color: #000000;
+  box-shadow: 0px 0px 15px #E5E5E5;
+  border: 2px solid #FFCD11;
   font-weight: bold;
-  transition: color 0.5s ease-in, background 0.7s ease-in-out; }
+  transition: box-shadow 0.5s ease-in, border 0.5s ease-in-out; }
   .yel-btn:hover {
-    background-color: #000000;
-    color: #FFCD11; }
+    box-shadow: 0px 0px 20px #FFCD11;
+    border: 2px solid #3B3B3B; }
 
 .dark-btn {
   background-color: #3B3B3B;
-  color: #FFCD11; }
+  color: #FFFFFF; }
 
 .wh-btn {
   background-color: transparent;
@@ -20,6 +22,9 @@
   .wh-btn:hover {
     background: #000;
     color: whitesmoke; }
+
+.blue-a {
+  color: #21ADD9; }
 
 html body {
   color: #000000;
@@ -90,6 +95,8 @@ html body {
             color: #FFCD11; }
           html body header nav.nav-first .container .dropdown-menu .dropdown-item:focus {
             outline: none; }
+        html body header nav.nav-first .container .dropdown-menu .btn {
+          font-weight: bold; }
       html body header nav.nav-first .container .location-choose {
         cursor: pointer; }
         html body header nav.nav-first .container .location-choose .choicecity {
@@ -750,23 +757,8 @@ html body {
       margin-top: 0; }
     html body .item-container .container.d-flex .right-block .card:last-child {
       margin-bottom: 0; }
-  html body .backdrop {
-    background: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: none; }
-  html body .modal-window {
-    position: fixed;
-    background-color: #FFFFFF;
-    z-index: 1000;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  html body .modal input, html body .modal textarea, html body .modal select {
+    border-radius: 0; }
   html body #locationModal input[type=radio], html body #searchModal input[type=radio] {
     margin-right: 20px; }
   html body #locationModal p, html body #searchModal p {
@@ -780,10 +772,7 @@ html body {
       outline: 1px solid #FFCD11; }
     html body #locationModal input[type=text]::placeholder, html body #searchModal input[type=text]::placeholder {
       color: #B1B1B1; }
-  html body #locationModal button, html body #searchModal button {
-    background-color: #FFCD11;
-    font-weight: bold; }
-  html body #loginModal .reg_link {
+  html body #signInModal .reg_link, html body #signUpModal .reg_link {
     color: #989396;
     text-decoration: underline;
     text-underline-position: under;
@@ -811,6 +800,13 @@ html body {
     html body #applicationModal .modal-footer .yel-btn {
       letter-spacing: 4px;
       text-transform: uppercase; } }
+  @media screen and (max-width: 575px) {
+    html body #rentalModal .modal-footer .yel-btn {
+      letter-spacing: 4px;
+      text-transform: uppercase; } }
+  html body #exampleModal .form-row {
+    width: 100%;
+    margin: 0; }
   html body .order-form {
     display: none; }
     html body .order-form form * {

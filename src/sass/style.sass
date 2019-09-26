@@ -27,14 +27,16 @@ $placeholder: #B1B1B1
 .yel-btn
   background-color: $yellow-bg
   color: $black-text
+  box-shadow: 0px 0px 15px $light-grey-bg
+  border: 2px solid $yellow-bg
   font-weight: bold
-  transition: color 0.5s ease-in, background 0.7s ease-in-out
+  transition: box-shadow 0.5s ease-in, border 0.5s ease-in-out
   &:hover
-    background-color: $black-bg
-    color: $yellow-text
+    box-shadow: 0px 0px 20px $yellow-bg
+    border: 2px solid $dark-grey
 .dark-btn
   background-color: $dark-grey
-  color: $yellow-text
+  color: $white
 .wh-btn
   background-color: transparent
   border: 3px solid $dark-grey
@@ -44,7 +46,8 @@ $placeholder: #B1B1B1
   &:hover
     background: #000
     color: whitesmoke
-
+.blue-a
+  color: #21ADD9
 
 html
   body
@@ -116,6 +119,8 @@ html
                   color: $yellow-text
                 &:focus
                   outline: none
+              .btn
+                font-weight: bold
           .location-choose
             cursor: pointer
             .choicecity
@@ -887,27 +892,11 @@ html
 
     //МОДАЛЬНЫЕ ОКНА
 
-    // Темный фон для мод. окон
-    .backdrop
-      background: rgba(0,0,0,0.7)
-      position: fixed
-      z-index: 999
-      left: 0
-      top: 0
-      width: 100%
-      height: 100%
-      display: none
-
     // Общие стили для модальных окон
-    .modal-window
-      position: fixed
-      background-color: $white-bg
-      z-index: 1000
-      left: 50%
-      top: 50%
-      transform: translateX(-50%) translateY(-50%)
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-    // Местоположение
+    .modal
+      input, textarea, select
+        border-radius: 0
+
     #locationModal, #searchModal
       input[type=radio]
         margin-right: 20px
@@ -922,16 +911,14 @@ html
           outline: 1px solid $yellow-bg
         &::placeholder
           color: $placeholder
-      button
-        background-color: $yellow-bg
-        font-weight: bold
-    #loginModal
+
+    #signInModal, #signUpModal
       .reg_link
         color: #989396
         text-decoration: underline
         text-underline-position: under
         font-size: inherit
-
+        
     #applicationModal
       .modal-body
         .form-row
@@ -958,8 +945,17 @@ html
           @media screen and ( max-width: 575px )
             letter-spacing: 4px
             text-transform: uppercase
-            
-    // Модальное окно техника
+    #rentalModal
+      .modal-footer
+        .yel-btn
+          @media screen and ( max-width: 575px )
+            letter-spacing: 4px
+            text-transform: uppercase
+
+    #exampleModal
+      .form-row
+        width: 100%
+        margin: 0    // Модальное окно техника
     .order-form
       display: none
       form

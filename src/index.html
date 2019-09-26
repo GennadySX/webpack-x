@@ -35,7 +35,8 @@
                             <a class="dropdown-item active" href="#">Услуги</a>
                             <a class="dropdown-item" href="#">Грузоперевозки</a>
                             <a class="dropdown-item" href="#">Доставка материала</a>
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Войти</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signInModal">Войти</a>
+                            <button type="button" class="btn btn-warning rent w-100 py-1 mt-4" data-toggle="modal" data-target="#exampleModal">Сдать технику</button>
                         </div>
                     </div>
 
@@ -50,7 +51,7 @@
                         <img class="mx-2" src="img/icons/location-icon.svg" alt="">
                         <span class="d-none d-sm-block choicecity">Выберите регион</span>
                     </div>            
-                    <div class="d-none d-sm-block ml-auto" data-toggle="modal" data-target="#loginModal">
+                    <div class="d-none d-sm-block ml-auto" data-toggle="modal" data-target="#signInModal">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
                         </ul>
@@ -122,21 +123,21 @@
                         <div class="col-2 col-sm-4 col-md-2 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center align-self-lg-start">
                             <img src="./img/home-icon1.svg" class="icon" alt=" ">
                         </div>
-                        <div class="col d-flex flex-column">
+                        <div class="col d-flex flex-column mt-sm-2">
                             <p class="card-title pb-1 align-self-sm-center align-self-lg-start">Оставить заявку</p>
                             <p class="card-text d-sm-none d-lg-block">Мы подберем для Вас любую <br> технику. Подача техники в день обращения.</p>
                         </div>  
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 p-0 py-2">
+            <div class="col-md-4 col-lg-3 p-0 py-2" data-toggle="modal" data-target="#exampleModal">
                 <div class="card_desc card">
                     <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
                         <div class="col-2 col-sm-4 col-md-2 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center align-self-lg-start">
                             <img src="./img/home-icon1.svg" class="icon" alt=" ">
                         </div>
-                        <div class="col d-flex flex-column">
-                            <p class="card-title pb-1 align-self-sm-center align-self-lg-start">Получить предложения</p>
+                        <div class="col d-flex flex-column mt-sm-2">
+                            <p class="card-title pb-1 align-self-sm-center align-self-lg-start" >Получить предложения</p>
                             <p class="card-text d-sm-none d-lg-block">Мы поможем сдать вашу технику быстро и на выгодных условиях. Заполните форму и получайте заказы.</p>
                         </div>  
                     </div>
@@ -148,7 +149,7 @@
                         <div class="col-2 col-sm-4 col-md-2 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center align-self-lg-start">
                             <img src="./img/home-icon1.svg" class="icon" alt=" ">
                         </div>
-                        <div class="col d-flex flex-column">
+                        <div class="col d-flex flex-column mt-sm-2">
                             <p class="card-title pb-1 align-self-sm-center align-self-lg-start">Договориться напрямую</p>
                             <p class="card-text d-sm-none d-lg-block">Изучайте предложения, связывайтесь напрямую и обсуждайте детали заказа по телефону.</p>
                         </div>  
@@ -394,7 +395,7 @@
                         </div>
                         <div class="card-bottom-content font-weight-bold">
                             <button class="more">Подробнее</button>
-                            <button class="order px-3">Заказать</button>
+                            <button class="order px-3" data-toggle="modal" data-target="#rentalModal">Заказать</button>
                             <button class="number d-none d-lg-block">+7 показать номер</button>
                         </div>
                     </div>
@@ -656,12 +657,12 @@
 
 
 <!-- МОДАЛЬНОЕ ОКНО ВХОДА -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content rounded-0 p-sm-3">
       <div class="modal-header border-0 d-flex justify-content-between">
         <h1 class="modal-title" id="exampleModalLabel">Войти</h1>
-        <a href="#" class="reg_link">Зарегистрироваться</a>
+        <a href="#" class="reg_link" data-toggle="modal" data-target="#signUpModal">Зарегистрироваться</a>
       </div>
       <div class="modal-body py-0">
         <form action="">
@@ -676,234 +677,232 @@
         </form>
        </div>
        <div class="modal-footer border-0 justify-content-between justify-content-sm-around">
-            <button class="send btn yel-btn w-50" data-toggle="modal" data-target="#loginModal">Войти</button>
-            <a href="" class="forget-pass">Забыли пароль?</a>
+            <button class="send btn yel-btn w-50" data-toggle="modal" data-target="#signInModal">Войти</button>
+            <a href="" class="forget-pass blue-a">Забыли пароль?</a>
       </div>
     </div>
   </div>
 </div>
-<!-- МОДАЛЬНОЕ ОКНО ВХОДА -->
 
 
-<!-- Модальное окно - регистрация -->
-<div class="signup-block col-md-6 col-lg-5 p-3 py-4 modal-window">
-    <div class="title-block ">
-        <h1 class="title-block">Зарегистрироваться</h1>
-        <span class="reg_link" data-toggle="modal" data-target="#loginModal">Войти</span>
+<!-- МОДАЛЬНОЕ ОКНО РЕГИСТРАЦИИ -->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0 p-sm-3">
+      <div class="modal-header border-0 d-flex justify-content-between">
+        <h1 class="modal-title" id="exampleModalLabel">Зарегистрироваться</h1>
+        <a href="#" class="reg_link">Войти</a>
+      </div>
+      <div class="modal-body py-0">
+        <form action="">
+            <div class="form-group">
+                <label for="emailIn d-none d-sm-block">Почта</label>
+                <input type="email" class="form-control rounded-0" name="email" id="emailIn" placeholder="Почта">
+            </div>  
+            <div class="form-group">
+                <label for="passIn d-none d-sm-block">Пароль</label>
+                <input type="password" class="form-control rounded-0" id="passIn" name="password" placeholder="Пароль">
+            </div>
+            <div class="form-group">
+                <label for="passConfirm d-none d-sm-block">Повторите пароль</label>
+                <input type="password" class="form-control" id="passConfirm" name="confirm" class="Повторите пароль">
+            </div>
+        </form>
+       </div>
+       <div class="modal-footer border-0 flex-column">
+            <div class="form-group desc">
+                <p class="policy">Нажимая на кнопку Зарегистрироваться, я принимаю условия <a href="" class="blue-a">пользовательского соглашения</a></p>
+            </div>
+            <button class="btn sign_up send yel-btn w-100">Зарегистрироваться</button>
+      </div>
     </div>
-    <form action="">
-        <div class="form-group">
-            <label for="name">Ваше имя</label>
-            <input type="text" class="form-control" name="name" id="name">
-        </div>
-        <div class="form-group">
-            <label for="emailUp">Почта</label>
-            <input type="email" name="email" class="form-control" id="emailUp">
-        </div>
-        <div class="form-group">
-            <label for="passUp">Пароль</label>
-            <input type="password" class="form-control" id="passUp" name="password">
-        </div>
-        <div class="form-group">
-            <label for="passConfirm">Подтвердите пароль</label>
-            <input type="password" class="form-control" id="passConfirm" name="confirm">
-        </div>
-        <div class="form-group desc">
-            <p class="policy">Нажимая на кнопку Зарегистрироваться, я принимаю условия <a href="">пользовательского соглашения</a></p>
-        </div>
-        <div class="bottom-form">
-            <button class="btn sign_up send">Зарегистрироваться</button>
-        </div>
-    </form>
+  </div>
 </div>
 
-<!-- Модальное окно - техника -->
-<div class="order-form col-md-12 p-md-5 modal-window">
-    <form action="#">
-        <div class="form-group">
-            <label for="" class="d-none d-sm-block">Тип техники*</label>
-            <select name="" id="c" class="order_select form-control">
-                <option value="">Выберите технику</option>
-            </select>
-        </div>
-        <div class="form-group d-none d-sm-flex">
-            <label for="">Когда нужна*</label>
-            <select name="" id="" class="order_select form-control">
-                <option value="">Выберите необходимый диапозон дат</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="" class="d-none d-sm-flex">Вид работ*</label>
-            <textarea name="" id="" cols="30" rows="5" class="form-control">Опишите вид проводимых работ</textarea>
-        </div>
-        <div class="form-group d-none d-sm-flex">
-            <label for="">Место проведения работ</label>
-            <input type="text" class="form-control" placeholder="Где будут проводиться работы, район">
-        </div>
-        <div class="form-group d-none d-sm-flex">
-            <label for="">Оплата*</label>
-            <select name="" id="" class="order_select form-control">
-                <option value="">Выберите вид оплаты</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="" class="d-none d-sm-block">Имя*</label>
-            <input type="x" class="form-control" placeholder="Ваше имя">
-        </div>
-        <div class="form-group">
-            <label for="" class="d-none d-sm-block">Номер телефона*</label>
-            <input type="tel" class="form-control" placeholder="Введите ваш номер">
-        </div>
-        <div class="form-group btn-col">
-            <div class="left-side w-100">
-                <button class="order btn w-100 text-uppercase">Заказать</button>
+
+<!-- МОДАЛЬНОЕ ОКНО ЗАЯВКА НА АРЕНДУ -->
+<div class="modal fade" id="rentalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
+      <div class="modal-header border-0 p-0">
+        <h1 class="modal-title" id="exampleModalLabel">Заявка на аренду</h1>
+      </div>
+      <div class="modal-body p-0 py-2 py-lg-4">
+        <form action="">         
+            <div class="form-group">
+                <label for="">Ваше имя*</label>
+                <input type="text" placeholder="Ваше имя" class="form-control">
             </div>
-            <div class="right-side d-none d-sm-block">
-                <button class="search btn">Искать на карте</button>
-                <button class="search btn">Искать в объявлениях</button>
+            <div class="form-group">
+                <label for="">Ваш телефон* </label>
+                <input type="tel" placeholder="+7 (___) ___-____" class="form-control">
             </div>
-        </div>
-        
-    </form>
+        </form>
+      </div>
+      <div class="modal-footer border-0 flex-column p-0 w-100">
+          <div class="form-group d-flex policy w-100 mx-0 flex-nowrap mt-2 ">
+            <input type="checkbox" checked id="policy-check" class="mr-2 mt-1 mt-xl-2">
+            <label for="policy-check" class="m-0">Я согласен с политикой конфиденциальности и обработкой персональных данных</label>
+          </div>
+          <div class="form-row w-100 m-0">
+            <button class="btn yel-btn px-4 px-sm-5 flex-grow-1 flex-sm-grow-0" type="submit">Заказать</button>
+          </div>
+          
+      </div>
+    </div>
+  </div>
 </div>
+
 
 
 <!-- МОДАЛЬНОЕ ОКНО РАЗМЕСТИТЬ ТЕХНИКУ -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content rounded-0">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Разместить технику</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content rounded-0 p-lg-5">
+      <div class="modal-header border-0">
+        <h1 class="modal-title" id="exampleModalLabel">Разместить технику</h1>
       </div>
       <div class="modal-body">
           <form action="">
-              <div class="form-group">
-                  <label for="">Раздел*</label>
-                  <select name="" id="">
+              <div class="form-row">
+                  <label for="" class="col-md-5">Раздел*</label>
+                  <select name="" id="" class="col-md-7">
                       <option value="">Выберите раздел</option>
                   </select>
               </div>
-              <div class="form-group">
-                  <label for="">Тип техники*</label>
-                  <select name="" id="">
+              <div class="form-row">
+                  <label for="" class="col-md-5">Тип техники*</label>
+                  <select name="" id="" class="col-md-7">
                       <option value="">Выберите тип техники</option>
                   </select>
               </div>
-              <div class="form-group">
-                  <label for="">Марка и модель*</label>
-                  <select name="" id="">
-                      <option value="">Напишите марку техники</option>
-                  </select>
-                  <p class="form-text">
-                    В данном поле запрещено писать какую-либо контактную информацию, 
-                    такие объявления будут удалены модератором.
-                  </p>
+              <div class="form-row">
+                  <label for="" class="col-md-5">Марка и модель*</label>
+                  <div class="col-md-7 p-0">
+                  <select name="" id="" class="w-100">
+                        <option value="">Напишите марку техники</option>
+                    </select>
+                    <p class="form-text">
+                      В данном поле запрещено писать какую-либо контактную информацию, 
+                      такие объявления будут удалены модератором.
+                    </p>
+                  </div>
               </div>
               
-              <div class="form-group">
-                  <label for="">Смена</label>
-                  <input type="text">
-                  <select name="" id="">
+              <div class="form-row">
+                  <label for="" class="col-md-5">Смена</label>
+                  <div class="col-md-7 p-0 flex-nowrap d-flex justify-content-between">
+                    <input type="text" class="col-7 m-0">
+                    <select name="" id="" class="col-4">
                       <option value="">час</option>
-                  </select>
+                    </select>
+                  </div>
               </div>
-              <div class="form-group">
-                  <label for="">Цена за смену</label>
+              <div class="form-row">
+                  <label for="" class="col-5">Цена за смену</label>
                   <input type="text">
                   <select name="" id="">
                       <option value="">руб.</option>
                   </select>
               </div>
                 
-              <div class="form-group">
-                  <label for="">Регион</label>
+              <div class="form-row">
+                  <label for="" class="col-5">Регион</label>
                   <select name="" id="">
                       <option value="">Выберите регион</option>
                   </select>
               </div>
-              <div class="form-group">
-                    <label for=""class="align-top">Описание объявления</label>
+              <div class="form-row">
+                    <label for=""class="align-top col-5">Описание объявления</label>
                     <textarea name="" id="" cols="30" rows="5">Опишите вид проводимых работ</textarea>
                     <p class="form-text">В описании также запрещено вставлять контактные и персональные данные, ссылки на другие сайты. 
                     Подобные объявления удаляются модератором.</p>
               </div>
-              <div class="form-group">
-                    <label for="">Оплата</label>
+              <div class="form-row">
+                    <label for="" class="col-5">Оплата</label>
                     <select name="" id="">
                         <option value="">Выберите вид оплаты</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                             <label for=""></label>
                             <select name="" id=""></select>
                         </div>
-                    <div class="form-group">
+                    <div class="form-row">
                             <label for=""></label>
                             <input type="text" name="" id="">
                     </div>
-                    <div class="form-group">
-                            <label for="">Год выпуска</label>
+                    <div class="form-row">
+                            <label for="" class="col-5">Год выпуска</label>
                             <input type="text" name="" id="">
                     </div>
-                    <div class="form-group">
-                            <label for="">Фотографии</label>
+                    <div class="form-row">
+                            <label for="" class="col-5">Фотографии</label>
                             <p>Добавляйте фотографии, только вашей техники. На фото не должно быть контактной информации.</p>
                     </div>
-                    <div class="form-group">
-                        <label for="">Расположение техники</label>
-                      <p>Перемесите метку на карте, чтобы указать местоположение вашей техники.</p>
+                    <div class="form-row">
+                        <label for="" class="col-md-5">Расположение техники</label>
+                        <div class="col-md-7 d-flex flex-column">
+                            <p>Перемесите метку на карте, чтобы указать местоположение вашей техники.</p>
+                            <div class="map" style="background-image: url('img/map-form.jpg'); height: 150px;">
+                            </div>
+                        </div>
+                      
                     </div>
-              <div class="form-group">
-                  <legend>Основные характеристики </legend>
-                  <div class="form-group">
-                      <label for="">Рабочая высота подъема, м</label>
-                      <select name="" id="">
+              <div class="form-row flex-column">
+                  <legend class="w-100">Основные характеристики </legend>
+                  <div class="form-row">
+                      <label for="" class="col-md-5">Рабочая высота подъема, м</label>
+                      <select name="" id="" class="col-md-7">
                           <option value=""></option>
                       </select>
                   </div>
-                  <div class="form-group">Грузоподъемность, кг<label for=""></label>
-                      <select name="" id="">
+                  <div class="form-row">
+                      <label for="" class="col-md-5">Грузоподъемность, кг</label>
+                      <select name="" id="" class="col-md-7">
                           <option value=""></option>
                       </select>
                   </div>
-                  <div class="form-group">Максимальный вылет стрелы<label for=""></label>
-                      <select name="" id="">
+                  <div class="form-row">
+                      <label for="" class="col-md-5">Максимальный вылет стрелы</label>
+                      <select name="" id="" class="col-md-7">
                           <option value=""></option>
                       </select>
                   </div>
-                  <div class="form-group">Угол поворота<label for=""></label>
-                      <select name="" id="">
+                  <div class="form-row">
+                      <label for="" class="col-md-5">Угол поворота</label>
+                      <select name="" id="" class="col-md-7">
                           <option value=""></option>
                       </select>
                   </div>
               </div>
-              <div class="form-group">
+              <div class="form-row">
                   <legend>Информация о собственнике</legend>
                   <div class="form-group">
                       <p>Уже зарегистрированы на нашем портале?</p>
                       <button class="btn dark-btn">Да</button>
                       <button class="btn wh-btn">Нет</button>
-                      <div class="form-group"><label for="">Почта*</label><input type="text"></div>
-                      <div class="form-group"><label for="">Пароль*</label><input type="text"></div>
+                      <div class="form-group">
+                          <label for="" class="col-5">Почта*</label>
+                          <input type="text"></div>
+                      <div class="form-group">
+                          <label for="" class="col-5">Пароль*</label>
+                          <input type="text"></div>
                   </div>
               </div>
           </form>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer border-0 flex-column align-items-start">
           <button class="btn yel-btn" type="submit">Разместить</button>
           <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Я согласен с политикой конфиденциальности и обработкой персональных данных</label>
-              </div>
-        
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Я согласен с политикой конфиденциальности и обработкой персональных данных</label>
+          </div>
       </div>
     </div>
   </div>
 </div>
-<!-- МОДАЛЬНОЕ ОКНО РАЗМЕСТИТЬ ТЕХНИКУ -->
+
 
 
 <!-- МОДАЛЬНОЕ ОКНО ПОИСКА ТЕХНИКИ, вместо формы поиска расположенного в .top-content --> 
@@ -922,7 +921,7 @@
         </div>
     </div>
 </div>
-<!-- МОДАЛЬНОЕ ОКНО ПОИСКА ТЕХНИКИ -->
+
 
 
 <!-- МОДАЛЬНОЕ ОКНО ВЫБОР МЕСТОПОЛОЖЕНИЯ -->
@@ -952,7 +951,7 @@
     </div>
   </div>
 </div>
-<!-- МОДАЛЬНОЕ ОКНО ВЫБОР МЕСТОПОЛОЖЕНИЯ -->
+
 
 
 <!-- МОДАЛЬНОЕ ОКНО ОСТАВИТЬ ЗАЯВКУ -->
@@ -1015,11 +1014,89 @@
     </div>
   </div>
 </div>
-<!-- МОДАЛЬНОЕ ОКНО ОСТАВИТЬ ЗАЯВКУ -->
 
 
 
 
+<!-- 
+<div class="signup-block col-md-6 col-lg-5 p-3 py-4 modal-window">
+    <div class="title-block ">
+        <h1 class="title-block">Зарегистрироваться</h1>
+        <span class="reg_link" data-toggle="modal" data-target="#signInModal">Войти</span>
+    </div>
+    <form action="">
+        <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" class="form-control" name="name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="emailUp">Почта</label>
+            <input type="email" name="email" class="form-control" id="emailUp">
+        </div>
+        <div class="form-group">
+            <label for="passUp">Пароль</label>
+            <input type="password" class="form-control" id="passUp" name="password">
+        </div>
+        <div class="form-group">
+            <label for="passConfirm">Подтвердите пароль</label>
+            <input type="password" class="form-control" id="passConfirm" name="confirm">
+        </div>
+        
+        <div class="bottom-form">
+            <button class="btn sign_up send">Зарегистрироваться</button>
+        </div>
+    </form>
+</div> -->
+
+<!-- Модальное окно - техника -->
+<!-- <div class="order-form col-md-12 p-md-5 modal-window">
+    <form action="#">
+        <div class="form-group">
+            <label for="" class="d-none d-sm-block">Тип техники*</label>
+            <select name="" id="c" class="order_select form-control">
+                <option value="">Выберите технику</option>
+            </select>
+        </div>
+        <div class="form-group d-none d-sm-flex">
+            <label for="">Когда нужна*</label>
+            <select name="" id="" class="order_select form-control">
+                <option value="">Выберите необходимый диапозон дат</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="" class="d-none d-sm-flex">Вид работ*</label>
+            <textarea name="" id="" cols="30" rows="5" class="form-control">Опишите вид проводимых работ</textarea>
+        </div>
+        <div class="form-group d-none d-sm-flex">
+            <label for="">Место проведения работ</label>
+            <input type="text" class="form-control" placeholder="Где будут проводиться работы, район">
+        </div>
+        <div class="form-group d-none d-sm-flex">
+            <label for="">Оплата*</label>
+            <select name="" id="" class="order_select form-control">
+                <option value="">Выберите вид оплаты</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="" class="d-none d-sm-block">Имя*</label>
+            <input type="x" class="form-control" placeholder="Ваше имя">
+        </div>
+        <div class="form-group">
+            <label for="" class="d-none d-sm-block">Номер телефона*</label>
+            <input type="tel" class="form-control" placeholder="Введите ваш номер">
+        </div>
+        <div class="form-group btn-col">
+            <div class="left-side w-100">
+                <button class="order btn w-100 text-uppercase">Заказать</button>
+            </div>
+            <div class="right-side d-none d-sm-block">
+                <button class="search btn">Искать на карте</button>
+                <button class="search btn">Искать в объявлениях</button>
+            </div>
+        </div>
+        
+    </form>
+</div> -->
 
 <!-- JavaScript links -->
 <script src="./libs/jquery/dist/jquery.min.js"></script>
