@@ -28,6 +28,10 @@ $placeholder: #B1B1B1
   background-color: $yellow-bg
   color: $black-text
   font-weight: bold
+  transition: color 0.5s ease-in, background 0.7s ease-in-out
+  &:hover
+    background-color: $black-bg
+    color: $yellow-text
 .dark-btn
   background-color: $dark-grey
   color: $yellow-text
@@ -36,6 +40,10 @@ $placeholder: #B1B1B1
   border: 3px solid $dark-grey
   color: $dark-grey
   font-weight: bold
+  transition: color 0.5s ease-in, background 0.7s ease-in-out
+  &:hover
+    background: #000
+    color: whitesmoke
 
 
 html
@@ -924,6 +932,33 @@ html
         text-underline-position: under
         font-size: inherit
 
+    #applicationModal
+      .modal-body
+        .form-row
+          justify-content: space-between
+          margin: 0
+          margin-bottom: 10px
+          flex-wrap: nowrap
+          select, textarea, input
+            border-radius: 0
+            padding-left: 10px
+            @media screen and ( min-width: 768px )
+              font-size: 16px
+            &::placeholder
+              color: $placeholder
+            &.form-control
+              box-sizing: border-box
+              // width: auto
+          input, select
+            height: 30px
+          textarea
+            resize: none
+      .modal-footer
+        .yel-btn
+          @media screen and ( max-width: 575px )
+            letter-spacing: 4px
+            text-transform: uppercase
+            
     // Модальное окно техника
     .order-form
       display: none

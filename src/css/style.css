@@ -1,7 +1,11 @@
 .yel-btn {
   background-color: #FFCD11;
   color: #000000;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: color 0.5s ease-in, background 0.7s ease-in-out; }
+  .yel-btn:hover {
+    background-color: #000000;
+    color: #FFCD11; }
 
 .dark-btn {
   background-color: #3B3B3B;
@@ -11,7 +15,11 @@
   background-color: transparent;
   border: 3px solid #3B3B3B;
   color: #3B3B3B;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: color 0.5s ease-in, background 0.7s ease-in-out; }
+  .wh-btn:hover {
+    background: #000;
+    color: whitesmoke; }
 
 html body {
   color: #000000;
@@ -780,6 +788,29 @@ html body {
     text-decoration: underline;
     text-underline-position: under;
     font-size: inherit; }
+  html body #applicationModal .modal-body .form-row {
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 10px;
+    flex-wrap: nowrap; }
+    html body #applicationModal .modal-body .form-row select, html body #applicationModal .modal-body .form-row textarea, html body #applicationModal .modal-body .form-row input {
+      border-radius: 0;
+      padding-left: 10px; }
+      @media screen and (min-width: 768px) {
+        html body #applicationModal .modal-body .form-row select, html body #applicationModal .modal-body .form-row textarea, html body #applicationModal .modal-body .form-row input {
+          font-size: 16px; } }
+      html body #applicationModal .modal-body .form-row select::placeholder, html body #applicationModal .modal-body .form-row textarea::placeholder, html body #applicationModal .modal-body .form-row input::placeholder {
+        color: #B1B1B1; }
+      html body #applicationModal .modal-body .form-row select.form-control, html body #applicationModal .modal-body .form-row textarea.form-control, html body #applicationModal .modal-body .form-row input.form-control {
+        box-sizing: border-box; }
+    html body #applicationModal .modal-body .form-row input, html body #applicationModal .modal-body .form-row select {
+      height: 30px; }
+    html body #applicationModal .modal-body .form-row textarea {
+      resize: none; }
+  @media screen and (max-width: 575px) {
+    html body #applicationModal .modal-footer .yel-btn {
+      letter-spacing: 4px;
+      text-transform: uppercase; } }
   html body .order-form {
     display: none; }
     html body .order-form form * {

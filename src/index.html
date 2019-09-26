@@ -116,7 +116,7 @@
             </div>
         </div>
         <div class="pre-block d-flex col-md-12 flex-column flex-sm-row p-0 no-gutters row py-4 justify-content-between">
-            <div class="col-md-4 col-lg-3 p-0 py-2">
+            <div class="col-md-4 col-lg-3 p-0 py-2" data-toggle="modal" data-target="#applicationModal">
                 <div class="card_desc card">
                     <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
                         <div class="col-2 col-sm-4 col-md-2 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center align-self-lg-start">
@@ -274,7 +274,7 @@
         <div class="left-block col-md-3 d-flex flex-column" id="categories">
             <h1 class="title-block align-self-center align-self-md-start my-3">Категории</h1>
             <div class="list-block">
-                <a data-toggle="collapse" href="#firstList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2">Строительная техника</a>
+                <a data-toggle="collapse" href="#firstList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Строительная техника</a>
                 <ul class="cat-list collapse " id="firstList">
                     <li class="cat-item"><a href="#">Автовышки</a></li>
                     <li class="cat-item"><a href="#">Автогрейдеры</a></li>
@@ -300,7 +300,7 @@
             </div>
             
             <div class="list-block">
-                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2">Грузоперевозки</a>
+                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Грузоперевозки</a>
                 <ul class="cat-list collapse " id="collapseExample">
                     <li class="cat-item"><a href="#">Бензовозы</a></li>
                     <li class="cat-item"><a href="#">Водовозы</a></li>
@@ -324,7 +324,7 @@
                     </div>
                 </div>
             </div>
-            <a data-toggle="collapse" href="#thirdList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2">Заявки</a>
+            <a data-toggle="collapse" href="#thirdList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Заявки</a>
             <div class="list-block collapse" id="thirdList">
                 <div class="card order-ask">
                     <p class="title-ask pl-3">Эвакуатор-погрузчик JSB 1СХ</p>
@@ -655,6 +655,7 @@
 </footer>
 
 
+<!-- МОДАЛЬНОЕ ОКНО ВХОДА -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content rounded-0 p-sm-3">
@@ -681,17 +682,8 @@
     </div>
   </div>
 </div>
+<!-- МОДАЛЬНОЕ ОКНО ВХОДА -->
 
-<!-- Модальное окно - войти -->
-<div class="login-block col-md-6 col-lg-5 p-3 py-4 modal-window">
-    <div class="title-block ">
-        <h1 class="title-block">Войти</h1>
-        <a href="#" class="reg_link">Зарегистрироваться</a>
-    </div>
-    <form action="">
-        
-    </form>
-</div>
 
 <!-- Модальное окно - регистрация -->
 <div class="signup-block col-md-6 col-lg-5 p-3 py-4 modal-window">
@@ -771,12 +763,7 @@
                 <button class="search btn">Искать в объявлениях</button>
             </div>
         </div>
-        <div class="form-group policy">
-            <input type="checkbox" checked id="policy-check">
-            <p class="policy-text">
-                <label for="policy-check">Я согласен с политикой конфиденциальности и обработкой персональных данных</label>
-            </p>
-        </div>
+        
     </form>
 </div>
 
@@ -968,6 +955,67 @@
 <!-- МОДАЛЬНОЕ ОКНО ВЫБОР МЕСТОПОЛОЖЕНИЯ -->
 
 
+<!-- МОДАЛЬНОЕ ОКНО ОСТАВИТЬ ЗАЯВКУ -->
+<div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
+      <div class="modal-header border-0 p-0">
+        <h1 class="modal-title" id="exampleModalLabel">Оставить заявку</h1>
+      </div>
+      <div class="modal-body p-0 py-2 py-lg-4">
+        <form action="">         
+            <div class="form-row">        
+                <label for="" class="d-none d-sm-block col-5">Тип техники*</label>
+                <select name="" id="c" class="order_select form-control col-sm-7">
+                </select>
+            </div>
+            <div class="form-row d-none d-sm-flex">
+                <label for="" class="col-5">Когда нужна*</label>
+                <select name="" id="" class="order_select form-control col-sm-7">
+                    <option value="">Выберите необходимый диапозон дат</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="" class="d-none d-sm-block col-5">Вид работ*</label>
+                <textarea name="" id="" cols="30" rows="3" class="form-control col-sm-7"></textarea>
+            </div>
+            <div class="form-row d-none d-sm-flex">
+                <label for="">Место проведения работ</label>
+                <input type="text" class="form-control col-sm-7" placeholder="Где будут проводиться работы, район">
+            </div>
+            <div class="form-row d-none d-sm-flex">
+                <label for="">Оплата*</label>
+                <select name="" id="" class="order_select form-control col-sm-7">
+                    <option value="">Выберите вид оплаты</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="" class="d-none d-sm-block col-5">Имя*</label>
+                <input type="x" class="form-control col-sm-7" placeholder="Ваше имя">
+            </div>
+            <div class="form-row">
+                <label for="" class="d-none d-sm-block col-5">Номер телефона*</label>
+                <input type="tel" class="form-control col-sm-7" placeholder="Введите ваш номер">
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer border-0 flex-column p-0 w-100">
+          <div class="form-row flex-nowrap justify-content-between mx-0 w-100 mb-sm-3">
+            <button class="btn yel-btn px-4 px-lg-5 flex-grow-1 flex-sm-grow-0" type="submit">Заказать</button>
+            <div class="col-sm-7 d-none d-sm-flex justify-content-between p-0">
+                <button class="btn wh-btn  flex-grow-1 mr-2">Искать на карте</button>
+                <button class="btn wh-btn  flex-grow-1">Искать в объявлениях</button>
+            </div>
+          </div>
+          <div class="form-row policy w-100 mx-0 flex-nowrap mt-2 align-items-lg-center">
+            <input type="checkbox" checked id="policy-check" class="mr-2 mt-1 mt-lg-0">
+            <label for="policy-check" class="m-0">Я согласен с политикой конфиденциальности и обработкой персональных данных</label>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- МОДАЛЬНОЕ ОКНО ОСТАВИТЬ ЗАЯВКУ -->
 
 
 
