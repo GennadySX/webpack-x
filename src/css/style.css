@@ -14,10 +14,11 @@
   border: 3px solid #3B3B3B;
   color: #3B3B3B;
   font-weight: bold;
-  transition: color 0.5s ease-in, background 0.7s ease-in-out; }
+  transition: color 0.5s ease-in, background 0.7s ease-in-out, border-color 0.4s ease; }
   .wh-btn:hover {
     background: #000;
-    color: whitesmoke; }
+    color: whitesmoke;
+    border-color: #FFCD11; }
 
 .blue-a {
   color: #21ADD9; }
@@ -57,6 +58,10 @@ html body {
   @media screen and (min-width: 560px) {
     html body .card-bottom-content {
       font-size: inherit; } }
+  html body .card {
+    border-radius: 0; }
+  html body caption {
+    caption-side: top; }
   html body .header-and-promo {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg");
     background-repeat: no-repeat;
@@ -398,7 +403,6 @@ html body {
             display: flex;
             justify-content: space-between; }
             html body section.item-container .container .right-block .card .card-body .right-side-card .card-bottom-content button {
-              height: 2.2rem;
               padding-left: 10px;
               padding-right: 10px;
               border: none;
@@ -767,6 +771,8 @@ html body {
       margin-bottom: 0; }
   html body .modal input, html body .modal textarea, html body .modal select, html body .modal button {
     border-radius: 0; }
+  html body .modal input, html body .modal textarea, html body .modal select {
+    border: 1px solid #E5E5E5; }
   html body .modal textarea {
     resize: none; }
   html body #locationModal input[type=radio], html body #searchModal input[type=radio] {
@@ -814,14 +820,30 @@ html body {
     html body #rentalModal .modal-footer .yel-btn {
       letter-spacing: 4px;
       text-transform: uppercase; } }
+  html body #exampleModal .modal-body input, html body #exampleModal .modal-body select {
+    height: 30px; }
   html body #exampleModal .form-row {
     width: 100%;
     margin: 0;
     margin-bottom: 10px; }
+    html body #exampleModal .form-row .col-md-7, html body #exampleModal .form-row .col-5, html body #exampleModal .form-row .col-7 {
+      padding: 0;
+      padding-left: 10px; }
     html body #exampleModal .form-row label {
       padding: 0;
       margin: 0;
       margin-bottom: 5px; }
+    html body #exampleModal .form-row input, html body #exampleModal .form-row textarea {
+      padding-left: 7px; }
+  html body #exampleModal .dark-btn:hover, html body #exampleModal .dark-btn:focus, html body #exampleModal .dark-btn:active {
+    color: #FFCD11; }
+  html body #exampleModal .wh-btn:hover, html body #exampleModal .wh-btn:focus, html body #exampleModal .wh-btn:active {
+    border-color: #FFCD11;
+    background-color: transparent;
+    color: #000000; }
+  @media screen and (max-width: 560px) {
+    html body #exampleModal .form-text {
+      color: #757575; } }
   @media screen and (max-width: 575px) {
     html body #exampleModal .modal-footer .yel-btn {
       letter-spacing: 4px;
