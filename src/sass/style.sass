@@ -901,8 +901,10 @@ html
 
     // Общие стили для модальных окон
     .modal
-      input, textarea, select
+      input, textarea, select, button
         border-radius: 0
+      textarea
+        resize: none
 
     #locationModal, #searchModal
       input[type=radio]
@@ -952,6 +954,7 @@ html
           @media screen and ( max-width: 575px )
             letter-spacing: 4px
             text-transform: uppercase
+
     #rentalModal
       .modal-footer
         .yel-btn
@@ -968,6 +971,11 @@ html
           padding: 0
           margin: 0
           margin-bottom: 5px
+      .modal-footer
+        .yel-btn
+          @media screen and ( max-width: 575px )
+            letter-spacing: 4px
+            text-transform: uppercase
       
             // Модальное окно техника
     .order-form

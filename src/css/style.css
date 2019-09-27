@@ -765,8 +765,10 @@ html body {
       margin-top: 0; }
     html body .item-container .container.d-flex .right-block .card:last-child {
       margin-bottom: 0; }
-  html body .modal input, html body .modal textarea, html body .modal select {
+  html body .modal input, html body .modal textarea, html body .modal select, html body .modal button {
     border-radius: 0; }
+  html body .modal textarea {
+    resize: none; }
   html body #locationModal input[type=radio], html body #searchModal input[type=radio] {
     margin-right: 20px; }
   html body #locationModal p, html body #searchModal p {
@@ -820,6 +822,10 @@ html body {
       padding: 0;
       margin: 0;
       margin-bottom: 5px; }
+  @media screen and (max-width: 575px) {
+    html body #exampleModal .modal-footer .yel-btn {
+      letter-spacing: 4px;
+      text-transform: uppercase; } }
   html body .order-form {
     display: none; }
     html body .order-form form * {
