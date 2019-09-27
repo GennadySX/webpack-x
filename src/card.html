@@ -95,64 +95,44 @@
     <!-- Главная карточка -->
     <section class="card_main py-4">
         <!-- Заголовок главной карточки -->
-        <div class="container">            <h1 class="title-card p-0 px-3 pt-3 order-md-0">Автокран Ивановец 14 тонн (14 метров)</h1>
+        <div class="container py-0">
+            <h1 class="title-card p-0  pt-3 m-0 order-md-0 pb-3">Автокран Ивановец 14 тонн (14 метров)</h1>
         </div>
-        <div class="container p-0">
+        <div class="container d-flex flex-row align-items-start px-0">
             <!-- Левая сторона с картинками -->
-            <div class="left-side col-md-6 p-0  d-flex flex-column">
-                <div class="item-slide d-flex flex-column">
-                    <div class="mySlides">
-                        <img src="./img/main-bg2.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides">
-                        <img src="./img/icons/google-play.png" style="width:100%">
-                    </div>
-                    <div class="mySlides">
-                        <img src="./img/items/ios-app.svg" style="width:100%">
-                    </div>
-                    <div class="mySlides">
-                        <img src="./img/items/ios-app-2.png" style="width:100%">
-                    </div>
-                    <!-- Миниатюры главной карточки -->
-                    <div class="img-card container d-none d-md-flex flex-row flex-nowrap justify-content-between">
-                        <div class="column-3">
-                            <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(1)">
-                        </div>
-                        <div class="column-3">
-                            <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(2)">
-                        </div>
-                        <div class="column-3">
-                            <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(3)">
-                        </div>
-                        <!-- <div class="column">
-                            <img class="demo cursor" src="./img/items/camas.png" style="width:100%" onclick="currentSlide(4)">
-                        </div> -->
-                    </div>
-                    
+            <div class="left-side col-md-6  p-0 d-flex flex-column">
+                <div class="col-12 p-0">
+                    <img src="img/items/camas.png" alt="" class="w-100">
+                </div>
+                <div class="slide-mini col-12 p-0 flex-nowrap no-gutters justify-content-between pt-4 align-items-stretch d-none d-md-flex">
+                    <div class="col-4"><img src="img/items/camas.png" alt="" class="w-100 h-100"></div>
+                    <div class="col-4"><img src="img/items/camas.png" alt="" class="w-100 h-100"></div>
+                    <div class="col-4"><img src="img/items/camas.png" alt="" class="w-100 h-100"></div>
                 </div>
             </div>
+                
             <!-- Правая сторона с информацией -->
-            <div class="right-side col-md-6 px-3 ">
+            <div class="right-side col-md-6 px-3 pl-md-4 px-md-3 ">
                 <div class="prop-content">
-                    <p class="block-title  d-none d-md-flex">Основные характеристики техники</p>
+                    <p class="block-title  d-none d-md-flex m-0 mb-2">Основные характеристики техники</p>
                     <div class="card-prop">
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th scope="row">Рабочая высота подъема</th>
-                                    <td>28 м</td>
+                                    <th scope="row" class="col-9">Грузоподъемность (максимальная)</th>
+                                    <td class="col-3">14 тонн</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Грузоподъемность люльки</th>
-                                    <td>300 кг</td>
+                                    <th scope="row" class="col-9">Грузоподъемность (стрела)</th>
+                                    <td class="col-3">300 кг</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Максимальный вылет стрелы</th>
-                                    <td>13 м</td>
+                                    <th scope="row" class="col-9">Высота подъема</th>
+                                    <td class="col-3">13 м</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Угол поворота</th>
-                                    <td>360<sup> o</sup></td>
+                                    <th scope="row" class="col-9">Длина стрела</th>
+                                    <td class="col-3">8-14 метров</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -169,8 +149,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="description">  
-                    <p>Окажем услуги автокрана Все виды погрузочно-разгрузочных работ. 
+                <div class="description col col-md-9 px-0">  
+                    <p class="w-100">Окажем услуги автокрана Все виды погрузочно-разгрузочных работ. 
                         Опытные операторы. Имеются стропальщики.
                         Наличный/безналичный расчет. Договор.
                         Режим работы круглосуточно, без перерывов и выходных.
@@ -178,15 +158,15 @@
                 </div>
                 <div class="client-contact-info">
                         <p>Контактное лицо 
-                            <a href="">Станислав "СтройТехника Казань"</a>
+                            <a href="" class="blue-a">Станислав "СтройТехника Казань"</a>
                         </p>
                         <p>на портале с апреля 2014 г</p>
                         <p>всего объявлений 15</p>
                     </div>      
                     <div class="bottom-content w-100 py-3">
-                            <button class="btn order text-uppercase py-1">Заказать</button>
-                            <button class="number d-none d-md-block">+7 показать номер</button>
-                            <button class=" btn on-map wh-btn d-none d-md-block">Показать на карте</button>
+                            <button class="btn order yel-btn py-1 px-4">Заказать</button>
+                            <button class="number d-none d-md-block px-4">+7 показать номер</button>
+                            <button class=" btn on-map wh-btn d-none d-md-block px-4">Показать на карте</button>
             
                         </div>
             </div>
@@ -338,15 +318,15 @@
 
 
     <!-- Контейнер для боковой навигации и блока с похожей техникой -->
-    <section class="item-container pb-3">
+    <section class="item-container pb-3 pb-md-5">
         <div class="container d-flex">
             <!-- Левая боковая навигация -->
             <div class="left-block col-md-3 d-none d-sm-block pl-0" id="categories">
                 <h1 class="title-block pb-md-3">Категории</h1>
                 <!-- Список со строительной техникой -->
                 <div class="list-block">
-                    <p class="title-list-block">Строительная техника</p>
-                    <ul class="cat-list">
+                    <a data-toggle="collapse" href="#firstList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Строительная техника</a>
+                    <ul class="cat-list collapse " id="firstList">
                         <li class="cat-item"><a href="#">Автовышки</a></li>
                         <li class="cat-item"><a href="#">Автогрейдеры</a></li>
                         <li class="cat-item"><a href="#">Автокраны</a></li>
@@ -369,10 +349,10 @@
                         <li class="cat-item"><a href="#">Ямобуры</a></li>
                     </ul>
                 </div>
-                <!-- Список с грузоперевозками -->
+                
                 <div class="list-block">
-                    <p class="title-list-block">Грузоперевозки</p>
-                    <ul class="cat-list">
+                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Грузоперевозки</a>
+                    <ul class="cat-list collapse " id="collapseExample">
                         <li class="cat-item"><a href="#">Бензовозы</a></li>
                         <li class="cat-item"><a href="#">Водовозы</a></li>
                         <li class="cat-item"><a href="#">Газели</a></li>
@@ -385,6 +365,7 @@
                         <li class="cat-item"><a href="#">Эвакуаторы</a></li>
                     </ul>
                 </div>
+                
             </div>
             <!-- Правая сторона с карточками похожей техники -->
             <div class="right-block similar-technique col-md-9 px-0" id="item-block">
@@ -478,12 +459,13 @@
         </div>
     </section>
     <!-- Подвал -->
-    <footer class="py-4">
+    <footer class="py-4 py-md-5">
         <div class="container d-none d-sm-flex">
             <div class="col-md-4">
                 <div class="list-block">
                     <p class="title-list-block">Аренда техники</p>
                     <ul class="list-parent">
+                        
                         <li class="list-item"><a href="#">Автовышки</a></li>
                         <li class="list-item"><a href="#">Автогрейдеры</a></li>
                         <li class="list-item"><a href="#">Автокраны</a></li>
@@ -560,8 +542,9 @@
                 </div>
             </div>
         </div>
+    
         <div class="container">
-            <div class="companie col-md-12 d-flex flex-column flex-sm-row text-center text-md-left">
+            <div class="companie col-md-12 d-flex flex-column flex-sm-row text-center text-sm-left">
                 <div class="policy">
                     <a href="">Политика конфиденциальности</a>
                     <a href="">Пользовательское соглашение</a>
@@ -574,6 +557,7 @@
                         <a href="">Контакты</a>
                     </div>
                 </div>
+    
                 <div class="copy col-md-4 pt-4 p-md-0 text-center">
                     <address class="copy-companie">@ 2019 г. ООО "Спецтехникофф"</address>
                     <div class="icons">

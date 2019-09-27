@@ -3,11 +3,7 @@
   color: #000000;
   box-shadow: 0px 0px 15px #E5E5E5;
   border: 2px solid #FFCD11;
-  font-weight: bold;
-  transition: box-shadow 0.5s ease-in, border 0.5s ease-in-out; }
-  .yel-btn:hover {
-    box-shadow: 0px 0px 20px #FFCD11;
-    border: 2px solid #3B3B3B; }
+  font-weight: bold; }
 
 .dark-btn {
   background-color: #3B3B3B;
@@ -58,6 +54,9 @@ html body {
     font-weight: bold !important; }
   html body h2 {
     font-size: inherit; }
+  @media screen and (min-width: 560px) {
+    html body .card-bottom-content {
+      font-size: inherit; } }
   html body .header-and-promo {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg");
     background-repeat: no-repeat;
@@ -577,6 +576,12 @@ html body {
         @media screen and (max-width: 320px) {
           html body section.card_main .container h1.title-card {
             font-size: 16px; } }
+      html body section.card_main .container .left-side .slide-mini .col-4 {
+        padding: 0 7px; }
+        html body section.card_main .container .left-side .slide-mini .col-4:first-child {
+          padding-left: 0; }
+        html body section.card_main .container .left-side .slide-mini .col-4:last-child {
+          padding-right: 0; }
       html body section.card_main .container .left-side .item-slide .mySlides {
         display: none; }
         html body section.card_main .container .left-side .item-slide .mySlides img {
@@ -622,8 +627,8 @@ html body {
             display: flex;
             justify-content: space-between; }
             html body section.card_main .container .right-side .prop-content .card-prop tbody tr th, html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
-              padding-left: 0;
-              padding-bottom: 0;
+              padding: 0;
+              padding-bottom: 5px;
               border: none;
               font-weight: normal; }
             html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
@@ -659,7 +664,10 @@ html body {
               color: whitesmoke;
               text-shadow: 0 0 1px whitesmoke; }
       html body section.card_main .container .client-contact-info {
-        background-color: #FFFFFF; }
+        background-color: #FFFFFF;
+        line-height: 0.5;
+        color: #B1B1B1;
+        font-size: 0.8em; }
         html body section.card_main .container .client-contact-info button.number {
           background: #3b3b3b;
           color: #fecc11;
@@ -812,10 +820,6 @@ html body {
       padding: 0;
       margin: 0;
       margin-bottom: 5px; }
-  @media screen and (max-width: 575px) {
-    html body #exampleModal .modal-footer .yel-btn {
-      letter-spacing: 4px;
-      text-transform: uppercase; } }
   html body .order-form {
     display: none; }
     html body .order-form form * {

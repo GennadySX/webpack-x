@@ -30,10 +30,6 @@ $placeholder: #B1B1B1
   box-shadow: 0px 0px 15px $light-grey-bg
   border: 2px solid $yellow-bg
   font-weight: bold
-  transition: box-shadow 0.5s ease-in, border 0.5s ease-in-out
-  &:hover
-    box-shadow: 0px 0px 20px $yellow-bg
-    border: 2px solid $dark-grey
 .dark-btn
   background-color: $dark-grey
   color: $white
@@ -79,6 +75,9 @@ html
       font-weight: bold !important
     h2
       font-size: inherit
+    .card-bottom-content
+      @media screen and ( min-width: 560px )
+        font-size: inherit
     .header-and-promo
       background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg")
       background-repeat: no-repeat
@@ -686,8 +685,13 @@ html
           @media screen and ( max-width: 320px )
             font-size: 16px
         .left-side
-          
-          
+          .slide-mini
+            .col-4
+              padding: 0 7px
+              &:first-child
+                padding-left: 0
+              &:last-child
+                padding-right: 0
           .item-slide
             .mySlides
               display: none
@@ -738,8 +742,8 @@ html
                   display: flex
                   justify-content: space-between
                   th, td
-                    padding-left: 0
-                    padding-bottom: 0
+                    padding: 0
+                    padding-bottom: 5px
                     border: none
                     font-weight: normal
                   td
@@ -776,6 +780,9 @@ html
                 text-shadow: 0 0 1px whitesmoke
         .client-contact-info
           background-color: $white-bg
+          line-height: 0.5
+          color: $placeholder
+          font-size: 0.8em
           button.number
             background: #3b3b3b
             color: #fecc11
@@ -961,11 +968,7 @@ html
           padding: 0
           margin: 0
           margin-bottom: 5px
-      .modal-footer
-        .yel-btn
-          @media screen and ( max-width: 575px )
-            letter-spacing: 4px
-            text-transform: uppercase
+      
             // Модальное окно техника
     .order-form
       display: none
