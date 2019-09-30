@@ -483,7 +483,7 @@ html
                           padding-bottom: 5px
                         th
                           font-weight: normal
-                          @media screen and ( max-width: 321px )
+                          @media screen and ( max-width: 475px )
                             color: #757575
                 .cost-content
                   display: flex
@@ -534,18 +534,27 @@ html
         .similar-technique
           .card
             padding: 0
+            .cost-content
+              @media screen and ( max-width: 475px )
+                span.card-title, .location
+                  font-weight: 400
+                div.location
+                  color: #757575
             .card-thumb
               height: auto
               width: 100%
 
-          @media screen and ( max-width: 600px )
+          @media screen and ( max-width: 575px )
             .card-block
               .card
                 background-color: transparent
                 &:nth-child(odd)
                   padding-right: 5px
                 &:nth-child(even)
-                  padding-left: 5px   
+                  padding-left: 5px
+                @media screen and ( min-width: 576px )
+                  padding: 0
+                  
           h1
             font-weight: bold
     // Блок о сайте
@@ -675,13 +684,15 @@ html
               a
                 color: $dark-grey
               i
+                font-size: 0.9em !important
                 color: $yellow-bg
     // Карточка спецтехники
     section.card_main
-      background-color: $white-bg
+      @media screen and ( min-width: 768px )
+        background-color: $white-bg
       .container
         display: flex
-        padding-bottom: 40px
+        // padding-bottom: 40px
         flex-wrap: wrap 
         h1.title-card
           font-weight: bold
@@ -754,12 +765,22 @@ html
                   td
                     padding-right: 0
                   th
-                    @media screen and ( max-width: 321px )
+                    @media screen and ( max-width: 475px )
                       color: #757575   
             .cost-content
               padding-bottom: 20px
               .cost, .hour-dock, .location
+                flex-basis: 100%
                 font-weight: bold
+                display: flex
+                align-items: center
+                @media screen and ( min-width: 768px )
+                  flex-basis: unset
+                  
+        .bottom-button-client
+          background-color: #F5F5F5
+          @media screen and ( min-width: 768px )
+            background-color: inherit
         .bottom-content
           display: flex
           justify-content: space-between
@@ -768,8 +789,9 @@ html
             border-radius: 0
           button.order
             background: #fecc11
-            @media screen and ( max-width: 320px )
-              letter-spacing: 3px
+            @media screen and ( max-width: 575px )
+              letter-spacing: 4px
+              text-transform: uppercase
           button.number
             background: #1a1a1a
             color: #fecc11
@@ -785,13 +807,22 @@ html
                 text-shadow: 0 0 1px whitesmoke
         .client-contact-info
           background-color: $white-bg
-          line-height: 0.5
+          font-size: 12px
+          @media screen and ( min-width: 768px )
+            font-size: 0.9em
+            
+          // line-height: 0.5
+          p
+            margin-bottom: 5px
           color: $placeholder
-          font-size: 0.8em
+          // font-size: 0.8em
           button.number
             background: #3b3b3b
             color: #fecc11
-            font-size: inherit
+          .card-title, .contact-name, button
+            color: $black-text
+            font-size: 14px
+
     // Другая техника собственника
     section.also-by-client
       background: whitesmoke
@@ -804,8 +835,7 @@ html
             background-color: transparent
             padding: 0
             border: none
-            transition: box-shadow 0.7s ease-in-out
-            @media screen and ( max-width: 600px )
+            @media screen and ( max-width: 767px )
               width: 40%
               &:nth-child(odd)
                 padding-right: 5px
@@ -813,8 +843,20 @@ html
                 padding-left: 5px   
             &:first-child
               margin-left: 0
-            &:hover
-              box-shadow: 0 0 25px rgba(darkgray, 0.7)
+            @media screen and ( min-width: 768px )
+              padding: 0 5px
+              &:first-child
+                padding-left: 0
+              &:last-child
+                padding-right: 0
+            @media screen and ( min-width: 1200px )
+              padding: 0 10px
+            .card-body
+              transition: box-shadow 0.7s ease-in-out
+              height: 100%
+              &:hover
+                box-shadow: 0 0 25px rgba(darkgray, 0.7)
+              
             // &:first-child
             //   .card-body
             //     padding-left: 0
@@ -822,7 +864,7 @@ html
             //   .card-body
             //     padding-right: 0
             .card-body
-              padding: 10px
+              padding: 0
               img.card-image
                 width: 100%
               .card-data
@@ -831,6 +873,12 @@ html
                   background-color: $white
                 span.card-title
                   font-weight: bold
+                .cost-content
+                  @media screen and ( max-width: 475px )
+                    span.card-title, .location
+                      font-weight: 400
+                    div.location
+                      color: #757575
                 .prop-block
                   padding-top: 10px
                   display: flex
@@ -860,7 +908,14 @@ html
 
     .item-container
       > .container
-          h1
+          .main-characteristics-filtr
+            h2
+              font-size: 20px
+            tr
+              th
+                font-weight: 500
+              td
+                font-weight: bold
       .container.d-flex
         .left-block
           .main-characteristics-filtr, .search-map
@@ -973,6 +1028,8 @@ html
       .modal-body
         input, select
           height: 30px
+      legend
+        font-size: 1.1em
       .form-row
         width: 100%
         margin: 0
@@ -995,6 +1052,7 @@ html
           background-color: transparent
           color: $black-bg
       .form-text
+        margin: 3px 0 0 0
         @media screen and ( max-width: 560px )
           color: #757575
       .modal-footer
@@ -1002,7 +1060,30 @@ html
           @media screen and ( max-width: 575px )
             letter-spacing: 4px
             text-transform: uppercase
-      
+      .modal-foto-upload
+        height: 80px
+        label
+          border: 1px solid #e5e5e5
+          position: relative
+          color: #E5E5E5
+          font-size: 32px
+          margin: 0
+          flex-basis: 30%
+          flex-grow: 0
+          @media screen and ( min-width: 576px )
+            flex-basis: 22%
+          @media screen and ( min-width: 768px )
+            flex-basis: 30%
+          @media screen and ( min-width: 992px )
+            flex-basis: 22%
+            
+            
+          i
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translateX(-50%) translateY(-50%)
+
             // Модальное окно техника
     .order-form
       display: none

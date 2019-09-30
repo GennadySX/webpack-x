@@ -392,7 +392,7 @@ html body {
               padding-bottom: 5px; }
             html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr th {
               font-weight: normal; }
-              @media screen and (max-width: 321px) {
+              @media screen and (max-width: 475px) {
                 html body section.item-container .container .right-block .card .card-body .right-side-card .card-prop .table tbody tr th {
                   color: #757575; } }
           html body section.item-container .container .right-block .card .card-body .right-side-card .cost-content {
@@ -439,16 +439,24 @@ html body {
           text-shadow: 0 0 1px whitesmoke; }
       html body section.item-container .container .similar-technique .card {
         padding: 0; }
+        @media screen and (max-width: 475px) {
+          html body section.item-container .container .similar-technique .card .cost-content span.card-title, html body section.item-container .container .similar-technique .card .cost-content .location {
+            font-weight: 400; }
+          html body section.item-container .container .similar-technique .card .cost-content div.location {
+            color: #757575; } }
         html body section.item-container .container .similar-technique .card .card-thumb {
           height: auto;
           width: 100%; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 575px) {
         html body section.item-container .container .similar-technique .card-block .card {
           background-color: transparent; }
           html body section.item-container .container .similar-technique .card-block .card:nth-child(odd) {
             padding-right: 5px; }
           html body section.item-container .container .similar-technique .card-block .card:nth-child(even) {
             padding-left: 5px; } }
+  @media screen and (max-width: 575px) and (min-width: 576px) {
+    html body section.item-container .container .similar-technique .card-block .card {
+      padding: 0; } }
       html body section.item-container .container .similar-technique h1 {
         font-weight: bold; }
   html body section.service-block {
@@ -566,116 +574,135 @@ html body {
       html body .breadcrumb .container nav ol.breadcrumb li.breadcrumb-item a {
         color: #3B3B3B; }
       html body .breadcrumb .container nav ol.breadcrumb li.breadcrumb-item i {
+        font-size: 0.9em !important;
         color: #FFCD11; }
-  html body section.card_main {
-    background-color: #FFFFFF; }
-    html body section.card_main .container {
-      display: flex;
-      padding-bottom: 40px;
-      flex-wrap: wrap; }
-      html body section.card_main .container h1.title-card {
-        font-weight: bold;
-        padding-bottom: 30px;
-        flex-basis: 100%; }
-        @media screen and (max-width: 320px) {
-          html body section.card_main .container h1.title-card {
-            font-size: 16px; } }
-      html body section.card_main .container .left-side .slide-mini .col-4 {
-        padding: 0 7px; }
-        html body section.card_main .container .left-side .slide-mini .col-4:first-child {
-          padding-left: 0; }
-        html body section.card_main .container .left-side .slide-mini .col-4:last-child {
-          padding-right: 0; }
-      html body section.card_main .container .left-side .item-slide .mySlides {
-        display: none; }
-        html body section.card_main .container .left-side .item-slide .mySlides img {
-          position: relative; }
-      html body section.card_main .container .left-side .item-slide .img-card {
-        padding-bottom: 0; }
-        html body section.card_main .container .left-side .item-slide .img-card::after {
-          content: "";
-          display: table;
-          clear: both; }
-        html body section.card_main .container .left-side .item-slide .img-card .column .cursor {
-          cursor: pointer; }
-        html body section.card_main .container .left-side .item-slide .img-card .column .demo {
-          opacity: 0.6; }
-        html body section.card_main .container .left-side .item-slide .img-card .column .active, html body section.card_main .container .left-side .item-slide .img-card .column .demo:hover {
-          opacity: 1; }
-      html body section.card_main .container .left-side .item-slide img.main-img {
-        width: 100%;
+  @media screen and (min-width: 768px) {
+    html body section.card_main {
+      background-color: #FFFFFF; } }
+  html body section.card_main .container {
+    display: flex;
+    flex-wrap: wrap; }
+    html body section.card_main .container h1.title-card {
+      font-weight: bold;
+      padding-bottom: 30px;
+      flex-basis: 100%; }
+      @media screen and (max-width: 320px) {
+        html body section.card_main .container h1.title-card {
+          font-size: 16px; } }
+    html body section.card_main .container .left-side .slide-mini .col-4 {
+      padding: 0 7px; }
+      html body section.card_main .container .left-side .slide-mini .col-4:first-child {
+        padding-left: 0; }
+      html body section.card_main .container .left-side .slide-mini .col-4:last-child {
+        padding-right: 0; }
+    html body section.card_main .container .left-side .item-slide .mySlides {
+      display: none; }
+      html body section.card_main .container .left-side .item-slide .mySlides img {
+        position: relative; }
+    html body section.card_main .container .left-side .item-slide .img-card {
+      padding-bottom: 0; }
+      html body section.card_main .container .left-side .item-slide .img-card::after {
+        content: "";
+        display: table;
+        clear: both; }
+      html body section.card_main .container .left-side .item-slide .img-card .column .cursor {
+        cursor: pointer; }
+      html body section.card_main .container .left-side .item-slide .img-card .column .demo {
+        opacity: 0.6; }
+      html body section.card_main .container .left-side .item-slide .img-card .column .active, html body section.card_main .container .left-side .item-slide .img-card .column .demo:hover {
+        opacity: 1; }
+    html body section.card_main .container .left-side .item-slide img.main-img {
+      width: 100%;
+      object-fit: cover; }
+    html body section.card_main .container .left-side .item-slide .img-card {
+      margin-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: space-between;
+      width: 100%; }
+      html body section.card_main .container .left-side .item-slide .img-card img {
+        padding-left: 10px;
+        width: 33%;
+        max-height: 115px;
+        opacity: 0.7;
         object-fit: cover; }
-      html body section.card_main .container .left-side .item-slide .img-card {
-        margin-top: 20px;
-        padding-left: 0;
-        padding-right: 0;
-        justify-content: space-between;
-        width: 100%; }
-        html body section.card_main .container .left-side .item-slide .img-card img {
-          padding-left: 10px;
-          width: 33%;
-          max-height: 115px;
-          opacity: 0.7;
-          object-fit: cover; }
-          html body section.card_main .container .left-side .item-slide .img-card img:first-child {
-            padding-left: 0; }
-          html body section.card_main .container .left-side .item-slide .img-card img .active {
-            opacity: 1; }
-      html body section.card_main .container .right-side {
-        background-color: #FFFFFF; }
-        html body section.card_main .container .right-side .prop-content {
-          padding-top: 0px; }
-          html body section.card_main .container .right-side .prop-content .block-title {
-            font-weight: bold; }
-          html body section.card_main .container .right-side .prop-content .card-prop tbody tr {
+        html body section.card_main .container .left-side .item-slide .img-card img:first-child {
+          padding-left: 0; }
+        html body section.card_main .container .left-side .item-slide .img-card img .active {
+          opacity: 1; }
+    html body section.card_main .container .right-side {
+      background-color: #FFFFFF; }
+      html body section.card_main .container .right-side .prop-content {
+        padding-top: 0px; }
+        html body section.card_main .container .right-side .prop-content .block-title {
+          font-weight: bold; }
+        html body section.card_main .container .right-side .prop-content .card-prop tbody tr {
+          display: flex;
+          justify-content: space-between; }
+          html body section.card_main .container .right-side .prop-content .card-prop tbody tr th, html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
+            padding: 0;
+            padding-bottom: 5px;
+            border: none;
+            font-weight: normal; }
+          html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
+            padding-right: 0; }
+          @media screen and (max-width: 475px) {
+            html body section.card_main .container .right-side .prop-content .card-prop tbody tr th {
+              color: #757575; } }
+        html body section.card_main .container .right-side .prop-content .cost-content {
+          padding-bottom: 20px; }
+          html body section.card_main .container .right-side .prop-content .cost-content .cost, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock, html body section.card_main .container .right-side .prop-content .cost-content .location {
+            flex-basis: 100%;
+            font-weight: bold;
             display: flex;
-            justify-content: space-between; }
-            html body section.card_main .container .right-side .prop-content .card-prop tbody tr th, html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
-              padding: 0;
-              padding-bottom: 5px;
-              border: none;
-              font-weight: normal; }
-            html body section.card_main .container .right-side .prop-content .card-prop tbody tr td {
-              padding-right: 0; }
-            @media screen and (max-width: 321px) {
-              html body section.card_main .container .right-side .prop-content .card-prop tbody tr th {
-                color: #757575; } }
-          html body section.card_main .container .right-side .prop-content .cost-content {
-            padding-bottom: 20px; }
-            html body section.card_main .container .right-side .prop-content .cost-content .cost, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock, html body section.card_main .container .right-side .prop-content .cost-content .location {
-              font-weight: bold; }
-      html body section.card_main .container .bottom-content {
-        display: flex;
-        justify-content: space-between; }
-        html body section.card_main .container .bottom-content button {
-          border-radius: 0; }
-        html body section.card_main .container .bottom-content button.order {
-          background: #fecc11; }
-          @media screen and (max-width: 320px) {
-            html body section.card_main .container .bottom-content button.order {
-              letter-spacing: 3px; } }
-        html body section.card_main .container .bottom-content button.number {
-          background: #1a1a1a;
-          color: #fecc11;
-          border: none; }
-          html body section.card_main .container .bottom-content button.number button.on-map {
-            background: transparent;
-            border: 2px solid black;
-            font-size: 0.9rem;
-            transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out; }
-            html body section.card_main .container .bottom-content button.number button.on-map:hover {
-              background: #000;
-              color: whitesmoke;
-              text-shadow: 0 0 1px whitesmoke; }
-      html body section.card_main .container .client-contact-info {
-        background-color: #FFFFFF;
-        line-height: 0.5;
-        color: #B1B1B1;
-        font-size: 0.8em; }
-        html body section.card_main .container .client-contact-info button.number {
-          background: #3b3b3b;
-          color: #fecc11;
-          font-size: inherit; }
+            align-items: center; }
+            @media screen and (min-width: 768px) {
+              html body section.card_main .container .right-side .prop-content .cost-content .cost, html body section.card_main .container .right-side .prop-content .cost-content .hour-dock, html body section.card_main .container .right-side .prop-content .cost-content .location {
+                flex-basis: unset; } }
+    html body section.card_main .container .bottom-button-client {
+      background-color: #F5F5F5; }
+      @media screen and (min-width: 768px) {
+        html body section.card_main .container .bottom-button-client {
+          background-color: inherit; } }
+    html body section.card_main .container .bottom-content {
+      display: flex;
+      justify-content: space-between; }
+      html body section.card_main .container .bottom-content button {
+        border-radius: 0; }
+      html body section.card_main .container .bottom-content button.order {
+        background: #fecc11; }
+        @media screen and (max-width: 575px) {
+          html body section.card_main .container .bottom-content button.order {
+            letter-spacing: 4px;
+            text-transform: uppercase; } }
+      html body section.card_main .container .bottom-content button.number {
+        background: #1a1a1a;
+        color: #fecc11;
+        border: none; }
+        html body section.card_main .container .bottom-content button.number button.on-map {
+          background: transparent;
+          border: 2px solid black;
+          font-size: 0.9rem;
+          transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out; }
+          html body section.card_main .container .bottom-content button.number button.on-map:hover {
+            background: #000;
+            color: whitesmoke;
+            text-shadow: 0 0 1px whitesmoke; }
+    html body section.card_main .container .client-contact-info {
+      background-color: #FFFFFF;
+      font-size: 12px;
+      color: #B1B1B1; }
+      @media screen and (min-width: 768px) {
+        html body section.card_main .container .client-contact-info {
+          font-size: 0.9em; } }
+      html body section.card_main .container .client-contact-info p {
+        margin-bottom: 5px; }
+      html body section.card_main .container .client-contact-info button.number {
+        background: #3b3b3b;
+        color: #fecc11; }
+      html body section.card_main .container .client-contact-info .card-title, html body section.card_main .container .client-contact-info .contact-name, html body section.card_main .container .client-contact-info button {
+        color: #000000;
+        font-size: 14px; }
   html body section.also-by-client {
     background: whitesmoke;
     padding-bottom: 50px; }
@@ -684,9 +711,8 @@ html body {
     html body section.also-by-client .container .card-block .card {
       background-color: transparent;
       padding: 0;
-      border: none;
-      transition: box-shadow 0.7s ease-in-out; }
-      @media screen and (max-width: 600px) {
+      border: none; }
+      @media screen and (max-width: 767px) {
         html body section.also-by-client .container .card-block .card {
           width: 40%; }
           html body section.also-by-client .container .card-block .card:nth-child(odd) {
@@ -695,10 +721,23 @@ html body {
             padding-left: 5px; } }
       html body section.also-by-client .container .card-block .card:first-child {
         margin-left: 0; }
-      html body section.also-by-client .container .card-block .card:hover {
-        box-shadow: 0 0 25px rgba(169, 169, 169, 0.7); }
+      @media screen and (min-width: 768px) {
+        html body section.also-by-client .container .card-block .card {
+          padding: 0 5px; }
+          html body section.also-by-client .container .card-block .card:first-child {
+            padding-left: 0; }
+          html body section.also-by-client .container .card-block .card:last-child {
+            padding-right: 0; } }
+      @media screen and (min-width: 1200px) {
+        html body section.also-by-client .container .card-block .card {
+          padding: 0 10px; } }
       html body section.also-by-client .container .card-block .card .card-body {
-        padding: 10px; }
+        transition: box-shadow 0.7s ease-in-out;
+        height: 100%; }
+        html body section.also-by-client .container .card-block .card .card-body:hover {
+          box-shadow: 0 0 25px rgba(169, 169, 169, 0.7); }
+      html body section.also-by-client .container .card-block .card .card-body {
+        padding: 0; }
         html body section.also-by-client .container .card-block .card .card-body img.card-image {
           width: 100%; }
         html body section.also-by-client .container .card-block .card .card-body .card-data {
@@ -708,6 +747,11 @@ html body {
               background-color: #FFFFFF; } }
           html body section.also-by-client .container .card-block .card .card-body .card-data span.card-title {
             font-weight: bold; }
+          @media screen and (max-width: 475px) {
+            html body section.also-by-client .container .card-block .card .card-body .card-data .cost-content span.card-title, html body section.also-by-client .container .card-block .card .card-body .card-data .cost-content .location {
+              font-weight: 400; }
+            html body section.also-by-client .container .card-block .card .card-body .card-data .cost-content div.location {
+              color: #757575; } }
           html body section.also-by-client .container .card-block .card .card-body .card-data .prop-block {
             padding-top: 10px;
             display: flex;
@@ -733,6 +777,12 @@ html body {
             html body section.also-by-client .container .card-block .card .card-body .card-data .bottom-content button.order {
               background: #fecc11;
               font-weight: bold; }
+  html body .item-container > .container .main-characteristics-filtr h2 {
+    font-size: 20px; }
+  html body .item-container > .container .main-characteristics-filtr tr th {
+    font-weight: 500; }
+  html body .item-container > .container .main-characteristics-filtr tr td {
+    font-weight: bold; }
   html body .item-container .container.d-flex .left-block .main-characteristics-filtr, html body .item-container .container.d-flex .left-block .search-map {
     margin-bottom: 20px; }
   html body .item-container .container.d-flex .left-block .main-characteristics-filtr {
@@ -822,6 +872,8 @@ html body {
       text-transform: uppercase; } }
   html body #exampleModal .modal-body input, html body #exampleModal .modal-body select {
     height: 30px; }
+  html body #exampleModal legend {
+    font-size: 1.1em; }
   html body #exampleModal .form-row {
     width: 100%;
     margin: 0;
@@ -841,13 +893,39 @@ html body {
     border-color: #FFCD11;
     background-color: transparent;
     color: #000000; }
-  @media screen and (max-width: 560px) {
-    html body #exampleModal .form-text {
-      color: #757575; } }
+  html body #exampleModal .form-text {
+    margin: 3px 0 0 0; }
+    @media screen and (max-width: 560px) {
+      html body #exampleModal .form-text {
+        color: #757575; } }
   @media screen and (max-width: 575px) {
     html body #exampleModal .modal-footer .yel-btn {
       letter-spacing: 4px;
       text-transform: uppercase; } }
+  html body #exampleModal .modal-foto-upload {
+    height: 80px; }
+    html body #exampleModal .modal-foto-upload label {
+      border: 1px solid #e5e5e5;
+      position: relative;
+      color: #E5E5E5;
+      font-size: 32px;
+      margin: 0;
+      flex-basis: 30%;
+      flex-grow: 0; }
+      @media screen and (min-width: 576px) {
+        html body #exampleModal .modal-foto-upload label {
+          flex-basis: 22%; } }
+      @media screen and (min-width: 768px) {
+        html body #exampleModal .modal-foto-upload label {
+          flex-basis: 30%; } }
+      @media screen and (min-width: 992px) {
+        html body #exampleModal .modal-foto-upload label {
+          flex-basis: 22%; } }
+      html body #exampleModal .modal-foto-upload label i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%); }
   html body .order-form {
     display: none; }
     html body .order-form form * {
