@@ -183,6 +183,8 @@ html body {
           color: white;
           border: none;
           background: transparent !important; }
+          html body section.main-1 .container .pre-block .card_desc .card-body:hover, html body section.main-1 .container .pre-block .card-body .card-body:hover {
+            cursor: pointer; }
           html body section.main-1 .container .pre-block .card_desc .card-body img, html body section.main-1 .container .pre-block .card-body .card-body img {
             width: 100%; }
           html body section.main-1 .container .pre-block .card_desc .card-body .icon-rotate, html body section.main-1 .container .pre-block .card-body .card-body .icon-rotate {
