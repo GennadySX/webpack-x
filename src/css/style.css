@@ -122,12 +122,23 @@ html body {
       html body header .nav-second .bottom-nav .brand span.brand-text {
         background: #FFCD11;
         padding: 8px;
-        bottom: -50%; }
-    html body header .nav-second .bottom-nav .cat-right-block .nav-item a {
+        bottom: -50%;
+        z-index: 1000; }
+    html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link {
+      background-color: transparent;
       color: black;
       padding: 1rem 0.5rem;
       transition: border 1s ease-in-out;
       height: 100%; }
+      html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link:focus, html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link:active {
+        outline: none;
+        background-color: transparent; }
+      html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link + .dropdown-menu {
+        width: 100vw;
+        height: 60vh;
+        left: 0;
+        border-radius: 0;
+        z-index: 999; }
     html body header .nav-second .bottom-nav .cat-right-block .nav-item .active {
       background: transparent;
       border-bottom: 10px solid #FFCD11;
@@ -296,6 +307,12 @@ html body {
         width: 100%; }
         html body section.item-container .container .left-block a.title-list-block:hover {
           color: #FFCD11; }
+      html body section.item-container .container .left-block .title-list-block {
+        width: 100%;
+        background: #3B3B3B;
+        color: #FFFFFF;
+        padding-left: 15px;
+        min-height: 25px; }
       html body section.item-container .container .left-block .list-block .title-list-block {
         width: 100%;
         background: #3B3B3B;
@@ -324,7 +341,8 @@ html body {
       html body section.item-container .container .left-block .list-block .order-double-click {
         text-align: center;
         display: flex;
-        border: none; }
+        border: none;
+        margin-bottom: 10px; }
         html body section.item-container .container .left-block .list-block .order-double-click .card-body {
           padding: 0;
           margin-bottom: 10px; }
@@ -578,7 +596,7 @@ html body {
       html body .breadcrumb .container nav ol.breadcrumb li.breadcrumb-item i {
         font-size: 0.9em !important;
         color: #FFCD11; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) {
     html body section.card_main {
       background-color: #FFFFFF; } }
   html body section.card_main .container {
@@ -663,7 +681,7 @@ html body {
                 flex-basis: unset; } }
     html body section.card_main .container .bottom-button-client {
       background-color: #F5F5F5; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 576px) {
         html body section.card_main .container .bottom-button-client {
           background-color: inherit; } }
     html body section.card_main .container .bottom-content {
@@ -821,12 +839,20 @@ html body {
       margin-top: 0; }
     html body .item-container .container.d-flex .right-block .card:last-child {
       margin-bottom: 0; }
+  html body .modal .modal-header {
+    align-items: center; }
   html body .modal input, html body .modal textarea, html body .modal select, html body .modal button {
     border-radius: 0; }
   html body .modal input, html body .modal textarea, html body .modal select {
     border: 1px solid #E5E5E5; }
   html body .modal textarea {
     resize: none; }
+  html body .modal .close {
+    font-size: 1.5em; }
+    html body .modal .close:focus {
+      outline: none; }
+    html body .modal .close:hover {
+      text-shadow: 0px 0px 10px rgba(122, 122, 121, 0.5); }
   html body #locationModal input[type=radio], html body #searchModal input[type=radio] {
     margin-right: 20px; }
   html body #locationModal p, html body #searchModal p {
@@ -872,41 +898,41 @@ html body {
     html body #rentalModal .modal-footer .yel-btn {
       letter-spacing: 4px;
       text-transform: uppercase; } }
-  html body #exampleModal .modal-body input, html body #exampleModal .modal-body select {
+  html body #placeVehicleModal .modal-body input, html body #placeVehicleModal .modal-body select {
     height: 30px; }
-  html body #exampleModal legend {
+  html body #placeVehicleModal legend {
     font-size: 1.1em; }
-  html body #exampleModal .form-row {
+  html body #placeVehicleModal .form-row {
     width: 100%;
     margin: 0;
     margin-bottom: 10px; }
-    html body #exampleModal .form-row .col-md-7, html body #exampleModal .form-row .col-5, html body #exampleModal .form-row .col-7 {
+    html body #placeVehicleModal .form-row .col-md-7, html body #placeVehicleModal .form-row .col-5, html body #placeVehicleModal .form-row .col-7 {
       padding: 0;
       padding-left: 10px; }
-    html body #exampleModal .form-row label {
+    html body #placeVehicleModal .form-row label {
       padding: 0;
       margin: 0;
       margin-bottom: 5px; }
-    html body #exampleModal .form-row input, html body #exampleModal .form-row textarea {
+    html body #placeVehicleModal .form-row input, html body #placeVehicleModal .form-row textarea {
       padding-left: 7px; }
-  html body #exampleModal .dark-btn:hover, html body #exampleModal .dark-btn:focus, html body #exampleModal .dark-btn:active {
+  html body #placeVehicleModal .dark-btn:hover, html body #placeVehicleModal .dark-btn:focus, html body #placeVehicleModal .dark-btn:active {
     color: #FFCD11; }
-  html body #exampleModal .wh-btn:hover, html body #exampleModal .wh-btn:focus, html body #exampleModal .wh-btn:active {
+  html body #placeVehicleModal .wh-btn:hover, html body #placeVehicleModal .wh-btn:focus, html body #placeVehicleModal .wh-btn:active {
     border-color: #FFCD11;
     background-color: transparent;
     color: #000000; }
-  html body #exampleModal .form-text {
+  html body #placeVehicleModal .form-text {
     margin: 3px 0 0 0; }
     @media screen and (max-width: 560px) {
-      html body #exampleModal .form-text {
+      html body #placeVehicleModal .form-text {
         color: #757575; } }
   @media screen and (max-width: 575px) {
-    html body #exampleModal .modal-footer .yel-btn {
+    html body #placeVehicleModal .modal-footer .yel-btn {
       letter-spacing: 4px;
       text-transform: uppercase; } }
-  html body #exampleModal .modal-foto-upload {
+  html body #placeVehicleModal .modal-foto-upload {
     height: 80px; }
-    html body #exampleModal .modal-foto-upload label {
+    html body #placeVehicleModal .modal-foto-upload label {
       border: 1px solid #e5e5e5;
       position: relative;
       color: #E5E5E5;
@@ -915,83 +941,16 @@ html body {
       flex-basis: 30%;
       flex-grow: 0; }
       @media screen and (min-width: 576px) {
-        html body #exampleModal .modal-foto-upload label {
+        html body #placeVehicleModal .modal-foto-upload label {
           flex-basis: 22%; } }
       @media screen and (min-width: 768px) {
-        html body #exampleModal .modal-foto-upload label {
+        html body #placeVehicleModal .modal-foto-upload label {
           flex-basis: 30%; } }
       @media screen and (min-width: 992px) {
-        html body #exampleModal .modal-foto-upload label {
+        html body #placeVehicleModal .modal-foto-upload label {
           flex-basis: 22%; } }
-      html body #exampleModal .modal-foto-upload label i {
+      html body #placeVehicleModal .modal-foto-upload label i {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%); }
-  html body .order-form {
-    display: none; }
-    html body .order-form form * {
-      border-radius: 0; }
-    html body .order-form form .form-group {
-      display: flex; }
-      html body .order-form form .form-group input::placeholder, html body .order-form form .form-group textarea::placeholder, html body .order-form form .form-group select::placeholder {
-        color: #B1B1B1; }
-      html body .order-form form .form-group label {
-        width: 70%;
-        text-shadow: 0 0 1px black; }
-      html body .order-form form .form-group textarea {
-        resize: none; }
-      html body .order-form form .form-group button {
-        height: 40px;
-        text-shadow: 0 0 1px black; }
-    html body .order-form form .btn-col {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      display: flex;
-      justify-content: space-between; }
-      html body .order-form form .btn-col .left-side button.order {
-        background: #fecc11;
-        height: 40px; }
-      html body .order-form form .btn-col .right-side {
-        display: flex;
-        justify-content: space-between; }
-        html body .order-form form .btn-col .right-side button {
-          border: 2px solid #1a1a1a;
-          margin-left: 10px; }
-    html body .order-form form .policy {
-      padding-top: 15px; }
-      html body .order-form form .policy p.policy-text {
-        padding-left: 5px;
-        margin-top: -4px; }
-        html body .order-form form .policy p.policy-text label {
-          width: 100%; }
-  html body .login-block, html body .signup-block {
-    display: none; }
-    html body .login-block div.title-block, html body .signup-block div.title-block {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 10px; }
-    html body .login-block form .form-group, html body .signup-block form .form-group {
-      padding-bottom: 7px; }
-      html body .login-block form .form-group label, html body .signup-block form .form-group label {
-        line-height: 0.7;
-        text-shadow: 0 0 1px gray; }
-      html body .login-block form .form-group input.form-control, html body .signup-block form .form-group input.form-control {
-        border-radius: 0; }
-    html body .login-block form .desc, html body .signup-block form .desc {
-      padding-bottom: 0; }
-      html body .login-block form .desc p.policy, html body .signup-block form .desc p.policy {
-        font-size: 0.9rem; }
-    html body .login-block form .bottom-form, html body .signup-block form .bottom-form {
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-between; }
-      html body .login-block form .bottom-form button, html body .signup-block form .bottom-form button {
-        width: 45%;
-        border-radius: 0; }
-      html body .login-block form .bottom-form button.send, html body .signup-block form .bottom-form button.send {
-        font-weight: bold;
-        background: #fecc11;
-        outline: none; }
-      html body .login-block form .bottom-form .sign_up, html body .signup-block form .bottom-form .sign_up {
-        width: 100%; }

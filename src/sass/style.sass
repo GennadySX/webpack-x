@@ -148,13 +148,24 @@ html
               background: #FFCD11
               padding: 8px
               bottom: -50%
+              z-index: 1000
           .cat-right-block
             .nav-item
-              a
+              a.nav-link
+                background-color: transparent
                 color: black
                 padding: 1rem 0.5rem
                 transition: border 1s ease-in-out
                 height: 100%
+                &:focus, &:active
+                  outline: none
+                  background-color: transparent
+                & + .dropdown-menu
+                  width: 100vw
+                  height: 60vh
+                  left: 0
+                  border-radius: 0
+                  z-index: 999
               .active
                 background: transparent
                 border-bottom: 10px solid #FFCD11
@@ -380,6 +391,12 @@ html
             width: 100%
             &:hover
               color: $yellow-text
+          .title-list-block
+            width: 100%
+            background: $dark-grey
+            color: $white
+            padding-left: 15px
+            min-height: 25px
           .list-block
             .title-list-block
               width: 100%
@@ -410,6 +427,7 @@ html
               text-align: center
               display: flex
               border: none
+              margin-bottom: 10px
               .card-body
                 padding: 0
                 margin-bottom: 10px
@@ -690,7 +708,7 @@ html
                 color: $yellow-bg
     // Карточка спецтехники
     section.card_main
-      @media screen and ( min-width: 768px )
+      @media screen and ( min-width: 576px )
         background-color: $white-bg
       .container
         display: flex
@@ -781,7 +799,7 @@ html
                   
         .bottom-button-client
           background-color: #F5F5F5
-          @media screen and ( min-width: 768px )
+          @media screen and ( min-width: 576px )
             background-color: inherit
         .bottom-content
           display: flex
@@ -963,12 +981,20 @@ html
 
     // Общие стили для модальных окон
     .modal
+      .modal-header
+        align-items: center
       input, textarea, select, button
         border-radius: 0
       input, textarea, select
         border: 1px solid #E5E5E5
       textarea
         resize: none
+      .close
+        font-size: 1.5em
+        &:focus
+          outline: none
+        &:hover
+          text-shadow: 0px 0px 10px rgba(122,122 ,121 ,0.5)
 
     #locationModal, #searchModal
       input[type=radio]
@@ -1026,7 +1052,7 @@ html
             letter-spacing: 4px
             text-transform: uppercase
 
-    #exampleModal
+    #placeVehicleModal
       .modal-body
         input, select
           height: 30px
@@ -1077,90 +1103,9 @@ html
           @media screen and ( min-width: 768px )
             flex-basis: 30%
           @media screen and ( min-width: 992px )
-            flex-basis: 22%
-            
-            
+            flex-basis: 22% 
           i
             position: absolute
             left: 50%
             top: 50%
             transform: translateX(-50%) translateY(-50%)
-
-            // Модальное окно техника
-    .order-form
-      display: none
-      form
-        *
-          border-radius: 0
-        .form-group
-          display: flex
-          input, textarea, select
-            &::placeholder
-              color: $placeholder
-          label
-            width: 70%
-            text-shadow: 0 0 1px black
-          select
-          textarea
-            resize: none
-          input
-          button
-            height: 40px
-            text-shadow: 0 0 1px black
-        .btn-col
-          padding-top: 15px
-          padding-bottom: 15px
-          display: flex
-          justify-content: space-between
-          .left-side
-            button.order
-              background: #fecc11
-              height: 40px
-          .right-side
-            display: flex
-            justify-content: space-between
-            button
-              border: 2px solid #1a1a1a
-              margin-left: 10px
-        .policy
-          padding-top: 15px
-          input[type="checkbox"]
-          p.policy-text
-            padding-left: 5px
-            margin-top: -4px
-            label
-              width: 100%
-    // Еще модальные окна
-    .login-block, .signup-block
-      display: none
-      div.title-block
-        display: flex
-        justify-content: space-between
-        padding-bottom: 10px
-        h1.title-block
-        
-      form
-        .form-group
-          padding-bottom: 7px
-          label
-            line-height: 0.7
-            text-shadow: 0 0 1px gray
-          input.form-control
-            border-radius: 0
-        .desc
-          padding-bottom: 0
-          p.policy
-            font-size: 0.9rem
-        .bottom-form
-          margin-top: 30px
-          display: flex
-          justify-content: space-between
-          button
-            width: 45%
-            border-radius: 0
-          button.send
-            font-weight: bold
-            background: #fecc11
-            outline: none
-          .sign_up
-            width: 100%

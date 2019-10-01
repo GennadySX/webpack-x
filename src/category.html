@@ -19,65 +19,76 @@
 </head>
 <body>
         <header>
-                <nav class="navbar navbar-expand-lg navbar-dark nav-first bg-dark">
-                    <div class="container d-flex flex-row align-items-center flex-nowrap">
-                        <button class="navbar-toggler px-0 border-0 d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>            
+            <nav class="navbar navbar-expand-lg navbar-dark nav-first bg-dark">
+                <div class="container d-flex flex-row align-items-center flex-nowrap">
+                    <div class="dropdown d-block d-sm-none">
+                        <button class="btn btn-secondary dropdown-toggle border-0 bg-transparent p-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>  
                         </button>
-                        <div class="mobile-logo d-block d-sm-none">
-                            <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                        <div class="dropdown-menu rounded-0 border-0 p-3" aria-labelledby="dropdownMenu2">
+                            <a class="dropdown-item" href="#">Аренда техники</a>
+                            <a class="dropdown-item active" href="#">Услуги</a>
+                            <a class="dropdown-item" href="#">Грузоперевозки</a>
+                            <a class="dropdown-item" href="#">Доставка материала</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signInModal">Войти</a>
+                            <button type="button" class="btn btn-warning rent w-100 py-1 mt-4" data-toggle="modal" data-target="#placeVehicleModal">Сдать технику</button>
                         </div>
-                        <div class="search-mobile d-block d-sm-none">
-                            <img src="img/icons/search-icon.svg" alt=" ">
+                    </div>
+
+                    <div class="mobile-logo d-block d-sm-none">
+                        <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                    </div>
+                    <div class="search-mobile d-block d-sm-none" data-toggle="modal" data-target="#searchModal">
+                        <img src="img/icons/search-icon.svg" alt=" ">
+                    </div>
+                    <div class="d-flex location-choose" data-toggle="modal" data-target="#locationModal">
+                        <span class="d-none d-sm-block">Местоположение</span>
+                        <img class="mx-2" src="img/icons/location-icon.svg" alt="">
+                        <span class="d-none d-sm-block choicecity">Выберите регион</span>
+                    </div>            
+                    <div class="d-none d-sm-block ml-auto" data-toggle="modal" data-target="#signInModal">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                        </ul>
+                    </div>
+                    <div class="rent-equip col-3 col-md-3 col-lg-2 d-none d-sm-block d-lg-none">
+                        <button type="button" class="btn btn-warning rent w-100" data-toggle="modal" data-target="#placeVehicleModal">Сдать технику</button>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar nav-second d-none d-sm-block p-0">
+                <div class="container px-0">
+                    <div class="bottom-nav d-flex align-items-center justify-content-between row no-gutters flex-nowrap col px-0">
+                        <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
+                            <img src="img/logo.png" alt=" ">
+                            <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
                         </div>
-                        <div class="d-flex" id="choose-location">
-                            <span class="d-none d-sm-block">Местоположение</span>
-                            <img class="mx-2" src="img/icons/location-icon.svg" alt="">
-                            <span class="d-none d-sm-block">Выберите регион</span>
-                        </div>            
-                        <div class="d-none d-sm-block ml-auto">
-                            <ul class="navbar-nav">
-                                <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                        <div class="cat-right-block col-10 col-md-9 col-lg-8 col-xl-7">
+                            <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Аренда техники</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Услуги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Доставка материалов</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Продажа</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Грузоперевозки</a>
+                                </li>
                             </ul>
                         </div>
-                        <div class="rent-equip col-3 col-md-3 col-lg-2 d-none d-sm-block d-lg-none">
-                            <button class="btn btn-warning rent w-100">Сдать технику</button>
-                        </div>      
-                    </div>
-                </nav>
-                <nav class="navbar nav-second d-none d-sm-block p-0">
-                    <div class="container px-0">
-                        <div class="bottom-nav d-flex align-items-center justify-content-between row no-gutters flex-nowrap col px-0">
-                            <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
-                                <img src="img/logo.png" alt=" ">
-                                <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
-                            </div>
-                            <div class="cat-right-block col-10 col-md-9 col-lg-8 col-xl-7">
-                                <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Аренда техники</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#">Услуги</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#">Доставка материалов</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#">Продажа</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#">Грузоперевозки</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="rent-equip col-md-2 col-lg-2 d-sm-none d-lg-block">
-                                <button class="btn btn-warning rent w-100">Сдать технику</button>
-                            </div>
+                        <div class="rent-equip col-md-2 col-lg-2 d-sm-none d-lg-block">
+                            <button class="btn btn-warning rent w-100" data-toggle="modal" data-target="#placeVehicleModal">Сдать технику</button>
                         </div>
                     </div>
-                </nav>
-            </header>
+                </div>
+            </nav>
+        </header>
 <div class="breadcrumb pt-sm-4 pt-md-4 pt-lg-5 m-0 my-sm-2">
     <div class="container p-0 px-md-3">
         <nav aria-label="breadcrumb">
@@ -473,6 +484,428 @@
 
 
 
+
+<!-- МОДАЛЬНОЕ ОКНО ВХОДА -->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0 p-sm-3">
+      <div class="modal-header border-0 d-flex justify-content-between">
+        <h1 class="modal-title" id="signInModalLabel">Войти</h1>
+        <a href="#" class="reg_link" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">Зарегистрироваться</a>
+      </div>
+      <form action="" method="POST">
+        <div class="modal-body py-0">
+            <div class="form-group">
+                <label for="emailIn">Почта</label>
+                <input type="email" class="form-control rounded-0" name="email" id="emailIn" placeholder="Почта" required>
+            </div>  
+            <div class="form-group">
+                <label for="passIn">Пароль</label>
+                <input type="password" class="form-control rounded-0" id="passIn" name="password" placeholder="Пароль" required>
+            </div>
+        </div>
+        <div class="modal-footer border-0 justify-content-between justify-content-sm-around">
+            <button class="send btn yel-btn w-50" type="submit">Войти</button>
+            <a href="" class="forget-pass blue-a"  data-toggle="modal" data-target="#restorePasswordModal" data-dismiss="modal">Забыли пароль?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- МОДАЛЬНОЕ ОКНО ВОССТАНОВЛЕНИЯ ПАРОЛЯ -->
+<div class="modal fade" id="restorePasswordModal" tabindex="-1" role="dialog" aria-labelledby="restorePasswordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0 p-sm-3">
+      <div class="modal-header border-0 d-flex justify-content-between">
+        <h1 class="modal-title" id="restorePasswordModalLabel">Введите адрес электронной почты</h1>
+      </div>
+      <form action="" method="POST">
+        <div class="modal-body py-0">
+            <div class="form-group">
+                <label for="emailRestore" class="sr-only">Ваша почта</label>
+                <input type="email" class="form-control rounded-0" name="email" id="emailRestore" placeholder="Почта" required>
+            </div>
+        </div>
+        <div class="modal-footer border-0 justify-content-between">
+            <button class="send btn yel-btn m-0 px-sm-4" type="submit">Восстановить пароль</button>
+            <a href="" class="forget-pass blue-a text-right m-0 " data-dismiss="modal" data-toggle="modal" data-target="#signInModal">Я вспомнил пароль</a>  
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- МОДАЛЬНОЕ ОКНО РЕГИСТРАЦИИ -->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0 p-sm-3">
+      <div class="modal-header border-0 d-flex justify-content-between">
+        <h1 class="modal-title" id="signUpModalLabel">Зарегистрироваться</h1>
+        <a href="#" class="reg_link" data-toggle="modal" data-target="#signInModal" data-dismiss="modal">Войти</a>
+      </div>
+      <form action="" method="post">
+        <div class="modal-body py-0">
+            <div class="form-group">
+                <label for="emailUp" class="d-none d-sm-block">Почта</label>
+                <input type="email" class="form-control rounded-0" name="email" id="emailUp" placeholder="Почта" required>
+            </div>  
+            <div class="form-group">
+                <label for="passUp" class="d-none d-sm-block">Пароль</label>
+                <input type="password" class="form-control rounded-0" id="passUp" name="password" placeholder="Пароль" required>
+            </div>
+            <div class="form-group">
+                <label for="passConfirm" class="d-none d-sm-block">Повторите пароль</label>
+                <input type="password" class="form-control" id="passConfirm" name="confirm" placeholder="Повторите пароль" required>
+            </div>
+        </div>
+        <div class="modal-footer border-0 flex-column">
+            <div class="form-group desc">
+                <p class="policy">Нажимая на кнопку Зарегистрироваться, я принимаю условия <a href="" class="blue-a">пользовательского соглашения</a></p>
+            </div>
+            <button class="btn sign_up send yel-btn w-100" type="submit">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- МОДАЛЬНОЕ ОКНО ЗАЯВКА НА АРЕНДУ -->
+<div class="modal fade" id="rentalModal" tabindex="-1" role="dialog" aria-labelledby="rentalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
+      <div class="modal-header border-0 p-0">
+        <h1 class="modal-title" id="rentalModalLabel">Заявка на аренду</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="" method="post">
+        <div class="modal-body p-0 py-2 py-lg-4">        
+            <div class="form-group">
+                <label for="nameInput">Ваше имя*</label>
+                <input type="text" id="nameInput" placeholder="Ваше имя" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="telInput">Ваш телефон*</label>
+                <input type="tel" id="telInput" placeholder="+7 (___) ___-____" class="form-control" required>
+            </div>
+        </div>
+        <div class="modal-footer border-0 flex-column p-0 w-100">
+            <div class="form-group d-flex policy w-100 mx-0 flex-nowrap mt-2 ">
+                <input type="checkbox" checked id="policy-check" class="mr-2 mt-1 mt-xl-2">
+                <label for="policy-check" class="m-0">Я согласен с <a href="" class="blue-a">политикой конфиденциальности</a> и обработкой персональных данных</label>
+            </div>
+            <div class="form-row w-100 m-0">
+                <button class="btn yel-btn px-4 px-sm-5 flex-grow-1 flex-sm-grow-0" type="submit">Заказать</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- МОДАЛЬНОЕ ОКНО РАЗМЕСТИТЬ ТЕХНИКУ -->
+<div class="modal fade" id="placeVehicleModal" tabindex="-1" role="dialog" aria-labelledby="placeVehicleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content rounded-0 p-lg-5">
+            <div class="modal-header border-0 pb-lg-5">
+                <h1 class="modal-title" id="placeVehicleModalLabel">Разместить технику</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div class="modal-body py-0">
+                    <div class="form-row">
+                        <label for="sectionVehicles" class="col-md-5">Раздел*</label>
+                        <select name="" id="sectionVehicles" class="col-md-7" required>
+                            <option value="">Выберите раздел</option>
+                            <option value="Аренда техники">Аренда техники</option>
+                            <option value="Грузоперевозки">Грузоперевозки</option>
+                            <option value="Доставка материалов">Доставка материалов</option>
+                            <option value="Услуги">Услуги</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="vehiclesCategory" class="col-md-5">Тип техники*</label>
+                        <select name="" id="vehiclesCategory" class="col-md-7" required>
+                            <option value="">Выберите тип техники</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="vehicleModal" class="col-md-5">Марка и модель*</label>
+                        <div class="col-md-7 p-0">
+                            <input type="text" id="vehicleModal" placeholder="Напишите марку модели" class="w-100" required>
+                            <p class="form-text">
+                                В данном поле запрещено писать какую-либо контактную информацию, такие объявления будут удалены модератором.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="interchange" class="col-md-5">Смена</label>
+                        <div class="col-md-7 p-0 flex-nowrap d-flex justify-content-between">
+                            <input id="interchange" type="text" class="col-7 m-0">
+                            <select name="" id="" class="col-4">
+                                <option value="">час</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="interchangePrice" class="col-md-5">Цена за смену</label>
+                        <div class="col-md-7 p-0 flex-nowrap d-flex justify-content-between">
+                            <input id="interchangePrice" type="text" class="col-7 m-0">
+                            <select name="" id="" class="col-4">
+                                <option value="">руб.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="selectRegion" class="col-md-5">Регион</label>
+                        <select name="" id="selectRegion" class="col-md-7">
+                            <option value="">Выберите регион</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="adDescription" class="align-top col-md-5">Описание объявления</label>
+                        <div class="form-row col-md-7 p-0">
+                            <textarea name="" id="adDescription" cols="30" rows="5" class="w-100">Опишите вид проводимых работ</textarea>
+                            <p class="form-text">В описании также запрещено вставлять контактные и персональные данные, ссылки на другие сайты. Подобные объявления удаляются модератором.</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="typePayment" class="col-md-5">Оплата</label>
+                        <select name="" id="typePayment" class="col-md-7">
+                            <option value="">Выберите вид оплаты</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="productionYear" class="col-md-5">Год выпуска</label>
+                        <input type="number" name="" id="productionYear" class="col-md-7">
+                    </div>
+                    <div class="form-row">
+                        <label for="" class="col-md-5">Фотографии</label>
+                        <div class="col-md-7 p-0">
+                            <div class="d-flex col-12 p-0 justify-content-between modal-foto-upload row no-gutters">
+                                <input type="file" name="" id="file-upload" class="d-none" accept=".gif,.jpg,.jpeg,.png">
+                                <label for="file-upload" class="">
+                                        <i class="fas fa-camera"></i>
+                                </label>
+                                <input type="file" name="" id="file-upload" class="d-none" accept=".gif,.jpg,.jpeg,.png">
+                                <label for="file-upload" class="">
+                                        <i class="fas fa-camera"></i>
+                                </label>
+                                <input type="file" name="" id="file-upload" class="d-none" accept=".gif,.jpg,.jpeg,.png">
+                                <label for="file-upload" class="d-md-none d-lg-inline-block">
+                                        <i class="fas fa-camera"></i>
+                                </label>
+                                <input type="file" name="" id="file-upload" class="d-none" accept=".gif,.jpg,.jpeg,.png">
+                                <label for="file-upload" class="col d-none d-sm-inline-block">
+                                        <i class="fas fa-camera"></i>
+                                </label>
+
+                            </div>
+                            <p class="form-text">Добавляйте фотографии, только вашей техники. На фото не должно быть контактной информации.</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="" class="col-md-5">Расположение техники</label>
+                        <div class="col-md-7 d-flex flex-column p-0">
+                            <p class="form-text">Перемесите метку на карте, чтобы указать местоположение вашей техники.</p>
+                            <div class="map" style="background-image: url('img/map-form.jpg'); height: 150px;">
+                            </div>
+                        </div>
+                    </div>
+                    <fieldset class="form-row flex-column">
+                        <legend class="w-100">Основные характеристики</legend>
+                        <div class="form-row">
+                            <label for="feature1" class="col-md-5">Рабочая высота подъема, м</label>
+                            <select name="" id="feature1" class="col-md-7">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="feature2" class="col-md-5">Грузоподъемность, кг</label>
+                            <select name="" id="feature2" class="col-md-7">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="feature3" class="col-md-5">Максимальный вылет стрелы</label>
+                            <select name="" id="feature3" class="col-md-7">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="feature4" class="col-md-5">Угол поворота</label>
+                            <select name="" id="feature4" class="col-md-7">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div class="form-row">
+                        <div class="form-row">
+                            <legend class="col-md-5 p-0">Информация о собственнике</legend>
+                            <div class="form-row col-md-7 p-0">
+                                <p class="form-text mb-2">Уже зарегистрированы на нашем портале?</p>
+                                <div class=" d-flex justify-content-between col-sm-7 p-0">
+                                    <button class="btn dark-btn flex-grow-1 mr-1 py-1">Да</button>
+                                    <button class="btn wh-btn flex-grow-1 ml-1 py-1">Нет</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="email" class="col-md-5 d-none d-sm-block">Почта*</label>
+                            <input type="email" id="email" placeholder="Почта" class="col-md-7" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="passw" class="col-md-5 d-none d-sm-block">Пароль*</label>
+                            <input type="password" id="passw" placeholder="Пароль" class="col-md-7" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="confirmPassw" class="col-md-5 d-none d-sm-block">Повторите пароль*</label>
+                            <input type="password" id="confirmPassw" placeholder="Повторите пароль" class="col-md-7" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 flex-column align-items-stretch">
+                    <button class="btn yel-btn px-4 px-lg-5 align-self-sm-start" type="submit" value="Разместить">Разместить</button>
+                    <div class="form-group form-check mt-3">
+                        <input type="checkbox" class="form-check-input mt-lg-2" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Я согласен с политикой конфиденциальности и обработкой персональных данных</label>
+                    </div>
+                </div>  
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- МОДАЛЬНОЕ ОКНО ПОИСКА ТЕХНИКИ, вместо формы поиска расположенного в .top-content --> 
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0 p-sm-3">
+            <form action="" method="">
+                <div class="modal-body py-0 pt-3">
+                    <h1 class="modal-title sr-only" id="searchModalLabel">Поиск техники</h1>        
+                    <input class="w-100 pl-3" type="text" placeholder="Какая техника требуется?" required>
+                </div>
+                <div class="modal-footer border-0 flex-column pt-2">
+                    <button class="btn yel-btn align-self-stretch align-self-sm-start px-4" type="submit">Найти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- МОДАЛЬНОЕ ОКНО ВЫБОР МЕСТОПОЛОЖЕНИЯ -->
+<div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="locationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0 p-sm-3">
+      <div class="modal-header border-0">
+        <h1 class="modal-title" id="locationModalLabel">Изменение региона</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="">
+        <div class="modal-body py-0">
+            <div class="form-body py-2">
+                <div class="form-group">
+                    <input type="radio" name="location" id="auto-location" checked><label for="auto-location">Казань</label>
+                    <p>Автоматически</p>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="location" id="set-location"><label for="set-location">Задать</label>
+                    <input type="text" id="city-field" placeholder="Введите название города">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer border-0 flex-column">
+            <button class="btn yel-btn align-self-stretch align-self-sm-start px-4" type="submit">Сохранить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- МОДАЛЬНОЕ ОКНО ОСТАВИТЬ ЗАЯВКУ -->
+<div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
+      <div class="modal-header border-0 p-0  pb-lп-3">
+        <h1 class="modal-title" id="exampleModalLabel">Оставить заявку</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="">
+        <div class="modal-body p-0 py-2 py-lg-4">      
+            <div class="form-row">        
+                <label for="vehiclesCategory2" class="d-none d-sm-block col-5 p-0">Тип техники*</label>
+                <select name="" id="vehiclesCategory2" class="order_select form-control col-sm-7">
+                </select>
+            </div>
+            <div class="form-row d-none d-sm-flex">
+                <label for="dateRange" class="col-5 p-0">Когда нужна*</label>
+                <select name="" id="dateRange" class="order_select form-control col-sm-7">
+                    <option value="">Выберите необходимый диапозон дат</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="typeWork" class="d-none d-sm-block col-5 p-0">Вид работ*</label>
+                <textarea name="" id="typeWork" cols="30" rows="3" class="form-control col-sm-7">Опишите вид проводимых работ</textarea>
+            </div>
+            <div class="form-row d-none d-sm-flex">
+                <label for="workLocation">Место проведения работ</label>
+                <input type="text" id="workLocation" class="form-control col-sm-7" placeholder="Где будут проводиться работы, район">
+            </div>
+            <div class="form-row d-none d-sm-flex">
+                <label for="typePayment2">Оплата*</label>
+                <select name="" id="typePayment2" class="order_select form-control col-sm-7">
+                    <option value="">Выберите вид оплаты</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="nameInput2" class="d-none d-sm-block col-5 p-0">Имя*</label>
+                <input type="text" id="nameInput2" class="form-control col-sm-7" placeholder="Ваше имя">
+            </div>
+            <div class="form-row">
+                <label for="telInput2" class="d-none d-sm-block col-5 p-0">Номер телефона*</label>
+                <input type="tel" id="telInput2" class="form-control col-sm-7" placeholder="Введите ваш номер">
+            </div>
+        </div>
+        <div class="modal-footer border-0 flex-column p-0 w-100">
+            <div class="form-row flex-nowrap justify-content-between mx-0 w-100 mb-sm-3">
+                <button class="btn yel-btn px-4 px-lg-5 flex-grow-1 flex-sm-grow-0" type="submit">Заказать</button>
+                <div class="col-sm-7 d-none d-sm-flex justify-content-between p-0">
+                    <button class="btn wh-btn px-1 flex-grow-1 mr-2">Искать на карте</button>
+                    <button class="btn wh-btn px-1 flex-grow-1">Искать в объявлениях</button>
+                </div>
+            </div>
+            <div class="form-row policy w-100 mx-0 flex-nowrap mt-2 align-items-lg-center">
+                <input type="checkbox" checked id="policy-check2" class="mr-2 mt-1 mt-lg-0">
+                <label for="policy-check2" class="m-0">Я согласен с <a href="" class="blue-a">политикой конфиденциальности</a> и обработкой персональных данных</label>
+            </div>
+        </div>
+      </form>  
+    </div>
+  </div>
+</div>
+
+
 <!-- JavaScript links -->
 <script src="./libs/jquery/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -481,7 +914,6 @@
 <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 <script src="./libs/flickity/dist/flickity.pkgd.min.js"></script>
-
 <script src="./js/main.js"></script>
 
 
