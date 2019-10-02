@@ -88,7 +88,6 @@ html body {
         background-color: #000000;
         top: 30px;
         left: -16px;
-        height: 350px;
         width: 100vw; }
         html body header nav.nav-first .container .dropdown-menu .dropdown-item {
           padding: 20px 0 5px 0;
@@ -128,21 +127,29 @@ html body {
       background-color: transparent;
       color: black;
       padding: 1rem 0.5rem;
-      transition: border 1s ease-in-out;
+      border-bottom: 10px solid transparent;
+      transition: border 0.4s ease-in-out;
       height: 100%; }
       html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link:focus, html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link:active {
         outline: none;
-        background-color: transparent; }
+        background-color: transparent;
+        border-bottom-color: #FFCD11;
+        border-radius: 0; }
       html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link + .dropdown-menu {
+        font-size: inherit;
         width: 100vw;
-        height: 60vh;
         left: 0;
         border-radius: 0;
         z-index: 999; }
-    html body header .nav-second .bottom-nav .cat-right-block .nav-item .active {
-      background: transparent;
-      border-bottom: 10px solid #FFCD11;
-      border-radius: 0px; }
+        html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link + .dropdown-menu .title-list-block {
+          font-weight: bold; }
+        html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link + .dropdown-menu .list-unstyled li a {
+          color: inherit;
+          font-size: 0.9em; }
+        html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link + .dropdown-menu .list-parent + .list-unstyled {
+          padding-top: 10px; }
+      html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link#freightTransportation + div ul.list-unstyled li a, html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link#materialDelivery + div ul.list-unstyled li a {
+        font-size: inherit; }
     html body header .nav-second .bottom-nav .rent-equip {
       padding: 0; }
       html body header .nav-second .bottom-nav .rent-equip button.rent {
@@ -194,18 +201,12 @@ html body {
           color: white;
           border: none;
           background: transparent !important; }
-          html body section.main-1 .container .pre-block .card_desc .card-body:hover, html body section.main-1 .container .pre-block .card-body .card-body:hover {
-            cursor: pointer; }
           html body section.main-1 .container .pre-block .card_desc .card-body img, html body section.main-1 .container .pre-block .card-body .card-body img {
-            width: 100%; }
-          html body section.main-1 .container .pre-block .card_desc .card-body .icon-rotate, html body section.main-1 .container .pre-block .card-body .card-body .icon-rotate {
-            transform: rotate(180deg); }
+            width: 100%;
+            vertical-align: bottom; }
           html body section.main-1 .container .pre-block .card_desc .card-body .card-title, html body section.main-1 .container .pre-block .card-body .card-body .card-title {
             font-weight: bold;
-            text-decoration: underline;
             margin-bottom: 0; }
-          html body section.main-1 .container .pre-block .card_desc .card-body:hover, html body section.main-1 .container .pre-block .card-body .card-body:hover {
-            color: #FFCD11; }
           html body section.main-1 .container .pre-block .card_desc .card-body .card-text, html body section.main-1 .container .pre-block .card-body .card-body .card-text {
             line-height: 1.3; }
   html body section.popular h1 {
@@ -228,32 +229,28 @@ html body {
     opacity: 1; }
     html body section.popular ol.carousel-indicators li.active {
       background-color: transparent; }
-  html body section.popular .carousel-control-prev {
+  html body section.popular .carousel-control-prev, html body section.popular .carousel-control-next {
     opacity: 1; }
-    html body section.popular .carousel-control-prev .carousel-control-prev-icon {
-      background: #FFCD11;
+    html body section.popular .carousel-control-prev .carousel-control-prev-icon, html body section.popular .carousel-control-prev .carousel-control-next-icon, html body section.popular .carousel-control-next .carousel-control-prev-icon, html body section.popular .carousel-control-next .carousel-control-next-icon {
+      background-color: transparent;
+      background-image: none;
       width: 30px;
       height: 30px;
       opacity: 1; }
-      html body section.popular .carousel-control-prev .carousel-control-prev-icon i {
-        color: #000000;
+      @media screen and (min-width: 500px) {
+        html body section.popular .carousel-control-prev .carousel-control-prev-icon, html body section.popular .carousel-control-prev .carousel-control-next-icon, html body section.popular .carousel-control-next .carousel-control-prev-icon, html body section.popular .carousel-control-next .carousel-control-next-icon {
+          background-color: #FFCD11; } }
+      html body section.popular .carousel-control-prev .carousel-control-prev-icon i, html body section.popular .carousel-control-prev .carousel-control-next-icon i, html body section.popular .carousel-control-next .carousel-control-prev-icon i, html body section.popular .carousel-control-next .carousel-control-next-icon i {
+        font-size: 1.5em;
+        color: #B1B1B1;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%); }
-  html body section.popular .carousel-control-next {
-    opacity: 1; }
-    html body section.popular .carousel-control-next .carousel-control-next-icon {
-      background: #FFCD11;
-      width: 30px;
-      height: 30px;
-      opacity: 1; }
-      html body section.popular .carousel-control-next .carousel-control-next-icon i {
-        color: #000000;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%); }
+        @media screen and (min-width: 500px) {
+          html body section.popular .carousel-control-prev .carousel-control-prev-icon i, html body section.popular .carousel-control-prev .carousel-control-next-icon i, html body section.popular .carousel-control-next .carousel-control-prev-icon i, html body section.popular .carousel-control-next .carousel-control-next-icon i {
+            color: #000000;
+            font-size: 1em; } }
   html body section.category {
     background-color: #f5f5f5; }
     html body section.category .container h1.title {
@@ -326,10 +323,14 @@ html body {
           color: #FFCD11; }
       html body section.item-container .container .left-block .list-block .cat-list {
         background: white;
-        padding: 10px 0;
+        padding: 0;
         margin-bottom: 10px; }
         html body section.item-container .container .left-block .list-block .cat-list .cat-item {
           list-style: none; }
+          html body section.item-container .container .left-block .list-block .cat-list .cat-item:first-child a {
+            padding-top: 10px; }
+          html body section.item-container .container .left-block .list-block .cat-list .cat-item:last-child a {
+            padding-bottom: 10px; }
           html body section.item-container .container .left-block .list-block .cat-list .cat-item a {
             padding-left: 25px;
             color: #1a1a1a;
@@ -364,8 +365,6 @@ html body {
         display: flex;
         border: none;
         margin-bottom: 1rem; }
-        html body section.item-container .container .left-block .list-block .order-ask:last-child {
-          margin-bottom: 0; }
         html body section.item-container .container .left-block .list-block .order-ask .title-ask {
           min-height: 40px;
           font-weight: bold;

@@ -112,7 +112,6 @@ html
               background-color: $black-bg
               top: 30px
               left: -16px
-              height: 350px
               width: 100vw
               .dropdown-item
                 padding: 20px 0 5px 0
@@ -155,21 +154,32 @@ html
                 background-color: transparent
                 color: black
                 padding: 1rem 0.5rem
-                transition: border 1s ease-in-out
+                border-bottom: 10px solid transparent
+                transition: border 0.4s ease-in-out
                 height: 100%
                 &:focus, &:active
                   outline: none
                   background-color: transparent
+                  border-bottom-color: $yellow-bg
+                  border-radius: 0
                 & + .dropdown-menu
+                  font-size: inherit
                   width: 100vw
-                  height: 60vh
                   left: 0
                   border-radius: 0
                   z-index: 999
-              .active
-                background: transparent
-                border-bottom: 10px solid #FFCD11
-                border-radius: 0px
+                  .title-list-block
+                    font-weight: bold
+                  .list-unstyled
+                    li a
+                      color: inherit
+                      font-size: 0.9em
+                  .list-parent + .list-unstyled
+                    padding-top: 10px
+                &#freightTransportation, &#materialDelivery
+                  & + div
+                    ul.list-unstyled li a
+                      font-size: inherit
           .rent-equip
             padding: 0
             button.rent
@@ -223,18 +233,12 @@ html
             border: none
             background: transparent !important
             .card-body
-              &:hover
-                cursor: pointer
               img
                 width: 100%
-              .icon-rotate
-                transform: rotate(180deg)
+                vertical-align: bottom
               .card-title
                 font-weight: bold
-                text-decoration: underline
                 margin-bottom: 0
-              &:hover
-                color: #FFCD11
               .card-text
                 line-height: 1.3
     section.popular
@@ -262,32 +266,30 @@ html
           &.active
             background-color: transparent
       .carousel-control
-        &-prev
+        &-prev, &-next
           opacity: 1
-          .carousel-control-prev-icon
-            background: #FFCD11
-            width: 30px
-            height: 30px
-            opacity: 1
-            i
-              color: $black-text
-              position: absolute
-              left: 50%
-              top: 50%
-              transform: translateX(-50%) translateY(-50%)
-        &-next
-          opacity: 1
-          .carousel-control-next-icon
-            background: #FFCD11
-            width: 30px
-            height: 30px
-            opacity: 1
-            i
-              color: $black-text
-              position: absolute
-              left: 50%
-              top: 50%
-              transform: translateX(-50%) translateY(-50%)
+          .carousel-control
+            &-prev-icon, &-next-icon
+              background-color: transparent
+              background-image: none
+              width: 30px
+              height: 30px
+              opacity: 1
+              @media screen and ( min-width: 500px )
+                background-color: $yellow-bg
+              i
+                font-size: 1.5em
+                color: #B1B1B1
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translateX(-50%) translateY(-50%)
+                @media screen and ( min-width: 500px )
+                  color: $black-bg
+                  font-size: 1em
+                  
+                
+        
 
     // Популярные категории слайдер
     section.category
@@ -411,10 +413,16 @@ html
                 color: $yellow-text
             .cat-list
               background: white
-              padding: 10px 0
+              padding: 0
               margin-bottom: 10px
               .cat-item
                 list-style: none
+                &:first-child
+                  a
+                    padding-top: 10px
+                &:last-child
+                  a
+                    padding-bottom: 10px
                 a
                   padding-left: 25px
                   color: #1a1a1a
@@ -450,7 +458,7 @@ html
               border: none
               margin-bottom: 1rem
               &:last-child
-                margin-bottom: 0
+                // margin-bottom: 0
               .title-ask
                 min-height: 40px
                 font-weight: bold
