@@ -45,12 +45,17 @@ $placeholder: #B1B1B1
     border-color: $yellow-bg
 .blue-a
   color: #21ADD9
-
+  &:hover
+    color: #21add9
 html
   body
     color: $black-text
     background-color: #F5F5F5
     font-family: "PFDinTextCondPro-Regular", sans-serif
+    a.und
+      text-decoration: underline
+      text-decoration-color: currentColor
+      text-underline-position: under
     @media screen and ( min-width: 0px )
       font-size: 14px
       
@@ -67,6 +72,7 @@ html
         font-size: 20px
     @media screen and ( min-width: 768px )
       font-size: 16px
+
       h1
         font-size: 24px
     @media screen and ( min-width: 1024px )
@@ -146,6 +152,9 @@ html
           .brand
             top: 0px
             display: block
+            img
+              position: relative
+              top: -5px
             span.brand-text
               background: #FFCD11
               padding: 8px
@@ -158,7 +167,7 @@ html
                 color: black
                 padding: 1rem 0.5rem
                 border-bottom: 10px solid transparent
-                transition: border 0.4s ease-in-out
+                transition: border 0.3s ease-in-out
                 height: 100%
                 &:focus, &:active
                   outline: none
@@ -238,7 +247,10 @@ html
             .card-body
               img
                 width: 100%
-                vertical-align: bottom
+                flex-basis: 50%
+                height: 50px
+                @media screen and ( min-width: 768px )
+                  height: 70px
               .card-title
                 font-weight: bold
                 margin-bottom: 0
@@ -402,6 +414,7 @@ html
             color: $white
             padding-left: 15px
             min-height: 25px
+            
           .list-block
             .title-list-block
               width: 100%
@@ -420,6 +433,7 @@ html
               margin-bottom: 10px
               .cat-item
                 list-style: none
+                font-size: 0.9em
                 &:first-child
                   a
                     padding-top: 10px
@@ -427,7 +441,7 @@ html
                   a
                     padding-bottom: 10px
                 a
-                  padding-left: 25px
+                  padding-left: 20px
                   color: #1a1a1a
                   display: inline-block
                   width: 100%
@@ -439,14 +453,21 @@ html
               display: flex
               border: none
               margin-bottom: 10px
+              background-color: transparent
               .card-body
+                background-color: $white-bg
                 padding: 0
                 margin-bottom: 10px
+                @media screen and ( min-width: 576px )
+                  padding-right: 10px
+                  @media screen and ( min-width: 768px )
+                    padding-right: 0
+                    
                 img
                   width: 100%
                 .title-item
-                  margin-top: 10px
-                  padding: 0
+                  padding: 10px 0 5px 0
+                  margin: 0
                 a.order
                   bottom: 10px
                   font-weight: bold
@@ -504,6 +525,7 @@ html
                   font-weight: bold
                 .card-prop
                   .table
+                    font-size: 0.9em
                     tbody
                       tr
                         display: flex
@@ -520,9 +542,11 @@ html
                   display: flex
                   justify-content: space-between
                   padding-bottom: 20px
+                  font-size: 0.9em
                 .card-bottom-content
                   display: flex
                   justify-content: space-between
+                  font-size: 0.9em
                   button
                     // height: 2.2rem
                     padding-left: 10px
@@ -648,6 +672,7 @@ html
             p.title-list-block
               font-weight: bold
             ul.list-parent
+              font-size: 0.9em
               padding-left: 10px
               padding-bottom: 10px
               li.list-item
@@ -778,11 +803,13 @@ html
                 .active
                   opacity: 1
         .right-side
+          font-size: 0.9em
           background-color: $white-bg
           .prop-content
             padding-top: 0px
             .block-title
               font-weight: bold
+              font-size: 1.1em
             .card-prop
               tbody
                 tr
@@ -815,6 +842,7 @@ html
         .bottom-content
           display: flex
           justify-content: space-between
+          font-size: 1.1em
           button
             // border: none
             border-radius: 0
@@ -916,6 +944,7 @@ html
                   padding-bottom: 10px
                   table.props
                     width: 100%
+                    font-size: 0.9em
                     tbody
                       tr
                         width: 100%
@@ -930,6 +959,7 @@ html
                   justify-content: space-between
                   flex-wrap: wrap
                   margin-top: 15px
+                  font-size: 0.9em
                   button.more
                     padding-left: 0
                     color: gray

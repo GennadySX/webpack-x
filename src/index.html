@@ -281,12 +281,13 @@
         <section class="main-1">
             <div class="container d-flex flex-column flex-column-sm-reverse">
                 <div class="top-content pt-sm-5">
-                    <h1 class="title d-none d-sm-block">Аренда спецтехники в городе от собственников</h1>
-                    <p class="your-equip d-none d-sm-block">Ваш заказ получит <strong>1256</strong> владельцев техники</p>
-                    
+                    <div class=" d-none d-sm-block">
+                        <h1 class="title">Аренда спецтехники в городе от собственников</h1>
+                        <p class="your-equip">Ваш заказ получит <strong>1256</strong> владельцев техники</p>
+                    </div>
                     <div class="d-flex flex-column flex-sm-column-reverse">
                         <!-- Блок преимуществ -->
-                        <div class="pre-block d-flex col-md-12 flex-column flex-sm-row p-0 no-gutters row py-4 justify-content-between align-items-center">
+                        <div class="pre-block d-flex col-md-12 flex-column flex-sm-row p-0 no-gutters row py-4 py-lg-5 justify-content-between">
                             <div class="col-md-4 col-lg-3 p-0 py-2">
                                 <div class="card_desc card">
                                     <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
@@ -333,7 +334,7 @@
                                 <div class="form-row ">
                                     <div class="form-group  mb-0 col-md-6 col-lg-5">
                                         <input type="text" class="form-control mb-2" placeholder="Какая техника требуется?">
-                                        <p class="label-input mb-2 d-none d-sm-block">Например: <a href="#">Дорожный каток</a></p>
+                                        <p class="label-input mb-2 d-none d-sm-block">Например: <a href="#" class="und">Дорожный каток</a></p>
                                     </div>
                                     <div class="form-group col-md-3 col-lg-2 d-none d-sm-block">
                                         <input type="text" class="form-control" placeholder="Какой город?" value="Казань">
@@ -350,7 +351,7 @@
                 <!-- Ссылки на мобильное приложение -->
                 <div class="bottom-icon col-8 align-self-end justify-content-end pb-5 d-none d-sm-flex">
                     <div class="store_link row no-gutters justify-content-end flex-nowrap">
-                        <a href="" class="mr-3 col-4 col-md-4 col-xl-5">
+                        <a href="" class="mr-3 mr-lg-4 col-4 col-md-4 col-xl-5">
                             <img class="w-100" src="./img/icons/google-play.svg" alt=" " title="Перейти в Google Play">
                         </a>
                         <a href="" class="col-4 col-md-4 col-xl-5">
@@ -482,21 +483,28 @@
                     <p class="title-list-block py-1 mb-2">Заказ в 2 клика</p>
                     <!-- Контейнер с заявками в 2 клика -->
                     <div class="list-block d-flex flex-md-column mb-3 row no-gutters">
-                        <div class="card order-double-click col-sm">
+                        <div class="card order-double-click col-sm-4 col-md">
+                            <div class="card-body">
+                                <img src="./img/items/camas.png" alt=" " class="item-thumb">
+                                <p class="title-item">Автовышка Камаз автокран автокран автокран</p>
+                                <a href="" class="order">цена от 1200 руб./ч</a>
+                            </div>
+                        </div>
+                        <div class="card order-double-click col-sm-4 col-md">
+                            <div class="card-body">
+                                <img src="./img/items/camas.png" alt=" " class="item-thumb">
+                                <p class="title-item">Автовышка Камаз автокран автокран автокран</p>
+                                <a href="" class="order">цена от 1200 руб./ч</a>
+                            </div>
+                        </div>
+                        <div class="card order-double-click col-sm-4 col-md">
                             <div class="card-body">
                                 <img src="./img/items/camas.png" alt=" " class="item-thumb">
                                 <p class="title-item">Автовышка Камаз</p>
                                 <a href="" class="order">цена от 1200 руб./ч</a>
                             </div>
                         </div>
-                        <div class="card order-double-click col-sm">
-                            <div class="card-body">
-                                <img src="./img/items/camas.png" alt=" " class="item-thumb">
-                                <p class="title-item">Автовышка Камаз</p>
-                                <a href="" class="order">цена от 1200 руб./ч</a>
-                            </div>
-                        </div>
-                        <div class="card order-double-click col-sm">
+                        <div class="card order-double-click col-sm-4 col-md">
                             <div class="card-body">
                                 <img src="./img/items/camas.png" alt=" " class="item-thumb">
                                 <p class="title-item">Автовышка Камаз</p>
@@ -588,7 +596,7 @@
                 </div>
                 <!-- Конец контейнера с карточками -->
                 <!-- Кнопка больше объявлений -->
-                <div class="more-content mb-3 mt-0 mx-3 mx-md-0 align-self-stretch align-self-md-start">
+                <div class="more-content mb-3 mt-0 mx-3 mx-md-0 align-self-stretch align-self-sm-start">
                     <button class="more-items w-100 py-1 px-3">Больше объявлений</button>
                 </div>
             </div>
@@ -627,7 +635,7 @@
     <section class="on-app p-4 p-md-5 text-center text-sm-left">
         <div class="container p-0 justify-content-start">
             <div class="left-block app-screeen col-sm-4 col-md-3 col-lg-3 col-xl-3 d-none d-sm-block px-0 mr-3">
-                <img src="./img/items/apptel.png" alt=" " class="screen">
+                <img src="./img/items/apptel.svg" alt=" " class="screen">
             </div>
             <div class="right-block app-desc col-md-8">
                 <h1 class="title-block">Заказ техники и услуг всегда под рукой!</h1>
