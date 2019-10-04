@@ -424,6 +424,10 @@ html body {
           padding: 12px 10px; }
         html body section.item-container .container .left-block .double-click-section .card-footer, html body section.item-container .container .left-block .applications-section .card-footer {
           padding: 0 10px 12px 10px; }
+      html body section.item-container .container .left-block .applications-section .card-header, html body section.item-container .container .left-block .applications-section .card-body {
+        padding: 10px 15px; }
+      html body section.item-container .container .left-block .applications-section .card-footer {
+        text-align: center; }
       html body section.item-container .container .right-block h1 {
         font-weight: bold; }
       html body section.item-container .container .right-block .card {
