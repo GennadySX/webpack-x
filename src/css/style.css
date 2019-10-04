@@ -1,3 +1,10 @@
+button.number {
+  background-color: #3B3B3B;
+  color: #FFCD11; }
+
+button {
+  border: none; }
+
 .yel-btn {
   background-color: #FFCD11;
   color: #000000;
@@ -38,9 +45,7 @@ html body {
       font-size: 14px; } }
   @media screen and (min-width: 320px) {
     html body {
-      font-size: 14px; }
-      html body .card-bottom-content {
-        font-size: 16px; } }
+      font-size: 14px; } }
   @media screen and (max-width: 560px) {
     html body h1 {
       font-size: 16px; } }
@@ -82,6 +87,7 @@ html body {
         background-image: url("../img/main-bg-mobile.jpg"); } }
   html body button.btn {
     border-radius: 0;
+    border: none;
     font-size: inherit; }
   html body header nav.nav-first {
     border-bottom: 10px solid #FFCD11; }
@@ -207,28 +213,34 @@ html body {
             color: #FFCD11;
             text-decoration: underline;
             padding-left: 10px; }
-      html body section.main-1 .container .pre-block {
+      html body section.main-1 .container .feature-block {
         flex-wrap: nowrap; }
-        html body section.main-1 .container .pre-block .card_desc, html body section.main-1 .container .pre-block .card-body {
+        html body section.main-1 .container .feature-block .card_desc, html body section.main-1 .container .feature-block .card-body {
           color: white;
           border: none;
           background: transparent !important; }
-          html body section.main-1 .container .pre-block .card_desc .card-body img, html body section.main-1 .container .pre-block .card-body .card-body img {
+          html body section.main-1 .container .feature-block .card_desc .card-body img, html body section.main-1 .container .feature-block .card-body .card-body img {
             width: 100%;
             flex-basis: 50%;
             height: 50px; }
             @media screen and (min-width: 768px) {
-              html body section.main-1 .container .pre-block .card_desc .card-body img, html body section.main-1 .container .pre-block .card-body .card-body img {
+              html body section.main-1 .container .feature-block .card_desc .card-body img, html body section.main-1 .container .feature-block .card-body .card-body img {
                 height: 70px; } }
-          html body section.main-1 .container .pre-block .card_desc .card-body .card-title, html body section.main-1 .container .pre-block .card-body .card-body .card-title {
+          html body section.main-1 .container .feature-block .card_desc .card-body .card-title, html body section.main-1 .container .feature-block .card-body .card-body .card-title {
             font-weight: bold;
             margin-bottom: 0; }
-          html body section.main-1 .container .pre-block .card_desc .card-body .card-text, html body section.main-1 .container .pre-block .card-body .card-body .card-text {
+          html body section.main-1 .container .feature-block .card_desc .card-body .card-text, html body section.main-1 .container .feature-block .card-body .card-body .card-text {
             line-height: 1.3; }
   html body section.popular h1 {
     font-weight: bold; }
-  html body section.popular .carousel-item {
-    height: 180px; }
+  html body section.popular .flickity-viewport {
+    height: 100%; }
+    html body section.popular .flickity-viewport .flickity-button {
+      background-color: red; }
+    html body section.popular .flickity-viewport .flickity-prev-next-button.previous {
+      left: -15px; }
+    html body section.popular .flickity-viewport .flickity-prev-next-button.next {
+      right: -15px; }
   html body section.popular .carousel-caption {
     position: static;
     padding: 0;
@@ -271,6 +283,53 @@ html body {
     background-color: #f5f5f5; }
     html body section.category .container h1.title {
       font-weight: bold; }
+    html body section.category .container .slide-category .carousel .flickity-viewport {
+      height: 200px; }
+      html body section.category .container .slide-category .carousel .flickity-viewport .flickity-slider {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        top: 0;
+        height: 100%; }
+        html body section.category .container .slide-category .carousel .flickity-viewport .flickity-slider .carousel-cell .title {
+          margin-top: 10px; }
+    @media screen and (max-width: 475px) {
+      html body section.category .container .slide-category .carousel .flickity-page-dots {
+        display: none; } }
+    html body section.category .container .slide-category .carousel .flickity-page-dots li.dot {
+      opacity: 1; }
+    html body section.category .container .slide-category .carousel .flickity-page-dots li.is-selected {
+      background: transparent;
+      border: 1px solid black; }
+    html body section.category .container .slide-category .carousel .flickity-prev-next-button {
+      border-radius: 0;
+      background-color: #FFCD11;
+      width: 30px;
+      height: 30px;
+      top: 40%;
+      transform: translateY(-40%), translateX(-40%); }
+      html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
+        right: -30px; }
+        @media screen and (max-width: 321px) {
+          html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
+            background-color: transparent;
+            color: #B1B1B1; } }
+      html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
+        left: -30px; }
+        @media screen and (max-width: 321px) {
+          html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
+            background-color: transparent;
+            color: #B1B1B1; } }
+      html body section.category .container .slide-category .carousel .flickity-prev-next-button:disabled {
+        background-color: #B8B8B8; }
+        @media screen and (max-width: 321px) {
+          html body section.category .container .slide-category .carousel .flickity-prev-next-button:disabled {
+            background-color: transparent;
+            opacity: 1; } }
+      html body section.category .container .slide-category .carousel .flickity-prev-next-button .slider-list .items {
+        background: #FFFFFF; }
+        html body section.category .container .slide-category .carousel .flickity-prev-next-button .slider-list .items img {
+          width: 130px; }
   html body .search-map {
     background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
     background-size: cover; }
@@ -316,18 +375,15 @@ html body {
         color: #FFFFFF;
         padding-left: 15px;
         min-height: 25px;
-        display: block;
-        width: 100%; }
+        display: block; }
         html body section.item-container .container .left-block a.title-list-block:hover {
           color: #FFCD11; }
       html body section.item-container .container .left-block .title-list-block {
-        width: 100%;
         background: #3B3B3B;
         color: #FFFFFF;
         padding-left: 15px;
         min-height: 25px; }
       html body section.item-container .container .left-block .list-block .title-list-block {
-        width: 100%;
         background: #3B3B3B;
         color: #FFFFFF;
         padding-left: 15px;
@@ -356,51 +412,48 @@ html body {
             html body section.item-container .container .left-block .list-block .cat-list .cat-item a:hover {
               color: white;
               background-color: #9a9a9a; }
-      html body section.item-container .container .left-block .list-block .order-double-click {
-        text-align: center;
-        display: flex;
-        border: none;
+      html body section.item-container .container .left-block .double-click-section .card, html body section.item-container .container .left-block .applications-section .card {
+        background-color: transparent;
         margin-bottom: 10px;
-        background-color: transparent; }
-        html body section.item-container .container .left-block .list-block .order-double-click .card-body {
+        border: none; }
+        html body section.item-container .container .left-block .double-click-section .card-header, html body section.item-container .container .left-block .double-click-section .card-body, html body section.item-container .container .left-block .double-click-section .card-footer, html body section.item-container .container .left-block .applications-section .card-header, html body section.item-container .container .left-block .applications-section .card-body, html body section.item-container .container .left-block .applications-section .card-footer {
           background-color: #FFFFFF;
-          padding: 0;
-          margin-bottom: 10px; }
-          @media screen and (min-width: 576px) {
-            html body section.item-container .container .left-block .list-block .order-double-click .card-body {
-              padding-right: 10px; } }
-  @media screen and (min-width: 576px) and (min-width: 768px) {
-    html body section.item-container .container .left-block .list-block .order-double-click .card-body {
-      padding-right: 0; } }
-          html body section.item-container .container .left-block .list-block .order-double-click .card-body img {
+          border-radius: 0;
+          border: none; }
+        html body section.item-container .container .left-block .double-click-section .card-header, html body section.item-container .container .left-block .applications-section .card-header {
+          background-color: #FFCD11;
+          font-size: 1.1em;
+          padding: 12px 10px; }
+        html body section.item-container .container .left-block .double-click-section .card-footer, html body section.item-container .container .left-block .applications-section .card-footer {
+          padding: 0 10px 12px 10px; }
+          html body section.item-container .container .left-block .double-click-section .card-footer img, html body section.item-container .container .left-block .applications-section .card-footer img {
             width: 100%; }
-          html body section.item-container .container .left-block .list-block .order-double-click .card-body .title-item {
+          html body section.item-container .container .left-block .double-click-section .card-footer .title-item, html body section.item-container .container .left-block .applications-section .card-footer .title-item {
             padding: 10px 0 5px 0;
             margin: 0; }
-          html body section.item-container .container .left-block .list-block .order-double-click .card-body a.order {
-            bottom: 10px;
+          html body section.item-container .container .left-block .double-click-section .card-footer a.order, html body section.item-container .container .left-block .applications-section .card-footer a.order {
             font-weight: bold;
             background: #fecc11;
             color: #1a1a1a;
             padding: 7px;
             padding-left: 10px;
             padding-right: 10px; }
-      html body section.item-container .container .left-block .list-block .order-ask {
+      html body section.item-container .container .left-block .double-click-section .order-ask, html body section.item-container .container .left-block .applications-section .order-ask {
         padding: 0;
         display: flex;
         border: none;
         margin-bottom: 1rem; }
-        html body section.item-container .container .left-block .list-block .order-ask .title-ask {
+        html body section.item-container .container .left-block .double-click-section .order-ask .title-ask, html body section.item-container .container .left-block .applications-section .order-ask .title-ask {
           min-height: 40px;
           font-weight: bold;
           margin-bottom: 5px;
           background: #fecc11;
           padding: 10px 0; }
-        html body section.item-container .container .left-block .list-block .order-ask .card-body {
+        html body section.item-container .container .left-block .double-click-section .order-ask .card-body, html body section.item-container .container .left-block .applications-section .order-ask .card-body {
           padding-top: 0px; }
-          html body section.item-container .container .left-block .list-block .order-ask .card-body .ask-desc {
+          html body section.item-container .container .left-block .double-click-section .order-ask .card-body .ask-desc, html body section.item-container .container .left-block .applications-section .order-ask .card-body .ask-desc {
             text-align: left; }
-          html body section.item-container .container .left-block .list-block .order-ask .card-body button.number {
+          html body section.item-container .container .left-block .double-click-section .order-ask .card-body button.number, html body section.item-container .container .left-block .applications-section .order-ask .card-body button.number {
             background: #3B3B3B;
             color: #FFCD11;
             border: none;

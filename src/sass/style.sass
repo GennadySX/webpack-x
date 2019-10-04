@@ -24,8 +24,11 @@ $white: #FFFFFF
 $placeholder: #B1B1B1
 
 
-
-    
+button.number
+  background-color: $dark-grey
+  color: $yellow-bg
+button
+  border: none
 .yel-btn
   background-color: $yellow-bg
   color: $black-text
@@ -35,6 +38,7 @@ $placeholder: #B1B1B1
 .dark-btn
   background-color: $dark-grey
   color: $white
+
 .wh-btn
   background-color: transparent
   border: 3px solid $dark-grey
@@ -63,8 +67,6 @@ html
       
     @media screen and ( min-width: 320px )
       font-size: 14px
-      .card-bottom-content
-        font-size: 16px
     @media screen and ( max-width: 560px )
       h1
         font-size: 16px
@@ -104,6 +106,7 @@ html
         background-image:  url('../img/main-bg-mobile.jpg')
     button.btn
       border-radius: 0
+      border: none
       font-size: inherit
     // Шапка сайта
     header
@@ -240,7 +243,7 @@ html
                     color: #FFCD11
                     text-decoration: underline
                     padding-left: 10px
-        .pre-block
+        .feature-block
           flex-wrap: nowrap
           .card_desc,.card-body
             color: white
@@ -262,8 +265,22 @@ html
 
       h1
         font-weight: bold
-      .carousel-item
-        height: 180px
+      .flickity-viewport
+        height: 100%
+        .carousel
+          // position: static
+        .flickity-button
+          background-color: red
+        .flickity-prev-next-button.previous
+          left: -15px
+        .flickity-prev-next-button.next
+          right: -15px
+      .flickity-slider
+        // position: static
+        .carousel-cell
+          // position: static !important
+      // .carousel-item
+      //   height: 180px
         img
       .carousel-caption
         position: static
@@ -314,54 +331,54 @@ html
       .container
         h1.title
           font-weight: bold
-        // .slide-category
-        //   .carousel
-        //     .flickity-viewport
-        //       height: 200px
-        //       .flickity-slider
-        //         display: flex
-        //         flex-direction: row
-        //         align-items: center
-        //         top: 0
-        //         height: 100%
-        //         .carousel-cell
-        //           .title
-        //             margin-top: 10px
-        //     .flickity-page-dots
-        //       @media screen and ( max-width: 475px )
-        //         display: none
-        //       li.dot
-        //         opacity: 1
-        //       li.is-selected
-        //         background: transparent
-        //         border: 1px solid black
-        //     .flickity-prev-next-button
-        //       border-radius: 0
-        //       background-color: #FFCD11
-        //       width: 30px
-        //       height: 30px
-        //       top: 40%
-        //       transform: translateY(-40%), translateX(-40%)
-        //       &.next
-        //         right: -30px
-        //         @media screen and ( max-width: 321px )
-        //           background-color: transparent
-        //           color: #B1B1B1
-        //       &.previous
-        //         left: -30px
-        //         @media screen and ( max-width: 321px )
-        //           background-color: transparent
-        //           color: #B1B1B1
-        //       &:disabled
-        //         background-color: #B8B8B8
-        //         @media screen and ( max-width: 321px )
-        //           background-color: transparent
-        //           opacity: 1
-        //       .slider-list
-        //         .items
-        //           img
-        //             width: 130px
-        //           background: #FFFFFF
+        .slide-category
+          .carousel
+            .flickity-viewport
+              height: 200px
+              .flickity-slider
+                display: flex
+                flex-direction: row
+                align-items: center
+                top: 0
+                height: 100%
+                .carousel-cell
+                  .title
+                    margin-top: 10px
+            .flickity-page-dots
+              @media screen and ( max-width: 475px )
+                display: none
+              li.dot
+                opacity: 1
+              li.is-selected
+                background: transparent
+                border: 1px solid black
+            .flickity-prev-next-button
+              border-radius: 0
+              background-color: #FFCD11
+              width: 30px
+              height: 30px
+              top: 40%
+              transform: translateY(-40%), translateX(-40%)
+              &.next
+                right: -30px
+                @media screen and ( max-width: 321px )
+                  background-color: transparent
+                  color: #B1B1B1
+              &.previous
+                left: -30px
+                @media screen and ( max-width: 321px )
+                  background-color: transparent
+                  color: #B1B1B1
+              &:disabled
+                background-color: #B8B8B8
+                @media screen and ( max-width: 321px )
+                  background-color: transparent
+                  opacity: 1
+              .slider-list
+                .items
+                  img
+                    width: 130px
+                  background: #FFFFFF
       // Блок поиск на карте
     .search-map
       background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url('../img/map2.jpg')
@@ -407,19 +424,20 @@ html
             padding-left: 15px
             min-height: 25px
             display: block
-            width: 100%
+            // width: 100%
             &:hover
               color: $yellow-text
           .title-list-block
-            width: 100%
+            // width: 100%
             background: $dark-grey
             color: $white
             padding-left: 15px
             min-height: 25px
             
           .list-block
+            // width: 100%
             .title-list-block
-              width: 100%
+              // width: 100%
               background: $dark-grey
               color: $white
               padding-left: 15px
@@ -450,28 +468,28 @@ html
                   &:hover
                     color: white
                     background-color: #9a9a9a
-            .order-double-click
-              text-align: center
-              display: flex
-              border: none
-              margin-bottom: 10px
+          .double-click-section, .applications-section
+            .card
               background-color: transparent
-              .card-body
-                background-color: $white-bg
-                padding: 0
-                margin-bottom: 10px
-                @media screen and ( min-width: 576px )
-                  padding-right: 10px
-                  @media screen and ( min-width: 768px )
-                    padding-right: 0
-                    
+              margin-bottom: 10px
+              border: none
+              
+              &-header, &-body, &-footer
+                background-color: $white
+                border-radius: 0
+                border: none
+              &-header
+                background-color: $yellow-bg
+                font-size: 1.1em
+                padding: 12px 10px
+              &-footer
+                padding: 0 10px 12px 10px
                 img
                   width: 100%
                 .title-item
                   padding: 10px 0 5px 0
                   margin: 0
                 a.order
-                  bottom: 10px
                   font-weight: bold
                   background: #fecc11
                   color: #1a1a1a
