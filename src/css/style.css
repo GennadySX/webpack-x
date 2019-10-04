@@ -23,8 +23,6 @@ button {
   font-weight: bold;
   transition: color 0.5s ease-in, background 0.7s ease-in-out, border-color 0.4s ease; }
   .wh-btn:hover {
-    background: #000;
-    color: whitesmoke;
     border-color: #FFCD11; }
 
 .blue-a {
@@ -426,41 +424,6 @@ html body {
           padding: 12px 10px; }
         html body section.item-container .container .left-block .double-click-section .card-footer, html body section.item-container .container .left-block .applications-section .card-footer {
           padding: 0 10px 12px 10px; }
-          html body section.item-container .container .left-block .double-click-section .card-footer img, html body section.item-container .container .left-block .applications-section .card-footer img {
-            width: 100%; }
-          html body section.item-container .container .left-block .double-click-section .card-footer .title-item, html body section.item-container .container .left-block .applications-section .card-footer .title-item {
-            padding: 10px 0 5px 0;
-            margin: 0; }
-          html body section.item-container .container .left-block .double-click-section .card-footer a.order, html body section.item-container .container .left-block .applications-section .card-footer a.order {
-            font-weight: bold;
-            background: #fecc11;
-            color: #1a1a1a;
-            padding: 7px;
-            padding-left: 10px;
-            padding-right: 10px; }
-      html body section.item-container .container .left-block .double-click-section .order-ask, html body section.item-container .container .left-block .applications-section .order-ask {
-        padding: 0;
-        display: flex;
-        border: none;
-        margin-bottom: 1rem; }
-        html body section.item-container .container .left-block .double-click-section .order-ask .title-ask, html body section.item-container .container .left-block .applications-section .order-ask .title-ask {
-          min-height: 40px;
-          font-weight: bold;
-          margin-bottom: 5px;
-          background: #fecc11;
-          padding: 10px 0; }
-        html body section.item-container .container .left-block .double-click-section .order-ask .card-body, html body section.item-container .container .left-block .applications-section .order-ask .card-body {
-          padding-top: 0px; }
-          html body section.item-container .container .left-block .double-click-section .order-ask .card-body .ask-desc, html body section.item-container .container .left-block .applications-section .order-ask .card-body .ask-desc {
-            text-align: left; }
-          html body section.item-container .container .left-block .double-click-section .order-ask .card-body button.number, html body section.item-container .container .left-block .applications-section .order-ask .card-body button.number {
-            background: #3B3B3B;
-            color: #FFCD11;
-            border: none;
-            min-height: 2.2rem;
-            line-height: 12px;
-            padding-right: 10px;
-            padding-right: 10px; }
       html body section.item-container .container .right-block h1 {
         font-weight: bold; }
       html body section.item-container .container .right-block .card {
