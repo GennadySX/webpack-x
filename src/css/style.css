@@ -229,105 +229,85 @@ html body {
             margin-bottom: 0; }
           html body section.main-1 .container .feature-block .card_desc .card-body .card-text, html body section.main-1 .container .feature-block .card-body .card-body .card-text {
             line-height: 1.3; }
-  html body section.popular h1 {
+  html body section.category h1 {
     font-weight: bold; }
-  html body section.popular .flickity-viewport {
-    height: 100%; }
-    html body section.popular .flickity-viewport .flickity-button {
-      background-color: red; }
-    html body section.popular .flickity-viewport .flickity-prev-next-button.previous {
-      left: -15px; }
-    html body section.popular .flickity-viewport .flickity-prev-next-button.next {
-      right: -15px; }
-  html body section.popular .carousel-caption {
-    position: static;
-    padding: 0;
-    padding-top: 15px; }
-    html body section.popular .carousel-caption p {
-      color: #000000; }
-  html body section.popular ol.carousel-indicators li {
-    box-sizing: border-box;
-    border-radius: 50%;
-    width: 13px;
-    height: 13px;
-    background-color: #3B3B3B;
-    border: 2px solid #3B3B3B;
+  html body section.category .slide-category {
+    height: 150px; }
+    @media screen and (min-width: 1200px) {
+      html body section.category .slide-category {
+        height: 200px; } }
+    html body section.category .slide-category .carousel {
+      height: 100%; }
+      html body section.category .slide-category .carousel .flickity-viewport {
+        height: 100% !important; }
+        html body section.category .slide-category .carousel .flickity-viewport .flickity-slider {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: row;
+          top: 0;
+          height: 100% !important; }
+          @media screen and (min-width: 768px) {
+            html body section.category .slide-category .carousel .flickity-viewport .flickity-slider {
+              align-items: flex-end; } }
+          html body section.category .slide-category .carousel .flickity-viewport .flickity-slider .card {
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            justify-content: space-between; }
+            html body section.category .slide-category .carousel .flickity-viewport .flickity-slider .card img {
+              height: 70%;
+              width: auto; }
+            html body section.category .slide-category .carousel .flickity-viewport .flickity-slider .card .card-footer {
+              background-color: inherit;
+              border: inherit;
+              padding: 10px 0 0 0; }
+              html body section.category .slide-category .carousel .flickity-viewport .flickity-slider .card .card-footer .card-title {
+                margin: 0; }
+          html body section.category .slide-category .carousel .flickity-viewport .flickity-slider .carousel-cell {
+            height: 100% !important;
+            flex-direction: column !important; }
+            html body section.category .slide-category .carousel .flickity-viewport .flickity-slider .carousel-cell img {
+              object-fit: cover; }
+            html body section.category .slide-category .carousel .flickity-viewport .flickity-slider .carousel-cell .title {
+              margin-top: 10px; }
+  @media screen and (max-width: 560px) {
+    html body section.category .container .slide-category .carousel .flickity-page-dots {
+      display: none; } }
+  html body section.category .container .slide-category .carousel .flickity-page-dots li.dot {
     opacity: 1; }
-    html body section.popular ol.carousel-indicators li.active {
-      background-color: transparent; }
-  html body section.popular .carousel-control-prev, html body section.popular .carousel-control-next {
-    opacity: 1; }
-    html body section.popular .carousel-control-prev .carousel-control-prev-icon, html body section.popular .carousel-control-prev .carousel-control-next-icon, html body section.popular .carousel-control-next .carousel-control-prev-icon, html body section.popular .carousel-control-next .carousel-control-next-icon {
-      background-color: transparent;
-      background-image: none;
-      width: 30px;
-      height: 30px;
-      opacity: 1; }
-      @media screen and (min-width: 500px) {
-        html body section.popular .carousel-control-prev .carousel-control-prev-icon, html body section.popular .carousel-control-prev .carousel-control-next-icon, html body section.popular .carousel-control-next .carousel-control-prev-icon, html body section.popular .carousel-control-next .carousel-control-next-icon {
-          background-color: #FFCD11; } }
-      html body section.popular .carousel-control-prev .carousel-control-prev-icon i, html body section.popular .carousel-control-prev .carousel-control-next-icon i, html body section.popular .carousel-control-next .carousel-control-prev-icon i, html body section.popular .carousel-control-next .carousel-control-next-icon i {
-        font-size: 1.5em;
-        color: #B1B1B1;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%); }
-        @media screen and (min-width: 500px) {
-          html body section.popular .carousel-control-prev .carousel-control-prev-icon i, html body section.popular .carousel-control-prev .carousel-control-next-icon i, html body section.popular .carousel-control-next .carousel-control-prev-icon i, html body section.popular .carousel-control-next .carousel-control-next-icon i {
-            color: #000000;
-            font-size: 1em; } }
-  html body section.category {
-    background-color: #f5f5f5; }
-    html body section.category .container h1.title {
-      font-weight: bold; }
-    html body section.category .container .slide-category .carousel .flickity-viewport {
-      height: 200px; }
-      html body section.category .container .slide-category .carousel .flickity-viewport .flickity-slider {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        top: 0;
-        height: 100%; }
-        html body section.category .container .slide-category .carousel .flickity-viewport .flickity-slider .carousel-cell .title {
-          margin-top: 10px; }
-    @media screen and (max-width: 475px) {
-      html body section.category .container .slide-category .carousel .flickity-page-dots {
-        display: none; } }
-    html body section.category .container .slide-category .carousel .flickity-page-dots li.dot {
-      opacity: 1; }
-    html body section.category .container .slide-category .carousel .flickity-page-dots li.is-selected {
-      background: transparent;
-      border: 1px solid black; }
-    html body section.category .container .slide-category .carousel .flickity-prev-next-button {
-      border-radius: 0;
-      background-color: #FFCD11;
-      width: 30px;
-      height: 30px;
-      top: 40%;
-      transform: translateY(-40%), translateX(-40%); }
-      html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
-        right: -30px; }
-        @media screen and (max-width: 321px) {
-          html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
-            background-color: transparent;
-            color: #B1B1B1; } }
-      html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
-        left: -30px; }
-        @media screen and (max-width: 321px) {
-          html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
-            background-color: transparent;
-            color: #B1B1B1; } }
-      html body section.category .container .slide-category .carousel .flickity-prev-next-button:disabled {
-        background-color: #B8B8B8; }
-        @media screen and (max-width: 321px) {
-          html body section.category .container .slide-category .carousel .flickity-prev-next-button:disabled {
-            background-color: transparent;
-            opacity: 1; } }
-      html body section.category .container .slide-category .carousel .flickity-prev-next-button .slider-list .items {
-        background: #FFFFFF; }
-        html body section.category .container .slide-category .carousel .flickity-prev-next-button .slider-list .items img {
-          width: 130px; }
+  html body section.category .container .slide-category .carousel .flickity-page-dots li.is-selected {
+    background: transparent;
+    border: 1px solid black; }
+  html body section.category .container .slide-category .carousel .flickity-prev-next-button {
+    border-radius: 0;
+    background-color: #FFCD11;
+    width: 30px;
+    height: 30px;
+    top: 40%;
+    transform: translateY(-40%), translateX(-40%); }
+    html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
+      right: -30px; }
+      @media screen and (max-width: 560px) {
+        html body section.category .container .slide-category .carousel .flickity-prev-next-button.next {
+          background-color: transparent;
+          color: #B1B1B1; } }
+    html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
+      left: -30px; }
+      @media screen and (max-width: 560px) {
+        html body section.category .container .slide-category .carousel .flickity-prev-next-button.previous {
+          background-color: transparent;
+          color: #B1B1B1; } }
+    html body section.category .container .slide-category .carousel .flickity-prev-next-button:disabled {
+      background-color: #B8B8B8; }
+      @media screen and (max-width: 560px) {
+        html body section.category .container .slide-category .carousel .flickity-prev-next-button:disabled {
+          background-color: transparent;
+          opacity: 1; } }
+    html body section.category .container .slide-category .carousel .flickity-prev-next-button .slider-list .items {
+      background: #FFFFFF; }
+      html body section.category .container .slide-category .carousel .flickity-prev-next-button .slider-list .items img {
+        width: 130px; }
   html body .search-map {
     background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
     background-size: cover; }
@@ -410,6 +390,17 @@ html body {
             html body section.item-container .container .left-block .list-block .cat-list .cat-item a:hover {
               color: white;
               background-color: #9a9a9a; }
+      html body section.item-container .container .left-block .double-click-section .card {
+        width: 48%; }
+        @media screen and (min-width: 576px) {
+          html body section.item-container .container .left-block .double-click-section .card {
+            width: 100%; } }
+      @media screen and (min-width: 576px) {
+        html body section.item-container .container .left-block .double-click-section.in-main-page .card {
+          width: 32%; } }
+      @media screen and (min-width: 768px) {
+        html body section.item-container .container .left-block .double-click-section.in-main-page .card {
+          width: 100%; } }
       html body section.item-container .container .left-block .double-click-section .card, html body section.item-container .container .left-block .applications-section .card {
         background-color: transparent;
         margin-bottom: 10px;
@@ -893,6 +884,41 @@ html body {
       margin-top: 0; }
     html body .item-container .container.d-flex .right-block .card:last-child {
       margin-bottom: 0; }
+  html body .item-container .requests-section {
+    align-items: flex-start; }
+    html body .item-container .requests-section .card {
+      background-color: transparent;
+      border: none;
+      font-size: 0.9em;
+      color: #3b3b3b;
+      padding: 0 10px;
+      box-shadow: none; }
+      html body .item-container .requests-section .card:last-of-type {
+        margin-bottom: 15px !important; }
+      html body .item-container .requests-section .card-wrapper {
+        height: 100%;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+        will-change: transform, box-shadow; }
+        html body .item-container .requests-section .card-wrapper:hover {
+          transform: scale(1.02);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      html body .item-container .requests-section .card-wrapper, html body .item-container .requests-section .card-header, html body .item-container .requests-section .card-body, html body .item-container .requests-section .card-footer {
+        background-color: #FFFFFF;
+        border: inherit;
+        border-radius: 0; }
+      html body .item-container .requests-section .card-title {
+        font-weight: bold;
+        font-size: 1.2em; }
+      html body .item-container .requests-section .card i {
+        font-size: 0.8em; }
+      html body .item-container .requests-section .card-footer .number {
+        font-size: 1em; }
+        html body .item-container .requests-section .card-footer .number:hover {
+          background-color: #000000; }
+      html body .item-container .requests-section .card-footer .card-text {
+        color: #B1B1B1; }
   html body .modal .modal-header {
     align-items: center; }
   html body .modal input, html body .modal textarea, html body .modal select, html body .modal button {

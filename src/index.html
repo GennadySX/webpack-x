@@ -36,7 +36,7 @@
                             <a class="dropdown-item active" href="#">Услуги</a>
                             <a class="dropdown-item" href="#">Грузоперевозки</a>
                             <a class="dropdown-item" href="#">Доставка материала</a>
-                            <a class="dropdown-item" href="#">Заявки</a>
+                            <a class="dropdown-item" href="requests.html">Заявки</a>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signInModal">Войти</a>
                             <button type="button" class="btn btn-warning rent w-100 py-1 mt-4" data-toggle="modal" data-target="#placeVehicleModal">Сдать технику</button>
                         </div>
@@ -229,7 +229,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">Заявки</a>
+                                    <a class="nav-link " href="requests.html">Заявки</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -359,12 +359,68 @@
     </article>
 
     <!-- Блок-слайдер с популярной категорией техники -->
-    <section class="popular">
-        <div class="container py-3 my-lg-4 d-flex flex-column">
-            <h1 class="align-self-center align-self-md-start">Популярные категории</h1>
-        </div> 
-    </section>
 
+
+    <section class="category py-3 py-md-5"> 
+        <h1 class="title text-center pb-2">Популярные категории</h1>
+        <div class="container py-2">
+            <div class="slide-category">
+                <div  class="carousel col-10 col-md-12 mx-auto">
+
+                    <div class="card col-12 col-sm-4 col-lg-3">
+                        
+                        <img src="img/tractor.jpg" class="card-img-top" alt="...">
+                        
+                        <div class="card-footer">
+                        
+                            <p class="card-title">Дорожно-строительная 
+                                    техника</p>
+                        
+                        </div>
+                    
+                    </div>
+                    <div class="card col-12 col-sm-4 col-lg-3">
+                        
+                        <img src="img/wrwLvJM.jpg" class="card-img-top" alt="...">
+                        
+                        <div class="card-footer">
+                        
+                            <p class="card-title">Транспорт</p>
+                        
+                        </div>
+                    
+                    </div>
+
+
+
+                    <div class="card col-12 col-sm-4 col-lg-3">
+                        
+                        <img src="img/ZK9mmOR.jpg" class="card-img-top" alt="...">
+                        
+                        <div class="card-footer">
+                        
+                            <p class="card-title">Подъемная техника</p>
+                        
+                        </div>
+                    
+                    </div>
+
+                    <div class="card col-12 col-sm-4 col-lg-3">
+                        
+                        <img src="img/kran.jpg" class="card-img-top" alt="...">
+                        
+                        <div class="card-footer">
+                        
+                            <p class="card-title">Землеройная техника</p>
+                        
+                        </div>
+                    
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Блок поиск на карте -->
     <section class="search-map px-3 py-4 px-md-5">
@@ -383,7 +439,8 @@
                 <h1 class="title-block align-self-center align-self-md-start my-3 mb-lg-4">Категории</h1>
                 <!-- Блок со списком строительной техники -->
                 <div class="list-block">
-                    <a data-toggle="collapse" href="#firstList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Строительная техника</a>
+                    <a data-toggle="collapse" href="#firstList" role="button" aria-expanded="false" aria-controls="firstList"
+                     class="title-list-block py-1 mb-2" title="Раскрыть список">Строительная техника</a>
                     <ul class="cat-list collapse " id="firstList">
                         <li class="cat-item"><a href="#">Автовышки</a></li>
                         <li class="cat-item"><a href="#">Автогрейдеры</a></li>
@@ -409,8 +466,9 @@
                 </div>
                 <!-- Блок со списком грузоперевозок -->
                 <div class="list-block">
-                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Грузоперевозки</a>
-                    <ul class="cat-list collapse " id="collapseExample">
+                    <a data-toggle="collapse" href="#secondList" role="button" aria-expanded="false"
+                     aria-controls="secondList" class="title-list-block py-1 mb-2" title="Раскрыть список">Грузоперевозки</a>
+                    <ul class="cat-list collapse " id="secondList">
                         <li class="cat-item"><a href="#">Бензовозы</a></li>
                         <li class="cat-item"><a href="#">Водовозы</a></li>
                         <li class="cat-item"><a href="#">Газели</a></li>
@@ -425,102 +483,114 @@
                 </div>
 
                 <!-- Блок заказ в 2 клика -->
-                <div class="double-click-section">
-                    <!-- Заголовок -->
-                    <p class="title-list-block py-1 mb-2">Заказ в 2 клика</p>
-                    <!-- Контейнер с заявками в 2 клика -->
-                    
-                    <div class="list-block d-flex flex-md-column mb-3 row">
+                    <div class="double-click-section in-main-page">
+                        <!-- Заголовок -->
+                        <p class="title-list-block py-1 mb-2">Заказ в 2 клика</p>
+                        <!-- Контейнер с заявками в 2 клика -->
+                        <div class="list-block d-flex flex-wrap flex-md-column mb-2 justify-content-between justify-sm-content-around justify-items-between">
+                            <div class="card text-center flex-shrink-0">
+                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
+                                <div class="card-body p-2">
+                                    <span class="card-title">Гидромолот-экскаватор</span>
+                                </div> 
+                                <div class="card-footer">
+                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
+                                </div>  
+                            </div>
+                            <div class="card text-center flex-shrink-0">  
+                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
+                                <div class="card-body p-2">
+                                    <span class="card-title">Гидромолот-экскаватор</span>
+                                </div> 
+                                <div class="card-footer">
+                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
+                                </div>  
+                            </div>
 
-                           
-                        <div class="card col-sm-4 col-md text-center">  
-                            <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                            <div class="card-body p-2">
-                                <span class="card-title">Гидромолот-экскаватор</span>
-                            </div> 
-                            <div class="card-footer">
-                                <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                            </div>  
+                            <div class="card text-center flex-shrink-0">
+                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
+                                <div class="card-body p-2">
+                                    <span class="card-title">Гидромолот-экскаватор</span>
+                                </div> 
+                                <div class="card-footer">
+                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
+                                </div>  
+                            </div>
+
+                            <div class="card text-center flex-shrink-0">  
+                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
+                                <div class="card-body p-2">
+                                    <span class="card-title">Гидромолот-экскаватор</span>
+                                </div> 
+                                <div class="card-footer">
+                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
+                                </div>  
+                            </div>
                         </div>
-
-                        <div class="card col-sm-4 col-md text-center">  
-                            <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                            <div class="card-body p-2">
-                                <span class="card-title">Гидромолот-экскаватор</span>
-                            </div> 
-                            <div class="card-footer">
-                                <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                            </div>  
-                        </div>
-
-                        <div class="card col-sm-4 col-md text-center">  
-                            <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                            <div class="card-body p-2">
-                                <span class="card-title">Гидромолот-экскаватор</span>
-                            </div> 
-                            <div class="card-footer">
-                                <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                            </div>  
-                        </div>
-
-
                     </div>
-                </div>
 
                 <!-- Блок с заявками -->
                 <div class="applications-section">
-                    <a data-toggle="collapse" href="#thirdList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Заявки</a>
-                    <div class="list-block collapse d-flex flex-md-column mb-3 row" id="thirdList">
-
-                        <div class="card col-sm-4 col-md">
-                            <div class="card-header">
-                                <div class="cad-title">
-                                    Эвакуатор-погрузчик JSB 1СХ
+                    <a data-toggle="collapse" href="#thirdList" role="button" aria-expanded="false" aria-controls="thirdList"
+                     class="title-list-block py-1 mb-2" title="Раскрыть список">Заявки</a>
+                    <div class="collapse" id="thirdList">
+                        <div class="list-block d-flex flex-md-column mb-3 row">
+                            <!-- Мини-карточка заявки -->
+                            <div class="card col-sm-4 col-md">
+                                <div class="card-header">
+                                    <div class="cad-title">
+                                        Эвакуатор-погрузчик JSB 1СХ
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен от 2 до 5.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="order number py-1 px-2">+7 показать номер</button>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен от 2 до 5.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="order number btn">+7 показать номер</button>
-                            </div>
-                        </div>
+                            <!-- Конец мини-карточки -->
 
-                        <div class="card col-sm-4 col-md">
-                            <div class="card-header">
-                                <div class="cad-title">
-                                    Эвакуатор-погрузчик JSB 1СХ
+                            <!-- Мини-карточка заявки -->
+                            <div class="card col-sm-4 col-md">
+                                <div class="card-header">
+                                    <div class="cad-title">
+                                        Эвакуатор-погрузчик JSB 1СХ
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен от 2 до 5.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="order number py-1 px-2">+7 показать номер</button>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен от 2 до 5.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="order number btn px-3">+7 показать номер</button>
-                            </div>
-                        </div>
+                            <!-- Конец мини-карточки -->
 
-                        <div class="card col-sm-4 col-md">
-                            <div class="card-header">
-                                <div class="cad-title">
-                                    Эвакуатор-погрузчик JSB 1СХ
+                            <!-- Мини-карточка заявки -->
+                            <div class="card col-sm-4 col-md">
+                                <div class="card-header">
+                                    <div class="cad-title">
+                                        Эвакуатор-погрузчик JSB 1СХ
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен от 2 до 5.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="order number py-1 px-2">+7 показать номер</button>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен от 2 до 5.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="order number btn">+7 показать номер</button>
-                            </div>
-                        </div>
+                            <!-- Конец мини-карточки -->
 
-                    </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Конец левой колонки -->
