@@ -39,7 +39,7 @@ button
   background-color: $dark-grey
   color: $white
 
-.wh-btn
+button.wh-btn
   background-color: transparent
   border: 3px solid $dark-grey
   color: $dark-grey
@@ -1037,15 +1037,82 @@ html
       // Личный кабинет
       .left-block
         .user-account-menu
+          
+          justify-content: space-between
           a
             color: inherit
+            flex-grow: 1
+            text-align: center
             i
-              width: 20px
+              width: 10px
               font-size: 0.8em
               text-align: center
+              display: none
           .active
             background-color: $dark-grey
             color: $yellow-bg
+      .right-block
+        .tab-content
+          .card
+            .col-md-7
+              background-color: $white-bg
+              .card
+                &-header, &-body, &-footer
+                  background-color: transparent
+                  border: none
+                  border-radius: 0
+                &-footer
+                  display: flex
+                  justify-content: space-between
+                  .btn-link
+                    background-color: inherit
+                    color: inherit
+                  .dark-btn
+                    color: $yellow-bg
+
+            .card-title
+              font-size: 1.1em
+              font-weight: bold
+            .card-prop
+              .table
+                font-size: 0.9em
+                tbody
+                  tr
+                    display: flex
+                    justify-content: space-between
+                    th, td
+                      border: none
+                      padding: 0
+                      padding-bottom: 5px
+                    th
+                      font-weight: normal
+                      @media screen and ( max-width: 475px )
+                        color: #757575
+            .cost-content
+              display: flex
+              justify-content: space-between
+              padding-bottom: 20px
+              font-size: 0.9em
+              .card-bottom-content
+                display: flex
+                justify-content: space-between
+                font-size: 0.9em
+                button
+                  // height: 2.2rem
+                    padding-left: 10px
+                    padding-right: 10px
+                    border: none
+                    font-weight: inherit
+                  button.more
+                    background: none
+                    padding-left: 0
+                  button.order
+                    background: #fecc11
+                  button.number
+                    background: #3b3b3b
+                    color: #fecc11
+                    line-height: 12px
+
 
 
 

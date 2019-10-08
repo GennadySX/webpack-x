@@ -16,13 +16,13 @@ button {
   background-color: #3B3B3B;
   color: #FFFFFF; }
 
-.wh-btn {
+button.wh-btn {
   background-color: transparent;
   border: 3px solid #3B3B3B;
   color: #3B3B3B;
   font-weight: bold;
   transition: color 0.5s ease-in, background 0.7s ease-in-out, border-color 0.4s ease; }
-  .wh-btn:hover {
+  button.wh-btn:hover {
     border-color: #FFCD11; }
 
 .blue-a {
@@ -920,15 +920,69 @@ html body {
           background-color: #000000; }
       html body .item-container .requests-section .card-footer .card-text {
         color: #B1B1B1; }
-  html body .item-container .left-block .user-account-menu a {
-    color: inherit; }
-    html body .item-container .left-block .user-account-menu a i {
-      width: 20px;
-      font-size: 0.8em;
+  html body .item-container .left-block .user-account-menu {
+    justify-content: space-between; }
+    html body .item-container .left-block .user-account-menu a {
+      color: inherit;
+      flex-grow: 1;
       text-align: center; }
-  html body .item-container .left-block .user-account-menu .active {
-    background-color: #3B3B3B;
-    color: #FFCD11; }
+      html body .item-container .left-block .user-account-menu a i {
+        width: 10px;
+        font-size: 0.8em;
+        text-align: center;
+        display: none; }
+    html body .item-container .left-block .user-account-menu .active {
+      background-color: #3B3B3B;
+      color: #FFCD11; }
+  html body .item-container .right-block .tab-content .card .col-md-7 {
+    background-color: #FFFFFF; }
+    html body .item-container .right-block .tab-content .card .col-md-7 .card-header, html body .item-container .right-block .tab-content .card .col-md-7 .card-body, html body .item-container .right-block .tab-content .card .col-md-7 .card-footer {
+      background-color: transparent;
+      border: none;
+      border-radius: 0; }
+    html body .item-container .right-block .tab-content .card .col-md-7 .card-footer {
+      display: flex;
+      justify-content: space-between; }
+      html body .item-container .right-block .tab-content .card .col-md-7 .card-footer .btn-link {
+        background-color: inherit;
+        color: inherit; }
+      html body .item-container .right-block .tab-content .card .col-md-7 .card-footer .dark-btn {
+        color: #FFCD11; }
+  html body .item-container .right-block .tab-content .card .card-title {
+    font-size: 1.1em;
+    font-weight: bold; }
+  html body .item-container .right-block .tab-content .card .card-prop .table {
+    font-size: 0.9em; }
+    html body .item-container .right-block .tab-content .card .card-prop .table tbody tr {
+      display: flex;
+      justify-content: space-between; }
+      html body .item-container .right-block .tab-content .card .card-prop .table tbody tr th, html body .item-container .right-block .tab-content .card .card-prop .table tbody tr td {
+        border: none;
+        padding: 0;
+        padding-bottom: 5px; }
+      html body .item-container .right-block .tab-content .card .card-prop .table tbody tr th {
+        font-weight: normal; }
+        @media screen and (max-width: 475px) {
+          html body .item-container .right-block .tab-content .card .card-prop .table tbody tr th {
+            color: #757575; } }
+  html body .item-container .right-block .tab-content .card .cost-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    font-size: 0.9em; }
+    html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em; }
+      html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content button button.more {
+        background: none;
+        padding-left: 0; }
+      html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content button button.order {
+        background: #fecc11; }
+      html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content button button.number {
+        background: #3b3b3b;
+        color: #fecc11;
+        line-height: 12px; }
   html body .modal .modal-header {
     align-items: center; }
   html body .modal input, html body .modal textarea, html body .modal select, html body .modal button {
