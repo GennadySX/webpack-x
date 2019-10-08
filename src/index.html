@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="libs/flickity/dist/flickity.min.css">
     <link rel="stylesheet" href="fonts/fonts.css">
+    <!--  jQuery -->
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
 </head>
 <body>
     <article class="header-and-promo">
@@ -713,7 +722,10 @@
             </div>
         </div>
     </section>
-
+    <div class="md-form" id="date">
+            <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
+            <label for="date-picker-example">Try me...</label>
+          </div>
 
     <!-- Подвал -->
     <footer class="py-4 py-md-5">
@@ -1235,7 +1247,7 @@
             <div class="form-row flex-nowrap justify-content-between mx-0 w-100 mb-sm-3">
                 <button class="btn yel-btn px-4 px-lg-5 flex-grow-1 flex-sm-grow-0" type="submit">Заказать</button>
                 <div class="col-sm-7 d-none d-sm-flex justify-content-between p-0">
-                    <button class=" wh-btn px-1 flex-grow-1 mr-2" data-toggle="modal" data-target="#searchOnMapModal">Искать на карте</button>
+                    <button class=" wh-btn px-1 flex-grow-1 mr-2" data-toggle="modal" data-target="#searchOnMapModal" >Искать на карте</button>
                     <button class=" wh-btn px-1 flex-grow-1">Искать в объявлениях</button>
                 </div>
             </div>
@@ -1262,8 +1274,23 @@
 <script src="./libs/flickity/dist/flickity.pkgd.min.js"></script>
 
 <script src="./js/main.js"></script>
+<script src="js/modal.js"></script>
 
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<script>
+        $(document).ready(function(){
+          var date_input=$('input[name="date"]'); //our date input has the name "date"
+          var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+          var options={
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+          };
+          date_input.datepicker(options);
+        })
+    </script>
 <script>
     var flky = new Flickity( '.carousel', {
         // options, defaults listed
