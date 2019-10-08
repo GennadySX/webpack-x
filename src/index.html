@@ -426,7 +426,7 @@
     <section class="search-map px-3 py-4 px-md-5">
         <div class="container d-flex flex-column flex-sm-row justify-content-between justify-content-lg-around align-items-center">
             <h1 class="title-content">Ищите необходимую технику рядом</h1>
-            <button class="btn search-on-map align-self-stretch align-self-md-center py-1 ">Искать на карте</button>
+            <button class="btn search-on-map align-self-stretch align-self-md-center py-1" data-toggle="modal" data-target="#searchOnMapModal">Искать на карте</button>
         </div>
     </section>
 
@@ -1181,11 +1181,11 @@
 </div>
 
 <!-- МОДАЛЬНОЕ ОКНО ИСКАТЬ НА КАРТЕ - ГЛАВНАЯ СТРАНИЦА -->
-<div class="modal fade" id="showOnMapModal" tabindex="-1" role="dialog" aria-labelledby="showOnMapModalLabel" aria-hidden="true">
+<div class="modal fade" id="searchOnMapModal" tabindex="-1" role="dialog" aria-labelledby="searchOnMapModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
       <div class="modal-header border-0 p-0  pb-lп-3">
-        <h1 class="modal-title" id="showOnMapModalModalLabel">Поиск техники</h1>
+        <h1 class="modal-title" id="searchOnMapModalModalLabel">Поиск техники</h1>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -1195,6 +1195,10 @@
 
          <div class="map-container w-100">
             <!-- Здесь карта -->
+         </div>
+         <div class="form-row">
+             <input type="text" placeholder="Какая техника требуется?" class="pl-3 mr-3 col-7 col-md-6">
+             <button class="yel-btn col-3">Найти</button>
          </div>
         </form>
     </div>
@@ -1251,7 +1255,7 @@
             <div class="form-row flex-nowrap justify-content-between mx-0 w-100 mb-sm-3">
                 <button class="btn yel-btn px-4 px-lg-5 flex-grow-1 flex-sm-grow-0" type="submit">Заказать</button>
                 <div class="col-sm-7 d-none d-sm-flex justify-content-between p-0">
-                    <button class="btn wh-btn px-1 flex-grow-1 mr-2" data-toggle="modal" data-target="#showOnMapModal">Искать на карте</button>
+                    <button class="btn wh-btn px-1 flex-grow-1 mr-2" data-toggle="modal" data-target="#searchOnMapModal">Искать на карте</button>
                     <button class="btn wh-btn px-1 flex-grow-1">Искать в объявлениях</button>
                 </div>
             </div>
