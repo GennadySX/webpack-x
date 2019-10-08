@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta charset="theme-color" content="#EE8813">
     <!-- End meta tag configurations -->
-    <title>Спецтехникофф - Заявки на аренду техники</title>
+    <title>Спецтехникофф - Личный кабинет</title>
     <!-- CSS stylesheets -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
@@ -265,7 +265,8 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb p-0 m-0">
                     <li class="breadcrumb-item"><a href="#">Главная</a><i class="fas fa-chevron-right mx-2"></i></li>
-                    <li class="breadcrumb-item active" aria-current="page">Заявки</li>
+                    <li class="breadcrumb-item"><a href="#">Личный кабинет</a><i class="fas fa-chevron-right mx-2"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Мои объявления</li>
                 </ol>
             </nav>
         </div>
@@ -273,241 +274,72 @@
     <!-- Конец хлебных крошек -->
 
 
-    <section class="item-container pb-3 pb-md-5 pl-3">
+    <section class="item-container pb-3 pb-md-5 pl-3 mt-4">
         <div class="container d-flex pl-0">
-            <h1 class="title-block p-0 pb-3 m-0 my-lg-3">Заявки на аренду техники</h1>
         </div>
-        <div class="container d-flex flex-column-reverse flex-sm-row px-0 ">
-            <div class="left-block col col-sm-4 col-md-3 px-0 pr-md-3 pl-md-0 pr-3 pr-sm-0" id="categories">
-                <div class="d-block">
-                    <div class="list-block">
-                        <a data-toggle="collapse" href="#firstList" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Строительная техника</a>
-                        <ul class="cat-list collapse " id="firstList">
-                            <li class="cat-item"><a href="#">Автовышки</a></li>
-                            <li class="cat-item"><a href="#">Автогрейдеры</a></li>
-                            <li class="cat-item"><a href="#">Автокраны</a></li>
-                            <li class="cat-item"><a href="#">Асфальтоукладчики</a></li>
-                            <li class="cat-item"><a href="#">Бетононасосы</a></li>
-                            <li class="cat-item"><a href="#">Бульдозеры</a></li>
-                            <li class="cat-item"><a href="#">Гидромолоты</a></li>
-                            <li class="cat-item"><a href="#">ГНБ</a></li>
-                            <li class="cat-item"><a href="#">Катки</a></li>
-                            <li class="cat-item"><a href="#">Краны</a></li>
-                            <li class="cat-item"><a href="#">Манипуляторы</a></li>
-                            <li class="cat-item"><a href="#">Миксеры</a></li>
-                            <li class="cat-item"><a href="#">Погрузчики</a></li>
-                            <li class="cat-item"><a href="#">Самосвалы</a></li>
-                            <li class="cat-item"><a href="#">Сваебои</a></li>
-                            <li class="cat-item"><a href="#">Тракторы</a></li>
-                            <li class="cat-item"><a href="#">Трубоукладчики</a></li>
-                            <li class="cat-item"><a href="#">Фреза</a></li>
-                            <li class="cat-item"><a href="#">Экскаваторы</a></li>
-                            <li class="cat-item"><a href="#">Ямобуры</a></li>
-                        </ul>
-                    </div>
-                    <div class="list-block">
-                        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="title-list-block py-1 mb-2" title="Раскрыть список">Грузоперевозки</a>
-                        <ul class="cat-list collapse " id="collapseExample">
-                            <li class="cat-item"><a href="#">Бензовозы</a></li>
-                            <li class="cat-item"><a href="#">Водовозы</a></li>
-                            <li class="cat-item"><a href="#">Газели</a></li>
-                            <li class="cat-item"><a href="#">Длинномеры</a></li>
-                            <li class="cat-item"><a href="#">Камазы</a></li>
-                            <li class="cat-item"><a href="#">Лесовозы</a></li>
-                            <li class="cat-item"><a href="#">Рефрижераторы</a></li>
-                            <li class="cat-item"><a href="#">Тралы</a></li>
-                            <li class="cat-item"><a href="#">Фуры</a></li>
-                            <li class="cat-item"><a href="#">Эвакуаторы</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Блок заказ в 2 клика -->
-                    <div class="double-click-section">
-                        <!-- Заголовок -->
-                        <p class="title-list-block py-1 mb-2">Заказ в 2 клика</p>
-                        <!-- Контейнер с заявками в 2 клика -->
-                        <div class="list-block d-flex flex-wrap flex-sm-column mb-2 justify-content-between justify-sm-content-around justify-items-between">
-                            <div class="card text-center flex-shrink-0">
-                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                                <div class="card-body p-2">
-                                    <span class="card-title">Гидромолот-экскаватор</span>
-                                </div> 
-                                <div class="card-footer">
-                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                                </div>  
-                            </div>
-                            <div class="card text-center flex-shrink-0">  
-                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                                <div class="card-body p-2">
-                                    <span class="card-title">Гидромолот-экскаватор</span>
-                                </div> 
-                                <div class="card-footer">
-                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                                </div>  
-                            </div>
-
-                            <div class="card text-center flex-shrink-0">
-                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                                <div class="card-body p-2">
-                                    <span class="card-title">Гидромолот-экскаватор</span>
-                                </div> 
-                                <div class="card-footer">
-                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                                </div>  
-                            </div>
-
-                            <div class="card text-center flex-shrink-0">  
-                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                                <div class="card-body p-2">
-                                    <span class="card-title">Гидромолот-экскаватор</span>
-                                </div> 
-                                <div class="card-footer">
-                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
+        <div class="container d-flex flex-sm-row px-0 ">
+            <div class="left-block col col-sm-4 col-md-3 px-0 pr-md-3 pl-md-0 pr-3 pr-sm-0">
+                <div class="nav flex-column user-account-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill"
+                     href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                       <i class="fas fa-list-ul mr-2"></i>Мои объявления</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+                     href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-user mr-2"></i>Профиль</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                     role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-cog mr-2"></i>Настройки</a>
                 </div>
             </div>
             <!-- Конец левой колонки -->
         
             <!-- Правая сторона с заявками -->
-            <div class="requests-section px-0  pr-3 pl-sm-3 pl-md-0 right-block col-md-9" id="item-block">
+            <div class="px-0  pr-3 pl-sm-3 pl-md-0 right-block col-md-9" id="item-block">
                 <!-- Контейнер  для карточек заявок -->
-                <div class="requests-list row w-100 mx-0">
-                    <div class="card p-0 px-md-2 shadow-none col-md-6">
-                        <div class="card-wrapper px-3 py-2 px-lg-4 py-lg-3">
-                            <div class="card-header px-0">
-                                <div class="card-title">Требуется бензовоз</div>
-                                <div class="card-subtitle my-2"><i class="fas fa-map-marker-alt mr-1"></i>Казань</div>
-                                <div class="card-text">Требуются услуги по перевозке дизельного топлива
-                                    бензовозом от 20 до 25 кубов с МНПЗ в Большие Ключи, Зеленодольск
-                                </div>
-                            </div>
-                            <div class="card-body px-0 py-2">
-                                <div class="card-text">
-                                    <i class="far fa-clock font-weight-light mr-1"></i>Заявка актуальна: с 7.10.2019 до 30.10.2019
-                                </div>
-                                <div>
-                                    <i class="fas fa-ruble-sign mr-1"></i>Безналичный расчет
-                                </div>
-                            </div>
-                            <div class="card-footer px-0">
-                                <button class="number py-1 px-3 mb-2 mb-lg-3">+7 показать номер</button>
-                                <div class="card-text">
-                                    <div>
-                                        <i class="fas fa-pencil-alt mr-1"></i>Заявка опубликована : 1.10.2019
-                                    </div>
-                                    <div class="pl-3">
-                                        Заказчик: Ильдар
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Конец заявки -->
+                
+                <div class="tab-content" id="v-pills-tabContent">
 
-                    <div class="card p-0 px-md-2 shadow-none col-md-6">
-                        <div class="card-wrapper px-3 py-2 px-lg-4 py-lg-3">
-                            <div class="card-header px-0">
-                                <div class="card-title">Требуется бензовоз</div>
-                                <div class="card-subtitle my-2"><i class="fas fa-map-marker-alt mr-1"></i>Казань</div>
-                                <div class="card-text">Требуются услуги по перевозке дизельного топлива
-                                    бензовозом от 20 до 25 кубов Ключи, Зеленодольск
-                                </div>
-                            </div>
-                            <div class="card-body px-0 py-2">
-                                <div class="card-text">
-                                    <i class="far fa-clock font-weight-light mr-1"></i>Заявка актуальна: с 7.10.2019 до 30.10.2019
-                                </div>
-                                <div>
-                                    <i class="fas fa-ruble-sign mr-1"></i>Безналичный расчет
-                                </div>
-                            </div>
-                            <div class="card-footer px-0">
-                                <button class="number py-1 px-3 mb-2 mb-lg-3">+7 показать номер</button>
-                                <div class="card-text">
-                                    <div>
-                                        <i class="fas fa-pencil-alt mr-1"></i>Заявка опубликована : 1.10.2019
-                                    </div>
-                                    <div class="pl-3">
-                                        Заказчик: Ильдар
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- Мои объявления -->
+                    <div class="tab-pane  show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <!-- Если объявлений нет -->
+                        <div>
+                                У вас нет ни одного объявления.
+                                <button class="yel-btn">Добавить объявление</button>
                         </div>
-                    </div>
-                    <!-- Конец заявки -->
 
-                    <div class="card p-0 px-md-2 shadow-none col-md-6">
-                        <div class="card-wrapper px-3 py-2 px-lg-4 py-lg-3">
-                            <div class="card-header px-0">
-                                <div class="card-title">Требуется бензовоз</div>
-                                <div class="card-subtitle my-2"><i class="fas fa-map-marker-alt mr-1"></i>Казань</div>
-                                <div class="card-text">Требуются услуги по перевозке дизельного топлива
-                                    
-                                </div>
-                            </div>
-                            <div class="card-body px-0 py-2">
-                                <div class="card-text">
-                                    <i class="far fa-clock font-weight-light mr-1"></i>Заявка актуальна: с 7.10.2019 до 30.10.2019
-                                </div>
-                                <div>
-                                    <i class="fas fa-ruble-sign mr-1"></i>Безналичный расчет
-                                </div>
-                            </div>
-                            <div class="card-footer px-0">
-                                <button class="number py-1 px-3 mb-2 mb-lg-3">+7 показать номер</button>
-                                <div class="card-text">
-                                    <div>
-                                        <i class="fas fa-pencil-alt mr-1"></i>Заявка опубликована : 1.10.2019
+                        <!-- Если объявления есть -->
+
+                        <div class="card-list">
+
+                            <div class="card flex-row no-gutters">
+                                <img src="img/items/camas.png" alt="" class="col-5 p-0">
+                                <div class="col-7">
+                                    <div class="card-header">
+                                        <div class="card-title">Автовышка АГП-28</div>
+                                        <a href="" class="card-link">Редактировать</a>
                                     </div>
-                                    <div class="pl-3">
-                                        Заказчик: Ильдар
+                                    <div class="card-body">
+                                        <div class="cost-content font-weight-bold">
+                                            <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
+                                            <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
+                                            <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn-link">Удалить</button>
+                                        <button class="dark-btn">Снять с публикации</button>
                                     </div>
                                 </div>
                             </div>
+
+
                         </div>
-                    </div>
-                    <!-- Конец заявки -->
+                        
 
-                    <div class="card p-0 px-md-2 shadow-none col-md-6">
-                        <div class="card-wrapper px-3 py-2 px-lg-4 py-lg-3">
-                            <div class="card-header px-0">
-                                <div class="card-title">Требуется доставка материалов</div>
-                                <div class="card-subtitle my-2"><i class="fas fa-map-marker-alt mr-1"></i>Казань</div>
-                                <div class="card-text">Требуются услуги по перевозке дизельного топлива
-                                    бензовозом от 20 до 25 кубов Ключи, Зеленодольск
-                                </div>
-                            </div>
-                            <div class="card-body px-0 py-2">
-                                <div class="card-text">
-                                    <i class="far fa-clock font-weight-light mr-1"></i>Заявка актуальна: с 7.10.2019 до 30.10.2019
-                                </div>
-                                <div>
-                                    <i class="fas fa-ruble-sign mr-1"></i>Безналичный расчет
-                                </div>
-                            </div>
-                            <div class="card-footer px-0">
-                                <button class="number py-1 px-3 mb-2 mb-lg-3">+7 показать номер</button>
-                                <div class="card-text">
-                                    <div>
-                                        <i class="fas fa-pencil-alt mr-1"></i>Заявка опубликована : 1.10.2019
-                                    </div>
-                                    <div class="pl-3">
-                                        Заказчик: Ильдар
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <!-- Конец заявки -->
-                </div>
-                <!-- Конец списка с заявками -->
 
-                <!-- Кнопка больше заявок -->
-                <div class="more-requests mt-2 mb-3 mt-lg-4">
-                    <button class="wh-btn px-4 py-2">Больше заявок</button>
+                    <div class="tab-pane " id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+
+                    <div class="tab-pane " id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">..dgfdg.</div>
+
                 </div>
             </div>
             <!-- Конец правого блока с заявками -->

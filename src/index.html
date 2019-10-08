@@ -1180,14 +1180,33 @@
   </div>
 </div>
 
-
-
-<!-- МОДАЛЬНОЕ ОКНО ОСТАВИТЬ ЗАЯВКУ -->
-<div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- МОДАЛЬНОЕ ОКНО ИСКАТЬ НА КАРТЕ - ГЛАВНАЯ СТРАНИЦА -->
+<div class="modal fade" id="showOnMapModal" tabindex="-1" role="dialog" aria-labelledby="showOnMapModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
       <div class="modal-header border-0 p-0  pb-lп-3">
-        <h1 class="modal-title" id="exampleModalLabel">Оставить заявку</h1>
+        <h1 class="modal-title" id="showOnMapModalModalLabel">Поиск техники</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-0 py-2 py-lg-4">
+        <form action="">
+
+         <div class="map-container w-100">
+            <!-- Здесь карта -->
+         </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+<!-- МОДАЛЬНОЕ ОКНО ОСТАВИТЬ ЗАЯВКУ -->
+<div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="applicationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
+      <div class="modal-header border-0 p-0  pb-lп-3">
+        <h1 class="modal-title" id="applicationModalLabel">Оставить заявку</h1>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -1232,7 +1251,7 @@
             <div class="form-row flex-nowrap justify-content-between mx-0 w-100 mb-sm-3">
                 <button class="btn yel-btn px-4 px-lg-5 flex-grow-1 flex-sm-grow-0" type="submit">Заказать</button>
                 <div class="col-sm-7 d-none d-sm-flex justify-content-between p-0">
-                    <button class="btn wh-btn px-1 flex-grow-1 mr-2">Искать на карте</button>
+                    <button class="btn wh-btn px-1 flex-grow-1 mr-2" data-toggle="modal" data-target="#showOnMapModal">Искать на карте</button>
                     <button class="btn wh-btn px-1 flex-grow-1">Искать в объявлениях</button>
                 </div>
             </div>
@@ -1245,6 +1264,9 @@
     </div>
   </div>
 </div>
+
+
+
 
 <!-- JavaScript links -->
 <script src="./libs/jquery/dist/jquery.min.js"></script>

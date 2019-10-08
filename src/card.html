@@ -358,7 +358,7 @@
                     <div class="bottom-content w-100 py-3 justify-content-sm-around">
                         <button class="btn order yel-btn py-1 flex-grow-1 flex-sm-grow-0 px-sm-3">Заказать</button>
                         <button class="number d-none d-sm-block px-sm-3 px-md-2 px-lg-3">+7 показать номер</button>                
-                        <button class="on-map wh-btn d-none d-sm-block px-sm-3 px-md-1 px-lg-3">Показать на карте</button>
+                        <button class="on-map wh-btn d-none d-sm-block px-sm-3 px-md-1 px-lg-3" data-toggle="modal" data-target="#showOnMapModal">Показать на карте</button>
                     </div>
                     <div class="client-contact-info p-3 pb-4 p-md-0">
                         <div class="d-flex flex-row justify-content-between">
@@ -1224,7 +1224,23 @@
   </div>
 </div>
 
-
+<!-- МОДАЛЬНОЕ ОКНО ИСКАТЬ НА КАРТЕ - ГЛАВНАЯ КАРТОЧКА -->
+<div class="modal fade" id="showOnMapModal" tabindex="-1" role="dialog" aria-labelledby="showOnMapModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
+      <div class="modal-header border-0 p-0  pb-lп-3">
+        <h1 class="modal-title" id="showOnMapModalModalLabel">Автокран Ивановец 14 тонн (14 метров)</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body p-0 py-2 py-lg-4">
+            <div class="map-container w-100">
+                <!-- Здесь карта -->
+            </div>
+    </div>
+  </div>
+</div>
 
 <!-- МОДАЛЬНОЕ ОКНО ОСТАВИТЬ ЗАЯВКУ -->
 <div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

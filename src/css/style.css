@@ -920,6 +920,15 @@ html body {
           background-color: #000000; }
       html body .item-container .requests-section .card-footer .card-text {
         color: #B1B1B1; }
+  html body .item-container .left-block .user-account-menu a {
+    color: inherit; }
+    html body .item-container .left-block .user-account-menu a i {
+      width: 20px;
+      font-size: 0.8em;
+      text-align: center; }
+  html body .item-container .left-block .user-account-menu .active {
+    background-color: #3B3B3B;
+    color: #FFCD11; }
   html body .modal .modal-header {
     align-items: center; }
   html body .modal input, html body .modal textarea, html body .modal select, html body .modal button {
