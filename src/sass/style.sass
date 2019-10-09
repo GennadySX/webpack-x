@@ -23,10 +23,40 @@ $dark-grey: #3B3B3B
 $white: #FFFFFF
 $placeholder: #B1B1B1
 
-
+.card
+  border: none
+  .card-img
+    object-fit: cover
+  &-img
+    border-radius: 0
+  &-header, &-body, &-footer
+    border: none
+    background-color: $white
+  &-header
+    font-size: 1.1em
+  &-title, &-subtitle
+    font-weight: bold
+  table tr
+    display: flex
+    justify-content: space-between
+    th
+      color: #757575
+      font-weight: normal
+    td
+      color: #3B3B3B
+.client-contact-info, .btn-group
+  background-color: #F5F5F5
+  @media screen and ( min-width: 576px )
+    background-color: inherit
+    
+.details
+  color: #757575
+  font-size: .9em
 button.number
   background-color: $dark-grey
   color: $yellow-bg
+  padding-top: 4px
+  padding-bottom: 4px
 button
   border: none
 .yel-btn
@@ -35,6 +65,9 @@ button
   box-shadow: 0px 0px 15px $light-grey-bg
   border: 2px solid $yellow-bg
   font-weight: bold
+  &:disabled
+    background-color: #B8B8B8
+    color: #989396
 .dark-btn
   background-color: $dark-grey
   color: $white
@@ -47,6 +80,9 @@ button.wh-btn
   transition: color 0.5s ease-in, background 0.7s ease-in-out, border-color 0.4s ease
   &:hover
     border-color: $yellow-bg
+  &:disabled
+    border: 3px solid #B1B1B1
+    color: #B1B1B1
 .blue-a
   color: #21ADD9
   &:hover
@@ -55,7 +91,7 @@ html
   body
     color: $black-text
     background-color: #F5F5F5
-    font-family: "PFDinTextCondPro-Regular", sans-serif
+    font-family: "PFDinTextCondPro-Light", sans-serif
     a.und
       text-decoration: underline
       text-decoration-color: currentColor
@@ -106,6 +142,8 @@ html
       border-radius: 0
       border: none
       font-size: inherit
+      &:disabled
+        opacity: 1
     // Шапка сайта
     header
       nav.nav-first

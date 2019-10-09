@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
 $('.datepicker').pickadate();
+
+
 // Затемнение
 var backdrop = document.querySelector(".backdrop");
 // Затемнение

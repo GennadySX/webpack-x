@@ -40,17 +40,18 @@
                 <div class="mobile-logo d-block d-sm-none">
                     <img src="img/mobile-logo.svg" alt="Спецтехникофф">
                 </div>
-                <div class="search-mobile d-block d-sm-none" data-toggle="modal" data-target="#searchModal">
+                <!-- <div class="search-mobile d-block d-sm-none" data-toggle="modal" data-target="#searchModal">
                     <img src="img/icons/search-icon.svg" alt=" ">
-                </div>
+                </div> -->
                 <div class="d-flex location-choose" data-toggle="modal" data-target="#locationModal">
                     <span class="d-none d-sm-block">Местоположение</span>
                     <img class="mx-2" src="img/icons/location-icon.svg" alt="">
                     <span class="d-none d-sm-block choicecity">Выберите регион</span>
                 </div>
-                <div class="d-none d-sm-block ml-auto" data-toggle="modal" data-target="#signInModal">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                <div class="d-none d-sm-block ">
+                    <ul class="navbar-nav flex-nowrap">
+                        <li class="nav-item"><a class="nav-link und" href="#">Личный кабинет</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Выйти</a></li>
                     </ul>
                 </div>
                 <div class="rent-equip col-3 col-md-3 col-lg-2 d-none d-sm-block d-lg-none">
@@ -276,15 +277,22 @@
 
     <section class="item-container pb-3 pb-md-5 pl-3 mt-3 mt-md-4">
         <div class="container d-flex flex-column flex-sm-row px-0 ">
+
             <div class="left-block col col-sm-4 col-md-3 px-0 pr-md-3 pl-md-0 pr-3 pr-sm-0 mb-3">
                 <div class="nav flex-row flex-sm-column user-account-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active p-2 text-sm-left px-sm-3" id="v-pills-home-tab" data-toggle="pill"
-                     href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                    <a class="nav-link active p-2 text-sm-left px-sm-3" id="v-pills-ads-tab" data-toggle="pill"
+                     href="#v-pills-ads" role="tab" aria-controls="v-pills-ads" aria-selected="true">
                        <i class="fas fa-list-ul mr-1"></i>Мои объявления</a>
+
                     <a class="nav-link p-2 text-sm-left px-sm-3" id="v-pills-profile-tab" data-toggle="pill"
-                     href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-user mr-1"></i>Профиль</a>
-                    <a class="nav-link p-2 text-sm-left px-sm-3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
-                     role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-cog mr-1"></i>Настройки</a>
+                     href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                     <i class="fas fa-user mr-1"></i>Профиль</a>
+
+                    <a class="nav-link p-2 text-sm-left px-sm-3" id="v-pills-settings-tab" data-toggle="pill"
+                     href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                     <i class="fas fa-cog mr-1"></i>Настройки</a>
+
                 </div>
             </div>
             <!-- Конец левой колонки -->
@@ -296,7 +304,7 @@
                 <div class="tab-content" id="v-pills-tabContent">
 
                     <!-- Мои объявления -->
-                    <div class="tab-pane  show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div class="tab-pane show active" id="v-pills-ads" role="tabpanel" aria-labelledby="v-pills-ads-tab">
 
                         <!-- Если объявлений нет -->
                         <div>
@@ -398,53 +406,102 @@
                             
                         </div>
                         <button class="yel-btn py-1 px-3 mt-3" data-toggle="modal" data-target="#applicationModal">Добавить объявление</button>
-<!-- Режим редактирования объявления -->
 
-<div class="ad-edit bg-white">
-        <form action="" method="POST" enctype="multipart/form-data">
-            Редактирование объявления Автовышка АГП-28
-            <div class="modal-body py-0">
-                <div class="form-row">
-                    <label for="sectionVehicles" class="col-md-5">Раздел*</label>
-                    <select name="" id="sectionVehicles" class="col-md-7" required>                                        <option value="">Выберите раздел</option>
-                        <option value="Аренда техники">Аренда техники</option>
-                        <option value="Грузоперевозки">Грузоперевозки</option>
-                        <option value="Доставка материалов">Доставка материалов</option>
-                        <option value="Услуги">Услуги</option>
-                    </select>
-                </div>
-                <div class="form-row">
-                    <label for="vehiclesCategory" class="col-md-5">Тип техники*</label>
-                    <select name="" id="vehiclesCategory" class="col-md-7" required>
-                        <option value="">Выберите тип техники</option>
-                    </select>
-                </div>
-                <div class="form-row">
-                    <label for="vehicleModal" class="col-md-5">Марка и модель*</label>
-                    <div class="col-md-7 p-0">
-                        <input type="text" id="vehicleModal" placeholder="Напишите марку модели" class="w-100" required>
-                        <p class="form-text">
-                            В данном поле запрещено писать какую-либо контактную информацию, такие объявления будут удалены модератором.
-                        </p>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <label for="interchange" class="col-md-5">Смена</label>
-                        <div class="col-md-7 p-0 flex-nowrap d-flex justify-content-between">
-                            <input id="interchange" type="text" class="col-7 m-0">
-                            <select name="" id="" class="col-4">
-                                <option value="">час</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <label for="interchangePrice" class="col-md-5">Цена за смену</label>
-                        <div class="col-md-7 p-0 flex-nowrap d-flex justify-content-between">
-                            <input id="interchangePrice" type="text" class="col-7 m-0">
-                            <select name="" id="" class="col-4">
-                                <option value="">руб.</option>
-                            </select>
-                        </div>
+                        <!-- Режим редактирования объявления -->
+
+
+
+                        <div class="ad-edit bg-white">
+
+                            <form action="" method="POST" enctype="multipart/form-data">
+
+                                Редактирование объявления Автовышка АГП-28
+
+                                <div class="modal-body py-0">
+
+
+                                    <div class="form-row">
+
+                                        <label for="sectionVehicles" class="col-md-5">Раздел*</label>
+
+                                        <select name="" id="sectionVehicles" class="col-md-7" required>                                        <option value="">Выберите раздел</option>
+
+                                            <option value="Аренда техники">Аренда техники</option>
+
+                                            <option value="Грузоперевозки">Грузоперевозки</option>
+
+                                            <option value="Доставка материалов">Доставка материалов</option>
+
+                                            <option value="Услуги">Услуги</option>
+
+                                        </select>
+
+                                    </div>
+
+                                    <div class="form-row">
+
+                                        <label for="vehiclesCategory" class="col-md-5">Тип техники*</label>
+
+                                        <select name="" id="vehiclesCategory" class="col-md-7" required>
+
+                                            <option value="">Выберите тип техники</option>
+
+                                        </select>
+
+                                    </div>
+
+                                    <div class="form-row">
+
+                                        <label for="vehicleModal" class="col-md-5">Марка и модель*</label>
+
+                                        <div class="col-md-7 p-0">
+
+                                            <input type="text" id="vehicleModal" placeholder="Напишите марку модели" class="w-100" required>
+
+                                            <p class="form-text">
+
+                                                В данном поле запрещено писать какую-либо контактную информацию, такие объявления будут удалены модератором.
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-row">
+
+                                        <label for="interchange" class="col-md-5">Смена</label>
+
+                                        <div class="col-md-7 p-0 flex-nowrap d-flex justify-content-between">
+
+                                            <input id="interchange" type="text" class="col-7 m-0">
+
+                                            <select name="" id="" class="col-4">
+
+
+                                                <option value="">час</option>
+
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-row">
+
+                                        <label for="interchangePrice" class="col-md-5">Цена за смену</label>
+
+                                        <div class="col-md-7 p-0 flex-nowrap d-flex justify-content-between">
+
+                                            <input id="interchangePrice" type="text" class="col-7 m-0">
+
+                                            <select name="" id="" class="col-4">
+
+                                                <option value="">руб.</option>
+
+                                            </select>
+
+                                        </div>
                     </div>
                     <div class="form-row">
                         <label for="selectRegion" class="col-md-5">Регион</label>
@@ -546,7 +603,7 @@
 
                     <div class="tab-pane " id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
 
-                    <div class="tab-pane " id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">..dgfdg.</div>
+                    <div class="tab-pane " id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">..dgfdg.</div>
 
                 </div>
 
