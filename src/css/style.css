@@ -9,6 +9,7 @@
     border-radius: 0; }
   .card-header, .card-body, .card-footer {
     border: none;
+    border-radius: 0;
     background-color: #FFFFFF; }
   .card-header {
     font-size: 1.1em; }
@@ -1043,9 +1044,14 @@ html body {
         padding-left: 20px;
         padding-right: 20px; } }
     @media screen and (min-width: 400px) and (max-width: 580px) {
+      html body .cat-block-list .card {
+        background-color: transparent; }
       html body .cat-block-list .client-contact-info .d-flex {
         flex-direction: row-reverse;
-        justify-content: space-between; } }
+        justify-content: space-between; }
+      html body .cat-block-list .col-md-7 {
+        padding-left: 15px;
+        padding-right: 15px; } }
   html body .modal .modal-header {
     align-items: center; }
   html body .modal input, html body .modal textarea, html body .modal select, html body .modal button {
