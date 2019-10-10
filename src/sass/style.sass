@@ -27,6 +27,9 @@ $placeholder: #B1B1B1
   border: none
   .card-img
     object-fit: cover
+    object-position: 50%
+    flex-basis: 45%
+    background-color: transparent
   &-img
     border-radius: 0
   &-header, &-body, &-footer
@@ -42,13 +45,16 @@ $placeholder: #B1B1B1
     th
       color: #757575
       font-weight: normal
-    td
-      color: #3B3B3B
-.client-contact-info, .btn-group
+    i
+      font-family: "PFDinTextCondPro-Light"
+.client-contact-info,
   background-color: #F5F5F5
   @media screen and ( min-width: 576px )
     background-color: inherit
-    
+.btn-group
+  justify-content: space-between
+  button
+    flex-basis: 48%
 .details
   color: #757575
   font-size: .9em
@@ -91,7 +97,7 @@ html
   body
     color: $black-text
     background-color: #F5F5F5
-    font-family: "PFDinTextCondPro-Light", sans-serif
+    font-family: "PFDinTextCondPro-Regular", sans-serif
     a.und
       text-decoration: underline
       text-decoration-color: currentColor
@@ -120,7 +126,7 @@ html
       h1
         font-size: 30px
     h1, h2
-      font-weight: bold !important
+      // font-weight: bold !important
     h2
       font-size: inherit
     .card-bottom-content
@@ -1150,6 +1156,29 @@ html
                     background: #3b3b3b
                     color: #fecc11
                     line-height: 12px
+    
+    .cat-block-list
+      padding: 0
+      @media screen and ( min-width: 400px )
+        padding: 0 15px
+      .card-img
+        background-color: #F5F5F5
+      @media screen and ( min-width: 450px )
+        .card
+          .card-img, .contact-info-client
+            padding-left: 20px
+            padding-right: 20px
+        
+      
+      @media screen and ( min-width: 400px ) and ( max-width: 580px )
+        // .col-md-5
+        //   padding: 0 15px
+        // .client-contact-info
+        //   background-color: $white
+        .client-contact-info .d-flex
+          flex-direction: row-reverse
+          justify-content: space-between
+        
 
 
 
@@ -1297,4 +1326,17 @@ html
 @media screen and ( min-width: 2400px )
   html body
     font-size: 30px
-  
+
+
+
+// font-weight: regular
+.fw-r
+  font-family: "PFDinTextCondPro-Regular"
+
+// font-weight: medium
+.fw-m
+  font-family: "PFDinTextCompPro-Medium"
+
+// font-weight: bold
+.fw-b
+  font-family: "PFDinTextCondPro-Bold"

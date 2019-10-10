@@ -1,7 +1,10 @@
 .card {
   border: none; }
   .card .card-img {
-    object-fit: cover; }
+    object-fit: cover;
+    object-position: 50%;
+    flex-basis: 45%;
+    background-color: transparent; }
   .card-img {
     border-radius: 0; }
   .card-header, .card-body, .card-footer {
@@ -17,14 +20,19 @@
     .card table tr th {
       color: #757575;
       font-weight: normal; }
-    .card table tr td {
-      color: #3B3B3B; }
+    .card table tr i {
+      font-family: "PFDinTextCondPro-Light"; }
 
-.client-contact-info, .btn-group {
+.client-contact-info {
   background-color: #F5F5F5; }
   @media screen and (min-width: 576px) {
-    .client-contact-info, .btn-group {
+    .client-contact-info {
       background-color: inherit; } }
+
+.btn-group {
+  justify-content: space-between; }
+  .btn-group button {
+    flex-basis: 48%; }
 
 .details {
   color: #757575;
@@ -73,7 +81,7 @@ button.wh-btn {
 html body {
   color: #000000;
   background-color: #F5F5F5;
-  font-family: "PFDinTextCondPro-Light", sans-serif; }
+  font-family: "PFDinTextCondPro-Regular", sans-serif; }
   html body a.und {
     text-decoration: underline;
     text-decoration-color: currentColor;
@@ -103,8 +111,6 @@ html body {
       font-size: 20px; }
       html body h1 {
         font-size: 30px; } }
-  html body h1, html body h2 {
-    font-weight: bold !important; }
   html body h2 {
     font-size: inherit; }
   @media screen and (min-width: 560px) {
@@ -1025,6 +1031,21 @@ html body {
         background: #3b3b3b;
         color: #fecc11;
         line-height: 12px; }
+  html body .cat-block-list {
+    padding: 0; }
+    @media screen and (min-width: 400px) {
+      html body .cat-block-list {
+        padding: 0 15px; } }
+    html body .cat-block-list .card-img {
+      background-color: #F5F5F5; }
+    @media screen and (min-width: 450px) {
+      html body .cat-block-list .card .card-img, html body .cat-block-list .card .contact-info-client {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media screen and (min-width: 400px) and (max-width: 580px) {
+      html body .cat-block-list .client-contact-info .d-flex {
+        flex-direction: row-reverse;
+        justify-content: space-between; } }
   html body .modal .modal-header {
     align-items: center; }
   html body .modal input, html body .modal textarea, html body .modal select, html body .modal button {
@@ -1152,3 +1173,12 @@ html body {
 @media screen and (min-width: 2400px) {
   html body {
     font-size: 30px; } }
+
+.fw-r {
+  font-family: "PFDinTextCondPro-Regular"; }
+
+.fw-m {
+  font-family: "PFDinTextCompPro-Medium"; }
+
+.fw-b {
+  font-family: "PFDinTextCondPro-Bold"; }
