@@ -83,7 +83,7 @@ html body {
   color: #000000;
   background-color: #F5F5F5;
   font-family: "PFDinTextCondPro-Regular", sans-serif; }
-  html body a.und {
+  html body a.und, html body button.und {
     text-decoration: underline;
     text-decoration-color: currentColor;
     text-underline-position: under; }
@@ -136,6 +136,8 @@ html body {
     font-size: inherit; }
     html body button.btn:disabled {
       opacity: 1; }
+  html body header .navbar-dark {
+    background-color: #000000 !important; }
   html body header nav.nav-first {
     border-bottom: 10px solid #FFCD11; }
     @media screen and (max-width: 425px) {
@@ -269,7 +271,7 @@ html body {
           html body section.main-1 .container .feature-block .card_desc .card-body img, html body section.main-1 .container .feature-block .card-body .card-body img {
             width: 100%;
             flex-basis: 50%;
-            height: 50px; }
+            height: 35px; }
             @media screen and (min-width: 768px) {
               html body section.main-1 .container .feature-block .card_desc .card-body img, html body section.main-1 .container .feature-block .card-body .card-body img {
                 height: 70px; } }
@@ -359,7 +361,8 @@ html body {
         width: 130px; }
   html body .search-map {
     background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
-    background-size: cover; }
+    background-size: cover;
+    background-repeat: no-repeat; }
     html body .search-map .container {
       display: flex;
       justify-content: space-between;
@@ -973,65 +976,136 @@ html body {
     justify-content: space-between; }
     html body .item-container .left-block .user-account-menu a {
       color: inherit;
-      flex-grow: 1;
-      text-align: center; }
+      flex-grow: 1; }
       html body .item-container .left-block .user-account-menu a i {
         width: 10px;
-        font-size: 0.8em;
-        text-align: center;
-        display: none; }
+        font-size: 0.8em; }
     html body .item-container .left-block .user-account-menu .active {
       background-color: #3B3B3B;
       color: #FFCD11; }
-  html body .item-container .right-block .tab-content .card .col-md-7 {
-    background-color: #FFFFFF; }
-    html body .item-container .right-block .tab-content .card .col-md-7 .card-header, html body .item-container .right-block .tab-content .card .col-md-7 .card-body, html body .item-container .right-block .tab-content .card .col-md-7 .card-footer {
-      background-color: transparent;
-      border: none;
-      border-radius: 0; }
-    html body .item-container .right-block .tab-content .card .col-md-7 .card-footer {
-      display: flex;
-      justify-content: space-between; }
-      html body .item-container .right-block .tab-content .card .col-md-7 .card-footer .btn-link {
-        background-color: inherit;
-        color: inherit; }
-      html body .item-container .right-block .tab-content .card .col-md-7 .card-footer .dark-btn {
-        color: #FFCD11; }
-  html body .item-container .right-block .tab-content .card .card-title {
-    font-size: 1.1em;
-    font-weight: bold; }
-  html body .item-container .right-block .tab-content .card .card-prop .table {
-    font-size: 0.9em; }
-    html body .item-container .right-block .tab-content .card .card-prop .table tbody tr {
-      display: flex;
-      justify-content: space-between; }
-      html body .item-container .right-block .tab-content .card .card-prop .table tbody tr th, html body .item-container .right-block .tab-content .card .card-prop .table tbody tr td {
+  html body .item-container .right-block .tab-content .card {
+    align-items: stretch; }
+    html body .item-container .right-block .tab-content .card img {
+      object-fit: cover;
+      object-position: center; }
+    html body .item-container .right-block .tab-content .card .col-md-7 {
+      background-color: #FFFFFF; }
+      html body .item-container .right-block .tab-content .card .col-md-7 .card-header, html body .item-container .right-block .tab-content .card .col-md-7 .card-body, html body .item-container .right-block .tab-content .card .col-md-7 .card-footer {
+        background-color: transparent;
         border: none;
-        padding: 0;
-        padding-bottom: 5px; }
-      html body .item-container .right-block .tab-content .card .card-prop .table tbody tr th {
-        font-weight: normal; }
-        @media screen and (max-width: 475px) {
-          html body .item-container .right-block .tab-content .card .card-prop .table tbody tr th {
-            color: #757575; } }
-  html body .item-container .right-block .tab-content .card .cost-content {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    font-size: 0.9em; }
-    html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content {
+        border-radius: 0; }
+      html body .item-container .right-block .tab-content .card .col-md-7 .card-footer {
+        display: flex;
+        justify-content: space-between; }
+        html body .item-container .right-block .tab-content .card .col-md-7 .card-footer .btn-link {
+          background-color: inherit;
+          color: inherit; }
+        html body .item-container .right-block .tab-content .card .col-md-7 .card-footer .dark-btn {
+          color: #FFCD11; }
+    html body .item-container .right-block .tab-content .card .card-title {
+      font-size: 1.1em;
+      font-weight: bold; }
+    html body .item-container .right-block .tab-content .card .card-prop .table {
+      font-size: 0.9em; }
+      html body .item-container .right-block .tab-content .card .card-prop .table tbody tr {
+        display: flex;
+        justify-content: space-between; }
+        html body .item-container .right-block .tab-content .card .card-prop .table tbody tr th, html body .item-container .right-block .tab-content .card .card-prop .table tbody tr td {
+          border: none;
+          padding: 0;
+          padding-bottom: 5px; }
+        html body .item-container .right-block .tab-content .card .card-prop .table tbody tr th {
+          font-weight: normal; }
+          @media screen and (max-width: 475px) {
+            html body .item-container .right-block .tab-content .card .card-prop .table tbody tr th {
+              color: #757575; } }
+    html body .item-container .right-block .tab-content .card .cost-content {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 20px;
       font-size: 0.9em; }
-      html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content button button.more {
-        background: none;
-        padding-left: 0; }
-      html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content button button.order {
-        background: #fecc11; }
-      html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content button button.number {
-        background: #3b3b3b;
-        color: #fecc11;
-        line-height: 12px; }
+      html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9em; }
+        html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content button button.more {
+          background: none;
+          padding-left: 0; }
+        html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content button button.order {
+          background: #fecc11; }
+        html body .item-container .right-block .tab-content .card .cost-content .card-bottom-content button button.number {
+          background: #3b3b3b;
+          color: #fecc11;
+          line-height: 12px; }
+  html body .item-container .right-block .profile-info {
+    background-color: #FFFFFF; }
+    html body .item-container .right-block .profile-info .row {
+      width: 100%; }
+      html body .item-container .right-block .profile-info .row:hover {
+        background-color: rgba(255, 205, 17, 0.2); }
+      html body .item-container .right-block .profile-info .row .profile-title {
+        font-weight: bold;
+        font-size: 1.1em; }
+      html body .item-container .right-block .profile-info .row .profile-subtitle {
+        color: #3b3b3b;
+        font-size: .8em; }
+        html body .item-container .right-block .profile-info .row .profile-subtitle a.und {
+          color: inherit; }
+      html body .item-container .right-block .profile-info .row img {
+        width: 45px; }
+      html body .item-container .right-block .profile-info .row .col {
+        color: #3b3b3b; }
+        html body .item-container .right-block .profile-info .row .col i {
+          color: inherit;
+          font-size: 0.8em; }
+        html body .item-container .right-block .profile-info .row .col .fa-pencil-alt {
+          color: #B1B1B1;
+          font-size: 1em; }
+        html body .item-container .right-block .profile-info .row .col .place {
+          color: #b1b1b1; }
+    html body .item-container .right-block .profile-info .switch {
+      position: relative;
+      display: inline-block;
+      width: 29px;
+      height: 15px;
+      margin: 0; }
+      html body .item-container .right-block .profile-info .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      html body .item-container .right-block .profile-info .switch .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #f2f2f2;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 7.5px;
+        border: 0.75px solid #e5e5e5; }
+        html body .item-container .right-block .profile-info .switch .slider:before {
+          position: absolute;
+          content: "";
+          height: 11px;
+          width: 11px;
+          left: 1px;
+          bottom: 1px;
+          background-color: #3b3b3b;
+          -webkit-transition: .4s;
+          transition: .4s;
+          border-radius: 50%; }
+      html body .item-container .right-block .profile-info .switch input:checked + .slider {
+        background-color: rgba(255, 205, 17, 0.3);
+        border-color: rgba(255, 205, 17, 0.3); }
+      html body .item-container .right-block .profile-info .switch input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3; }
+      html body .item-container .right-block .profile-info .switch input:checked + .slider:before {
+        -webkit-transform: translateX(14px);
+        -ms-transform: translateX(14px);
+        transform: translateX(14px);
+        background-color: #FFCD11; }
   html body .cat-block-list {
     padding: 0; }
     @media screen and (min-width: 400px) {
@@ -1179,6 +1253,9 @@ html body {
 @media screen and (min-width: 2400px) {
   html body {
     font-size: 30px; } }
+
+.fw-l {
+  font-family: "PFDinTextCondPro-Light"; }
 
 .fw-r {
   font-family: "PFDinTextCondPro-Regular"; }

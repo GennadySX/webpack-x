@@ -38,7 +38,9 @@
                     </div>
                 </div>
                 <div class="mobile-logo d-block d-sm-none">
-                    <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                    <a href="index.html">
+                        <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                    </a>
                 </div>
                 <!-- <div class="search-mobile d-block d-sm-none" data-toggle="modal" data-target="#searchModal">
                     <img src="img/icons/search-icon.svg" alt=" ">
@@ -279,19 +281,25 @@
         <div class="container d-flex flex-column flex-sm-row px-0 ">
 
             <div class="left-block col col-sm-4 col-md-3 px-0 pr-md-3 pl-md-0 pr-3 pr-sm-0 mb-3">
-                <div class="nav flex-row flex-sm-column user-account-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="nav flex-column user-account-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-                    <a class="nav-link active p-2 text-sm-left px-sm-3" id="v-pills-ads-tab" data-toggle="pill"
-                     href="#v-pills-ads" role="tab" aria-controls="v-pills-ads" aria-selected="true">
-                       <i class="fas fa-list-ul mr-1"></i>Мои объявления</a>
+                    <a class="nav-link px-3 p-2 px-sm-3" id="v-pills-ads-tab" data-toggle="pill" 
+                    href="#v-pills-ads" role="tab" aria-controls="v-pills-ads" aria-selected="true">
+                        <i class="fas fa-list-ul mr-2"></i>Мои объявления
+                    </a>
 
-                    <a class="nav-link p-2 text-sm-left px-sm-3" id="v-pills-profile-tab" data-toggle="pill"
-                     href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                     <i class="fas fa-user mr-1"></i>Профиль</a>
+                    <a class="nav-link  p-2 px-3 px-sm-3" id="v-pills-profile-tab" data-toggle="pill" 
+                    href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <i class="fas fa-user mr-2"></i>Профиль
+                    </a>
 
-                    <a class="nav-link p-2 text-sm-left px-sm-3" id="v-pills-settings-tab" data-toggle="pill"
-                     href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                     <i class="fas fa-cog mr-1"></i>Настройки</a>
+                    <a class="nav-link active p-2 px-3 px-sm-3" id="v-pills-settings-tab" data-toggle="pill" 
+                    href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <i class="fas fa-cog mr-2"></i>Настройки
+
+                        Учетная запись
+                        Уведомления
+                    </a>
 
                 </div>
             </div>
@@ -301,10 +309,10 @@
             <div class="px-0  pr-3 pl-sm-3 pl-md-0 right-block col-md-9" id="item-block">
                 <!-- Контейнер  для карточек заявок -->
                 
-                <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-content" id="v-pills-tabContent" style="min-height: 300px;">
 
                     <!-- Мои объявления -->
-                    <div class="tab-pane show active" id="v-pills-ads" role="tabpanel" aria-labelledby="v-pills-ads-tab">
+                    <div class="tab-pane" id="v-pills-ads" role="tabpanel" aria-labelledby="v-pills-ads-tab">
 
                         <!-- Если объявлений нет -->
                         <div>
@@ -313,19 +321,20 @@
                         </div>
                         <!--  -->
 
+                    </div>
 
                         <!-- Если они есть -->
-                        
+<!--                         
                         <div class="card-list">
 
-                            <div class="card flex-column flex-md-row no-gutters">
-                                <img src="img/items/camas.png" alt="" class="col-12 col-md-5 p-0">
+                            <div class="card flex-column flex-md-row no-gutters align-items-stretch">
+                                <img src="img/images.jpg" alt="" class="col-12 col-md-5 p-0">
                                 <div class="col-12 col-md-7">
                                     <div class="card-header d-flex flex-row justify-content-between p-3">
                                         <div class="card-title m-0">Автовышка АГП-28</div>
                                         <a href="" class="card-link blue-a">Редактировать</a>
                                     </div>
-                                    <div class="card-body p-3">
+                                    <div class="card-body px-3 py-1">
                                         <div class="card-prop">
                                             <table class="table">
                                                 <tbody>
@@ -361,7 +370,7 @@
                                 </div>
                             </div>
 
-                            <div class="card flex-column flex-md-row no-gutters">
+                            <div class="card flex-column flex-md-row no-gutters align-items-stretch">
                                 <img src="img/items/camas.png" alt="" class="col-12 col-md-5 p-0">
                                 <div class="col-12 col-md-7">
                                     <div class="card-header d-flex flex-row justify-content-between p-3">
@@ -405,11 +414,11 @@
                             </div>
                             
                         </div>
-                        <button class="yel-btn py-1 px-3 mt-3" data-toggle="modal" data-target="#applicationModal">Добавить объявление</button>
+                        <button class="yel-btn py-1 px-3 mt-3" data-toggle="modal" data-target="#applicationModal">Добавить объявление</button> -->
 
                         <!-- Режим редактирования объявления -->
 
-
+<!-- 
 
                         <div class="ad-edit bg-white">
 
@@ -598,12 +607,215 @@
                 </div>  
             </form>
     </div>
+-->
+
+                    <div class="tab-pane" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+
+                        <!-- контейнер для профиля  -->
+
+                        <div class="profile-info">
+
+                            <div class="profile-foto p-4 row no-gutters profile-row">
+                                <div class="profile-title col-md-3">
+                                    Личное фото
+
+                                <div class="profile-subtitle fw-l">
+                                        Ознакомьтесь с <a href="" class="und">требованиями
+                                            к загружаемой фотографии</a>
+                                </div>
+                                </div>
+
+                                <div class="col justify-content-between d-flex">
+                                    <img src="../../../../alinanurislamova/Downloads/Group 50.svg" alt="" class="rounded">
+                                
+                                    <i class="fas fa-pencil-alt align-self-end"></i>
+                                </div>
+
+                            </div>
+
+
+                            <div class="profile-type p-3 row no-gutters">
+                                <div class="profile-title col-md-3">
+                                        Организационно-правовая 
+                                        форма
+                                </div>
+
+                                <div class="col justify-content-between d-flex">
+                                        Индивидуальный предприниматель
+                                
+                                    <i class="fas fa-pencil-alt align-self-end"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="profile-city p-3 row no-gutters">
+                                <div class="profile-title col-md-3">
+                                        Ваш город
+                                </div>
+
+                                <div class="col justify-content-between d-flex">
+                                    <div>
+                                            <i class="fas fa-map-marker-alt mr-2"></i>Казань
+                                            <div class="place">Республика Татарстан</div>
+                                    </div>
+                                        
+                                
+                                    <i class="fas fa-pencil-alt align-self-end"></i>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="profile-full-name p-3 row no-gutters">
+                                <div class="profile-title col-md-3">
+                                    ФИО
+                                </div>
+
+                                <div class="col justify-content-between d-flex">
+                                    Иванов Иван Иванович
+                                
+                                    <i class="fas fa-pencil-alt align-self-end"></i>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="profile-contacts p-3 row no-gutters">
+                                <div class="profile-title col-md-3">
+                                        Контактные данные
+                                </div>
+
+                                <div class="col">
+                                
+                                    <div>
+                                            <i class="fas fa-phone-alt mr-2"></i>+7 917 000 00 00 
+                                    </div>
+                                    <div>
+                                            <i class="far fa-envelope mr-2"></i>email@mail.ru
+                                            
+                                    </div>
+                                    <button href="" class="und">Добавить контакт</button>
+                                    
+                                </div>
+
+                            </div>
+
+
+                        </div>
 
                     </div>
 
-                    <div class="tab-pane " id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
 
-                    <div class="tab-pane " id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">..dgfdg.</div>
+                    <div class="tab-pane  show active" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+
+                        <div class="profile-info">
+
+                            <div class="profile-foto p-4 row no-gutters profile-row">
+                                <div class="profile-title col-md-3">
+                                    Электронная почта
+
+                                
+                                </div>
+
+                                <div class="col justify-content-between d-flex">
+                                    email@mail.ru
+                                
+                                    <i class="fas fa-pencil-alt align-self-end"></i>
+                                </div>
+
+                            </div>
+
+
+                            <div class="profile-type p-3 row no-gutters">
+                                <div class="profile-title col-md-3">
+                                        Пароль
+                                </div>
+
+                                <div class="col justify-content-between d-flex">
+                                    <div class="password">
+                                            <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                                    </div>
+                                        
+                                
+                                    <i class="fas fa-pencil-alt align-self-end"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="profile-city p-3 row no-gutters">
+                                <div class="profile-title col-md-3">
+                                        Основной телефон
+                                </div>
+                                <div>
+                                        <i class="fas fa-phone-alt mr-2"></i>+7 917 000 00 00 
+                                </div>
+
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+                        <!-- УВЕДОМЛЕНИЯ -->
+                        <div class="profile-info mt-4">
+
+
+                            <!-- Новости портала -->
+                            <div class="profile-foto p-4 row no-gutters profile-row justify-content-between align-items-center">
+                                <div class="profile-title">
+                                    Новости портала
+                                </div>
+    
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+    
+                            </div>
+                            <!-- Новости портала -->
+
+
+                            <!-- Данные профиля -->
+                            <div class="profile-foto p-4 row no-gutters profile-row justify-content-between align-items-center">
+                                <div class="profile-title">
+                                    Данные профиля
+                                </div>
+    
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+    
+                            </div>
+                            <!-- Данные профиля -->
+
+                            
+                            <!-- Новые заказы -->
+                            <div class="profile-foto p-4 row no-gutters profile-row justify-content-between align-items-center">
+                                <div class="profile-title">
+                                    Новые заказы
+                                </div>
+    
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+    
+                            </div>
+                            <!-- Новые заказы -->
+
+
+                        </div>
+                        <!-- УВЕДОМЛЕНИЯ -->
+
+
+                    </div>
 
                 </div>
 
