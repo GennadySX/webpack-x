@@ -1056,20 +1056,26 @@ html body {
         width: 120px;
         height: 120px;
         position: relative;
-        left: 35%;
+        left: 29%;
         transform: translateX(-100%); }
       html body .item-container .right-block .profile-info .row .col {
-        color: #3b3b3b; }
+        color: #3b3b3b;
+        position: relative;
+        left: 10%; }
         html body .item-container .right-block .profile-info .row .col i {
           color: inherit;
           font-size: 0.8em; }
         html body .item-container .right-block .profile-info .row .col .fa-pencil-alt {
           color: #B1B1B1;
           font-size: 1em;
+          right: 50%;
           position: relative;
           bottom: 15px; }
           html body .item-container .right-block .profile-info .row .col .fa-pencil-alt:hover {
             color: darkslategrey; }
+        html body .item-container .right-block .profile-info .row .col .name_field {
+          position: relative;
+          left: 10px; }
         html body .item-container .right-block .profile-info .row .col .place {
           color: #b1b1b1; }
     html body .item-container .right-block .profile-info .switch {
