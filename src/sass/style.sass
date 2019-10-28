@@ -25,56 +25,73 @@ $placeholder: #B1B1B1
 
 .card
   border: none
+
   .card-img
     object-fit: cover
     object-position: 50%
     flex-basis: 45%
     background-color: transparent
+
   &-img
     border-radius: 0
+
   &-header, &-body, &-footer
     border: none
     border-radius: 0
     background-color: $white
+
   &-header
     font-size: 1.1em
+
   &-title, &-subtitle
     font-weight: bold
+
   table tr
     display: flex
     justify-content: space-between
+
     th
       color: #757575
       font-weight: normal
+
     i
       font-family: "PFDinTextCondPro-Light"
+
 .client-contact-info,
   background-color: #F5F5F5
-  @media screen and ( min-width: 576px )
+  @media screen and (min-width: 576px)
     background-color: inherit
+
 .btn-group
   justify-content: space-between
+
   button
     flex-basis: 48%
+
 .details
   color: #757575
   font-size: .9em
+
 button.number
   background-color: $dark-grey
   color: $yellow-bg
   padding-top: 4px
   padding-bottom: 4px
+
 button
   border: none
+
 .yel-btn
   background-color: $yellow-bg
   color: $black-text
   box-shadow: 0px 0px 15px $light-grey-bg
   border: 2px solid $yellow-bg
   font-weight: bold
+
   &:disabled
     background-color: #B8B8B8
     color: #989396
+
 .dark-btn
   background-color: $dark-grey
   color: $white
@@ -85,131 +102,163 @@ button.wh-btn
   color: $dark-grey
   font-weight: bold
   transition: color 0.5s ease-in, background 0.7s ease-in-out, border-color 0.4s ease
+
   &:hover
     border-color: $yellow-bg
+
   &:disabled
     border: 3px solid #B1B1B1
     color: #B1B1B1
+
 .blue-a
   color: #21ADD9
+
   &:hover
     color: #21add9
+
 html
   body
     color: $black-text
     background-color: #F5F5F5
     font-family: "PFDinTextCondPro-Regular", sans-serif
+
     a.und, button.und
       text-decoration: underline
       text-decoration-color: currentColor
       text-underline-position: under
-    @media screen and ( min-width: 0px )
+
+    @media screen and (min-width: 0px)
       font-size: 14px
-      
-    @media screen and ( min-width: 320px )
+
+    @media screen and (min-width: 320px)
       font-size: 14px
-    @media screen and ( max-width: 560px )
+    @media screen and (max-width: 560px)
       h1
         font-size: 16px
-      
-    @media screen and ( min-width: 561px )
+
+    @media screen and (min-width: 561px)
       h1
         font-size: 20px
-    @media screen and ( min-width: 768px )
+    @media screen and (min-width: 768px)
       font-size: 16px
 
       h1
         font-size: 24px
-    @media screen and ( min-width: 1024px )
+    @media screen and (min-width: 1024px)
       font-size: 18px
-    @media screen and ( min-width: 1440px )
+    @media screen and (min-width: 1440px)
       font-size: 20px
       h1
         font-size: 30px
+
     h1, h2
-      // font-weight: bold !important
+    // font-weight: bold !important
     h2
       font-size: inherit
+
     .card-bottom-content
-      @media screen and ( min-width: 560px )
+      @media screen and (min-width: 560px)
         font-size: inherit
+
     .card
       border-radius: 0
+
     caption
       caption-side: top
+
     .header-and-promo
       background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.33%, rgba(0, 0, 0, 0.36) 100%), url("../img/main-bg2.jpg")
       background-repeat: no-repeat
       background-size: cover
       background-position: center
       background-color: $dark-grey
-      @media screen and ( max-width: 475px )
-        background-image:  url('../img/main-bg-mobile.jpg')
+      @media screen and (max-width: 475px)
+        background-image: url('../img/main-bg-mobile.jpg')
+
     button.btn
       border-radius: 0
       border: none
       font-size: inherit
+
       &:disabled
         opacity: 1
     // Шапка сайта
     header
       .navbar-dark
         background-color: $black-text !important
+
       nav.nav-first
         border-bottom: 10px solid #FFCD11
         // background-color: $black-bg
-        @media screen and ( max-width: 425px )
+        @media screen and (max-width: 425px)
           border: none
           background-color: $black-bg
+
         .container
           color: $yellow-text
+
           .dropdown
             .dropdown-toggle
               &::after
                 display: none
+
             &-menu
               background-color: $black-bg
               top: 30px
               left: -16px
               width: 100vw
+
               .dropdown-item
                 padding: 20px 0 5px 0
                 color: $white
                 border-bottom: 1px solid rgba(196, 196, 196, 0.3)
+
                 &.active, &:focus, &:hover
                   background-color: transparent
                   color: $yellow-text
+
                 &:focus
                   outline: none
+
               .btn
                 font-weight: bold
+
           .location-choose
             cursor: pointer
+
             .choicecity
               text-decoration: underline
               text-underline-position: under
+
           .navbar-toggler-icon
             background-image: url('../img/icons/menu-icon.svg')
             width: 22px
             height: 17px
+
           a.nav-link
             color: $yellow-text
+
             &:hover
               color: $yellow-text
+
       .nav-second
         background-color: white
+
         .bottom-nav
           .brand
             top: 0px
             display: block
+
             img
               position: relative
               top: -5px
+
             span.brand-text
               background: #FFCD11
               padding: 8px
               bottom: -50%
               z-index: 1000
+
           .cat-right-block
             .nav-item
               a.nav-link
@@ -219,157 +268,190 @@ html
                 border-bottom: 10px solid transparent
                 transition: border 0.3s ease-in-out
                 height: 100%
+
                 &:hover, &:focus, &:active
                   outline: none
                   background-color: transparent
                   border-bottom-color: $yellow-bg
                   border-radius: 0
+
                 & + .dropdown-menu
                   font-size: inherit
                   width: 100vw
                   left: 0
                   border-radius: 0
                   z-index: 999
+
                   .title-list-block
                     font-weight: bold
+
                   .list-unstyled
                     li a
                       color: inherit
                       font-size: 0.9em
+
                   .list-parent + .list-unstyled
                     padding-top: 10px
+
                 &#freightTransportation, &#materialDelivery
                   & + div
                     ul.list-unstyled li a
                       font-size: inherit
+
           .rent-equip
             padding: 0
+
             button.rent
               font-weight: 600
+
     section.main-1
       z-index: -1
       width: 100%
       height: auto
-      
+
       .container
         height: 100%
+
         .top-content
           h1.title
             color: #fff
             font-weight: bold
-            @media screen and ( max-width: 600px )
+            @media screen and (max-width: 600px)
               font-size: 20px
-            @media screen and ( min-width: 1024px )
+            @media screen and (min-width: 1024px)
               font-size: 30px
-            @media screen and ( min-width: 1440px )
+            @media screen and (min-width: 1440px)
               font-size: 36px
+
           p.your-equip
             color: #fff
             padding-top: 10px
             padding-bottom: 10px
+
           .search-form
             form
               background: transparent
               padding-left: 0
               border: none
+
               .form-group
                 input, button
                   border-radius: 0
                   font-size: inherit
+
                 button
                   font-weight: bold
+
                   &:focus
                     box-shadow: 0px 0px 5px 1px #FFCD11
                     border: none
+
                 .label-input
                   color: #FFFFFF
                   padding-top: 5px
+
                   a
                     color: #FFCD11
                     text-decoration: underline
                     padding-left: 10px
+
         .feature-block
           flex-wrap: nowrap
-          .card_desc,.card-body
+
+          .card_desc, .card-body
             color: white
             border: none
             background: transparent !important
+
             .card-body
               img
                 width: 100%
                 flex-basis: 50%
                 height: 35px
-                @media screen and ( min-width: 768px )
+                @media screen and (min-width: 768px)
                   height: 70px
+
               .card-title
                 font-weight: bold
                 margin-bottom: 0
+
               .card-text
                 line-height: 1.3
-
 
 
     section.category
       h1
         font-weight: bold
+
       .slide-category
         height: 150px
-        @media screen and ( min-width: 1200px )
+        @media screen and (min-width: 1200px)
           height: 200px
-          
+
         .carousel
           height: 100%
+
           .flickity-viewport
             height: 100% !important
+
             .flickity-slider
               align-items: flex-start
               display: flex
               flex-direction: row
               top: 0
               height: 100% !important
-              @media screen and ( min-width: 768px )
+              @media screen and (min-width: 768px)
                 align-items: flex-end
-              .card 
+
+              .card
                 height: 100%
                 background-color: transparent
                 border: none
                 text-align: center
                 justify-content: space-between
+
                 img
                   height: 70%
                   width: auto
+
                 .card-footer
                   background-color: inherit
                   border: inherit
                   padding: 10px 0 0 0
+
                   .card-title
                     margin: 0
+
               .carousel-cell
                 height: 100% !important
                 flex-direction: column !important
+
                 img
                   // height: 100%
                   object-fit: cover
+
                 .title
                   margin-top: 10px
-                
-        
+
 
     // Популярные категории слайдер
     section.category
       .container
         .slide-category
           .carousel
-                
-                
+
+
             .flickity-page-dots
-              @media screen and ( max-width: 560px )
+              @media screen and (max-width: 560px)
                 display: none
+
               li.dot
                 opacity: 1
+
               li.is-selected
                 background: transparent
                 border: 1px solid black
+
             .flickity-prev-next-button
               border-radius: 0
               background-color: #FFCD11
@@ -377,21 +459,25 @@ html
               height: 30px
               top: 40%
               transform: translateY(-40%), translateX(-40%)
+
               &.next
                 right: -30px
-                @media screen and ( max-width: 560px )
+                @media screen and (max-width: 560px)
                   background-color: transparent
                   color: #B1B1B1
+
               &.previous
                 left: -30px
-                @media screen and ( max-width: 560px )
+                @media screen and (max-width: 560px)
                   background-color: transparent
                   color: #B1B1B1
+
               &:disabled
                 background-color: #B8B8B8
-                @media screen and ( max-width: 560px )
+                @media screen and (max-width: 560px)
                   background-color: transparent
                   opacity: 1
+
               .slider-list
                 .items
                   img
@@ -399,48 +485,53 @@ html
                   background: #FFFFFF
 
 
-
-
-
-      // Блок поиск на карте
+    // Блок поиск на карте
     .search-map
       background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url('../img/map2.jpg')
       background-size: cover
       background-repeat: no-repeat
-      .container 
+
+      .container
         display: flex
         justify-content: space-between
         padding: 0
         height: 100%
         align-items: center
-        @media screen and ( max-width: 768px )
+        @media screen and (max-width: 768px)
           flex-direction: column
           justify-content: center
           h1.title-content
             text-align: center
+
         h1.title-content
           font-weight: bold
           padding-bottom: 5px
+
         button.search-on-map
           background: #2a2b29
           color: #fecc11
           padding-left: 14px
           padding-right: 14px
           border-radius: 0px
+
     section.item-container
       height: auto
       background: whitesmoke
+
       .container
         height: 100%
         @media (max-width: 768px)
           max-width: 860px
         @media (max-width: 576px)
           max-width: 710px
+
         h1
           font-weight: bold
+
         .left-block
           .title-block
             font-weight: bold
+
           a.title-list-block
             width: 100%
             background: $dark-grey
@@ -451,13 +542,14 @@ html
             // width: 100%
             &:hover
               color: $yellow-text
+
           .title-list-block
             // width: 100%
             background: $dark-grey
             color: $white
             padding-left: 15px
             min-height: 25px
-            
+
           .list-block
             // width: 100%
             .title-list-block
@@ -466,79 +558,98 @@ html
               color: $white
               padding-left: 15px
               min-height: 25px
+
             a.title-list-block
               display: block
               width: 100%
+
               &:hover
                 color: $yellow-text
+
             .cat-list
               background: white
               padding: 0
               margin-bottom: 10px
+
               .cat-item
                 list-style: none
                 font-size: 0.9em
+
                 &:first-child
                   a
                     padding-top: 10px
+
                 &:last-child
                   a
                     padding-bottom: 10px
+
                 a
                   padding-left: 20px
                   color: #1a1a1a
                   display: inline-block
                   width: 100%
+
                   &:hover
                     color: white
                     background-color: #9a9a9a
+
           .double-click-section
             .card
               width: 48%
-              @media screen and ( min-width: 576px )
+              @media screen and (min-width: 576px)
                 width: 100%
+
             &.in-main-page
-              @media screen and ( min-width: 576px )
+              @media screen and (min-width: 576px)
                 .card
                   width: 32%
-              @media screen and ( min-width: 768px )
+              @media screen and (min-width: 768px)
                 .card
                   width: 100%
-                
-                
-                
+
+
           .double-click-section, .applications-section
             .card
               background-color: transparent
               margin-bottom: 10px
               border: none
+
               &-header, &-body, &-footer
                 background-color: $white
                 border-radius: 0
                 border: none
+
               &-header
                 background-color: $yellow-bg
                 font-size: 1.1em
                 padding: 12px 10px
+
               &-footer
                 padding: 0 10px 12px 10px
+
           .applications-section
             .card
 
               &-header, &-body
                 padding: 10px 15px
+
               &-footer
                 text-align: center
+
         .right-block
           h1
             font-weight: bold
+
           .card
             border: none
             transition: box-shadow 0.5s ease-in-out
+
             &:hover
               box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15)
+
             .card-body
               padding: 0
+
               .card-thumb
                 min-height: 200px
                 width: 100%
@@ -546,61 +657,76 @@ html
                 background-size: cover
                 background-position: 50% 50%
                 display: inline-block
+
               .right-side-card
                 .card-title
                   font-size: 1.1em
                   font-weight: bold
+
                 .card-prop
                   .table
                     font-size: 0.9em
+
                     tbody
                       tr
                         display: flex
                         justify-content: space-between
+
                         th, td
                           border: none
                           padding: 0
                           padding-bottom: 5px
+
                         th
                           font-weight: normal
-                          @media screen and ( max-width: 475px )
+                          @media screen and (max-width: 475px)
                             color: #757575
+
                 .cost-content
                   display: flex
                   justify-content: space-between
                   padding-bottom: 20px
                   font-size: 0.9em
+
                 .card-bottom-content
                   display: flex
                   justify-content: space-between
                   font-size: 0.9em
+
                   button
                     // height: 2.2rem
                     padding-left: 10px
                     padding-right: 10px
                     border: none
                     font-weight: inherit
+
                   button.more
                     background: none
                     padding-left: 0
+
                   button.order
                     background: #fecc11
+
                   button.number
                     background: #3b3b3b
                     color: #fecc11
                     line-height: 12px
                     min-height: 2.2rem
+
                   .right-side
                     width: 59%
                     display: flex
                     justify-content: space-between
+
                     button.order
                       background: #fecc11
+
                     button.number
                       background: #3b3b3b
                       color: #fecc11
                       line-height: 12px
                       min-height: 2.2rem
+
           .more-content
             // margin-top: 20px
             button.more-items
@@ -608,6 +734,7 @@ html
               border: 2px solid black
               box-shadow: 0 0 1px #000
               transition: color 0.5s ease-in, background 0.7s ease-in-out
+
               &:hover
                 background: #000
                 color: whitesmoke
@@ -616,27 +743,32 @@ html
         .similar-technique
           .card
             padding: 0
+
             .cost-content
-              @media screen and ( max-width: 475px )
+              @media screen and (max-width: 475px)
                 span.card-title, .location
                   font-weight: 400
                 div.location
                   color: #757575
+
             .card-thumb
               height: auto
               width: 100%
 
-          @media screen and ( max-width: 575px )
+          @media screen and (max-width: 575px)
             .card-block
               .card
                 background-color: transparent
+
                 &:nth-child(odd)
                   padding-right: 5px
+
                 &:nth-child(even)
                   padding-left: 5px
-                @media screen and ( min-width: 576px )
+
+                @media screen and (min-width: 576px)
                   padding: 0
-                  
+
           h1
             font-weight: bold
     // Блок о сайте
@@ -644,10 +776,13 @@ html
       background: whitesmoke
       padding-top: 40px
       padding-bottom: 40px
+
       .container
         display: flex
+
         .left-block
           height: 280px
+
           .card-image
             width: 100%
             height: 100%
@@ -656,34 +791,42 @@ html
     section.on-app
       background: #3B3B3B
       color: $white
+
       .container
         display: flex
+
         .left-block
           margin-left: 0
           padding-left: 0
+
           img.screen
             width: 90%
+
         .right-block
           .title-block
             color: #fecc11
             font-weight: bold
-            @media screen and ( max-width: 600px )
+            @media screen and (max-width: 600px)
               font-size: 20px
-            @media screen and ( min-width: 1024px )
+            @media screen and (min-width: 1024px)
               font-size: 30px
-            @media screen and ( min-width: 1440px )
+            @media screen and (min-width: 1440px)
               font-size: 36px
+
           .desc-block
             padding-bottom: 20px
+
             .title-desc
               color: white
               font-size: 1.4em
+
             ul
               li.desc-item
                 // font-size: 1.2rem
                 padding-bottom: 10px
                 color: white
                 list-style: none
+
                 i
                   color: #fecc11
                   font-size: 0.5em
@@ -692,48 +835,63 @@ html
     footer
       background: #000000
       color: white
+
       .container
         .col-md-4
           .list-block
             padding-bottom: 40px
+
             p.title-list-block
               font-weight: bold
+
             ul.list-parent
               font-size: 0.9em
               padding-left: 10px
               padding-bottom: 10px
+
               li.list-item
                 list-style: none
+
                 a
                   color: white
+
         .companie
           justify-content: space-between
           line-height: 1.9
+
           & > div
             flex-basis: 100%
+
           .policy
             a
               display: block
+
           .policy, .contacts
             padding-left: 0
+
             a
               color: white
               text-decoration: underline
+
           .contacts
             display: block
             text-decoration: underline
+
           .copy
             .copy-companie
               line-height: 16px
+
           .icons
             a
               margin-left: 10px
               display: inline-block
+
               &:first-child
                 margin-left: 0
+
               i
                 position: relative
-                
+
                 font-size: 0.8rem
                 border-radius: 50%
                 width: 25px
@@ -741,10 +899,12 @@ html
                 border: 1px solid white
                 color: white
                 transition: color 0.7s ease-in-out, background 0.5s ease-in, box-shadow 1s ease-in-out
+
                 &:hover
                   background: white
                   color: #1a1a1a
                   box-shadow: 0 0 5px whitesmoke
+
                 &::before
                   position: absolute
                   left: 50%
@@ -753,6 +913,7 @@ html
     // Хлебные крошки
     .breadcrumb
       background-color: inherit
+
       .container
         nav
           ol.breadcrumb
@@ -761,144 +922,181 @@ html
               text-decoration: underline
               text-underline-position: under
               color: $dark-grey
+
               &.active
                 text-decoration: none
+
               &::before
                 display: none
                 content: ''
+
               a
                 color: $dark-grey
+
               i
                 font-size: 0.9em !important
                 color: $yellow-bg
     // Карточка спецтехники
     section.card_main
-      @media screen and ( min-width: 576px )
+      @media screen and (min-width: 576px)
         background-color: $white-bg
+
       .container
         display: flex
         // padding-bottom: 40px
-        flex-wrap: wrap 
+        flex-wrap: wrap
+
         h1.title-card
           font-weight: bold
           padding-bottom: 30px
           flex-basis: 100%
-          @media screen and ( max-width: 320px )
+          @media screen and (max-width: 320px)
             font-size: 16px
+
         .left-side
           .slide-mini
             .col-4
               padding: 0 7px
+
               &:first-child
                 padding-left: 0
+
               &:last-child
                 padding-right: 0
+
           .item-slide
             .mySlides
               display: none
+
               img
                 position: relative
+
             .img-card
               padding-bottom: 0
+
               &::after
                 content: ""
                 display: table
                 clear: both
-              .column 
+
+              .column
                 // flex-basis: 100%
                 .cursor
                   cursor: pointer
+
                 .demo
                   opacity: 0.6
-                .active, .demo:hover 
+
+                .active, .demo:hover
                   opacity: 1
+
             img.main-img
               width: 100%
               object-fit: cover
+
             .img-card
               margin-top: 20px
               padding-left: 0
               padding-right: 0
               justify-content: space-between
               width: 100%
+
               img
                 padding-left: 10px
                 width: 33%
                 max-height: 115px
                 opacity: 0.7
                 object-fit: cover
+
                 &:first-child
                   padding-left: 0
+
                 .active
                   opacity: 1
+
         .right-side
           font-size: 0.9em
           background-color: $white-bg
+
           .prop-content
             padding-top: 0px
+
             .block-title
               font-weight: bold
               font-size: 1.1em
+
             .card-prop
               tbody
                 tr
                   display: flex
                   justify-content: space-between
+
                   th, td
                     padding: 0
                     padding-bottom: 5px
                     border: none
                     font-weight: normal
+
                   td
                     padding-right: 0
+
                   th
-                    @media screen and ( max-width: 475px )
-                      color: #757575   
+                    @media screen and (max-width: 475px)
+                      color: #757575
+
             .cost-content
               padding-bottom: 20px
+
               .cost, .hour-dock, .location
                 flex-basis: 100%
                 font-weight: bold
                 display: flex
                 align-items: center
-                @media screen and ( min-width: 768px )
+                @media screen and (min-width: 768px)
                   flex-basis: unset
-                  
+
         .bottom-button-client
           background-color: #F5F5F5
-          @media screen and ( min-width: 576px )
+          @media screen and (min-width: 576px)
             background-color: inherit
+
         .bottom-content
           display: flex
           justify-content: space-between
           font-size: 1.1em
+
           button
             // border: none
             border-radius: 0
+
           button.order
             background: #fecc11
-            @media screen and ( max-width: 575px )
+            @media screen and (max-width: 575px)
               letter-spacing: 4px
               text-transform: uppercase
+
           button.number
             background: #1a1a1a
             color: #fecc11
             border: none
+
             button.on-map
               background: transparent
               border: 2px solid black
               font-size: 0.9rem
               transition: color 0.5s ease-in, background 0.7s ease-in-out, text-shadow 0.5s ease-in-out
+
               &:hover
                 background: #000
                 color: whitesmoke
                 text-shadow: 0 0 1px whitesmoke
+
         .client-contact-info
           background-color: $white-bg
           font-size: 12px
-          @media screen and ( min-width: 768px )
+          @media screen and (min-width: 768px)
             font-size: 0.9em
-            
+
           // line-height: 0.5
           p
             margin-bottom: 5px
@@ -907,6 +1105,7 @@ html
           button.number
             background: #3b3b3b
             color: #fecc11
+
           .card-title, .contact-name, button
             color: $black-text
             font-size: 14px
@@ -915,36 +1114,42 @@ html
     section.also-by-client
       background: whitesmoke
       padding-bottom: 50px
+
       .container
         h1.title-content
           font-weight: bold
+
         .card-block
           .card
             background-color: transparent
             padding: 0
             border: none
-            @media screen and ( max-width: 767px )
+            @media screen and (max-width: 767px)
               width: 40%
               &:nth-child(odd)
                 padding-right: 5px
               &:nth-child(even)
-                padding-left: 5px   
+                padding-left: 5px
+
             &:first-child
               margin-left: 0
-            @media screen and ( min-width: 768px )
+
+            @media screen and (min-width: 768px)
               padding: 0 5px
               &:first-child
                 padding-left: 0
               &:last-child
                 padding-right: 0
-            @media screen and ( min-width: 1200px )
+            @media screen and (min-width: 1200px)
               padding: 0 10px
+
             .card-body
               transition: box-shadow 0.7s ease-in-out
               height: 100%
+
               &:hover
                 box-shadow: 0 0 25px rgba(darkgray, 0.7)
-              
+
             // &:first-child
             //   .card-body
             //     padding-left: 0
@@ -953,101 +1158,128 @@ html
             //     padding-right: 0
             .card-body
               padding: 0
+
               img.card-image
                 width: 100%
+
               .card-data
                 background-color: transparent
-                @media screen and ( min-width: 768px )
+                @media screen and (min-width: 768px)
                   background-color: $white
+
                 span.card-title
                   font-weight: bold
+
                 .cost-content
-                  @media screen and ( max-width: 475px )
+                  @media screen and (max-width: 475px)
                     span.card-title, .location
                       font-weight: 400
                     div.location
                       color: #757575
+
                 .prop-block
                   padding-top: 10px
                   display: flex
                   padding-bottom: 10px
+
                   table.props
                     width: 100%
                     font-size: 0.9em
+
                     tbody
                       tr
                         width: 100%
                         display: flex
                         justify-content: space-between
+
                         th, td
                           padding: 0
                           font-weight: normal
                           padding-bottom: 0
+
                 .bottom-content
                   display: flex
                   justify-content: space-between
                   flex-wrap: wrap
                   margin-top: 15px
                   font-size: 0.9em
+
                   button.more
                     padding-left: 0
                     color: gray
+
                   button.order
                     background: #fecc11
                     font-weight: bold
 
     .item-container
       > .container
-          .main-characteristics-filtr
-            h2
-              font-size: 20px
-            tr
-              th
-                font-weight: 500
-              td
-                font-weight: bold
+        .main-characteristics-filtr
+          h2
+            font-size: 20px
+
+          tr
+            th
+              font-weight: 500
+
+            td
+              font-weight: bold
+
       .container.d-flex
         .left-block
           .main-characteristics-filtr, .search-map
             margin-bottom: 20px
+
           .main-characteristics-filtr
             padding: 20px 15px
             background-color: #FEFEFE
+
             h1
               font-weight: bold
+
             table
               width: 100%
+
               th
                 font-weight: normal
                 color: $dark-grey
+
               td
                 text-align: right
+
                 select
                   border: 1px solid #E5E5E5
                   width: 60px
                   font-weight: bold
+
           .search-map
             background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url('../img/map2.jpg')
             background-size: cover
             background-repeat: no-repeat
             padding: 20px 0
+
             .container
               flex-direction: column
               align-items: center
+
               button.search-on-map
                 background: #2a2b29
                 color: #fecc11
                 border-radius: 0px
+
         .right-block
           .card
             margin-bottom: 15px
+
             &:first-child
               margin-top: 0
+
             &:last-child
               margin-bottom: 0
-    
+
       .requests-section
         align-items: flex-start
+
         .card
           background-color: transparent
           border: none
@@ -1055,99 +1287,124 @@ html
           color: #3b3b3b
           padding: 0 10px
           box-shadow: none
+
           &:last-of-type
             margin-bottom: 15px !important
+
           &-wrapper
             height: 100%
             transition: all 0.5s
             display: flex
             flex-direction: column
             will-change: transform, box-shadow
+
             &:hover
               transform: scale(1.02)
               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
           &-wrapper, &-header, &-body, &-footer
             background-color: $white
             border: inherit
             border-radius: 0
+
           &-title
             font-weight: bold
             font-size: 1.2em
+
           i
             font-size: 0.8em
+
           &-footer
             .number
-              font-size: 1em
-              &:hover
-                background-color: $black-bg
+            font-size: 1em
+
+            &:hover
+              background-color: $black-bg
+
             .card-text
               color: #B1B1B1
       // Личный кабинет
       .left-block
         .user-account-menu
-          
+
           justify-content: space-between
+
           a
             color: inherit
             flex-grow: 1
+
             i
               width: 10px
               font-size: 0.8em
+
           .active
             background-color: $dark-grey
             color: $yellow-bg
+
       .right-block
         .tab-content
           .card
             align-items: stretch
+
             img
               object-fit: cover
               object-position: center
-              // width: 100%
-              // height: 100%
+            // width: 100%
+            // height: 100%
             .col-md-7
               background-color: $white-bg
+
               .card
                 &-header, &-body, &-footer
                   background-color: transparent
                   border: none
                   border-radius: 0
+
                 &-footer
                   display: flex
                   justify-content: space-between
+
                   .btn-link
                     background-color: inherit
                     color: inherit
+
                   .dark-btn
                     color: $yellow-bg
 
             .card-title
               font-size: 1.1em
               font-weight: bold
+
             .card-prop
               .table
                 font-size: 0.9em
+
                 tbody
                   tr
                     display: flex
                     justify-content: space-between
+
                     th, td
                       border: none
                       padding: 0
                       padding-bottom: 5px
+
                     th
                       font-weight: normal
-                      @media screen and ( max-width: 475px )
+                      @media screen and (max-width: 475px)
                         color: #757575
+
             .cost-content
               display: flex
               justify-content: space-between
               padding-bottom: 20px
               font-size: 0.9em
+
               .card-bottom-content
                 display: flex
                 justify-content: space-between
                 font-size: 0.9em
+
                 button
                   // height: 2.2rem
                     padding-left: 10px
@@ -1157,53 +1414,77 @@ html
                   button.more
                     background: none
                     padding-left: 0
+
                   button.order
                     background: #fecc11
+
                   button.number
                     background: #3b3b3b
                     color: #fecc11
                     line-height: 12px
+
         .profile-info
           background-color: $white
+
           .row
             width: 100%
+
             &:hover
               background-color: rgba(255, 205, 17, 0.2)
-              // i.fa-pencil-alt
-                // color: $placeholder
+            // i.fa-pencil-alt
+              // color: $placeholder
             .profile-title
               font-weight: bold
-              font-size: 1.1em
+              font-size: 0.9em
+
             .profile-subtitle
               color: #3b3b3b
-              font-size: .8em
+              font-size: .70em
+              margin-top: 10px
+
               a.und
                 color: inherit
+
             img
-              width: 45px
-            // i.fa-pencil-alt
+              width: 120px
+              height: 120px
+              // i.fa-pencil-alt
               // color: $white
+              position: relative
+              left: 35%
+              transform: translateX(-100%)
+
             .col
               color: #3b3b3b
+
               i
                 color: inherit
                 font-size: 0.8em
+
               .fa-pencil-alt
                 color: $placeholder
                 font-size: 1em
+                position: relative
+                bottom: 15px
+                &:hover
+                  color: darkslategrey
+
 
               .place
                 color: #b1b1b1
+
           .switch
             position: relative
             display: inline-block
             width: 29px
             height: 15px
             margin: 0
+
             input
               opacity: 0
               width: 0
               height: 0
+
             .slider
               position: absolute
               cursor: pointer
@@ -1216,6 +1497,7 @@ html
               transition: .4s
               border-radius: 7.5px
               border: 0.75px solid #e5e5e5
+
               &:before
                 position: absolute
                 content: ""
@@ -1227,33 +1509,41 @@ html
                 -webkit-transition: .4s
                 transition: .4s
                 border-radius: 50%
-            input:checked + .slider 
+
+            input:checked + .slider
               background-color: rgba(255, 205, 17, 0.3)
               border-color: rgba(255, 205, 17, 0.3)
-            input:focus + .slider 
+
+            input:focus + .slider
               box-shadow: 0 0 1px #2196F3
-            input:checked + .slider:before 
+
+            input:checked + .slider:before
               -webkit-transform: translateX(14px)
               -ms-transform: translateX(14px)
               transform: translateX(14px)
               background-color: $yellow-bg
+          .add-contacts
 
+            background: transparent
+            text-decoration: underline
 
 
     .cat-block-list
       padding: 0
-      @media screen and ( min-width: 400px )
+      @media screen and (min-width: 400px)
         padding: 0 15px
+
       .card-img
         background-color: #F5F5F5
-      @media screen and ( min-width: 450px )
+
+      @media screen and (min-width: 450px)
         .card
           .card-img, .contact-info-client
             padding-left: 20px
             padding-right: 20px
-        
-      
-      @media screen and ( min-width: 400px ) and ( max-width: 580px )
+
+
+      @media screen and (min-width: 400px) and (max-width: 580px)
         // .col-md-5
         //   padding: 0 15px
         // .client-contact-info
@@ -1266,10 +1556,6 @@ html
         .col-md-7
           padding-left: 15px
           padding-right: 15px
-        
-
-
-
 
 
     //МОДАЛЬНЫЕ ОКНА
@@ -1278,31 +1564,41 @@ html
     .modal
       .modal-header
         align-items: center
+
       input, textarea, select, button
         border-radius: 0
+
       input, textarea, select
         border: 1px solid #E5E5E5
+
       textarea
         resize: none
+
       .close
         font-size: 1.5em
+
         &:focus
           outline: none
+
         &:hover
-          text-shadow: 0px 0px 10px rgba(122,122 ,121 ,0.5)
+          text-shadow: 0px 0px 10px rgba(122, 122, 121, 0.5)
 
     #locationModal, #searchModal
       input[type=radio]
         margin-right: 20px
+
       p
         color: $placeholder
+
       input[type=text]
         width: 100%
         padding: 7px 0 7px 7%
         border: 1px solid $light-grey-bg
+
         &:focus
           box-shadow: 0px 0px 4px 0px $yellow-bg
           outline: 1px solid $yellow-bg
+
         &::placeholder
           color: $placeholder
 
@@ -1312,7 +1608,7 @@ html
         text-decoration: underline
         text-underline-position: under
         font-size: inherit
-        
+
     #applicationModal
       .modal-body
         .form-row
@@ -1320,30 +1616,35 @@ html
           margin: 0
           margin-bottom: 10px
           flex-wrap: nowrap
+
           select, textarea, input
             border-radius: 0
             padding-left: 10px
-            @media screen and ( min-width: 768px )
+            @media screen and (min-width: 768px)
               font-size: 16px
+
             &::placeholder
               color: $placeholder
+
             &.form-control
               box-sizing: border-box
-              // width: auto
+          // width: auto
           input, select
             height: 30px
+
           textarea
             resize: none
+
       .modal-footer
         .yel-btn
-          @media screen and ( max-width: 575px )
+          @media screen and (max-width: 575px)
             letter-spacing: 4px
             text-transform: uppercase
 
     #rentalModal
       .modal-footer
         .yel-btn
-          @media screen and ( max-width: 575px )
+          @media screen and (max-width: 575px)
             letter-spacing: 4px
             text-transform: uppercase
 
@@ -1351,40 +1652,51 @@ html
       .modal-body
         input, select
           height: 30px
+
       legend
         font-size: 1.1em
+
       .form-row
         width: 100%
         margin: 0
         margin-bottom: 10px
+
         .col-md-7, .col-5, .col-7
           padding: 0
           padding-left: 10px
+
         label
           padding: 0
           margin: 0
           margin-bottom: 5px
+
         input, textarea
           padding-left: 7px
+
       .dark-btn
         &:hover, &:focus, &:active
           color: $yellow-text
+
       .wh-btn
         &:hover, &:focus, &:active
           border-color: $yellow-text
           background-color: transparent
           color: $black-bg
+
       .form-text
         margin: 3px 0 0 0
-        @media screen and ( max-width: 560px )
+        @media screen and (max-width: 560px)
           color: #757575
+
       .modal-footer
         .yel-btn
-          @media screen and ( max-width: 575px )
+          @media screen and (max-width: 575px)
             letter-spacing: 4px
             text-transform: uppercase
+
       .modal-foto-upload
         height: 80px
+
         label
           border: 1px solid #e5e5e5
           position: relative
@@ -1393,25 +1705,28 @@ html
           margin: 0
           flex-basis: 30%
           flex-grow: 0
-          @media screen and ( min-width: 576px )
+          @media screen and (min-width: 576px)
             flex-basis: 22%
-          @media screen and ( min-width: 768px )
+          @media screen and (min-width: 768px)
             flex-basis: 30%
-          @media screen and ( min-width: 992px )
-            flex-basis: 22% 
+          @media screen and (min-width: 992px)
+            flex-basis: 22%
+
           i
             position: absolute
             left: 50%
             top: 50%
             transform: translateX(-50%) translateY(-50%)
 
-@media screen and ( min-width: 1800px )
+@media screen and (min-width: 1800px)
   .container
     max-width: 1500px
-@media screen and ( min-width: 1800px )
+
+@media screen and (min-width: 1800px)
   html body
     font-size: 25px
-@media screen and ( min-width: 2400px )
+
+@media screen and (min-width: 2400px)
   html body
     font-size: 30px
 
@@ -1430,3 +1745,38 @@ html
 // font-weight: bold
 .fw-b
   font-family: "PFDinTextCondPro-Bold"
+
+.create-item-seller
+  background: white
+
+  select, input, textarea
+    height: 30px
+    padding: 0
+    padding-left: 10px
+    border: 1px solid gainsboro
+
+  textarea
+    height: auto
+    margin-left: 5px
+
+  label.fu
+    width: 100px
+    height: 80px
+    background-size: cover
+
+@media screen and (min-width: 1800px)
+  .container
+    max-width: 1500px
+
+@media screen and (min-width: 1800px)
+  html body
+    font-size: 25px
+
+@media screen and (min-width: 2400px)
+  html body
+    font-size: 30px
+
+.dropdown:hover > .dropdown-menu
+  display: block
+
+

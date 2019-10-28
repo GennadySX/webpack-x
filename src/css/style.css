@@ -966,12 +966,12 @@ html body {
         font-size: 1.2em; }
       html body .item-container .requests-section .card i {
         font-size: 0.8em; }
-      html body .item-container .requests-section .card-footer .number {
+      html body .item-container .requests-section .card-footer {
         font-size: 1em; }
-        html body .item-container .requests-section .card-footer .number:hover {
+        html body .item-container .requests-section .card-footer:hover {
           background-color: #000000; }
-      html body .item-container .requests-section .card-footer .card-text {
-        color: #B1B1B1; }
+        html body .item-container .requests-section .card-footer .card-text {
+          color: #B1B1B1; }
   html body .item-container .left-block .user-account-menu {
     justify-content: space-between; }
     html body .item-container .left-block .user-account-menu a {
@@ -1045,14 +1045,19 @@ html body {
         background-color: rgba(255, 205, 17, 0.2); }
       html body .item-container .right-block .profile-info .row .profile-title {
         font-weight: bold;
-        font-size: 1.1em; }
+        font-size: 0.9em; }
       html body .item-container .right-block .profile-info .row .profile-subtitle {
         color: #3b3b3b;
-        font-size: .8em; }
+        font-size: .70em;
+        margin-top: 10px; }
         html body .item-container .right-block .profile-info .row .profile-subtitle a.und {
           color: inherit; }
       html body .item-container .right-block .profile-info .row img {
-        width: 45px; }
+        width: 120px;
+        height: 120px;
+        position: relative;
+        left: 35%;
+        transform: translateX(-100%); }
       html body .item-container .right-block .profile-info .row .col {
         color: #3b3b3b; }
         html body .item-container .right-block .profile-info .row .col i {
@@ -1060,7 +1065,11 @@ html body {
           font-size: 0.8em; }
         html body .item-container .right-block .profile-info .row .col .fa-pencil-alt {
           color: #B1B1B1;
-          font-size: 1em; }
+          font-size: 1em;
+          position: relative;
+          bottom: 15px; }
+          html body .item-container .right-block .profile-info .row .col .fa-pencil-alt:hover {
+            color: darkslategrey; }
         html body .item-container .right-block .profile-info .row .col .place {
           color: #b1b1b1; }
     html body .item-container .right-block .profile-info .switch {
@@ -1106,6 +1115,9 @@ html body {
         -ms-transform: translateX(14px);
         transform: translateX(14px);
         background-color: #FFCD11; }
+    html body .item-container .right-block .profile-info .add-contacts {
+      background: transparent;
+      text-decoration: underline; }
   html body .cat-block-list {
     padding: 0; }
     @media screen and (min-width: 400px) {
@@ -1265,3 +1277,33 @@ html body {
 
 .fw-b {
   font-family: "PFDinTextCondPro-Bold"; }
+
+.create-item-seller {
+  background: white; }
+  .create-item-seller select, .create-item-seller input, .create-item-seller textarea {
+    height: 30px;
+    padding: 0;
+    padding-left: 10px;
+    border: 1px solid gainsboro; }
+  .create-item-seller textarea {
+    height: auto;
+    margin-left: 5px; }
+  .create-item-seller label.fu {
+    width: 100px;
+    height: 80px;
+    background-size: cover; }
+
+@media screen and (min-width: 1800px) {
+  .container {
+    max-width: 1500px; } }
+
+@media screen and (min-width: 1800px) {
+  html body {
+    font-size: 25px; } }
+
+@media screen and (min-width: 2400px) {
+  html body {
+    font-size: 30px; } }
+
+.dropdown:hover > .dropdown-menu {
+  display: block; }
