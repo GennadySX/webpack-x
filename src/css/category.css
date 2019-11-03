@@ -1,0 +1,17 @@
+.category-list .container {
+  background: #fff; }
+  .category-list .container .categories {
+    padding: 10px; }
+    .category-list .container .categories ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      position: relative;
+      left: 50%;
+      transform: translateX(-43%); }
+      .category-list .container .categories ul li {
+        flex-basis: 20%;
+        list-style: none;
+        justify-content: space-around; }
+        .category-list .container .categories ul li .badge {
+          font-size: 0.85rem; }
