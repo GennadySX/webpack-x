@@ -1313,3 +1313,14 @@ html body {
 
 .dropdown:hover > .dropdown-menu {
   display: block; }
+
+@media screen and (max-width: 425px) {
+  .right-block, .card-block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .right-block .card, .card-block .card {
+      width: 48%;
+      flex-basis: 48%; }
+      .right-block .card .card-prop, .right-block .card .location, .card-block .card .card-prop, .card-block .card .location {
+        display: none; } }

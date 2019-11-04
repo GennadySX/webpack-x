@@ -604,13 +604,15 @@
             </div>
             <!-- Конец левой колонки -->
 
-
-
-            
             <!-- ОБЪЯВЛЕНИЯ правая колонка -->
             <div class="right-block col-12 col-md-9 p-0 d-flex flex-column" id="item-block">
                 <!-- Заголовок -->
-                <h1 id="ads" class="title-block align-self-center align-self-md-start my-3 mb-lg-4">Объявления</h1>
+                <div class="col-md-12">
+                    <h1 id="ads" class="title-block align-self-center align-self-md-start my-3 mb-lg-4 float-left">Объявления</h1>
+                    <button type="button" class="btn btn-warning float-right mt-2 "  data-toggle="collapse" data-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
+                        <i class="fas fa-filter"></i> Фильтр
+                    </button>
+                </div>
                 <!-- Контейнер для карточек -->
                 <div class="card-block">
                     <!-- Карточка -->
@@ -652,7 +654,46 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+                    <div class="card mb-3 rounded-0">
+                        <div class="card-body d-flex flex-column flex-sm-row">
+                            <div class="align-self-md-stretch card-thumb" style="background-image: url('./img/items/camas.png')"></div>
+                            <div class="right-side-card col-md-7 p-3 pb-4 pb-md-3">
+                                <p class="card-title">Автовышка АГП-28</p>
+                                <div class="card-prop">
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Рабочая высота подъема</th>
+                                            <td>28 м</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Грузоподъемность люльки</th>
+                                            <td>300 кг</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Максимальный вылет стрелы</th>
+                                            <td>13 м</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Угол поворота</th>
+                                            <td>360<sup> o</sup></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cost-content font-weight-bold">
+                                    <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
+                                    <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
+                                    <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
+                                </div>
+                                <div class="card-bottom-content font-weight-bold">
+                                    <button class="more">Подробнее</button>
+                                    <button class="order px-4" data-toggle="modal" data-target="#rentalModal">Заказать</button>
+                                    <button class="number d-none d-lg-block">+7 показать номер</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Конец контейнера с карточками -->
                 <!-- Кнопка больше объявлений -->

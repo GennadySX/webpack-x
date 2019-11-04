@@ -637,6 +637,7 @@ html
                 text-align: center
 
         .right-block
+
           h1
             font-weight: bold
 
@@ -1783,5 +1784,15 @@ html
 
 .dropdown:hover > .dropdown-menu
   display: block
+@media screen and (max-width: 425px)
+  .right-block, .card-block
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-around
+    .card
+      width: 48%
+      flex-basis: 48%
+      .card-prop,.location
+        display: none
 
 
