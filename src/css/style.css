@@ -146,12 +146,13 @@ html body {
         background-color: #000000; } }
     html body header nav.nav-first .container {
       color: #FFCD11; }
-      html body header nav.nav-first .container .dropdown .dropdown-toggle::after {
-        display: none; }
+      html body header nav.nav-first .container .dropdown .dropdown-toggle {
+        outline: none; }
+        html body header nav.nav-first .container .dropdown .dropdown-toggle::after {
+          display: none; }
       html body header nav.nav-first .container .dropdown-menu {
         background-color: #000000;
         top: 30px;
-        left: -16px;
         width: 100vw; }
         html body header nav.nav-first .container .dropdown-menu .dropdown-item {
           padding: 20px 0 5px 0;
@@ -164,6 +165,8 @@ html body {
             outline: none; }
         html body header nav.nav-first .container .dropdown-menu .btn {
           font-weight: bold; }
+      html body header nav.nav-first .container .navbar-toggler {
+        outline: none; }
       html body header nav.nav-first .container .location-choose {
         cursor: pointer; }
         html body header nav.nav-first .container .location-choose .choicecity {
@@ -172,7 +175,8 @@ html body {
       html body header nav.nav-first .container .navbar-toggler-icon {
         background-image: url("../img/icons/menu-icon.svg");
         width: 22px;
-        height: 17px; }
+        height: 17px;
+        outline: none; }
       html body header nav.nav-first .container a.nav-link {
         color: #FFCD11; }
         html body header nav.nav-first .container a.nav-link:hover {

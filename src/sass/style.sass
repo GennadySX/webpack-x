@@ -199,13 +199,13 @@ html
 
           .dropdown
             .dropdown-toggle
+              outline: none
               &::after
                 display: none
 
             &-menu
               background-color: $black-bg
               top: 30px
-              left: -16px
               width: 100vw
 
               .dropdown-item
@@ -222,7 +222,8 @@ html
 
               .btn
                 font-weight: bold
-
+          .navbar-toggler
+            outline: none
           .location-choose
             cursor: pointer
 
@@ -234,6 +235,7 @@ html
             background-image: url('../img/icons/menu-icon.svg')
             width: 22px
             height: 17px
+            outline: none
 
           a.nav-link
             color: $yellow-text
