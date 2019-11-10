@@ -20,993 +20,1107 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <!--  jQuery -->
 
-<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
-<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css"/>
 
-<!-- Bootstrap Date-Picker Plugin -->
+    <!-- Bootstrap Date-Picker Plugin -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
 </head>
 <body>
-    <article class="header-and-promo">
-        <!-- Шапка сайта -->
-        <header class="fw-r">
-            <!-- Верхняя навигация -->
-            <nav class="navbar navbar-expand-lg navbar-dark nav-first">
-                <div class="container d-flex flex-row align-items-center flex-nowrap">
-                    <!-- Гамбургер и мобильное меню -->
-                    <div class="dropdown d-block d-sm-none">
-                        <button class="btn btn-secondary dropdown-toggle border-0 bg-transparent p-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="navbar-toggler-icon"></span>  
+<article class="header-and-promo">
+    <!-- Шапка сайта -->
+    <header class="fw-r">
+        <!-- Верхняя навигация -->
+        <nav class="navbar navbar-expand-lg navbar-dark nav-first">
+            <div class="container d-flex flex-row align-items-center flex-nowrap">
+                <!-- Гамбургер и мобильное меню -->
+                <div class="dropdown d-block d-sm-none">
+                    <button class="btn btn-secondary dropdown-toggle border-0 bg-transparent p-0" type="button"
+                            id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="dropdown-menu rounded-0 border-0 p-3" aria-labelledby="dropdownMenu2">
+                        <a class="dropdown-item" href="#">Аренда техники</a>
+                        <a class="dropdown-item active" href="#">Услуги</a>
+                        <a class="dropdown-item" href="#">Грузоперевозки</a>
+                        <a class="dropdown-item" href="#">Доставка материала</a>
+                        <a class="dropdown-item" href="requests.html">Заявки</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signInModal">Войти</a>
+                        <button type="button" class="btn btn-warning rent w-100 py-1 mt-4" data-toggle="modal"
+                                data-target="#placeVehicleModal">Сдать технику
                         </button>
-                        <div class="dropdown-menu rounded-0 border-0 p-3" aria-labelledby="dropdownMenu2">
-                            <a class="dropdown-item" href="#">Аренда техники</a>
-                            <a class="dropdown-item active" href="#">Услуги</a>
-                            <a class="dropdown-item" href="#">Грузоперевозки</a>
-                            <a class="dropdown-item" href="#">Доставка материала</a>
-                            <a class="dropdown-item" href="requests.html">Заявки</a>
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#signInModal">Войти</a>
-                            <button type="button" class="btn btn-warning rent w-100 py-1 mt-4" data-toggle="modal" data-target="#placeVehicleModal">Сдать технику</button>
-                        </div>
                     </div>
-                    <!-- Мобильное лого -->
-                    <div class="mobile-logo d-block d-sm-none">
-                        <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                </div>
+                <!-- Мобильное лого -->
+                <div class="mobile-logo d-block d-sm-none">
+                    <img src="img/mobile-logo.svg" alt="Спецтехникофф">
+                </div>
+
+                <!-- Местоположение -->
+                <div class="d-flex location-choose" data-toggle="modal" data-target="#locationModal">
+                    <span class="d-none d-sm-block">Местоположение</span>
+                    <img class="mx-2" src="img/icons/location-icon.svg" alt="">
+                    <span class="d-none d-sm-block choicecity">Выберите регион</span>
+                </div>
+                <div class="d-none d-sm-block ml-auto" data-toggle="modal" data-target="#signInModal">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                    </ul>
+                </div>
+                <!-- Кнопка сдать технику -->
+                <div class="rent-equip col-3 col-md-3 col-lg-2 d-none d-sm-block d-lg-none">
+                    <button type="button" class="btn btn-warning rent w-100" data-toggle="modal"
+                            data-target="#placeVehicleModal">Сдать технику
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Нижняя навигация -->
+        <nav class="navbar nav-second d-none d-sm-block p-0 fw-l">
+            <div class="container px-0">
+                <div class="bottom-nav d-flex align-items-center justify-content-between row position-static no-gutters flex-nowrap col px-0">
+                    <!-- Главное лого -->
+                    <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
+                        <img src="img/logo.png" alt=" ">
+                        <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
                     </div>
-                    
-                    <!-- Местоположение -->
-                    <div class="d-flex location-choose" data-toggle="modal" data-target="#locationModal">
-                        <span class="d-none d-sm-block">Местоположение</span>
-                        <img class="mx-2" src="img/icons/location-icon.svg" alt="">
-                        <span class="d-none d-sm-block choicecity">Выберите регион</span>
-                    </div>
-                    <div class="d-none d-sm-block ml-auto" data-toggle="modal" data-target="#signInModal">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#" id="login-link">Войти</a></li>
+                    <!-- Главное меню -->
+                    <div class="cat-right-block col-10 col-md-9 col-lg-8 col-xl-7 position-static">
+                        <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
+
+                            <li class="nav-item dropdown show position-static">
+                                <a class="nav-link" href="#" id="equipmentRental" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Аренда техники</a>
+                                <div class="dropdown-menu position-absolute mt-0 border-0"
+                                     aria-labelledby="equipmentRental">
+                                    <div class="container d-flex justify-content-center py-sm-3 py-md-4 py-lg-5">
+                                        <div class="col-4">
+                                            <div class="list-block mb-sm-3 mb-md-4">
+                                                <p class="title-list-block mb-sm-2 mb-md-3">Аренда экскаваторов</p>
+                                                <ul class="list-parent list-unstyled pl-2">
+                                                    <li><a href="">Гусеничные экскаваторы</a></li>
+                                                    <li><a href="">Колесные экскаваторы</a></li>
+                                                    <li><a href="">Мини-экскаваторы</a></li>
+                                                    <li><a href="">Эксваторы погрузчики</a></li>
+                                                    <li><a href="">Плавающие экскаваторы</a></li>
+                                                    <li><a href="">Экскаваторы-разрушители</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="list-block">
+                                                <p class="title-list-block mb-sm-2 mb-md-3">Аренда погрузчиков</p>
+                                                <ul class="list-parent list-unstyled pl-2">
+                                                    <li><a href="">Фронтальный погрузчики</a></li>
+                                                    <li><a href="">Мини-погрузчики</a></li>
+                                                    <li><a href="">Погрузчики вилочные</a></li>
+                                                    <li><a href="">Погрузчики телескопические</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="list-block">
+                                                <p class="title-list-block mb-sm-2 mb-md-3">Аренда кранов</p>
+                                                <ul class="list-parent list-unstyled pl-2">
+                                                    <li><a href="">Автокраны</a></li>
+                                                    <li><a href="">Башенные краны</a></li>
+                                                    <li><a href="">Манипуляторы</a></li>
+                                                </ul>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Автовышки</a></li>
+                                                    <li><a href="">Самосвалы</a></li>
+                                                    <li><a href="">Бульдозеры</a></li>
+                                                    <li><a href="">Ямобуры</a></li>
+                                                    <li><a href="">Бетононасосы</a></li>
+                                                    <li><a href="">Автобетоносмесители</a></li>
+                                                    <li><a href="">Длинномеры</a></li>
+                                                    <li><a href="">Поливомоечные машины</a></li>
+                                                    <li><a href="">Тракторы</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="list-block">
+                                                <p class="title-list-block mb-sm-2 mb-md-3">Аренда катков</p>
+                                                <ul class="list-parent list-unstyled pl-2">
+                                                    <li><a href="">Грунтовые катки</a></li>
+                                                    <li><a href="">Дорожные катки</a></li>
+                                                    <li><a href="">Тротуарные катки</a></li>
+                                                </ul>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Низкорамные тралы</a></li>
+                                                    <li><a href="">Илососы</a></li>
+                                                    <li><a href="">Компрессоры</a></li>
+                                                    <li><a href="">Автогрейдеры</a></li>
+                                                    <li><a href="">Мусоровозы</a></li>
+                                                    <li><a href="">Гидромолоты</a></li>
+                                                    <li><a href="">Грейферы</a></li>
+                                                    <li><a href="">Асфальтоукладчики</a></li>
+                                                    <li><a href="">Дорожные фрезы</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown show position-static">
+                                <a class="nav-link" href="#" id="services" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">Услуги</a>
+                                <div class="dropdown-menu position-absolute mt-0 border-0" aria-labelledby="services">
+                                    <div class="container d-flex justify-content-center py-sm-3 py-md-4 py-lg-5">
+                                        <div class="col-4">
+                                            <div class="list-block">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Асфальтирование дорог</a></li>
+                                                    <li><a href="">Бестраншейная замена коммуникаций</a></li>
+                                                    <li><a href="">Бурение колодцев</a></li>
+                                                    <li><a href="">Бурение под сваи</a></li>
+                                                    <li><a href="">Вывоз ЖБО</a></li>
+                                                    <li><a href="">Вывоз мусора</a></li>
+                                                    <li><a href="">Выкапывание ямы под септик</a></li>
+                                                    <li><a href="">Выкорчевка</a></li>
+                                                    <li><a href="">Горизонтальное бурение</a></li>
+                                                    <li><a href="">Грейдирование дорог</a></li>
+                                                    <li><a href="">Демонтаж асфальта</a></li>
+                                                    <li><a href="">Дорожные работы</a></li>
+                                                    <li><a href="">Забивка свай под дом </a></li>
+                                                    <li><a href="">Малоэтажное строительство</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="list-block">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Монтаж железобетонных конструкций</a></li>
+                                                    <li><a href="">Осушение котлованов, траншей, ливневок и
+                                                        отстойников</a></li>
+                                                    <li><a href="">Отвал грунта, разработка каналов</a></li>
+                                                    <li><a href="">Откачка выгребной ямы</a></li>
+                                                    <li><a href="">Откачка ила, песка и шлама</a></li>
+                                                    <li><a href="">Откачка канализации</a></li>
+                                                    <li><a href="">Откачка септика</a></li>
+                                                    <li><a href="">Прокладка водопровода, канализации</a></li>
+                                                    <li><a href="">Прокладка теплотрассы</a></li>
+                                                    <li><a href="">Грейдирование дорог</a></li>
+                                                    <li><a href="">Уборка снега</a></li>
+                                                    <li><a href="">Снос зданий и разрушение зданий</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="materialDelivery" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Доставка материалов</a>
+                                <div class="dropdown-menu position-absolute mt-0 border-0"
+                                     aria-labelledby="materialDelivery">
+                                    <div class="container d-flex justify-content-center py-sm-3 py-md-4 py-lg-5">
+                                        <div class="col-3">
+                                            <div class="list-block">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Доставка асфальта</a></li>
+                                                    <li><a href="">Доставка бетона</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="list-block">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Доставка грунта</a></li>
+                                                    <li><a href="">Доставка песка</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="list-block">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Доставка щебня</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " href="requests.html">Заявки</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="freightTransportation" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Грузоперевозки</a>
+                                <div class="dropdown-menu position-absolute mt-0 border-0"
+                                     aria-labelledby="freightTransportation">
+                                    <div class="container d-flex justify-content-center py-sm-3 py-md-4 py-lg-5">
+                                        <div class="col-3">
+                                            <div class="list-block">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Бензовозы</a></li>
+                                                    <li><a href="">Водовозы</a></li>
+                                                    <li><a href="">Газели</a></li>
+                                                    <li><a href="">Длинномеры</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="list-block">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Камазы</a></li>
+                                                    <li><a href="">Лесовозы</a></li>
+                                                    <li><a href="">Рефрижераторы</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="list-block">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="">Тралы</a></li>
+                                                    <li><a href="">Фуры</a></li>
+                                                    <li><a href="">Эвакуаторы</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <!-- Кнопка сдать технику -->
-                    <div class="rent-equip col-3 col-md-3 col-lg-2 d-none d-sm-block d-lg-none">
-                        <button type="button" class="btn btn-warning rent w-100" data-toggle="modal" data-target="#placeVehicleModal">Сдать технику</button>
-                    </div>
-                </div>
-            </nav>
-            <!-- Нижняя навигация -->
-            <nav class="navbar nav-second d-none d-sm-block p-0 fw-l">
-                <div class="container px-0">
-                    <div class="bottom-nav d-flex align-items-center justify-content-between row position-static no-gutters flex-nowrap col px-0">
-                        <!-- Главное лого -->
-                        <div class="brand col-md-2 d-flex flex-column align-items-center position-relative">
-                            <img src="img/logo.png" alt=" ">
-                            <span class="brand-text px-3 py-0 position-absolute">Спецтехникофф</span>
-                        </div>
-                        <!-- Главное меню -->
-                        <div class="cat-right-block col-10 col-md-9 col-lg-8 col-xl-7 position-static">
-                            <ul class="nav nav-pills d-flex flex-row justify-content-between row no-gutters h-100">
-
-                                <li class="nav-item dropdown show position-static">
-                                    <a class="nav-link" href="#" id="equipmentRental" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Аренда техники</a>
-                                    <div class="dropdown-menu position-absolute mt-0 border-0" aria-labelledby="equipmentRental">
-                                        <div class="container d-flex justify-content-center py-sm-3 py-md-4 py-lg-5">
-                                            <div class="col-4">
-                                                <div class="list-block mb-sm-3 mb-md-4">
-                                                    <p class="title-list-block mb-sm-2 mb-md-3">Аренда экскаваторов</p>
-                                                    <ul class="list-parent list-unstyled pl-2">    
-                                                        <li><a href="">Гусеничные экскаваторы</a></li>
-                                                        <li><a href="">Колесные экскаваторы</a></li>
-                                                        <li><a href="">Мини-экскаваторы</a></li>
-                                                        <li><a href="">Эксваторы погрузчики</a></li>
-                                                        <li><a href="">Плавающие экскаваторы</a></li>
-                                                        <li><a href="">Экскаваторы-разрушители</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list-block">
-                                                    <p class="title-list-block mb-sm-2 mb-md-3">Аренда погрузчиков</p>
-                                                    <ul class="list-parent list-unstyled pl-2">    
-                                                        <li><a href="">Фронтальный погрузчики</a></li>
-                                                        <li><a href="">Мини-погрузчики</a></li>
-                                                        <li><a href="">Погрузчики вилочные</a></li>
-                                                        <li><a href="">Погрузчики телескопические</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-4">
-                                                <div class="list-block">
-                                                    <p class="title-list-block mb-sm-2 mb-md-3">Аренда кранов</p>
-                                                    <ul class="list-parent list-unstyled pl-2">
-                                                        <li><a href="">Автокраны</a></li>
-                                                        <li><a href="">Башенные краны</a></li>
-                                                        <li><a href="">Манипуляторы</a></li>
-                                                    </ul>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Автовышки</a></li>
-                                                        <li><a href="">Самосвалы</a></li>
-                                                        <li><a href="">Бульдозеры</a></li>
-                                                        <li><a href="">Ямобуры</a></li>
-                                                        <li><a href="">Бетононасосы</a></li>
-                                                        <li><a href="">Автобетоносмесители</a></li>
-                                                        <li><a href="">Длинномеры</a></li>
-                                                        <li><a href="">Поливомоечные машины</a></li>
-                                                        <li><a href="">Тракторы</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-4">
-                                                <div class="list-block">
-                                                    <p class="title-list-block mb-sm-2 mb-md-3">Аренда катков</p>
-                                                    <ul class="list-parent list-unstyled pl-2">
-                                                        <li><a href="">Грунтовые катки</a></li>
-                                                        <li><a href="">Дорожные катки</a></li>
-                                                        <li><a href="">Тротуарные катки</a></li>
-                                                    </ul>
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Низкорамные тралы</a></li>
-                                                        <li><a href="">Илососы</a></li>
-                                                        <li><a href="">Компрессоры</a></li>
-                                                        <li><a href="">Автогрейдеры</a></li>
-                                                        <li><a href="">Мусоровозы</a></li>
-                                                        <li><a href="">Гидромолоты</a></li>
-                                                        <li><a href="">Грейферы</a></li>
-                                                        <li><a href="">Асфальтоукладчики</a></li>
-                                                        <li><a href="">Дорожные фрезы</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item dropdown show position-static">
-                                    <a class="nav-link" href="#" id="services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
-                                    <div class="dropdown-menu position-absolute mt-0 border-0" aria-labelledby="services">
-                                        <div class="container d-flex justify-content-center py-sm-3 py-md-4 py-lg-5">
-                                            <div class="col-4">
-                                                <div class="list-block">
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Асфальтирование дорог</a></li>
-                                                        <li><a href="">Бестраншейная замена коммуникаций</a></li>
-                                                        <li><a href="">Бурение колодцев</a></li>
-                                                        <li><a href="">Бурение под сваи</a></li>
-                                                        <li><a href="">Вывоз ЖБО</a></li>
-                                                        <li><a href="">Вывоз мусора</a></li>
-                                                        <li><a href="">Выкапывание ямы под септик</a></li>
-                                                        <li><a href="">Выкорчевка</a></li>
-                                                        <li><a href="">Горизонтальное бурение</a></li>
-                                                        <li><a href="">Грейдирование дорог</a></li>
-                                                        <li><a href="">Демонтаж асфальта</a></li>
-                                                        <li><a href="">Дорожные работы</a></li>
-                                                        <li><a href="">Забивка свай под дом </a></li>
-                                                        <li><a href="">Малоэтажное строительство</a></li> 
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="list-block">
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Монтаж железобетонных конструкций</a></li>
-                                                        <li><a href="">Осушение котлованов, траншей, ливневок и отстойников</a></li>
-                                                        <li><a href="">Отвал грунта, разработка каналов</a></li>
-                                                        <li><a href="">Откачка выгребной ямы</a></li>
-                                                        <li><a href="">Откачка ила, песка и шлама</a></li>
-                                                        <li><a href="">Откачка канализации</a></li>
-                                                        <li><a href="">Откачка септика</a></li>
-                                                        <li><a href="">Прокладка водопровода, канализации</a></li>
-                                                        <li><a href="">Прокладка теплотрассы</a></li>
-                                                        <li><a href="">Грейдирование дорог</a></li>
-                                                        <li><a href="">Уборка снега</a></li>
-                                                        <li><a href="">Снос зданий и разрушение зданий</a></li> 
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" id="materialDelivery" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Доставка материалов</a>
-                                    <div class="dropdown-menu position-absolute mt-0 border-0" aria-labelledby="materialDelivery">
-                                        <div class="container d-flex justify-content-center py-sm-3 py-md-4 py-lg-5">
-                                            <div class="col-3">
-                                                <div class="list-block">
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Доставка асфальта</a></li>
-                                                        <li><a href="">Доставка бетона</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="list-block">
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Доставка грунта</a></li>
-                                                        <li><a href="">Доставка песка</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="list-block">
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Доставка щебня</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link " href="requests.html">Заявки</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" id="freightTransportation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Грузоперевозки</a>
-                                    <div class="dropdown-menu position-absolute mt-0 border-0" aria-labelledby="freightTransportation">
-                                        <div class="container d-flex justify-content-center py-sm-3 py-md-4 py-lg-5">
-                                            <div class="col-3">
-                                                <div class="list-block">
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Бензовозы</a></li>
-                                                        <li><a href="">Водовозы</a></li>
-                                                        <li><a href="">Газели</a></li>
-                                                        <li><a href="">Длинномеры</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="list-block">
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Камазы</a></li>
-                                                        <li><a href="">Лесовозы</a></li>
-                                                        <li><a href="">Рефрижераторы</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="list-block">
-                                                    <ul class="list-unstyled">
-                                                        <li><a href="">Тралы</a></li>
-                                                        <li><a href="">Фуры</a></li>
-                                                        <li><a href="">Эвакуаторы</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Кнопка сдать технику -->
-                        <div class="rent-equip col-md-2 col-lg-2 d-sm-none d-lg-block">
-                            <button class="btn btn-warning rent w-100" data-toggle="modal" data-target="#placeVehicleModal">Сдать технику</button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- Блок с поиском техники и преимуществами -->
-        <section class="main-1">
-            <div class="container d-flex flex-column flex-column-sm-reverse">
-                <div class="top-content pt-sm-5">
-                    <div class=" d-none d-sm-block">
-                        <h1 class="title fw-b">Аренда спецтехники в городе от собственников</h1>
-                        <p class="your-equip">Ваш заказ получит <strong>1256</strong> владельцев техники</p>
-                    </div>
-                    <div class="d-flex flex-column flex-sm-column-reverse">
-                        <!-- Блок преимуществ -->
-                        <div class="feature-block d-flex col-md-12 flex-column flex-sm-row p-0 no-gutters row py-4 py-lg-5 justify-content-between">
-
-                            <div class="col-md-4 col-lg-3 p-0 py-2 card_desc card">
-                                <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
-                                    <div class="col-2 col-sm-3 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center">
-                                        <img src="./img/feature1.svg" class="icon" alt=" ">
-                                    </div>
-                                    <div class="col d-flex flex-column mt-sm-2 mt-lg-3">
-                                        <p class="card-title pb-1 align-self-sm-center">Оставьте заявку</p>
-                                        <p class="card-text d-sm-none d-lg-block text-lg-center">Мы подберем для Вас любую технику. Подача техники в день обращения</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-3 p-0 py-2 card_desc card">
-                                <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
-                                    <div class="col-2 col-sm-3 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center justify-content-center">
-                                        <img src="./img/feature2.svg" class="" alt=" ">
-                                    </div>
-                                    <div class="col d-flex flex-column mt-sm-2 mt-lg-3">
-                                        <p class="card-title pb-1 align-self-sm-center">Сравните предложения</p>
-                                        <p class="card-text d-sm-none d-lg-block text-lg-center">Изучите предложения исполнителей, сравните их условия и цены на вашу работу</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-3 p-0 py-2 card_desc card">
-                                <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
-                                    <div class="col-2 col-sm-3 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center justify-content-center">
-                                        <img src="./img/feature3.svg" class="align-self-end w-75" alt=" ">
-                                    </div>
-                                    <div class="col d-flex flex-column mt-sm-2 mt-lg-3">
-                                        <p class="card-title pb-1 align-self-sm-center">Договоритесь напрямую</p>
-                                        <p class="card-text d-sm-none d-lg-block text-lg-center">Связывайтесь с потенциальными исполнителямии и обсуждайте детали заказа по телефону</p>
-                                    </div>
-                                </div>     
-                            </div>
-                        </div>
-                        <!-- Форма быстрого поиска техники -->
-                        <div class="search-form">
-                            <form action="#" class="">
-                                <div class="form-row ">
-                                    <div class="form-group  mb-0 col-md-6 col-lg-5">
-                                        <input type="text" class="form-control mb-2" placeholder="Какая техника требуется?">
-                                        <p class="label-input mb-2 d-none d-sm-block">Например: <a href="#" class="und">Дорожный каток</a></p>
-                                    </div>
-                                    <div class="form-group col-md-3 col-lg-2 d-none d-sm-block">
-                                        <input type="text" class="form-control" placeholder="Какой город?" value="Казань">
-                                    </div>
-                                    <div class="form-group col-md-3 col-lg-2">
-                                        <button type="submit" class="btn btn-warning w-100" data-toggle="modal" data-target="#applicationModal">Заказать</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div> 
-                </div>
-                
-                <!-- Ссылки на мобильное приложение -->
-                <div class="bottom-icon col-8 align-self-end justify-content-end pb-5 d-none d-sm-flex">
-                    <div class="store_link row no-gutters justify-content-end flex-nowrap">
-                        <a href="" class="mr-3 mr-lg-4 col-4 col-md-4 col-xl-5">
-                            <img class="w-100" src="./img/icons/google-play.svg" alt=" " title="Перейти в Google Play">
-                        </a>
-                        <a href="" class="col-4 col-md-4 col-xl-5">
-                            <img class="w-100" src="./img/icons/app-store.svg" alt=" " title="Перейти в App Store">
-                        </a>
+                    <div class="rent-equip col-md-2 col-lg-2 d-sm-none d-lg-block">
+                        <button class="btn btn-warning rent w-100" data-toggle="modal" data-target="#placeVehicleModal">
+                            Сдать технику
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-    </article>
+        </nav>
+    </header>
+    <!-- Блок с поиском техники и преимуществами -->
+    <section class="main-1">
+        <div class="container d-flex flex-column flex-column-sm-reverse">
+            <div class="top-content pt-sm-5">
+                <div class=" d-none d-sm-block">
+                    <h1 class="title fw-b">Аренда спецтехники в городе от собственников</h1>
+                    <p class="your-equip">Ваш заказ получит <strong>1256</strong> владельцев техники</p>
+                </div>
+                <div class="d-flex flex-column flex-sm-column-reverse">
+                    <!-- Блок преимуществ -->
+                    <div class="feature-block d-flex col-md-12 flex-column flex-sm-row p-0 no-gutters row py-4 py-lg-5 justify-content-between">
 
-    <!-- Блок-слайдер с популярной категорией техники -->
-
-
-    <section class="category py-3 py-md-5"> 
-        <h1 class="title text-center pb-2">Популярные категории</h1>
-        <div class="container py-2">
-            <div class="slide-category">
-                <div  class="carousel col-10 col-md-12 mx-auto">
-
-                    <div class="card col-12 col-sm-4 col-lg-3">
-                        
-                        <img src="img/tractor.jpg" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer">
-                        
-                            <p class="card-title">Дорожно-строительная 
-                                    техника</p>
-                        
+                        <div class="col-md-4 col-lg-3 p-0 py-2 card_desc card">
+                            <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
+                                <div class="col-2 col-sm-3 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center">
+                                    <img src="./img/feature1.svg" class="icon" alt=" ">
+                                </div>
+                                <div class="col d-flex flex-column mt-sm-2 mt-lg-3">
+                                    <p class="card-title pb-1 align-self-sm-center">Оставьте заявку</p>
+                                    <p class="card-text d-sm-none d-lg-block text-lg-center">Мы подберем для Вас любую
+                                        технику. Подача техники в день обращения</p>
+                                </div>
+                            </div>
                         </div>
-                    
-                    </div>
-                    <div class="card col-12 col-sm-4 col-lg-3">
-                        
-                        <img src="img/wrwLvJM.jpg" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer">
-                        
-                            <p class="card-title">Транспорт</p>
-                        
+                        <div class="col-md-4 col-lg-3 p-0 py-2 card_desc card">
+                            <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
+                                <div class="col-2 col-sm-3 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center justify-content-center">
+                                    <img src="./img/feature2.svg" class="" alt=" ">
+                                </div>
+                                <div class="col d-flex flex-column mt-sm-2 mt-lg-3">
+                                    <p class="card-title pb-1 align-self-sm-center">Сравните предложения</p>
+                                    <p class="card-text d-sm-none d-lg-block text-lg-center">Изучите предложения
+                                        исполнителей, сравните их условия и цены на вашу работу</p>
+                                </div>
+                            </div>
                         </div>
-                    
-                    </div>
-
-
-
-                    <div class="card col-12 col-sm-4 col-lg-3">
-                        
-                        <img src="img/ZK9mmOR.jpg" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer">
-                        
-                            <p class="card-title">Подъемная техника</p>
-                        
+                        <div class="col-md-4 col-lg-3 p-0 py-2 card_desc card">
+                            <div class="card-body d-flex flex-row flex-sm-column align-items-md-center p-0 row no-gutters">
+                                <div class="col-2 col-sm-3 col-lg-4 mr-3 mr-sm-0 d-flex align-self-center justify-content-center">
+                                    <img src="./img/feature3.svg" class="align-self-end w-75" alt=" ">
+                                </div>
+                                <div class="col d-flex flex-column mt-sm-2 mt-lg-3">
+                                    <p class="card-title pb-1 align-self-sm-center">Договоритесь напрямую</p>
+                                    <p class="card-text d-sm-none d-lg-block text-lg-center">Связывайтесь с
+                                        потенциальными исполнителямии и обсуждайте детали заказа по телефону</p>
+                                </div>
+                            </div>
                         </div>
-                    
                     </div>
+                    <!-- Форма быстрого поиска техники -->
+                    <div class="search-form  ">
+                        <div class="order-content w-100 col-12">
+                            <div class="container mt-2">
+                                <span class="order-title ml-2 font-weight-bold text-warning">Оставить заявку</span>
+                                <div class="content-flex d-sm-flex mt-2">
+                                    <div class="form-group col-md-6">
+                                        <label for="exampleInputEmail1">Название техники</label>
+                                        <input type="text" class="form-control" placeholder="Какая техника требуется?">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="exampleInputEmail1">Выберите тип</label>
+                                        <select class="form-control" placeholder="Какая техника требуется?">
+                                            <option value="">Выберите тип</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            <div class="content-flex d-sm-flex">
+                                <div class="form-group col-md-6">
+                                    <label for="">Когда нужно</label>
+                                    <div class="d-flex justify-content-around ">
+                                        <input type="text" class="form-control col-md-6  "
+                                               placeholder="Выберите с какого">
+                                        <input type="text" class="form-control col-md-6 ml-2"
+                                               placeholder="Выберите с какого">
+                                    </div>
 
-                    <div class="card col-12 col-sm-4 col-lg-3">
-                        
-                        <img src="img/kran.jpg" class="card-img-top" alt="...">
-                        
-                        <div class="card-footer">
-                        
-                            <p class="card-title">Землеройная техника</p>
-                        
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Вид работ*</label>
+                                    <textarea name="" id="typeWork" cols="30" rows="2" class="form-control">Опишите вид проводимых работ</textarea>
+                                </div>
+                            </div>
+                            <div class="content-flex d-sm-flex">
+                                <div class="form-group col-md-6">
+                                    <label for="">Место проведения работ</label>
+                                    <input type="text" id="workLocation" class="form-control"
+                                           placeholder="Где будут проводиться работы, район">
+                                </div>
+                                <div class="form-group   col-md-6 col-lg-6 ">
+                                    <label for="" class="col-md-3">Оплата*</label>
+                                    <select name="" id="typePayment2" class="order_select form-control ">
+                                        <option value="">Выберите вид оплаты</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="content-flex d-sm-flex">
+                                <div class="form-group  col-md-6 col-lg-6 ">
+                                    <label for="" class="col-md-3">Имя*</label>
+                                    <input type="text" id="nameInput2" class="form-control " placeholder="Ваше имя">
+                                </div>
+                                <div class="form-group   col-md-6 col-lg-6 ">
+                                    <label for="">Номер телефона*</label>
+                                    <input type="tel" id="telInput2" class="form-control "
+                                           placeholder="Введите ваш номер">
+                                </div>
+                            </div>
+
+                            <div class="form-row flex-nowrap justify-content-between col-md-12 mx-0 w-100 mt-2 mb-sm-3">
+                                <button class="btn  btn-warning px-4 px-lg-5 flex-grow-1 flex-sm-grow-0">Заказать
+                                </button>
+                                <div class="col-sm-7 d-none d-sm-flex justify-content-between p-0">
+                                    <button class=" wh-btn border-warning text-warning px-1 flex-grow-1 mr-2"
+                                            data-toggle="modal" data-target="#searchOnMapModal"
+                                            data-dismiss="modal">Искать на карте
+                                    </button>
+                                    <button class=" wh-btn  border-warning text-warning px-1 flex-grow-1" disabled>
+                                        Искать в объявлениях
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-row policy col-md-12 flex-nowrap mt-2 align-items-lg-center">
+                                <input type="checkbox" checked id="policy" class=" hidden-xs-up mr-2 mb-3 mt-1 mt-lg-0 policy-check">
+                                <label class="cbx" for="policy"></label>
+                                <label  for="policy" class="lbl mb-3 text-light">Я согласен с <a href=""> конфиденциальности</a> и обработкой персональных данных</label>
+                            </div>
                         </div>
-                    
                     </div>
 
-                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-    <!-- Блок поиск на карте -->
-    <section class="search-map px-3 py-4 px-md-5">
-        <div class="container d-flex flex-column flex-sm-row justify-content-between justify-content-lg-around align-items-center">
-            <h1 class="title-content">Ищите необходимую технику на карте</h1>
-            <button class="btn search-on-map align-self-stretch align-self-md-center py-1" data-toggle="modal" data-target="#searchOnMapModal">Искать на карте</button>
+        <!-- Ссылки на мобильное приложение -->
+        <div class="bottom-icon col-8 align-self-end justify-content-end pb-5 d-none d-sm-flex">
+            <div class="store_link row no-gutters justify-content-end flex-nowrap">
+                <a href="" class="mr-3 mr-lg-4 col-4 col-md-4 col-xl-5">
+                    <img class="w-100" src="./img/icons/google-play.svg" alt=" " title="Перейти в Google Play">
+                </a>
+                <a href="" class="col-4 col-md-4 col-xl-5">
+                    <img class="w-100" src="./img/icons/app-store.svg" alt=" " title="Перейти в App Store">
+                </a>
+            </div>
+        </div>
         </div>
     </section>
+</article>
+
+<!-- Блок-слайдер с популярной категорией техники -->
 
 
+<section class="category py-3 py-md-5">
+    <h1 class="title text-center pb-2">Популярные категории</h1>
+    <div class="container py-2">
+        <div class="slide-category">
+            <div class="carousel col-10 col-md-12 mx-auto">
 
-    <section class="item-container py-md-4 py-lg-5">
-        <div class="container d-flex flex-column flex-md-row px-0">
-            <!-- Левая колонка -->
-            <div class="left-block col-md-3 d-flex flex-column px-3 pl-md-0" id="categories">
-                <h1 class="title-block align-self-center align-self-md-start my-3 mb-lg-4">Категории</h1>
-                <!-- Блок со списком строительной техники -->
-                <div class="list-block">
-                    <a data-toggle="collapse" href="#firstList" role="button" aria-expanded="false" aria-controls="firstList"
-                     class="title-list-block py-1 mb-2" title="Раскрыть список">Строительная техника</a>
-                    <ul class="cat-list collapse " id="firstList">
-                        <li class="cat-item"><a href="#">Автовышки</a></li>
-                        <li class="cat-item"><a href="#">Автогрейдеры</a></li>
-                        <li class="cat-item"><a href="#">Автокраны</a></li>
-                        <li class="cat-item"><a href="#">Асфальтоукладчики</a></li>
-                        <li class="cat-item"><a href="#">Бетононасосы</a></li>
-                        <li class="cat-item"><a href="#">Бульдозеры</a></li>
-                        <li class="cat-item"><a href="#">Гидромолоты</a></li>
-                        <li class="cat-item"><a href="#">ГНБ</a></li>
-                        <li class="cat-item"><a href="#">Катки</a></li>
-                        <li class="cat-item"><a href="#">Краны</a></li>
-                        <li class="cat-item"><a href="#">Манипуляторы</a></li>
-                        <li class="cat-item"><a href="#">Миксеры</a></li>
-                        <li class="cat-item"><a href="#">Погрузчики</a></li>
-                        <li class="cat-item"><a href="#">Самосвалы</a></li>
-                        <li class="cat-item"><a href="#">Сваебои</a></li>
-                        <li class="cat-item"><a href="#">Тракторы</a></li>
-                        <li class="cat-item"><a href="#">Трубоукладчики</a></li>
-                        <li class="cat-item"><a href="#">Фреза</a></li>
-                        <li class="cat-item"><a href="#">Экскаваторы</a></li>
-                        <li class="cat-item"><a href="#">Ямобуры</a></li>
-                    </ul>
-                </div>
-                <!-- Блок со списком грузоперевозок -->
-                <div class="list-block">
-                    <a data-toggle="collapse" href="#secondList" role="button" aria-expanded="false"
-                     aria-controls="secondList" class="title-list-block py-1 mb-2" title="Раскрыть список">Грузоперевозки</a>
-                    <ul class="cat-list collapse " id="secondList">
-                        <li class="cat-item"><a href="#">Бензовозы</a></li>
-                        <li class="cat-item"><a href="#">Водовозы</a></li>
-                        <li class="cat-item"><a href="#">Газели</a></li>
-                        <li class="cat-item"><a href="#">Длинномеры</a></li>
-                        <li class="cat-item"><a href="#">Камазы</a></li>
-                        <li class="cat-item"><a href="#">Лесовозы</a></li>
-                        <li class="cat-item"><a href="#">Рефрижераторы</a></li>
-                        <li class="cat-item"><a href="#">Тралы</a></li>
-                        <li class="cat-item"><a href="#">Фуры</a></li>
-                        <li class="cat-item"><a href="#">Эвакуаторы</a></li>
-                    </ul>
-                </div>
+                <div class="card col-12 col-sm-4 col-lg-3">
 
-                <!-- Блок заказ в 2 клика -->
-                    <div class="double-click-section in-main-page">
-                        <!-- Заголовок -->
-                        <p class="title-list-block py-1 mb-2">Заказ в 2 клика</p>
-                        <!-- Контейнер с заявками в 2 клика -->
-                        <div class="list-block d-flex flex-wrap flex-md-column mb-2 justify-content-between justify-sm-content-around justify-items-between">
-                            <div class="card text-center flex-shrink-0">
-                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                                <div class="card-body p-2">
-                                    <span class="card-title">Гидромолот-экскаватор</span>
-                                </div> 
-                                <div class="card-footer">
-                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                                </div>  
-                            </div>
-                            <div class="card text-center flex-shrink-0">  
-                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                                <div class="card-body p-2">
-                                    <span class="card-title">Гидромолот-экскаватор</span>
-                                </div> 
-                                <div class="card-footer">
-                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                                </div>  
-                            </div>
+                    <img src="img/tractor.jpg" class="card-img-top" alt="...">
 
-                            <div class="card text-center flex-shrink-0">
-                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                                <div class="card-body p-2">
-                                    <span class="card-title">Гидромолот-экскаватор</span>
-                                </div> 
-                                <div class="card-footer">
-                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                                </div>  
-                            </div>
+                    <div class="card-footer">
 
-                            <div class="card text-center flex-shrink-0">  
-                                <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
-                                <div class="card-body p-2">
-                                    <span class="card-title">Гидромолот-экскаватор</span>
-                                </div> 
-                                <div class="card-footer">
-                                    <button class="order yel-btn">цена от 1200 ₽/ч</button>
-                                </div>  
-                            </div>
-                        </div>
+                        <p class="card-title">Дорожно-строительная
+                            техника</p>
+
                     </div>
 
-                <!-- Блок с заявками -->
-                <div class="applications-section">
-                    <a data-toggle="collapse" href="#thirdList" role="button" aria-expanded="false" aria-controls="thirdList"
-                     class="title-list-block py-1 mb-2" title="Раскрыть список">Заявки</a>
-                    <div class="collapse" id="thirdList">
-                        <div class="list-block d-flex flex-md-column mb-3 row">
-                            <!-- Мини-карточка заявки -->
-                            <div class="card col-sm-4 col-md">
-                                <div class="card-header">
-                                    <div class="cad-title">
-                                        Эвакуатор-погрузчик JSB 1СХ
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен от 2 до 5.
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <button class="order number py-1 px-2">+7 показать номер</button>
-                                </div>
-                            </div>
-                            <!-- Конец мини-карточки -->
-
-                            <!-- Мини-карточка заявки -->
-                            <div class="card col-sm-4 col-md">
-                                <div class="card-header">
-                                    <div class="cad-title">
-                                        Эвакуатор-погрузчик JSB 1СХ
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен от 2 до 5.
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <button class="order number py-1 px-2">+7 показать номер</button>
-                                </div>
-                            </div>
-                            <!-- Конец мини-карточки -->
-
-                            <!-- Мини-карточка заявки -->
-                            <div class="card col-sm-4 col-md">
-                                <div class="card-header">
-                                    <div class="cad-title">
-                                        Эвакуатор-погрузчик JSB 1СХ
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен от 2 до 5.
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <button class="order number py-1 px-2">+7 показать номер</button>
-                                </div>
-                            </div>
-                            <!-- Конец мини-карточки -->
-
-                        </div>
-                    </div>
                 </div>
+                <div class="card col-12 col-sm-4 col-lg-3">
+
+                    <img src="img/wrwLvJM.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-footer">
+
+                        <p class="card-title">Транспорт</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card col-12 col-sm-4 col-lg-3">
+
+                    <img src="img/ZK9mmOR.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-footer">
+
+                        <p class="card-title">Подъемная техника</p>
+
+                    </div>
+
+                </div>
+
+                <div class="card col-12 col-sm-4 col-lg-3">
+
+                    <img src="img/kran.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-footer">
+
+                        <p class="card-title">Землеройная техника</p>
+
+                    </div>
+
+                </div>
+
             </div>
-            <!-- Конец левой колонки -->
+        </div>
+    </div>
+</section>
 
-            <!-- ОБЪЯВЛЕНИЯ правая колонка -->
-            <div class="right-block col-12 col-md-9 p-0 d-flex flex-column" id="item-block">
+<!-- Блок поиск на карте -->
+<section class="search-map px-3 py-4 px-md-5">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between justify-content-lg-around align-items-center">
+        <h1 class="title-content">Ищите необходимую технику на карте</h1>
+        <button class="btn search-on-map align-self-stretch align-self-md-center py-1" data-toggle="modal"
+                data-target="#searchOnMapModal">Искать на карте
+        </button>
+    </div>
+</section>
+
+
+<section class="item-container py-md-4 py-lg-5">
+    <div class="container d-flex flex-column flex-md-row px-0">
+        <!-- Левая колонка -->
+        <div class="left-block col-md-3 d-flex flex-column px-3 pl-md-0" id="categories">
+            <h1 class="title-block align-self-center align-self-md-start my-3 mb-lg-4">Категории</h1>
+            <!-- Блок со списком строительной техники -->
+            <div class="list-block">
+                <a data-toggle="collapse" href="#firstList" role="button" aria-expanded="false"
+                   aria-controls="firstList"
+                   class="title-list-block py-1 mb-2" title="Раскрыть список">Строительная техника</a>
+                <ul class="cat-list collapse " id="firstList">
+                    <li class="cat-item"><a href="#">Автовышки</a></li>
+                    <li class="cat-item"><a href="#">Автогрейдеры</a></li>
+                    <li class="cat-item"><a href="#">Автокраны</a></li>
+                    <li class="cat-item"><a href="#">Асфальтоукладчики</a></li>
+                    <li class="cat-item"><a href="#">Бетононасосы</a></li>
+                    <li class="cat-item"><a href="#">Бульдозеры</a></li>
+                    <li class="cat-item"><a href="#">Гидромолоты</a></li>
+                    <li class="cat-item"><a href="#">ГНБ</a></li>
+                    <li class="cat-item"><a href="#">Катки</a></li>
+                    <li class="cat-item"><a href="#">Краны</a></li>
+                    <li class="cat-item"><a href="#">Манипуляторы</a></li>
+                    <li class="cat-item"><a href="#">Миксеры</a></li>
+                    <li class="cat-item"><a href="#">Погрузчики</a></li>
+                    <li class="cat-item"><a href="#">Самосвалы</a></li>
+                    <li class="cat-item"><a href="#">Сваебои</a></li>
+                    <li class="cat-item"><a href="#">Тракторы</a></li>
+                    <li class="cat-item"><a href="#">Трубоукладчики</a></li>
+                    <li class="cat-item"><a href="#">Фреза</a></li>
+                    <li class="cat-item"><a href="#">Экскаваторы</a></li>
+                    <li class="cat-item"><a href="#">Ямобуры</a></li>
+                </ul>
+            </div>
+            <!-- Блок со списком грузоперевозок -->
+            <div class="list-block">
+                <a data-toggle="collapse" href="#secondList" role="button" aria-expanded="false"
+                   aria-controls="secondList" class="title-list-block py-1 mb-2"
+                   title="Раскрыть список">Грузоперевозки</a>
+                <ul class="cat-list collapse " id="secondList">
+                    <li class="cat-item"><a href="#">Бензовозы</a></li>
+                    <li class="cat-item"><a href="#">Водовозы</a></li>
+                    <li class="cat-item"><a href="#">Газели</a></li>
+                    <li class="cat-item"><a href="#">Длинномеры</a></li>
+                    <li class="cat-item"><a href="#">Камазы</a></li>
+                    <li class="cat-item"><a href="#">Лесовозы</a></li>
+                    <li class="cat-item"><a href="#">Рефрижераторы</a></li>
+                    <li class="cat-item"><a href="#">Тралы</a></li>
+                    <li class="cat-item"><a href="#">Фуры</a></li>
+                    <li class="cat-item"><a href="#">Эвакуаторы</a></li>
+                </ul>
+            </div>
+
+            <!-- Блок заказ в 2 клика -->
+            <div class="double-click-section in-main-page">
                 <!-- Заголовок -->
-                <div class="col-md-12">
-                    <h1 id="ads" class="title-block align-self-center align-self-md-start my-3 mb-lg-4 float-left">Объявления</h1>
-                    <button type="button" class="btn btn-warning float-right mt-2 "  data-toggle="collapse" data-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
-                        <i class="fas fa-filter"></i> Фильтр
-                    </button>
-                </div>
-                <!-- Контейнер для карточек -->
-                <div class="card-block">
-                    <!-- Карточка -->
-                    <div class="card mb-3 rounded-0">
-                        <div class="card-body d-flex flex-column flex-sm-row">
-                            <div class="align-self-md-stretch card-thumb" style="background-image: url('./img/items/camas.png')"></div>
-                            <div class="right-side-card col-md-7 p-3 pb-4 pb-md-3">
-                                <p class="card-title">Автовышка АГП-28</p>
-                                <div class="card-prop">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">Рабочая высота подъема</th>
-                                                <td>28 м</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Грузоподъемность люльки</th>
-                                                <td>300 кг</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Максимальный вылет стрелы</th>
-                                                <td>13 м</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Угол поворота</th>
-                                                <td>360<sup> o</sup></td></tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="cost-content font-weight-bold">
-                                    <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
-                                    <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
-                                    <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
-                                </div>
-                                <div class="card-bottom-content font-weight-bold">
-                                    <button class="more">Подробнее</button>
-                                    <button class="order px-4" data-toggle="modal" data-target="#rentalModal">Заказать</button>
-                                    <button class="number d-none d-lg-block">+7 показать номер</button>
-                                </div>
-                            </div>
+                <p class="title-list-block py-1 mb-2">Заказ в 2 клика</p>
+                <!-- Контейнер с заявками в 2 клика -->
+                <div class="list-block d-flex flex-wrap flex-md-column mb-2 justify-content-between justify-sm-content-around justify-items-between">
+                    <div class="card text-center flex-shrink-0">
+                        <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
+                        <div class="card-body p-2">
+                            <span class="card-title">Гидромолот-экскаватор</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="order yel-btn">цена от 1200 ₽/ч</button>
                         </div>
                     </div>
-                    <div class="card mb-3 rounded-0">
-                        <div class="card-body d-flex flex-column flex-sm-row">
-                            <div class="align-self-md-stretch card-thumb" style="background-image: url('./img/items/camas.png')"></div>
-                            <div class="right-side-card col-md-7 p-3 pb-4 pb-md-3">
-                                <p class="card-title">Автовышка АГП-28</p>
-                                <div class="card-prop">
-                                    <table class="table">
-                                        <tbody>
-                                        <tr>
-                                            <th scope="row">Рабочая высота подъема</th>
-                                            <td>28 м</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Грузоподъемность люльки</th>
-                                            <td>300 кг</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Максимальный вылет стрелы</th>
-                                            <td>13 м</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Угол поворота</th>
-                                            <td>360<sup> o</sup></td></tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="cost-content font-weight-bold">
-                                    <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
-                                    <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа</div>
-                                    <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
-                                </div>
-                                <div class="card-bottom-content font-weight-bold">
-                                    <button class="more">Подробнее</button>
-                                    <button class="order px-4" data-toggle="modal" data-target="#rentalModal">Заказать</button>
-                                    <button class="number d-none d-lg-block">+7 показать номер</button>
-                                </div>
-                            </div>
+                    <div class="card text-center flex-shrink-0">
+                        <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
+                        <div class="card-body p-2">
+                            <span class="card-title">Гидромолот-экскаватор</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="order yel-btn">цена от 1200 ₽/ч</button>
+                        </div>
+                    </div>
+
+                    <div class="card text-center flex-shrink-0">
+                        <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
+                        <div class="card-body p-2">
+                            <span class="card-title">Гидромолот-экскаватор</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="order yel-btn">цена от 1200 ₽/ч</button>
+                        </div>
+                    </div>
+
+                    <div class="card text-center flex-shrink-0">
+                        <img class="card-img-top rounded-0" src="./img/items/camas.png" alt="">
+                        <div class="card-body p-2">
+                            <span class="card-title">Гидромолот-экскаватор</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="order yel-btn">цена от 1200 ₽/ч</button>
                         </div>
                     </div>
                 </div>
-                <!-- Конец контейнера с карточками -->
-                <!-- Кнопка больше объявлений -->
-                <div class="more-content mb-3 mt-0 mx-3 mx-md-0 align-self-stretch align-self-sm-start">
-                    <button class="more-items w-100 py-1 px-3">Больше объявлений</button>
-                </div>
             </div>
-            <!-- Конец правой колонки -->
-        </div>
-    </section>
 
+            <!-- Блок с заявками -->
+            <div class="applications-section">
+                <a data-toggle="collapse" href="#thirdList" role="button" aria-expanded="false"
+                   aria-controls="thirdList"
+                   class="title-list-block py-1 mb-2" title="Раскрыть список">Заявки</a>
+                <div class="collapse" id="thirdList">
+                    <div class="list-block d-flex flex-md-column mb-3 row">
+                        <!-- Мини-карточка заявки -->
+                        <div class="card col-sm-4 col-md">
+                            <div class="card-header">
+                                <div class="cad-title">
+                                    Эвакуатор-погрузчик JSB 1СХ
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен
+                                    от 2 до 5.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="order number py-1 px-2">+7 показать номер</button>
+                            </div>
+                        </div>
+                        <!-- Конец мини-карточки -->
 
+                        <!-- Мини-карточка заявки -->
+                        <div class="card col-sm-4 col-md">
+                            <div class="card-header">
+                                <div class="cad-title">
+                                    Эвакуатор-погрузчик JSB 1СХ
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен
+                                    от 2 до 5.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="order number py-1 px-2">+7 показать номер</button>
+                            </div>
+                        </div>
+                        <!-- Конец мини-карточки -->
 
-    <!-- Блок с описанием сервиса Спецтехникофф -->
-    <section class="service-block d-none d-sm-block mb-lg-4">
-        <div class="container">
-            <!-- Контейнер для картинки -->
-            <div class="left-block col-md-6">
-                <img src="./img/items/service-block.jpg" alt=" " class="card-image">
-            </div>
-            <!-- Правая колонка с текстом -->
-            <div class="right-block col-md-6">
-                <h1 class="title-block font-weight-bold">Сервис аренды спецтехники</h1>
-                <div class="desc-block">
-                    <p class="desc">Это крупнейший российский портал создан для удобной, простой и полезной систематизации
-                        информации как для заказчиков,
-                        так и для собственников спецтехники.
-                    </p>
-                    <p class="desc">На портале вы сможете моментально оформить заказ на необходимую спецтехнику заполнив
-                        формы. Также вы можете найти ближайшую технику самостоятельно на карте или изучить объявления о
-                        сдаче в аренду техники от собственников.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <!-- Мини-карточка заявки -->
+                        <div class="card col-sm-4 col-md">
+                            <div class="card-header">
+                                <div class="cad-title">
+                                    Эвакуатор-погрузчик JSB 1СХ
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Арендую эвакуатор-погрузчик JSB 1CX или его аналог, желательно два. По срокам нужен
+                                    от 2 до 5.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="order number py-1 px-2">+7 показать номер</button>
+                            </div>
+                        </div>
+                        <!-- Конец мини-карточки -->
 
-
-    <!-- Блок с рекламой мобильного приложения -->
-    <section class="on-app p-4 p-md-5 text-center text-sm-left">
-        <div class="container p-0 justify-content-start">
-            <div class="left-block app-screeen col-sm-4 col-md-3 col-lg-3 col-xl-3 d-none d-sm-block px-0 mr-3">
-                <img src="./img/items/apptel.svg" alt=" " class="screen">
-            </div>
-            <div class="right-block app-desc col-md-8">
-                <h1 class="title-block">Заказ техники и услуг всегда под рукой!</h1>
-                <p class="d-block d-sm-none font-weight-light">Загрузите мобильное приложение</p>
-                <div class="desc-block d-none d-sm-block py-lg-4">
-                    <p class="title-desc">Мобильное приложение это:</p>
-                    <ul class="p-sm-0 pl-lg-5 font-weight-light">
-                        <li class="desc-item"><i class="far fa-circle"></i>быстрый поиск спецтехники</li>
-                        <li class="desc-item"><i class="far fa-circle"></i>общение без посредников</li>
-                        <li class="desc-item"><i class="far fa-circle"></i>push-уведомления о новых заказах</li>
-                        <li class="desc-item"><i class="far fa-circle"></i>удобный поиск</li>
-                        <li class="desc-item"><i class="far fa-circle"></i>простое размещение заказа</li>
-                    </ul>
-                </div>
-                <!-- Ссылки на мобильное приложение -->
-                <div class="store-links d-flex justify-content-center justify-content-md-start row no-gutters col-sm-10 col-md-12">
-                    <a href="" class="mr-2 mr-md-3 col-5 col-md-3 col-lg-3">
-                        <img class="w-100" src="./img/icons/app-store.svg" alt=" " title="Перейти в App Store">
-                    </a>
-                    <a href="" class="col-5 col-md-3 col-lg-3">
-                        <img class="w-100" src="./img/icons/google-play.svg" alt=" " title="Перейти в Google Play">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- <div class="md-form" id="date">
-            <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
-            <label for="date-picker-example">Try me...</label>
-          </div> -->
-
-    <!-- Подвал -->
-    <footer class="py-4 py-md-5">
-        <div class="container d-none d-sm-flex">
-            <div class="col-md-4">
-                <div class="list-block">
-                    <p class="title-list-block">Аренда техники</p>
-                    <ul class="list-parent">    
-                        <li class="list-item"><a href="#">Автовышки</a></li>
-                        <li class="list-item"><a href="#">Автогрейдеры</a></li>
-                        <li class="list-item"><a href="#">Автокраны</a></li>
-                        <li class="list-item"><a href="#">Асфальтоукладчики</a></li>
-                        <li class="list-item"><a href="#">Бетононасосы</a></li>
-                        <li class="list-item"><a href="#">Бульдозеры</a></li>
-                        <li class="list-item"><a href="#">Гидромолоты</a></li>
-                        <li class="list-item"><a href="#">ГНБ</a></li>
-                        <li class="list-item"><a href="#">Катки</a></li>
-                        <li class="list-item"><a href="#">Краны</a></li>
-                        <li class="list-item"><a href="#">Манипуляторы</a></li>
-                        <li class="list-item"><a href="#">Миксеры</a></li>
-                        <li class="list-item"><a href="#">Погрузчики</a></li>
-                        <li class="list-item"><a href="#">Самосвалы</a></li>
-                        <li class="list-item"><a href="#">Сваебои</a></li>
-                        <li class="list-item"><a href="#">Тракторы</a></li>
-                        <li class="list-item"><a href="#">Трубоукладчики</a></li>
-                        <li class="list-item"><a href="#">Фреза</a></li>
-                        <li class="list-item"><a href="#">Экскаваторы</a></li>
-                        <li class="list-item"><a href="#">Ямобуры</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class=" col-md-4">
-                <div class="list-block">
-                    <p class="title-list-block">Грузоперевозки</p>
-                    <ul class="list-parent">
-                        <li class="list-item"><a href="#">Бензовозы</a></li>
-                        <li class="list-item"><a href="#">Водовозы</a></li>
-                        <li class="list-item"><a href="#">Газели</a></li>
-                        <li class="list-item"><a href="#">Длинномеры</a></li>
-                        <li class="list-item"><a href="#">Камазы</a></li>
-                        <li class="list-item"><a href="#">Лесовозы</a></li>
-                        <li class="list-item"><a href="#">Рефрижераторы</a></li>
-                        <li class="list-item"><a href="#">Тралы</a></li>
-                        <li class="list-item"><a href="#">Фуры</a></li>
-                        <li class="list-item"><a href="#">Эвакуаторы</a></li>
-                    </ul>
-                </div>
-                <div class="list-block">
-                    <p class="title-list-block">Доставка материалов</p>
-                    <ul class="list-parent">
-                        <li class="list-item"><a href="#">Доставка асфальта</a></li>
-                        <li class="list-item"><a href="#">Доставка бетона</a></li>
-                        <li class="list-item"><a href="#">Доставка грунта</a></li>
-                        <li class="list-item"><a href="#">Доставка песка</a></li>
-                        <li class="list-item"><a href="#">Доставка щебня</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class=" col-md-4">
-                <div class="list-block">
-                    <p class="title-list-block">Услуги</p>
-                    <ul class="list-parent">
-                        <li class="list-item"><a href="#">Асфальтирование дорог</a></li>
-                        <li class="list-item"><a href="#">Бестраншейная замена коммуникаций</a></li>
-                        <li class="list-item"><a href="#">Бурение колодцев</a></li>
-                        <li class="list-item"><a href="#">Бурение под сваи</a></li>
-                        <li class="list-item"><a href="#">Вывоз ЖБО</a></li>
-                        <li class="list-item"><a href="#">Вывоз мусора</a></li>
-                        <li class="list-item"><a href="#">Выкапывание ямы под септик</a></li>
-                        <li class="list-item"><a href="#">Выкорчевка</a></li>
-                        <li class="list-item"><a href="#">Горизонтальное бурение</a></li>
-                        <li class="list-item"><a href="#">Грейдирование дорог</a></li>
-                        <li class="list-item"><a href="#">Демонтаж асфальта</a></li>
-                        <li class="list-item"><a href="#">Дорожные работы</a></li>
-                        <li class="list-item"><a href="#">Забивка свай под дом</a></li>
-                        <li class="list-item"><a href="#">Малоэтажное строительство</a></li>
-                        <li class="list-item"><a href="#">Монтаж железобетонных конструкций</a></li>
-                        <li class="list-item"><a href="#">Осушение котлованов, траншей, ливневок и отстойников</a></li>
-                        <li class="list-item"><a href="#">Снос зданий и разрушение зданий</a></li>
-                        <li class="list-item"><a href="#">Уборка снега</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="companie col-md-12 d-flex flex-column flex-sm-row text-center text-sm-left">
-                <div class="policy">
-                    <a href="">Политика конфиденциальности</a>
-                    <a href="">Пользовательское соглашение</a>
-                </div>
-                <div class="contacts col-md-4 d-inline-block pr-0">
-                    <div class="item">
-                        <a href="">Сотрудничество и предложения</a>
-                    </div>
-                    <div class="item">
-                        <a href="">Контакты</a>
-                    </div>
-                </div>
-                <div class="copy col-md-4 pt-4 p-sm-0 text-center">
-                    <address class="copy-companie">@ 2019 г. ООО "Спецтехникофф"</address>
-                    <div class="icons">
-                        <a href="" title="Мы в Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="" title="Мы в Vkontakte"><i class="fab fa-vk"></i></a>
-                        <a href="" title="Написать нам в Telegram"><i class="fab fa-telegram-plane"></i></a>
-                        <a href="" title="Мы в Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <!-- Конец левой колонки -->
+
+        <!-- ОБЪЯВЛЕНИЯ правая колонка -->
+        <div class="right-block col-12 col-md-9 p-0 d-flex flex-column" id="item-block">
+            <!-- Заголовок -->
+            <div class="col-md-12">
+                <h1 id="ads" class="title-block align-self-center align-self-md-start my-3 mb-lg-4 float-left">
+                    Объявления</h1>
+                <button type="button" class="btn btn-warning float-right mt-2 " data-toggle="collapse"
+                        data-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
+                    <i class="fas fa-filter"></i> Фильтр
+                </button>
+            </div>
+            <!-- Контейнер для карточек -->
+            <div class="card-block">
+                <!-- Карточка -->
+                <div class="card mb-3 rounded-0">
+                    <div class="card-body d-flex flex-column flex-sm-row">
+                        <div class="align-self-md-stretch card-thumb"
+                             style="background-image: url('./img/items/camas.png')"></div>
+                        <div class="right-side-card col-md-7 p-3 pb-4 pb-md-3">
+                            <p class="card-title">Автовышка АГП-28</p>
+                            <div class="card-prop">
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Рабочая высота подъема</th>
+                                        <td>28 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Грузоподъемность люльки</th>
+                                        <td>300 кг</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Максимальный вылет стрелы</th>
+                                        <td>13 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Угол поворота</th>
+                                        <td>360<sup> o</sup></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cost-content font-weight-bold">
+                                <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
+                                <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа
+                                </div>
+                                <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
+                            </div>
+                            <div class="card-bottom-content font-weight-bold">
+                                <button class="more">Подробнее</button>
+                                <button class="order px-4" data-toggle="modal" data-target="#rentalModal">Заказать
+                                </button>
+                                <button class="number d-none d-lg-block">+7 показать номер</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 rounded-0">
+                    <div class="card-body d-flex flex-column flex-sm-row">
+                        <div class="align-self-md-stretch card-thumb"
+                             style="background-image: url('./img/items/camas.png')"></div>
+                        <div class="right-side-card col-md-7 p-3 pb-4 pb-md-3">
+                            <p class="card-title">Автовышка АГП-28</p>
+                            <div class="card-prop">
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Рабочая высота подъема</th>
+                                        <td>28 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Грузоподъемность люльки</th>
+                                        <td>300 кг</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Максимальный вылет стрелы</th>
+                                        <td>13 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Угол поворота</th>
+                                        <td>360<sup> o</sup></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cost-content font-weight-bold">
+                                <span class="cost"><i class="fas fa-ruble-sign mr-1"></i>2 000 &#8381;/ч</span>
+                                <div class="hour-dock"><i class="far fa-clock font-weight-light mr-1"></i>Смена 4 часа
+                                </div>
+                                <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Зеленодольск</div>
+                            </div>
+                            <div class="card-bottom-content font-weight-bold">
+                                <button class="more">Подробнее</button>
+                                <button class="order px-4" data-toggle="modal" data-target="#rentalModal">Заказать
+                                </button>
+                                <button class="number d-none d-lg-block">+7 показать номер</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Конец контейнера с карточками -->
+            <!-- Кнопка больше объявлений -->
+            <div class="more-content mb-3 mt-0 mx-3 mx-md-0 align-self-stretch align-self-sm-start">
+                <button class="more-items w-100 py-1 px-3">Больше объявлений</button>
+            </div>
+        </div>
+        <!-- Конец правой колонки -->
+    </div>
+</section>
+
+
+<!-- Блок с описанием сервиса Спецтехникофф -->
+<section class="service-block d-none d-sm-block mb-lg-4">
+    <div class="container">
+        <!-- Контейнер для картинки -->
+        <div class="left-block col-md-6">
+            <img src="./img/items/service-block.jpg" alt=" " class="card-image">
+        </div>
+        <!-- Правая колонка с текстом -->
+        <div class="right-block col-md-6">
+            <h1 class="title-block font-weight-bold">Сервис аренды спецтехники</h1>
+            <div class="desc-block">
+                <p class="desc">Это крупнейший российский портал создан для удобной, простой и полезной систематизации
+                    информации как для заказчиков,
+                    так и для собственников спецтехники.
+                </p>
+                <p class="desc">На портале вы сможете моментально оформить заказ на необходимую спецтехнику заполнив
+                    формы. Также вы можете найти ближайшую технику самостоятельно на карте или изучить объявления о
+                    сдаче в аренду техники от собственников.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Блок с рекламой мобильного приложения -->
+<section class="on-app p-4 p-md-5 text-center text-sm-left">
+    <div class="container p-0 justify-content-start">
+        <div class="left-block app-screeen col-sm-4 col-md-3 col-lg-3 col-xl-3 d-none d-sm-block px-0 mr-3">
+            <img src="./img/items/apptel.svg" alt=" " class="screen">
+        </div>
+        <div class="right-block app-desc col-md-8">
+            <h1 class="title-block">Заказ техники и услуг всегда под рукой!</h1>
+            <p class="d-block d-sm-none font-weight-light">Загрузите мобильное приложение</p>
+            <div class="desc-block d-none d-sm-block py-lg-4">
+                <p class="title-desc">Мобильное приложение это:</p>
+                <ul class="p-sm-0 pl-lg-5 font-weight-light">
+                    <li class="desc-item"><i class="far fa-circle"></i>быстрый поиск спецтехники</li>
+                    <li class="desc-item"><i class="far fa-circle"></i>общение без посредников</li>
+                    <li class="desc-item"><i class="far fa-circle"></i>push-уведомления о новых заказах</li>
+                    <li class="desc-item"><i class="far fa-circle"></i>удобный поиск</li>
+                    <li class="desc-item"><i class="far fa-circle"></i>простое размещение заказа</li>
+                </ul>
+            </div>
+            <!-- Ссылки на мобильное приложение -->
+            <div class="store-links d-flex justify-content-center justify-content-md-start row no-gutters col-sm-10 col-md-12">
+                <a href="" class="mr-2 mr-md-3 col-5 col-md-3 col-lg-3">
+                    <img class="w-100" src="./img/icons/app-store.svg" alt=" " title="Перейти в App Store">
+                </a>
+                <a href="" class="col-5 col-md-3 col-lg-3">
+                    <img class="w-100" src="./img/icons/google-play.svg" alt=" " title="Перейти в Google Play">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div class="md-form" id="date">
+        <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
+        <label for="date-picker-example">Try me...</label>
+      </div> -->
+
+<!-- Подвал -->
+<footer class="py-4 py-md-5">
+    <div class="container d-none d-sm-flex">
+        <div class="col-md-4">
+            <div class="list-block">
+                <p class="title-list-block">Аренда техники</p>
+                <ul class="list-parent">
+                    <li class="list-item"><a href="#">Автовышки</a></li>
+                    <li class="list-item"><a href="#">Автогрейдеры</a></li>
+                    <li class="list-item"><a href="#">Автокраны</a></li>
+                    <li class="list-item"><a href="#">Асфальтоукладчики</a></li>
+                    <li class="list-item"><a href="#">Бетононасосы</a></li>
+                    <li class="list-item"><a href="#">Бульдозеры</a></li>
+                    <li class="list-item"><a href="#">Гидромолоты</a></li>
+                    <li class="list-item"><a href="#">ГНБ</a></li>
+                    <li class="list-item"><a href="#">Катки</a></li>
+                    <li class="list-item"><a href="#">Краны</a></li>
+                    <li class="list-item"><a href="#">Манипуляторы</a></li>
+                    <li class="list-item"><a href="#">Миксеры</a></li>
+                    <li class="list-item"><a href="#">Погрузчики</a></li>
+                    <li class="list-item"><a href="#">Самосвалы</a></li>
+                    <li class="list-item"><a href="#">Сваебои</a></li>
+                    <li class="list-item"><a href="#">Тракторы</a></li>
+                    <li class="list-item"><a href="#">Трубоукладчики</a></li>
+                    <li class="list-item"><a href="#">Фреза</a></li>
+                    <li class="list-item"><a href="#">Экскаваторы</a></li>
+                    <li class="list-item"><a href="#">Ямобуры</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class=" col-md-4">
+            <div class="list-block">
+                <p class="title-list-block">Грузоперевозки</p>
+                <ul class="list-parent">
+                    <li class="list-item"><a href="#">Бензовозы</a></li>
+                    <li class="list-item"><a href="#">Водовозы</a></li>
+                    <li class="list-item"><a href="#">Газели</a></li>
+                    <li class="list-item"><a href="#">Длинномеры</a></li>
+                    <li class="list-item"><a href="#">Камазы</a></li>
+                    <li class="list-item"><a href="#">Лесовозы</a></li>
+                    <li class="list-item"><a href="#">Рефрижераторы</a></li>
+                    <li class="list-item"><a href="#">Тралы</a></li>
+                    <li class="list-item"><a href="#">Фуры</a></li>
+                    <li class="list-item"><a href="#">Эвакуаторы</a></li>
+                </ul>
+            </div>
+            <div class="list-block">
+                <p class="title-list-block">Доставка материалов</p>
+                <ul class="list-parent">
+                    <li class="list-item"><a href="#">Доставка асфальта</a></li>
+                    <li class="list-item"><a href="#">Доставка бетона</a></li>
+                    <li class="list-item"><a href="#">Доставка грунта</a></li>
+                    <li class="list-item"><a href="#">Доставка песка</a></li>
+                    <li class="list-item"><a href="#">Доставка щебня</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class=" col-md-4">
+            <div class="list-block">
+                <p class="title-list-block">Услуги</p>
+                <ul class="list-parent">
+                    <li class="list-item"><a href="#">Асфальтирование дорог</a></li>
+                    <li class="list-item"><a href="#">Бестраншейная замена коммуникаций</a></li>
+                    <li class="list-item"><a href="#">Бурение колодцев</a></li>
+                    <li class="list-item"><a href="#">Бурение под сваи</a></li>
+                    <li class="list-item"><a href="#">Вывоз ЖБО</a></li>
+                    <li class="list-item"><a href="#">Вывоз мусора</a></li>
+                    <li class="list-item"><a href="#">Выкапывание ямы под септик</a></li>
+                    <li class="list-item"><a href="#">Выкорчевка</a></li>
+                    <li class="list-item"><a href="#">Горизонтальное бурение</a></li>
+                    <li class="list-item"><a href="#">Грейдирование дорог</a></li>
+                    <li class="list-item"><a href="#">Демонтаж асфальта</a></li>
+                    <li class="list-item"><a href="#">Дорожные работы</a></li>
+                    <li class="list-item"><a href="#">Забивка свай под дом</a></li>
+                    <li class="list-item"><a href="#">Малоэтажное строительство</a></li>
+                    <li class="list-item"><a href="#">Монтаж железобетонных конструкций</a></li>
+                    <li class="list-item"><a href="#">Осушение котлованов, траншей, ливневок и отстойников</a></li>
+                    <li class="list-item"><a href="#">Снос зданий и разрушение зданий</a></li>
+                    <li class="list-item"><a href="#">Уборка снега</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="companie col-md-12 d-flex flex-column flex-sm-row text-center text-sm-left">
+            <div class="policy">
+                <a href="">Политика конфиденциальности</a>
+                <a href="">Пользовательское соглашение</a>
+            </div>
+            <div class="contacts col-md-4 d-inline-block pr-0">
+                <div class="item">
+                    <a href="">Сотрудничество и предложения</a>
+                </div>
+                <div class="item">
+                    <a href="">Контакты</a>
+                </div>
+            </div>
+            <div class="copy col-md-4 pt-4 p-sm-0 text-center">
+                <address class="copy-companie">@ 2019 г. ООО "Спецтехникофф"</address>
+                <div class="icons">
+                    <a href="" title="Мы в Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" title="Мы в Vkontakte"><i class="fab fa-vk"></i></a>
+                    <a href="" title="Написать нам в Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="" title="Мы в Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <!-- МОДАЛЬНОЕ ОКНО ВХОДА -->
-<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content rounded-0 p-sm-3">
-      <div class="modal-header border-0 d-flex justify-content-between">
-        <h1 class="modal-title" id="signInModalLabel">Войти</h1>
-        <a href="#" class="reg_link" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">Зарегистрироваться</a>
-      </div>
-      <form action="" method="POST">
-        <div class="modal-body py-0">
-            <div class="form-group">
-                <label for="emailIn">Почта</label>
-                <input type="email" class="form-control rounded-0" name="email" id="emailIn" placeholder="Почта" required>
-            </div>  
-            <div class="form-group">
-                <label for="passIn">Пароль</label>
-                <input type="password" class="form-control rounded-0" id="passIn" name="password" placeholder="Пароль" required>
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0 p-sm-3">
+            <div class="modal-header border-0 d-flex justify-content-between">
+                <h1 class="modal-title" id="signInModalLabel">Войти</h1>
+                <a href="#" class="reg_link" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">Зарегистрироваться</a>
             </div>
+            <form action="" method="POST">
+                <div class="modal-body py-0">
+                    <div class="form-group">
+                        <label for="emailIn">Почта</label>
+                        <input type="email" class="form-control rounded-0" name="email" id="emailIn" placeholder="Почта"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passIn">Пароль</label>
+                        <input type="password" class="form-control rounded-0" id="passIn" name="password"
+                               placeholder="Пароль" required>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-between justify-content-sm-around">
+                    <button class="send btn yel-btn w-50" type="submit">Войти</button>
+                    <a href="" class="forget-pass blue-a" data-toggle="modal" data-target="#restorePasswordModal"
+                       data-dismiss="modal">Забыли пароль?</a>
+                </div>
+            </form>
         </div>
-        <div class="modal-footer border-0 justify-content-between justify-content-sm-around">
-            <button class="send btn yel-btn w-50" type="submit">Войти</button>
-            <a href="" class="forget-pass blue-a"  data-toggle="modal" data-target="#restorePasswordModal" data-dismiss="modal">Забыли пароль?</a>
-        </div>
-      </form>
     </div>
-  </div>
 </div>
 
 
-
 <!-- МОДАЛЬНОЕ ОКНО ВОССТАНОВЛЕНИЯ ПАРОЛЯ -->
-<div class="modal fade" id="restorePasswordModal" tabindex="-1" role="dialog" aria-labelledby="restorePasswordModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content rounded-0 p-sm-3">
-      <div class="modal-header border-0 d-flex justify-content-between">
-        <h1 class="modal-title" id="restorePasswordModalLabel">Введите адрес электронной почты</h1>
-      </div>
-      <form action="" method="POST">
-        <div class="modal-body py-0">
-            <div class="form-group">
-                <label for="emailRestore" class="sr-only">Ваша почта</label>
-                <input type="email" class="form-control rounded-0" name="email" id="emailRestore" placeholder="Почта" required>
+<div class="modal fade" id="restorePasswordModal" tabindex="-1" role="dialog"
+     aria-labelledby="restorePasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0 p-sm-3">
+            <div class="modal-header border-0 d-flex justify-content-between">
+                <h1 class="modal-title" id="restorePasswordModalLabel">Введите адрес электронной почты</h1>
             </div>
+            <form action="" method="POST">
+                <div class="modal-body py-0">
+                    <div class="form-group">
+                        <label for="emailRestore" class="sr-only">Ваша почта</label>
+                        <input type="email" class="form-control rounded-0" name="email" id="emailRestore"
+                               placeholder="Почта" required>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-between">
+                    <button class="send btn yel-btn m-0 px-sm-4" type="submit">Восстановить пароль</button>
+                    <a href="" class="forget-pass blue-a text-right m-0 " data-dismiss="modal" data-toggle="modal"
+                       data-target="#signInModal">Я вспомнил пароль</a>
+                </div>
+            </form>
         </div>
-        <div class="modal-footer border-0 justify-content-between">
-            <button class="send btn yel-btn m-0 px-sm-4" type="submit">Восстановить пароль</button>
-            <a href="" class="forget-pass blue-a text-right m-0 " data-dismiss="modal" data-toggle="modal" data-target="#signInModal">Я вспомнил пароль</a>  
-        </div>
-      </form>
     </div>
-  </div>
 </div>
 
 
 <!-- МОДАЛЬНОЕ ОКНО РЕГИСТРАЦИИ -->
-<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content rounded-0 p-sm-3">
-      <div class="modal-header border-0 d-flex justify-content-between">
-        <h1 class="modal-title" id="signUpModalLabel">Зарегистрироваться</h1>
-        <a href="#" class="reg_link" data-toggle="modal" data-target="#signInModal" data-dismiss="modal">Войти</a>
-      </div>
-      <form action="" method="post">
-        <div class="modal-body py-0">
-            <div class="form-group">
-                <label for="emailUp" class="d-none d-sm-block">Почта</label>
-                <input type="email" class="form-control rounded-0" name="email" id="emailUp" placeholder="Почта" required>
-            </div>  
-            <div class="form-group">
-                <label for="passUp" class="d-none d-sm-block">Пароль</label>
-                <input type="password" class="form-control rounded-0" id="passUp" name="password" placeholder="Пароль" required>
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0 p-sm-3">
+            <div class="modal-header border-0 d-flex justify-content-between">
+                <h1 class="modal-title" id="signUpModalLabel">Зарегистрироваться</h1>
+                <a href="#" class="reg_link" data-toggle="modal" data-target="#signInModal"
+                   data-dismiss="modal">Войти</a>
             </div>
-            <div class="form-group">
-                <label for="passConfirm" class="d-none d-sm-block">Повторите пароль</label>
-                <input type="password" class="form-control" id="passConfirm" name="confirm" placeholder="Повторите пароль" required>
-            </div>
+            <form action="" method="post">
+                <div class="modal-body py-0">
+                    <div class="form-group">
+                        <label for="emailUp" class="d-none d-sm-block">Почта</label>
+                        <input type="email" class="form-control rounded-0" name="email" id="emailUp" placeholder="Почта"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passUp" class="d-none d-sm-block">Пароль</label>
+                        <input type="password" class="form-control rounded-0" id="passUp" name="password"
+                               placeholder="Пароль" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passConfirm" class="d-none d-sm-block">Повторите пароль</label>
+                        <input type="password" class="form-control" id="passConfirm" name="confirm"
+                               placeholder="Повторите пароль" required>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 flex-column">
+                    <div class="form-group desc">
+                        <p class="policy">Нажимая на кнопку Зарегистрироваться, я принимаю условия <a href=""
+                                                                                                      class="blue-a">пользовательского
+                            соглашения</a></p>
+                    </div>
+                    <button class="btn sign_up send yel-btn w-100" type="submit">Зарегистрироваться</button>
+                </div>
+            </form>
         </div>
-        <div class="modal-footer border-0 flex-column">
-            <div class="form-group desc">
-                <p class="policy">Нажимая на кнопку Зарегистрироваться, я принимаю условия <a href="" class="blue-a">пользовательского соглашения</a></p>
-            </div>
-            <button class="btn sign_up send yel-btn w-100" type="submit">Зарегистрироваться</button>
-        </div>
-      </form>
     </div>
-  </div>
 </div>
 
 
 <!-- МОДАЛЬНОЕ ОКНО ЗАЯВКА НА АРЕНДУ -->
-<div class="modal fade" id="rentalModal" tabindex="-1" role="dialog" aria-labelledby="rentalModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
-      <div class="modal-header border-0 p-0">
-        <h1 class="modal-title" id="rentalModalLabel">Заявка на аренду</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <form action="" method="post">
-        <div class="modal-body p-0 py-2 py-lg-4">        
-            <div class="form-group">
-                <label for="nameInput">Ваше имя*</label>
-                <input type="text" id="nameInput" placeholder="Ваше имя" class="form-control" required>
+<div class="modal fade" id="rentalModal" tabindex="-1" role="dialog" aria-labelledby="rentalModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
+            <div class="modal-header border-0 p-0">
+                <h1 class="modal-title" id="rentalModalLabel">Заявка на аренду</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="form-group">
-                <label for="telInput">Ваш телефон*</label>
-                <input type="tel" id="telInput" placeholder="+7 (___) ___-____" class="form-control" required>
-            </div>
+            <form action="" method="post">
+                <div class="modal-body p-0 py-2 py-lg-4">
+                    <div class="form-group">
+                        <label for="nameInput">Ваше имя*</label>
+                        <input type="text" id="nameInput" placeholder="Ваше имя" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telInput">Ваш телефон*</label>
+                        <input type="tel" id="telInput" placeholder="+7 (___) ___-____" class="form-control" required>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 flex-column p-0 w-100">
+                    <div class="form-group d-flex policy w-100 mx-0 flex-nowrap mt-2 ">
+                        <input type="checkbox" checked id="policy-check" class="mr-2 mt-1 mt-xl-2">
+                        <label for="policy-check" class="m-0">Я согласен с <a href="" class="blue-a">политикой
+                            конфиденциальности</a> и обработкой персональных данных</label>
+                    </div>
+                    <div class="form-row w-100 m-0">
+                        <button class="btn yel-btn px-4 px-sm-5 flex-grow-1 flex-sm-grow-0" type="submit" disabled
+                                title="Заполните поля">Заказать
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="modal-footer border-0 flex-column p-0 w-100">
-            <div class="form-group d-flex policy w-100 mx-0 flex-nowrap mt-2 ">
-                <input type="checkbox" checked id="policy-check" class="mr-2 mt-1 mt-xl-2">
-                <label for="policy-check" class="m-0">Я согласен с <a href="" class="blue-a">политикой конфиденциальности</a> и обработкой персональных данных</label>
-            </div>
-            <div class="form-row w-100 m-0">
-                <button class="btn yel-btn px-4 px-sm-5 flex-grow-1 flex-sm-grow-0" type="submit" disabled title="Заполните поля">Заказать</button>
-            </div>
-        </div>
-      </form>
     </div>
-  </div>
 </div>
 
 
-
 <!-- МОДАЛЬНОЕ ОКНО РАЗМЕСТИТЬ ТЕХНИКУ -->
-<div class="modal fade" id="placeVehicleModal" tabindex="-1" role="dialog" aria-labelledby="placeVehicleModalLabel" aria-hidden="true">
+<div class="modal fade" id="placeVehicleModal" tabindex="-1" role="dialog" aria-labelledby="placeVehicleModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content rounded-0 p-lg-5">
             <div class="modal-header border-0 pb-lg-5">
@@ -1036,9 +1150,11 @@
                     <div class="form-row">
                         <label for="vehicleModal" class="col-md-5">Марка и модель*</label>
                         <div class="col-md-7 p-0">
-                            <input type="text" id="vehicleModal" placeholder="Напишите марку модели" class="w-100" required>
+                            <input type="text" id="vehicleModal" placeholder="Напишите марку модели" class="w-100"
+                                   required>
                             <p class="form-text">
-                                В данном поле запрещено писать какую-либо контактную информацию, такие объявления будут удалены модератором.
+                                В данном поле запрещено писать какую-либо контактную информацию, такие объявления будут
+                                удалены модератором.
                             </p>
                         </div>
                     </div>
@@ -1070,7 +1186,8 @@
                         <label for="adDescription" class="align-top col-md-5">Описание объявления</label>
                         <div class="form-row col-md-7 p-0">
                             <textarea name="" id="adDescription" cols="30" rows="5" class="w-100">Опишите вид проводимых работ</textarea>
-                            <p class="form-text">В описании также запрещено вставлять контактные и персональные данные, ссылки на другие сайты. Подобные объявления удаляются модератором.</p>
+                            <p class="form-text">В описании также запрещено вставлять контактные и персональные данные,
+                                ссылки на другие сайты. Подобные объявления удаляются модератором.</p>
                         </div>
                     </div>
                     <div class="form-row">
@@ -1087,31 +1204,37 @@
                         <label for="" class="col-md-5">Фотографии</label>
                         <div class="col-md-7 p-0">
                             <div class="d-flex col-12 p-0 justify-content-between modal-foto-upload row no-gutters">
-                                <input type="file" name="" id="file-upload" class="d-none" accept=".gif,.jpg,.jpeg,.png">
+                                <input type="file" name="" id="file-upload" class="d-none"
+                                       accept=".gif,.jpg,.jpeg,.png">
                                 <label for="file-upload" class="">
-                                        <i class="fas fa-camera"></i>
+                                    <i class="fas fa-camera"></i>
                                 </label>
-                                <input type="file" name="" id="file-upload" class="d-none" accept=".gif,.jpg,.jpeg,.png">
+                                <input type="file" name="" id="file-upload" class="d-none"
+                                       accept=".gif,.jpg,.jpeg,.png">
                                 <label for="file-upload" class="">
-                                        <i class="fas fa-camera"></i>
+                                    <i class="fas fa-camera"></i>
                                 </label>
-                                <input type="file" name="" id="file-upload" class="d-none" accept=".gif,.jpg,.jpeg,.png">
+                                <input type="file" name="" id="file-upload" class="d-none"
+                                       accept=".gif,.jpg,.jpeg,.png">
                                 <label for="file-upload" class="d-md-none d-lg-inline-block">
-                                        <i class="fas fa-camera"></i>
+                                    <i class="fas fa-camera"></i>
                                 </label>
-                                <input type="file" name="" id="file-upload" class="d-none" accept=".gif,.jpg,.jpeg,.png">
+                                <input type="file" name="" id="file-upload" class="d-none"
+                                       accept=".gif,.jpg,.jpeg,.png">
                                 <label for="file-upload" class="col d-none d-sm-inline-block">
-                                        <i class="fas fa-camera"></i>
+                                    <i class="fas fa-camera"></i>
                                 </label>
 
                             </div>
-                            <p class="form-text">Добавляйте фотографии, только вашей техники. На фото не должно быть контактной информации.</p>
+                            <p class="form-text">Добавляйте фотографии, только вашей техники. На фото не должно быть
+                                контактной информации.</p>
                         </div>
                     </div>
                     <div class="form-row">
                         <label for="" class="col-md-5">Расположение техники</label>
                         <div class="col-md-7 d-flex flex-column p-0">
-                            <p class="form-text">Перемесите метку на карте, чтобы указать местоположение вашей техники.</p>
+                            <p class="form-text">Перемесите метку на карте, чтобы указать местоположение вашей
+                                техники.</p>
                             <div class="map" style="background-image: url('img/map-form.jpg'); height: 150px;">
                             </div>
                         </div>
@@ -1164,17 +1287,21 @@
                         </div>
                         <div class="form-row">
                             <label for="confirmPassw" class="col-md-5 d-none d-sm-block">Повторите пароль*</label>
-                            <input type="password" id="confirmPassw" placeholder="Повторите пароль" class="col-md-7" required>
+                            <input type="password" id="confirmPassw" placeholder="Повторите пароль" class="col-md-7"
+                                   required>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer border-0 flex-column align-items-stretch">
-                    <button class="btn yel-btn px-4 px-lg-5 align-self-sm-start" type="submit" value="Разместить">Разместить</button>
+                    <button class="btn yel-btn px-4 px-lg-5 align-self-sm-start" type="submit" value="Разместить">
+                        Разместить
+                    </button>
                     <div class="form-group form-check mt-3">
                         <input type="checkbox" class="form-check-input mt-lg-2" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Я согласен с <a href="" class="blue-a">политикой конфиденциальности</a> и обработкой персональных данных</label>
+                        <label class="form-check-label" for="exampleCheck1">Я согласен с <a href="" class="blue-a">политикой
+                            конфиденциальности</a> и обработкой персональных данных</label>
                     </div>
-                </div>  
+                </div>
             </form>
         </div>
     </div>
@@ -1182,128 +1309,137 @@
 
 
 <!-- МОДАЛЬНОЕ ОКНО ВЫБОР МЕСТОПОЛОЖЕНИЯ -->
-<div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="locationModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content rounded-0 p-sm-3">
-      <div class="modal-header border-0">
-        <h1 class="modal-title" id="locationModalLabel">Изменение региона</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <form action="">
-        <div class="modal-body py-0">
-            <div class="form-body py-2">
-                <div class="form-group">
-                    <input type="radio" name="location" id="auto-location" checked><label for="auto-location">Казань</label>
-                    <p>Автоматически</p>
-                </div>
-                <div class="form-group">
-                    <input type="radio" name="location" id="set-location"><label for="set-location">Задать</label>
-                    <input type="text" id="city-field" placeholder="Введите название города">
-                </div>
+<div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="locationModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0 p-sm-3">
+            <div class="modal-header border-0">
+                <h1 class="modal-title" id="locationModalLabel">Изменение региона</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+            <form action="">
+                <div class="modal-body py-0">
+                    <div class="form-body py-2">
+                        <div class="form-group">
+                            <input type="radio" name="location" id="auto-location" checked><label for="auto-location">Казань</label>
+                            <p>Автоматически</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="location" id="set-location"><label
+                                for="set-location">Задать</label>
+                            <input type="text" id="city-field" placeholder="Введите название города">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 flex-column">
+                    <button class="btn yel-btn align-self-stretch align-self-sm-start px-4" type="submit">Сохранить
+                    </button>
+                </div>
+            </form>
         </div>
-        <div class="modal-footer border-0 flex-column">
-            <button class="btn yel-btn align-self-stretch align-self-sm-start px-4" type="submit">Сохранить</button>
-        </div>
-      </form>
     </div>
-  </div>
 </div>
 
 <!-- МОДАЛЬНОЕ ОКНО ИСКАТЬ НА КАРТЕ - ГЛАВНАЯ СТРАНИЦА -->
-<div class="modal fade" id="searchOnMapModal" tabindex="-1" role="dialog" aria-labelledby="searchOnMapModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
-      <div class="modal-header border-0 p-0  pb-lп-3">
-        <h1 class="modal-title" id="searchOnMapModalModalLabel">Поиск техники</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body p-0 py-2 py-lg-4">
-        <form action="">
+<div class="modal fade" id="searchOnMapModal" tabindex="-1" role="dialog" aria-labelledby="searchOnMapModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
+            <div class="modal-header border-0 p-0  pb-lп-3">
+                <h1 class="modal-title" id="searchOnMapModalModalLabel">Поиск техники</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0 py-2 py-lg-4">
+                <form action="">
 
-         <div class="map-container w-100">
-            <!-- Здесь карта -->
-         </div>
-         <div class="form-row">
-             <input type="text" placeholder="Какая техника требуется?" class="pl-3 mr-3 col-7 col-md-6">
-             <button class="yel-btn col-3">Найти</button>
-         </div>
-        </form>
-      </div>
+                    <div class="map-container w-100">
+                        <!-- Здесь карта -->
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Какая техника требуется?" class="pl-3 mr-3 col-7 col-md-6">
+                        <button class="yel-btn col-3">Найти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- МОДАЛЬНОЕ ОКНО ОСТАВИТЬ ЗАЯВКУ -->
-<div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="applicationModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
-      <div class="modal-header border-0 p-0  pb-lп-3">
-        <h1 class="modal-title" id="applicationModalLabel">Оставить заявку</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <form action="">
-        <div class="modal-body p-0 py-2 py-lg-4">      
-            <div class="form-row">        
-                <label for="vehiclesCategory2" class="d-none d-sm-block col-5 p-0">Тип техники*</label>
-                <select name="" id="vehiclesCategory2" class="order_select form-control col-sm-7">
-                </select>
+<div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="applicationModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content rounded-0 p-3 p-sm-4 p-lg-5">
+            <div class="modal-header border-0 p-0  pb-lп-3">
+                <h1 class="modal-title" id="applicationModalLabel">Оставить заявку</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="form-row d-none d-sm-flex">
-                <label for="dateRange" class="col-5 p-0">Когда нужна*</label>
-                <select name="" id="dateRange" class="order_select form-control col-sm-7">
-                    <option value="">Выберите необходимый диапозон дат</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <label for="typeWork" class="d-none d-sm-block col-5 p-0">Вид работ*</label>
-                <textarea name="" id="typeWork" cols="30" rows="3" class="form-control col-sm-7">Опишите вид проводимых работ</textarea>
-            </div>
-            <div class="form-row d-none d-sm-flex">
-                <label for="workLocation">Место проведения работ</label>
-                <input type="text" id="workLocation" class="form-control col-sm-7" placeholder="Где будут проводиться работы, район">
-            </div>
-            <div class="form-row d-none d-sm-flex">
-                <label for="typePayment2">Оплата*</label>
-                <select name="" id="typePayment2" class="order_select form-control col-sm-7">
-                    <option value="">Выберите вид оплаты</option>
-                </select>
-            </div>
-            
-            <div class="form-row">
-                <label for="nameInput2" class="d-none d-sm-block col-5 p-0">Имя*</label>
-                <input type="text" id="nameInput2" class="form-control col-sm-7" placeholder="Ваше имя">
-            </div>
-            <div class="form-row">
-                <label for="telInput2" class="d-none d-sm-block col-5 p-0">Номер телефона*</label>
-                <input type="tel" id="telInput2" class="form-control col-sm-7" placeholder="Введите ваш номер">
-            </div>
-        </div>
-        <div class="modal-footer border-0 flex-column p-0 w-100">
-            <div class="form-row flex-nowrap justify-content-between mx-0 w-100 mb-sm-3">
-                <button class="btn yel-btn px-4 px-lg-5 flex-grow-1 flex-sm-grow-0" type="submit" disabled>Заказать</button>
-                <div class="col-sm-7 d-none d-sm-flex justify-content-between p-0">
-                    <button class=" wh-btn px-1 flex-grow-1 mr-2" data-toggle="modal" data-target="#searchOnMapModal" data-dismiss="modal" disabled>Искать на карте</button>
-                    <button class=" wh-btn px-1 flex-grow-1" disabled>Искать в объявлениях</button>
+            <form action="">
+                <div class="modal-body p-0 py-2 py-lg-4">
+                    <div class="form-row">
+                        <label for="vehiclesCategory2" class="d-none d-sm-block col-5 p-0">Тип техники*</label>
+                        <select name="" id="vehiclesCategory2" class="order_select form-control col-sm-7">
+                        </select>
+                    </div>
+                    <div class="form-row d-none d-sm-flex">
+                        <label for="dateRange" class="col-5 p-0">Когда нужна*</label>
+                        <select name="" id="dateRange" class="order_select form-control col-sm-7">
+                            <option value="">Выберите необходимый диапозон дат</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="typeWork" class="d-none d-sm-block col-5 p-0">Вид работ*</label>
+                        <textarea name="" id="typeWork" cols="30" rows="3" class="form-control col-sm-7">Опишите вид проводимых работ</textarea>
+                    </div>
+                    <div class="form-row d-none d-sm-flex">
+                        <label for="workLocation">Место проведения работ</label>
+                        <input type="text" id="workLocation" class="form-control col-sm-7"
+                               placeholder="Где будут проводиться работы, район">
+                    </div>
+                    <div class="form-row d-none d-sm-flex">
+                        <label for="typePayment2">Оплата*</label>
+                        <select name="" id="typePayment2" class="order_select form-control col-sm-7">
+                            <option value="">Выберите вид оплаты</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="nameInput2" class="d-none d-sm-block col-5 p-0">Имя*</label>
+                        <input type="text" id="nameInput2" class="form-control col-sm-7" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-row">
+                        <label for="telInput2" class="d-none d-sm-block col-5 p-0">Номер телефона*</label>
+                        <input type="tel" id="telInput2" class="form-control col-sm-7" placeholder="Введите ваш номер">
+                    </div>
                 </div>
-            </div>
-            <div class="form-row policy w-100 mx-0 flex-nowrap mt-2 align-items-lg-center">
-                <input type="checkbox" checked id="policy-check2" class="mr-2 mt-1 mt-lg-0">
-                <label for="policy-check2" class="m-0">Я согласен с <a href="" class="blue-a">политикой конфиденциальности</a> и обработкой персональных данных</label>
-            </div>
+                <div class="modal-footer border-0 flex-column p-0 w-100">
+                    <div class="form-row flex-nowrap justify-content-between mx-0 w-100 mb-sm-3">
+                        <button class="btn yel-btn px-4 px-lg-5 flex-grow-1 flex-sm-grow-0" type="submit" disabled>
+                            Заказать
+                        </button>
+                        <div class="col-sm-7 d-none d-sm-flex justify-content-between p-0">
+                            <button class=" wh-btn px-1 flex-grow-1 mr-2" data-toggle="modal"
+                                    data-target="#searchOnMapModal" data-dismiss="modal" disabled>Искать на карте
+                            </button>
+                            <button class=" wh-btn px-1 flex-grow-1" disabled>Искать в объявлениях</button>
+                        </div>
+                    </div>
+                    <div class="form-row policy w-100 mx-0 flex-nowrap mt-2 align-items-lg-center">
+                        <input type="checkbox" checked id="policy-check2" class="mr-2 mt-1 mt-lg-0">
+                        <label for="policy-check2" class="m-0">Я согласен с <a href="" class="blue-a">политикой
+                            конфиденциальности</a> и обработкой персональных данных</label>
+                    </div>
+                </div>
+            </form>
         </div>
-      </form>  
     </div>
-  </div>
 </div>
-
-
 
 
 <!-- JavaScript links -->
@@ -1319,22 +1455,23 @@
 <script src="js/modal.js"></script>
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 <script>
-        $(document).ready(function(){
-          var date_input=$('input[name="date"]'); //our date input has the name "date"
-          var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-          var options={
+    $(document).ready(function () {
+        var date_input = $('input[name="date"]'); //our date input has the name "date"
+        var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+        var options = {
             format: 'mm/dd/yyyy',
             container: container,
             todayHighlight: true,
             autoclose: true,
-          };
-          date_input.datepicker(options);
-        })
-    </script>
+        };
+        date_input.datepicker(options);
+    })
+</script>
 <script>
-    var flky = new Flickity( '.carousel', {
+    var flky = new Flickity('.carousel', {
         // options, defaults listed
 
         accessibility: true,

@@ -243,25 +243,86 @@ html body {
         color: #fff;
         padding-top: 10px;
         padding-bottom: 10px; }
-      html body section.main-1 .container .top-content .search-form form {
-        background: transparent;
-        padding-left: 0;
-        border: none; }
-        html body section.main-1 .container .top-content .search-form form .form-group input, html body section.main-1 .container .top-content .search-form form .form-group button {
+      html body section.main-1 .container .top-content .search-form {
+        background: rgba(31, 34, 41, 0.5); }
+        html body section.main-1 .container .top-content .search-form .order-content .order-title {
+          font-size: 2rem; }
+        html body section.main-1 .container .top-content .search-form .order-content .form-group small {
+          opacity: 0.7; }
+        html body section.main-1 .container .top-content .search-form .order-content .form-group label {
+          font-size: 1.3rem;
+          color: #c69500; }
+        html body section.main-1 .container .top-content .search-form .order-content .form-group input, html body section.main-1 .container .top-content .search-form .order-content .form-group button, html body section.main-1 .container .top-content .search-form .order-content .form-group select, html body section.main-1 .container .top-content .search-form .order-content .form-group textarea {
           border-radius: 0;
           font-size: inherit; }
-        html body section.main-1 .container .top-content .search-form form .form-group button {
+        html body section.main-1 .container .top-content .search-form .order-content .form-group button {
           font-weight: bold; }
-          html body section.main-1 .container .top-content .search-form form .form-group button:focus {
+          html body section.main-1 .container .top-content .search-form .order-content .form-group button:focus {
             box-shadow: 0px 0px 5px 1px #FFCD11;
             border: none; }
-        html body section.main-1 .container .top-content .search-form form .form-group .label-input {
+        html body section.main-1 .container .top-content .search-form .order-content .form-group .label-input {
           color: #FFFFFF;
           padding-top: 5px; }
-          html body section.main-1 .container .top-content .search-form form .form-group .label-input a {
+          html body section.main-1 .container .top-content .search-form .order-content .form-group .label-input a {
             color: #FFCD11;
             text-decoration: underline;
             padding-left: 10px; }
+        html body section.main-1 .container .top-content .search-form .order-content .form-row .policy-check {
+          display: none; }
+        html body section.main-1 .container .top-content .search-form .order-content .form-row .cbx {
+          position: relative;
+          margin-left: 5px;
+          top: -3px;
+          width: 17px;
+          height: 17px;
+          border: 1px solid #C8CCD4;
+          border-radius: 3px;
+          vertical-align: middle;
+          transition: background .1s ease;
+          cursor: pointer; }
+          html body section.main-1 .container .top-content .search-form .order-content .form-row .cbx:after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 5px;
+            width: 5px;
+            height: 11px;
+            opacity: 0;
+            transform: rotate(45deg) scale(0);
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            transition: all .3s ease;
+            transition-delay: .15s; }
+        @media screen and (max-width: 768px) {
+          html body section.main-1 .container .top-content .search-form .order-content .form-row .cbx {
+            top: 3px; } }
+        html body section.main-1 .container .top-content .search-form .order-content .form-row .lbl {
+          margin-left: 10px;
+          vertical-align: middle;
+          cursor: pointer; }
+        html body section.main-1 .container .top-content .search-form .order-content .form-row #policy:checked ~ .cbx {
+          border-color: transparent;
+          background: #e6bc0a;
+          animation: jelly .6s ease; }
+          html body section.main-1 .container .top-content .search-form .order-content .form-row #policy:checked ~ .cbx:after {
+            opacity: 1;
+            transform: rotate(45deg) scale(1); }
+
+@keyframes jelly {
+  from {
+    transform: scale(1, 1); }
+  30% {
+    transform: scale(1.25, 0.75); }
+  40% {
+    transform: scale(0.75, 1.25); }
+  50% {
+    transform: scale(1.15, 0.85); }
+  65% {
+    transform: scale(0.95, 1.05); }
+  75% {
+    transform: scale(1.05, 0.95); }
+  to {
+    transform: scale(1, 1); } }
       html body section.main-1 .container .feature-block {
         flex-wrap: nowrap; }
         html body section.main-1 .container .feature-block .card_desc, html body section.main-1 .container .feature-block .card-body {
@@ -919,6 +980,9 @@ html body {
           border: 1px solid #E5E5E5;
           width: 60px;
           font-weight: bold; }
+    html body .item-container .container.d-flex .left-block .main-characteristics-filtr .submit-filter .btn {
+      width: 100%;
+      font-size: 1.3rem; }
   html body .item-container .container.d-flex .left-block .search-map {
     background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 51.6%, rgba(255, 255, 255, 0.4) 99.06%), url("../img/map2.jpg");
     background-size: cover;
