@@ -250,6 +250,8 @@ html
           .brand
             top: 0px
             display: block
+            &:hover
+              cursor: pointer
 
             img
               position: relative
@@ -262,7 +264,10 @@ html
               z-index: 1000
 
           .cat-right-block
+
+
             .nav-item
+
               a.nav-link
                 background-color: transparent
                 color: black
@@ -294,11 +299,14 @@ html
 
                   .list-parent + .list-unstyled
                     padding-top: 10px
-
                 &#freightTransportation, &#materialDelivery
                   & + div
                     ul.list-unstyled li a
                       font-size: inherit
+            li.current
+              a
+                border-bottom-color: $yellow-bg !important
+                border-radius: 0
 
           .rent-equip
             padding: 0

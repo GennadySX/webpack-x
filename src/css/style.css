@@ -186,6 +186,8 @@ html body {
     html body header .nav-second .bottom-nav .brand {
       top: 0px;
       display: block; }
+      html body header .nav-second .bottom-nav .brand:hover {
+        cursor: pointer; }
       html body header .nav-second .bottom-nav .brand img {
         position: relative;
         top: -5px; }
@@ -221,6 +223,9 @@ html body {
           padding-top: 10px; }
       html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link#freightTransportation + div ul.list-unstyled li a, html body header .nav-second .bottom-nav .cat-right-block .nav-item a.nav-link#materialDelivery + div ul.list-unstyled li a {
         font-size: inherit; }
+    html body header .nav-second .bottom-nav .cat-right-block li.current a {
+      border-bottom-color: #FFCD11 !important;
+      border-radius: 0; }
     html body header .nav-second .bottom-nav .rent-equip {
       padding: 0; }
       html body header .nav-second .bottom-nav .rent-equip button.rent {
